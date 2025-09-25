@@ -1,0 +1,48 @@
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+
+.loader-overlay.fade-out {
+  opacity: 0;
+}
+
+.loader-video {
+  width: 50%;
+  height: 100%;
+  object-fit: cover; /* remplissage plein écran sans déformation */
+}
+
+.site-content {
+  display: none;
+  transition: opacity 0.7s ease;
+}
+
+.site-content.visible {
+  display: block;
+  overflow: hidden;
+}
+
+@media screen and (max-width : 768px) {
+    .loader-overlay{
+        height: 100vh;
+        overflow: hidden;
+        scrollbar-width: none;
+    }
+    .loader-video{
+        width: 300px;
+        height: auto;
+        overflow-x: hidden;
+    }
+}

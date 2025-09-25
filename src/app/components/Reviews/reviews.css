@@ -1,0 +1,72 @@
+.reviews-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+}
+.reviews-title{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.reviews-subtitle{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.icon-smile{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    position: relative;
+    bottom: -10px;
+}
+.reviews-content{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+.reviews-content aside{
+    padding: 10px;
+    gap: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.reviews-content h3{
+    font-size: 17px;
+}
+.reviews-content aside:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.first-review, .second-review, .third-review{
+    height: auto;
+    width: 300px;
+}
+.first-review p, .second-review p, .third-review p{
+    text-overflow: ellipsis;
+    font-size: 14px;
+    text-transform: initial;
+}
+.first-review{
+    background-color: #B74F98;
+}
+.second-review{
+    background-color: #568B50;
+}
+.third-review{
+    background-color: #40B3E4;
+}

@@ -1,0 +1,91 @@
+.intro-agence-container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    background-color: black;
+}
+.intro-agence-title {
+  text-align: center;
+  font-size: 28px; /* un peu plus petit pour affiner */
+  text-transform: uppercase;
+  color: #fff;
+  margin: 50px auto;
+  padding: 15px 35px;
+  border-radius: 12px;
+  font-weight: 200;
+
+  /* Fond sombre translucide */
+  background: rgba(0, 0, 0, 0.7);
+
+  /* Bordure néon fine */
+  border: 2px solid #B64F98;
+  box-shadow:
+    0 0 6px #B64F98,
+    0 0 12px #B64F98,
+    0 0 24px #B64F98;
+
+  /* Glow texte affiné */
+  text-shadow:
+    0 0 3px #B64F98,
+    0 0 6px #B64F98,
+    0 0 48px #B64F98;
+}
+
+
+.intro-agence-texte{
+    font-size: 25px;
+    width: 95%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.intro-agence-image{
+    height: 55vh;
+    width: 90%;
+    object-fit: cover;
+}
+
+/* Responsive styles */
+@media (max-width: 1023px) {
+    .intro-agence-container {
+        height: 100vh;
+        padding-bottom: 30px;
+    }
+    .intro-agence-title {
+        font-size: 28px;
+        margin: 30px;
+        padding: 20px;
+    }
+    .intro-agence-texte {
+        font-size: 20px;
+        width: 90%;
+    }
+    .intro-agence-image {
+        height: 60vh;
+        width: 95%;
+    }
+}
+
+@media (max-width: 767px) {
+    .intro-agence-container {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .intro-agence-title {
+        font-size: 22px;
+        margin: 20px;
+        padding: 15px;
+    }
+    .intro-agence-texte {
+        font-size: 18px;
+        width: 90%;
+    }
+    .intro-agence-image {
+        height: 30vh;
+        width: 100%;
+    }
+}

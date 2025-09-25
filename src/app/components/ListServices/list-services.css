@@ -1,0 +1,455 @@
+.list-services{
+    height: auto;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-marionfabrice{
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
+}
+.about-marionfabrice div {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-marionfabrice .banner-cta{
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+.about-marionfabrice aside{
+    background-color: #568C51;
+    height: auto;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.list-services .marionfabrice{
+    height: 350px;
+    width: 90%;
+    object-fit: cover;
+}
+
+.list-services-ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.list-services-ul img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+.list-services-ul li{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 20px;
+    gap: 10px;
+    text-transform: uppercase;
+}
+.list-services h2{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: 50px 0 20px 0;
+    text-transform: uppercase;
+}
+.list-services-details{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50vh;
+    align-items: center;
+}
+.background-services{
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.list-intervention-detail{
+    height: 35vh;
+    z-index: 1;
+    width: 20%;
+    background-color: #B64E98;
+}
+
+/* NOUVEAU CSS POUR LE CARROUSEL */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(255,255,255,0.9);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background: white;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.carousel-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.carousel-btn-prev {
+    left: 10px;
+    background-color: #B64E98;
+}
+
+.carousel-btn-next {
+    right: 10px;
+    background-color: #B64E98;
+}
+
+.projects-carousel {
+    overflow: hidden;
+    margin: 0 60px;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+.projects-track {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease;
+    height: 100%;
+    gap: 10px;
+}
+
+.project-card {
+    flex-shrink: 0;
+    width: 25%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card-content {
+    background: #B64E98;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 100%;
+    color: black;
+}
+
+.project-image-container {
+    position: relative;
+}
+
+.project-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.project-category {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(255,255,255,0.9);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.project-info {
+    padding: 15px;
+}
+
+.project-name {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.project-description {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.project-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #888;
+}
+
+.project-date {
+    color: #888;
+}
+
+.project-link-icon {
+    color: #888;
+}
+
+/* NOUVEAU CSS POUR LA POPUP */
+.project-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow: auto;
+    position: relative;
+}
+
+.modal-header {
+    position: relative;
+}
+
+.modal-header-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.modal-header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    border-radius: 20px 20px 0 0;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.modal-close-btn:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.modal-header-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.modal-header-tags {
+    margin-bottom: 10px;
+}
+
+.modal-tag {
+    background: rgba(255,255,255,0.2);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.modal-section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.modal-description {
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.modal-subsection-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modal-results-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.modal-result-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.modal-result-bullet {
+    width: 6px;
+    height: 6px;
+    background-color: #B64E98;
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.modal-result-item span {
+    color: #555;
+}
+
+.modal-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #B64E98, #9c27b0);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.modal-cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(182, 78, 152, 0.3);
+}
+
+.modal-info-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.modal-info-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+}
+
+.modal-info-text {
+    margin: 0;
+    font-weight: 500;
+    color: #333;
+}
+
+.modal-tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.modal-tech-tag {
+    background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+    color: #333;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .modal-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .projects-carousel {
+        margin: 0 50px;
+    }
+    
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .project-card {
+        width: 50%;
+    }
+}

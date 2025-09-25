@@ -1,0 +1,122 @@
+.offre-container{
+    height: 160vh;
+    width: 100%;
+    padding: 1% 5%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: black;
+}
+.offre-container h3{
+    font-size: 17px;
+}
+.first-offre h3{
+    color: #76C7EA;
+}
+.second-offre h3{
+    color: #8CC084;
+}
+.third-offre h3{
+    color: #CF77B5;
+}
+.first-offre, .second-offre, .third-offre{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+}
+.second-offre{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+}
+.third-offre{
+    position: absolute;
+    top: 40%;
+}
+.image-offre{
+    height: 35vh;
+    width: auto;
+    object-fit: cover;
+}
+.first-offre ul, .second-offre ul, .third-offre ul{
+    padding: 5px 10px 10px 25px ;
+    font-size: 15px;
+    margin: 10px;
+    border: 1px solid white;
+}
+.declic-section{
+    position: relative;
+    top: 45%;
+    text-align: center;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+.declic-section h4{
+    text-transform: initial;
+}
+
+.declic-section a{
+    border-radius: 25px;
+    border: 1px solid;
+    padding: 5px 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 1023px) {
+    .offre-container {
+        height: auto;
+        padding: 1% 3%;
+    }
+    .first-offre, .second-offre, .third-offre {
+        width: 100%;
+        position: static;
+        margin-bottom: 20px;
+    }
+    .image-offre {
+        height: 25vh;
+        width: 50%;
+    }
+    .first-offre ul, .second-offre ul, .third-offre ul {
+        font-size: 14px;
+        padding: 5px 8px 8px 20px;
+        margin: 8px;
+    }
+    .declic-section {
+        top: 0;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .offre-container {
+        height: auto;
+        padding: 1% 2%;
+    }
+    .first-offre, .second-offre, .third-offre {
+        width: 100%;
+        position: static;
+        margin-bottom: 15px;
+        margin-top: -10%;
+        text-align: center;
+    }
+    .image-offre {
+        height: 20vh;
+        width: 50%;
+    }
+    .first-offre ul, .second-offre ul, .third-offre ul {
+        font-size: 12px;
+        text-align: center;
+        padding: 4px 6px 6px 20px;
+        margin: 6px;
+    }
+    .declic-section {
+        top: 0;
+        gap: 8px;
+    }
+}
