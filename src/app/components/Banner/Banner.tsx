@@ -6,6 +6,7 @@ import './banner.css'
 const Banner = () => {
   return (
     <section className='banner-container'>
+      <p className='banner-top'>Pas de panique : on a une vision claire sur l'intelligence artificielle dans la communication - et on l'intègre déjà dans nos accompagnements </p>
         <img className='banner-image' src={BannerImage.src}></img>
     <aside className='decoration-banner'></aside>
     <section className='banner-section-texte'>

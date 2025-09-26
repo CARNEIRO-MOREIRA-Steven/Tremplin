@@ -10,6 +10,7 @@ import ArrowRight from '../../../../public/arrow-right.svg'
 
 import marionfabrice from "../../../../public/marion&fabrice-agence.png"
 
+import LogoAfterCharlotte from "../../../../public/logo-after-charlotte.jpg"
 
 import { ChevronLeft, ChevronRight, X, ExternalLink, Calendar, Users, Tag } from 'lucide-react'
 
@@ -20,6 +21,8 @@ interface Project {
   description: string;
   longDescription: string;
   image: string;
+  image2 ?: string;
+  image3 ?: string;
   category: string;
   date: string;
   client: string;
@@ -33,15 +36,16 @@ const projectsData: Project[] = [
   {
     id: 1,
     name: "Abby",
-    description: "Application mobile e-commerce",
-    longDescription: "Développement d'une application mobile e-commerce complète avec système de paiement intégré, gestion des stocks en temps réel et interface utilisateur intuitive.",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop",
+    description: "Une esthéticienne dans un milieu concurentiel  -> mobile e-commerce",
+    longDescription: "Audit de communication - Refonte de son image - Création de la stratégie de communication",
+    image: "{LogoAfterCharlotte.src}", 
+    image2: "{LogoAfterCharlotte.src}", 
     category: "Mobile",
     date: "2024",
-    client: "Startup Fashion",
+    client: "Elle pensait que c'étais '/juste un problème d'Instagram.'/ En réalité, c'était un positionnement mal posé. ",
     technologies: ["React Native", "Node.js", "MongoDB"],
     link: "https://example.com/abby",
-    results: ["Augmentation des ventes de 150%", "50k+ téléchargements", "Note 4.8/5 sur les stores"]
+    results: ["Prise de conscience", "positionnement cohérent avec la clientèle visée", "Clientes prêtes à payer le vrai prix de son expertise"]
   },
   {
     id: 2,
@@ -79,54 +83,6 @@ const projectsData: Project[] = [
     technologies: ["Next.js", "Tailwind", "Framer Motion"],
     results: ["Temps de chargement < 2s", "Taux de conversion +80%", "Design Award 2024"]
   },
-  {
-    id: 5,
-    name: "EcoTrack",
-    description: "App gestion RSE",
-    longDescription: "Application web pour le suivi et la gestion des initiatives RSE en entreprise avec tableaux de bord personnalisés.",
-    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
-    category: "Web",
-    date: "2024",
-    client: "Groupe industriel",
-    technologies: ["Angular", "Python", "MySQL"],
-    results: ["30% réduction empreinte carbone", "100+ entreprises utilisatrices", "Certification ISO obtenue"]
-  },
-  {
-    id: 6,
-    name: "MediConnect",
-    description: "Plateforme télémédecine",
-    longDescription: "Plateforme de télémédecine sécurisée permettant consultations vidéo, gestion des dossiers patients et prescription électronique.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop",
-    category: "Santé",
-    date: "2024",
-    client: "Cabinet médical",
-    technologies: ["React", "Node.js", "MongoDB"],
-    results: ["1000+ consultations/mois", "95% satisfaction patients", "Temps d'attente réduit de 70%"]
-  },
-  {
-    id: 7,
-    name: "EduFlow",
-    description: "LMS éducation en ligne",
-    longDescription: "Learning Management System complet avec création de cours interactifs, suivi des progressions et outils collaboratifs.",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop",
-    category: "Education",
-    date: "2024",
-    client: "Institut formation",
-    technologies: ["Vue.js", "Django", "PostgreSQL"],
-    results: ["500+ étudiants formés", "Taux de completion 85%", "Note moyenne 4.7/5"]
-  },
-  {
-    id: 8,
-    name: "SmartHome",
-    description: "IoT maison connectée",
-    longDescription: "Application de contrôle pour maison connectée avec gestion des appareils IoT et automatisations personnalisées.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
-    category: "IoT",
-    date: "2024",
-    client: "Tech innovante",
-    technologies: ["React Native", "Python", "MQTT"],
-    results: ["40% économie énergie", "Integration 50+ devices", "99.9% uptime"]
-  }
 ];
 
 const ListServices: React.FC = () => {
@@ -228,19 +184,9 @@ const ListServices: React.FC = () => {
                         className="project-image"
                       />
                     </div>
-                    
-                    <div className="project-info">
-                      <h2 className="project-name">
-                        {project.name}
-                      </h2>
-                      <p className="project-description">
-                        {project.description}
-                      </p>
-                      <div className="project-footer">
-                        <span className="project-date">{project.date}</span>
-                        <ExternalLink className="project-link-icon" size={12} />
-                      </div>
-                    </div>
+                    <h2 className="project-name">
+                      {project.name}
+                    </h2>
                   </div>
                 </aside>
               ))}
@@ -263,6 +209,7 @@ const ListServices: React.FC = () => {
           >
             {/* Header avec image */}
             <div className="modal-header">
+              <h2>{selectedProject.description}</h2>
               <img 
                 src={selectedProject.image} 
                 alt={selectedProject.name}
@@ -276,17 +223,6 @@ const ListServices: React.FC = () => {
               >
                 <X size={18} />
               </button>
-
-              <div className="modal-header-info">
-                <div className="modal-header-tags">
-                  <span className="modal-tag">
-                    {selectedProject.date}
-                  </span>
-                </div>
-                <h2 className="modal-title">
-                  {selectedProject.name}
-                </h2>
-              </div>
             </div>
 
             {/* Contenu */}
@@ -312,27 +248,11 @@ const ListServices: React.FC = () => {
                       </li>
                     ))}
                   </ul>
-
-                  {selectedProject.link && (
-                    <a
-                      href={selectedProject.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="modal-cta-button"
-                    >
-                      <ExternalLink size={16} />
-                      Voir le projet
-                    </a>
-                  )}
                 </div>
 
                 {/* Sidebar informations */}
                 <div className="modal-sidebar">
                   <div className="modal-info-card">
-                    <h4 className="modal-info-title">
-                      <Users size={16} />
-                      Client
-                    </h4>
                     <p className="modal-info-text">
                       {selectedProject.client}
                     </p>
