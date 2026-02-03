@@ -10,9 +10,18 @@ import ArrowRight from '../../../../public/arrow-right.svg'
 
 import marionfabrice from "../../../../public/marion&fabrice-agence.png"
 
-import LogoAfterCharlotte from "../../../../public/logo-after-charlotte.jpg"
+import LogoAfterCharlotte from "../../../../public/logo-after-charlotte.png"
+import LogoBeforeCharlotte from "../../../../public/logo-before-charlotte.jpg"
 
 import { ChevronLeft, ChevronRight, X, ExternalLink, Calendar, Users, Tag } from 'lucide-react'
+
+// Interface TypeScript pour les services
+interface Service {
+  id: number;
+  name: string;
+  image: string;
+  description: string;
+}
 
 // Interface TypeScript pour les projets
 interface Project {
@@ -26,38 +35,64 @@ interface Project {
   category: string;
   date: string;
   client: string;
-  technologies: string[];
+  technologies?: string[];
   link?: string;
   results: string[];
 }
+
+// Données des services
+const servicesData: Service[] = [
+  {
+    id: 1,
+    name: "Transparence",
+    image: Transparence.src,
+    description: "Nous sommes transparents dans nos méthodes et nos tarifs."
+  },
+  {
+    id: 2,
+    name: "Expertise",
+    image: Expertise.src,
+    description: "Notre expertise nous permet de vous accompagner efficacement."
+  },
+  {
+    id: 3,
+    name: "Agilité",
+    image: Agilite.src,
+    description: "Nous adaptons nos stratégies à vos besoins en temps réel."
+  },
+  {
+    id: 4,
+    name: "Créativité",
+    image: Creativite.src,
+    description: "Notre créativité apporte une touche unique à vos projets."
+  }
+];
 
 // Données des projets (à connecter plus tard avec votre backend)
 const projectsData: Project[] = [
   {
     id: 1,
-    name: "Abby",
+    name: "Charlotte",
     description: "Une esthéticienne dans un milieu concurentiel  -> mobile e-commerce",
     longDescription: "Audit de communication - Refonte de son image - Création de la stratégie de communication",
-    image: "{LogoAfterCharlotte.src}", 
-    image2: "{LogoAfterCharlotte.src}", 
+    image: LogoBeforeCharlotte.src,
+    image2: LogoAfterCharlotte.src,
     category: "Mobile",
     date: "2024",
-    client: "Elle pensait que c'étais '/juste un problème d'Instagram.'/ En réalité, c'était un positionnement mal posé. ",
-    technologies: ["React Native", "Node.js", "MongoDB"],
-    link: "https://example.com/abby",
+    client: "Elle pensait que c'étais ''juste un problème d'Instagram.'' En réalité, c'était un positionnement mal posé. ",
     results: ["Prise de conscience", "positionnement cohérent avec la clientèle visée", "Clientes prêtes à payer le vrai prix de son expertise"]
   },
   {
     id: 2,
     name: "Madkin",
-    description: "Plateforme SaaS marketing",
-    longDescription: "Création d'une plateforme SaaS complète pour la gestion de campagnes marketing multi-canaux avec tableaux de bord analytiques.",
+    description: "MIHN a racheté une boite d'informatique vieille de 25 ans",
+    longDescription: "Audit de communication - création d'identité viseulle - création de préence en ligne (site - blog - linkedin) - création de la stratégie de communication",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
     category: "Web",
     date: "2024",
-    client: "Agence Marketing",
+    client: "Grâce",
     technologies: ["Vue.js", "Laravel", "PostgreSQL"],
-    results: ["ROI client +200%", "Temps de gestion réduit de 60%", "15 entreprises adoptées"]
+    results: ["Retour sur invéstissement immédiat", "Positionnement dans le top 3 Google dans un secteur concurentiel sur Paris"]
   },
   {
     id: 3,
@@ -116,10 +151,13 @@ const ListServices: React.FC = () => {
   return (
     <section className='list-services'>
       <ul className='list-services-ul'>
-        <li><img src={Transparence.src}/>Transparence</li>
-        <li><img src={Expertise.src}/>Expertise</li>
-        <li><img src={Agilite.src}/>Agilité</li>
-        <li><img src={Creativite.src}/>Créativité</li>
+        {servicesData.map((service) => (
+          <li key={service.id}>
+            <img src={service.image} alt={service.name} />
+            <h3>{service.name}</h3>
+            <p>{service.description}</p>
+          </li>
+        ))}
       </ul>
 
       <section className='about-marionfabrice'>

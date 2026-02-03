@@ -62,6 +62,20 @@
     gap: 10px;
     text-transform: uppercase;
 }
+
+.list-services-ul li h3 {
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+    color: white;
+}
+
+.list-services-ul li p {
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 200px;
+}
 .list-services h2{
     color: white;
     text-align: center;
