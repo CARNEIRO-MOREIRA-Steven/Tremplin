@@ -1,5 +1,5 @@
 .banner-container {
-    width: 100%;
+    width: auto;
     position: relative;
     height: 100vh;
     display: flex;
@@ -134,6 +134,9 @@
 }
 
 @media (max-width: 767px) {
+    .banner-top{
+        height: 10vh;
+    }
     .banner-container {
         height: auto;
         padding-bottom: 0;
@@ -148,6 +151,7 @@
         align-items: center;
         justify-content: flex-start;
         padding: 25px 5px;
+        width: auto;
     }
     .banner-title {
         font-size: 25px;
@@ -161,7 +165,7 @@
     }
     .decoration-banner {
         height: 10vh;
-        top: 44%;
+        top: 60%;
     }
     .banner-section-title {
         height: 10vh;

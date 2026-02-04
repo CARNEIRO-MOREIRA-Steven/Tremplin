@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 import React, { useState } from "react";
 import "./header.css";
@@ -24,7 +25,7 @@ const Header = () => {
       {/* Menu simple */}
       <nav className={`nav ${menuOpen ? "open" : ""}`}>
         <ul>
-          <li><a href="#home">Accueil</a></li>
+          <li><a href="./">Accueil</a></li>
           <li><a href="/agence">Notre Agence</a></li>
           <li><a href="#about">Présentation de nous</a></li>
           <li><a href="#processus">Processus</a></li>

@@ -459,17 +459,31 @@
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
     .projects-carousel {
         margin: 0 50px;
     }
-    
     .carousel-btn {
         width: 35px;
         height: 35px;
     }
-    
     .project-card {
         width: 50%;
+    }
+    .list-services-ul{
+        flex-wrap: wrap;
+    }
+    .list-services-ul li{
+        width: 35%;
+        margin: 10px;
+    }
+    .list-services .marionfabrice{
+        width: 100%;
+    }
+    .about-marionfabrice{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .about-marionfabrice .banner-cta {
+        margin-top: 10px;
     }
 }

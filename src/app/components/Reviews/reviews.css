@@ -70,3 +70,15 @@
 .third-review{
     background-color: #40B3E4;
 }
+
+@media screen and (max-width : 767px) {
+    .reviews-content{
+        flex-wrap: wrap;
+        height: auto;
+        margin-bottom: 20px;
+
+    }
+    .reviews-container{
+        height: auto;
+    }
+}

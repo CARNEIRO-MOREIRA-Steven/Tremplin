@@ -4,10 +4,10 @@ import Header from '../components/Header/Header';
 
 const Agence = () => {
   return (
-    <body>
+    <section>
     <Header />
     <div>Agence</div>
-    </body>
+    </section>
 
   )
 }

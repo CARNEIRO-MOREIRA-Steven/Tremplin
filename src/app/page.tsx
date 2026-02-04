@@ -11,8 +11,10 @@ import Reviews from "./components/Reviews/Reviews";
 import AboutAgence from "./components/AboutAgence/AboutAgence";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import LoaderVideo from "./components/LoaderVideo/LoaderVideo";
 export default function Home() {
   return (
+    <LoaderVideo>
     <section>
       <Header />
       <Banner />
@@ -24,7 +26,8 @@ export default function Home() {
       <ListServices />
       <Reviews />
       <AboutAgence />
-      <Footer />
+      <Footer /> 
    </section>
+   </LoaderVideo>
   );
 }

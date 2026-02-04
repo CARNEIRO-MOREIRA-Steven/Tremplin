@@ -79,3 +79,12 @@
     border-radius: 25px;
     padding: 5px 10px;
 }
+
+@media screen and (max-width : 767px) {
+    .about-agence-container{
+        height: auto;
+    }
+    .about-agence-content{
+    grid-template-columns: 1fr ;
+}
+}
