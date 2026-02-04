@@ -164,12 +164,12 @@ const ListServices: React.FC = () => {
         <img className='marionfabrice' src={marionfabrice.src} alt="" />
         <div>
           <aside>
-            <p>A la tête de Tremplin, il y a deux passionnées de communication et d'humains.</p><br></br>
-            <p>"On a créé cette agence pour partager notre expérience, soutenir les entrepreneurs dans leurs défis et leur donner les bons outils pour réussir "</p><br/>
+            <p>A la tête de Tremplin, il y a deux passionnées de communication et d&apos;humains.</p><br></br>
+            <p>&quot;On a créé cette agence pour partager notre expérience, soutenir les entrepreneurs dans leurs défis et leur donner les bons outils pour réussir &quot;</p><br/>
             <p>Notre moteur : transmettre, encourager, et surtout aider celles et ceux qui doutent à prendre confiance et à trouver leur voix.</p>
           </aside>
         <div className='banner-cta'>
-          <a href="">Je veux bosser avec l'agence</a>
+          <a href="">Je veux bosser avec l&apos;agence</a>
           <img src={ArrowRight.src} alt="flèche droite" />
         </div>
         </div>

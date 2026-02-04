@@ -11,11 +11,11 @@ const Offre = () => {
         <section>
         <ul> Pour toi si : 
         <li>Tu postes sur les réseaux sociaux au hasard.</li>
-        <li>Tu sens qu'un truc bloque, mais tu ne sais pas quoi.</li>
+        <li>Tu sens qu&apos;un truc bloque, mais tu ne sais pas quoi.</li>
         <li>Ton image ne reflète pas vraiment qui tu es.</li>
         </ul>
         <ul> Tu repars avec : 
-        <li>Un éclairage limpide sur ce qui freine ta com'</li>
+        <li>Un éclairage limpide sur ce qui freine ta com&apos;</li>
         <li>Des pistes concrètes à activer immédiatement.</li>
         <li>Le sentiment de savoir enfin ou tu vas.</li>
         </ul>
@@ -30,12 +30,12 @@ const Offre = () => {
         <section>
         <ul> Pour toi si : 
         <li>Tu ne sais plus comment te présenter, parler de ton entreprise</li>
-        <li>Tes offres manquent sont floues et ça bloque dans ta com'</li>
+        <li>Tes offres manquent sont floues et ça bloque dans ta com&apos;</li>
         <li>Tu veux reprendre confiance et communiquer aisément</li>
         </ul>
         <ul> Tu repars avec : 
         <li>Un positionnement clair et assumé.</li>
-        <li>Un plan d'action clair pour structurer ta communication.</li>
+        <li>Un plan d&apos;action clair pour structurer ta communication.</li>
         <li>Un pitch magnétique qui attire manuellement tes clients idéaux.</li>
         </ul>
         </section>
@@ -54,7 +54,7 @@ const Offre = () => {
         <ul> Tu repars avec : 
         <li>Une identité visuelle complète qui incarne ton évolution.</li>
         <li>Un storytelling puissant qui marque les esprits.</li>
-        <li>Des outils prêts à l'emploi pour déployer ta com' sans perdre de temps.</li>
+        <li>Des outils prêts à l&apos;emploi pour déployer ta com&apos; sans perdre de temps.</li>
         </ul>
         </section>
                         <div className='banner-cta'>
@@ -63,7 +63,7 @@ const Offre = () => {
         </div>
         </section>
 
-        <section className='declic-section'> <h3>Et si c'était maintenant, le vrai declic ?</h3>
+        <section className='declic-section'> <h3>Et si c&apos;était maintenant, le vrai declic ?</h3>
         <h4>30 minutes offertes, zéro engagement, 100% clarté.</h4>
         <a>Réserver le Call Déclic</a></section>
     </section>
