@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import BackgroundBlue from '../../../../public/background-blue.png'
 import './services.css'
@@ -28,7 +29,7 @@ const Services = () => {
 
   return (
     <section className='services-container'>
-      <img className='services-background' src={BackgroundBlue.src} />
+      <img className='services-background' src={BackgroundBlue.src} alt='Background'/>
       <ul className='services-list'>
         {duplicatedServices.map((service, index) => (
           <li key={index} className='services-texte'>

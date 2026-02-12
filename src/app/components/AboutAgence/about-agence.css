@@ -1,6 +1,6 @@
 .about-agence-container{
-    padding-top: 5vh;
-    height: 100vh;
+    padding: 30px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -83,8 +83,22 @@
 @media screen and (max-width : 767px) {
     .about-agence-container{
         height: auto;
+        padding: 20px 10px;
     }
     .about-agence-content{
     grid-template-columns: 1fr ;
 }
+    .about-agence-content section {
+        padding: 0;
+    }
+    .about-agence-content img{
+        width: 120px;
+        height: auto;
+    }
+    .about-agence-cta{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
 }

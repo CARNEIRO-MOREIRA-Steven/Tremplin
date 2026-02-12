@@ -1,5 +1,5 @@
 .reviews-container{
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,6 +7,7 @@
     background-color: #000000;
     text-align: center;
     text-transform: uppercase;
+    padding: 30px;
 }
 .reviews-title{
     color: white;
@@ -80,5 +81,6 @@
     }
     .reviews-container{
         height: auto;
+        padding: 20px 10px;
     }
 }

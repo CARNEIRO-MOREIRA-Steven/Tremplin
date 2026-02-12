@@ -17,7 +17,7 @@ const Banner = () => {
         </p>
         <div className='banner-cta'>
           <a > Tu veux bosser avec l&apos;agence </a>
-          <img src={ArrowRight.src} alt="flèche droite" />
+          <img src={ArrowRight.src} alt="flèche droite"></img>
         </div>
     </section>
     </section>

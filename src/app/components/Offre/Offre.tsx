@@ -7,7 +7,10 @@ import ArrowRight from '../../../../public/arrow-right.svg'
 const Offre = () => {
   return (
     <section className='offre-container'>
-        <section className='first-offre'><img className='image-offre' src={AuditExpress.src}/><h3>Le coup de projecteur express sur ta com.</h3>
+      <section className='offre-content'>
+        <section className='first-offre'>
+        <img className='image-offre' src={AuditExpress.src}/>
+        <h3>Le coup de projecteur express sur ta com.</h3>
         <section>
         <ul> Pour toi si : 
         <li>Tu postes sur les réseaux sociaux au hasard.</li>
@@ -25,7 +28,8 @@ const Offre = () => {
           <img src={ArrowRight.src} alt="flèche droite" />
         </div>
         </section>
-        <section className='second-offre'><img className='image-offre' src={Alignement.src}/>
+        <section className='second-offre'>
+        <img className='image-offre' src={Alignement.src} alt='image de la formule alignement'/>
         <h3>Retrouve un cap clair, et avance avec assurance.</h3>
         <section>
         <ul> Pour toi si : 
@@ -39,7 +43,7 @@ const Offre = () => {
         <li>Un pitch magnétique qui attire manuellement tes clients idéaux.</li>
         </ul>
         </section>
-                        <div className='banner-cta'>
+        <div className='banner-cta'>
           <a > Lire plus</a>
           <img src={ArrowRight.src} alt="flèche droite" />
         </div>
@@ -61,6 +65,7 @@ const Offre = () => {
           <a > Lire plus</a>
           <img src={ArrowRight.src} alt="flèche droite" />
         </div>
+        </section>
         </section>
 
         <section className='declic-section'> <h3>Et si c&apos;était maintenant, le vrai declic ?</h3>

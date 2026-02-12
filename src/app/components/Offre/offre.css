@@ -1,10 +1,15 @@
 .offre-container{
-    height: 160vh;
     width: 100%;
-    padding: 1% 5%;
+    padding: 30px;
+    background-color: black;
     display: flex;
     flex-direction: column;
-    position: relative;
+    gap: 50px;
+}
+.offre-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background-color: black;
 }
 .offre-container h3{
@@ -25,19 +30,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 45%;
-}
-.second-offre{
-    position: absolute;
-    left: 50%;
-    top: 15%;
-}
-.third-offre{
-    position: absolute;
-    top: 40%;
+    width: 100%;
 }
 .image-offre{
-    height: 35vh;
+    height: 25vh;
     width: auto;
     object-fit: cover;
 }
@@ -46,6 +42,9 @@
     font-size: 15px;
     margin: 10px;
     border: 1px solid white;
+}
+.first-offre h3, .second-offre h3, .third-offre h3{
+    text-align: center;
 }
 .declic-section{
     position: relative;
@@ -107,7 +106,7 @@
     }
     .image-offre {
         height: 20vh;
-        width: 50%;
+        width: auto;
     }
     .first-offre ul, .second-offre ul, .third-offre ul {
         font-size: 12px;
@@ -119,4 +118,7 @@
         top: 0;
         gap: 8px;
     }
-}
+    .offre-content{
+        display: flex; flex-direction: column; gap: 20px;    }
+    }
+

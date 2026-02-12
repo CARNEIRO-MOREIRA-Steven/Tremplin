@@ -5,16 +5,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px;
 }
 
 .about-marionfabrice{
     display: grid;
-    width: 70%;
+    width: 100%;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 .about-marionfabrice div {
     display: flex;
     height: 100%;
+    width: 350px;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -33,8 +36,8 @@
     justify-content: space-around;
 }
 .list-services .marionfabrice{
-    height: 350px;
-    width: 90%;
+    height: 400px;
+    width: 400px;
     object-fit: cover;
 }
 
@@ -96,7 +99,7 @@
 }
 .background-services{
     height: 50vh;
-    width: 100%;
+    width: calc(100% + 65px);
     object-fit: cover;
     position: absolute;
 }
@@ -471,13 +474,22 @@
     }
     .list-services-ul{
         flex-wrap: wrap;
+        gap: 20px;
+    } 
+    .list-services-ul img{
+        width: 50px;
+         height: 50px;
     }
     .list-services-ul li{
-        width: 35%;
+        width:100%;
         margin: 10px;
     }
+    .list-services-ul li p{
+        max-width: 100%;
+    }
     .list-services .marionfabrice{
-        width: 100%;
+        width: calc(100% - 0px);
+        height: 350px;
     }
     .about-marionfabrice{
         width: 100%;
@@ -485,5 +497,14 @@
     }
     .about-marionfabrice .banner-cta {
         margin-top: 10px;
+    }
+    .about-marionfabrice div { 
+        width: 100%;
+    }
+    .list-services{
+        padding : 20px 10px
+    }
+    .project-card{
+        width: 100%;
     }
 }
