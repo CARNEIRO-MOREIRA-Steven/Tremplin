@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import BannerImage from '../../../../public/banner-image.jpg'
 import ArrowRight from '../../../../public/arrow-right.svg'
@@ -7,7 +8,7 @@ const Banner = () => {
   return (
     <section className='banner-container'>
       <p className='banner-top'>Pas de panique : on a une vision claire sur l&apos;intelligence artificielle dans la communication - et on l&apos;intègre déjà dans nos accompagnements </p>
-        <img className='banner-image' src={BannerImage.src}></img>
+        <img className='banner-image' src={BannerImage.src} alt=''/>
     <aside className='decoration-banner'></aside>
     <section className='banner-section-texte'>
         <h1 className='banner-title'>La communication pour <span>propulser ton business</span>.</h1>
@@ -17,7 +18,7 @@ const Banner = () => {
         </p>
         <div className='banner-cta'>
           <a > Tu veux bosser avec l&apos;agence </a>
-          <img src={ArrowRight.src} alt="flèche droite"></img>
+          <img src={ArrowRight.src} alt="flèche droite" />
         </div>
     </section>
     </section>
