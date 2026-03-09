@@ -7,7 +7,7 @@ import Fichequizz from '../../../../public/fiche-quizz.png'
 const Quizz = () => {
   return (
     <section className='quizz-container'> 
-    <h2 className='quizz-intro'>Qu&apos;est ce qui t&apos;empêche (encore) de cartonner avec ta com&apos; ?</h2>   
+    <h2 className='quizz-intro special-title'>Qu&apos;est ce qui t&apos;empêche (encore) de cartonner avec ta com&apos; ?</h2>   
     <section className='quizz-section-title'>
         <h2 className='quizz-title'>FAIS LE QUIZZ <br></br>
 <span>&quot;QUEL COMMUNIQUANT ES-TU ?&quot;</span></h2></section>
@@ -29,6 +29,7 @@ const Quizz = () => {
 </section>
         </section>      
         <h3 className='quizz-resultat'>RÉSULTAT 100% PERSONNALISÉ + DES PISTES CONCRÈTES POUR (RE)PRENDRE LE LEAD</h3>  
+        <a className='quizz-button' href="/quizz">Je fais le quizz</a>
         <img className='banner-green' src={BannerGreen.src}></img>
     </section>
   )

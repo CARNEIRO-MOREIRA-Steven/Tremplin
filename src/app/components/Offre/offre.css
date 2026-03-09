@@ -1,16 +1,42 @@
 .offre-container{
     width: 100%;
-    padding: 30px;
+    padding: 50px;
     background-color: black;
     display: flex;
     flex-direction: column;
     gap: 50px;
+    align-items: center;
 }
 .offre-content{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: black;
+}
+.offre-title{
+  text-align: center;
+  width: 80%;
+  font-size: 28px; /* un peu plus petit pour affiner */
+  color: #B64F98;
+  padding: 15px 35px;
+  border-radius: 12px;
+  font-weight: 200;
+
+  /* Fond sombre translucide */
+  background: rgba(0, 0, 0, 0.7);
+
+  /* Bordure néon fine */
+  border: 2px solid #B64F98;
+  box-shadow:
+    0 0 6px #B64F98,
+    0 0 12px #B64F98,
+    0 0 24px #B64F98;
+
+  /* Glow texte affiné */
+  text-shadow:
+    0 0 3px #B64F98,
+    0 0 6px #B64F98,
+    0 0 48px #B64F98;
 }
 .offre-container h3{
     font-size: 17px;

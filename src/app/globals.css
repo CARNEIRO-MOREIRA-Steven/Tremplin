@@ -1,3 +1,43 @@
+/* ===============================
+   1️⃣ Give You Glory
+   =============================== */
+@font-face {
+  font-family: 'GiveYouGlory';
+  src: url('/fonts/GiveYouGlory-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===============================
+   2️⃣ Kodchasan
+   =============================== */
+@font-face {
+  font-family: 'Kodchasan';
+  src: url('/fonts/Kodchasan-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===============================
+   3️⃣ Josefin Sans
+   =============================== */
+@font-face {
+  font-family: 'JosefinSans';
+  src: url('/fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===============================
+   4️⃣ Open Sans
+   =============================== */
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -51,6 +91,23 @@ html, body, #__next {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+h1{
+  text-transform: uppercase;
+}
+
+h2{
+  font-family: 'OpenSans';
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'GiveYouGlory', cursive;
+}
+
+.special-title{
+  font-family: 'GiveYouGlory', cursive;
+  font-size: 25px;
 }
 
 

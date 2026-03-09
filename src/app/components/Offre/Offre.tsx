@@ -7,6 +7,7 @@ import ArrowRight from '../../../../public/arrow-right.svg'
 const Offre = () => {
   return (
     <section className='offre-container'>
+      <h2 className='offre-title'>Les 3 offres de l&apos;agence</h2>
       <section className='offre-content'>
         <section className='first-offre'>
         <img className='image-offre' src={AuditExpress.src}/>

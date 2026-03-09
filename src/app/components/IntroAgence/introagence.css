@@ -6,15 +6,14 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    padding: 30px;
+    padding: 50px;
     gap: 30px;
     background-color: black;
 }
 .intro-agence-title {
   text-align: center;
   font-size: 28px; /* un peu plus petit pour affiner */
-  text-transform: uppercase;
-  color: #fff;
+  color: #B64F98;
   padding: 15px 35px;
   border-radius: 12px;
   font-weight: 200;
@@ -42,6 +41,7 @@
     width: 95%;
     text-align: justify;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .intro-agence-image{
     height: 55vh;

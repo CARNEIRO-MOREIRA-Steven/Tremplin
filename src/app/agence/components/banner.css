@@ -1,0 +1,84 @@
+.banner-agence{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url('../../../../public/un-bureau-lumineux.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 50px 50px 50px;
+}
+.banner-avis{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    padding: 25px;
+}
+.avis-glass-effect{
+    background: rgba(255, 255, 255, 0.2); /* fond semi-transparent */
+    border-radius: 50px;                  /* coins arrondis */
+    padding: 0px 20px;
+    backdrop-filter: blur(10px);          /* flou derrière le container */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* bordure subtile */
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);     /* ombre légère */
+    width: fit-content;
+    display: flex;
+}
+.banner-avis-texte{
+    display: flex;
+    flex-direction: column;
+}
+.banner-agence-texte{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+.banner-agence-texte aside{
+    font-size: 18px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+}
+.banner-marionfabrice{
+    width: 400px;
+    object-fit: cover;
+    position: relative;
+    bottom: -50px;
+}
+.banner-logo{
+    height: auto;
+    padding: 30px;
+    background-position: top;
+    background-image: url('../../../../public/background-blue.png');
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.banner-logo div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.banner-logo img{
+    height: 150px;
+    width: 150px;
+    gap: auto;
+    object-fit: contain;
+}
+.banner-image{
+    width: 30px;
+    object-fit: contain;
+}
+.banner-logo a {
+    text-decoration: underline;
+    font-size: 20px;
+}

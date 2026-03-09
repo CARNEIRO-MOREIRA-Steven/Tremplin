@@ -27,7 +27,7 @@
     object-fit: cover;
 }
 .banner-section-texte{
-    width: 850px;
+    width: 900px;
     height: 30vh;
     display: flex;
     position: relative;
@@ -65,7 +65,7 @@
 }
 .banner-title{
     color: #B74F98;
-    font-size: 35px;
+    font-size: 30px;
     width: 100%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }

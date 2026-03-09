@@ -27,10 +27,12 @@ const Header = () => {
         <ul>
           <li><a href="./">Accueil</a></li>
           <li><a href="/agence">Notre Agence</a></li>
-          <li><a href="#about">Présentation de nous</a></li>
-          <li><a href="#processus">Processus</a></li>
-          <li><a href="#home">Contact</a></li>
-          <li><a href="#about">Blog</a></li>
+          <li><a href="/audit">Audit</a></li>
+          <li><a href="/accompagnement">Accompagnement</a></li>
+          <li><a href="/com">Com</a></li>
+          <li><a href="/branding">Branding</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/faq">FAQ</a></li>
         </ul>
       </nav>
     </header>

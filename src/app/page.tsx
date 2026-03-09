@@ -8,7 +8,7 @@ import Services from "./components/Services/Services";
 import About from "./components/About/About";
 import ListServices from "./components/ListServices/ListServices";
 import Reviews from "./components/Reviews/Reviews";
-import AboutAgence from "./components/AboutAgence/AboutAgence";
+import AboutAgence from "./components/AtoutTremplin/AtoutTremplin";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import LoaderVideo from "./components/LoaderVideo/LoaderVideo";

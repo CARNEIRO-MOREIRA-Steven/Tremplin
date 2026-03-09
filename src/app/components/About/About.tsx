@@ -4,6 +4,8 @@ import Bureaux from '../../../../public/un-bureau-lumineux.jpg'
 import MarionFabrice from '../../../../public/marion&fabrice.png'
 import Marion from '../../../../public/marion.png'
 import Fabrice from '../../../../public/fabrice.png'
+import "../../globals.css";
+
 
 const About = () => {
   return (
@@ -34,7 +36,7 @@ const About = () => {
        
        <section className='about-mission'>
         <h2 className='about-mission-title'>Notre mission</h2>
-        <h3 className='about-mission-subtitle'>Propulser ton business en révélant la puissance de ton offre grâce à <br></br> une communication claire, alignée et autonome. <br />Tremplin au service des entreprneurs</h3>
+        <h2 className='about-mission-subtitle'>Propulser ton business en révélant la puissance de ton offre grâce à <br></br> une communication claire, alignée et autonome. <br />Tremplin au service des entreprneurs</h2>
        </section>
        </section>
   )

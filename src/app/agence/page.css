@@ -1,0 +1,18 @@
+h1, h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Kodchasan";
+    font-weight: 300;
+}
+h1 span{
+    font-size: 55px;
+}
+p, a, li{
+    font-family: 'OpenSans';
+    font-weight: 400;
+}
+
+strong{
+    font-weight: 700;
+}
