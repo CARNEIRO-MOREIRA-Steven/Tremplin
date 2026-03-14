@@ -7,12 +7,16 @@
     background-color: #000000;
     text-align: center;
     text-transform: uppercase;
-    padding: 30px;
+    padding: 50px;
+    width: 100%;
 }
 .reviews-title{
     color: white;
     font-size: 25px;
     margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .reviews-subtitle{
     color: white;
@@ -47,6 +51,8 @@
 }
 .reviews-content h3{
     font-size: 17px;
+    font-family: 'Kodchasan';
+    text-transform: uppercase;
 }
 .reviews-content aside:hover{
     cursor: pointer;

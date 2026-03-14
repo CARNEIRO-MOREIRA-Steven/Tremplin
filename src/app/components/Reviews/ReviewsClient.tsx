@@ -1,8 +1,11 @@
 import React from 'react'
 import './reviews.css'
 
-const ReviewsClient = () => {
+const ReviewsClient = (props:{ title: React.ReactNode, subtitle : React.ReactNode, details : string, link : React.ReactNode }) => {
   return (
+    <section className='reviews-container'>
+      <h2 className='reviews-title'>{props.title}</h2>
+      <h2 className='reviews-subtitle'>{props.subtitle}</h2>
     <section className='reviews-content'>
         <aside className='first-review'>
           <h3>Stéphanie - Salon de coiffure et SPA pour cheveux</h3>
@@ -27,6 +30,7 @@ Merci à Tremplin pour cette expérience enrichissante.</p>
         A cela, si l’on ajoute leur bienveillance, leur gentillesse, et surtout leur disponibilité, il n’y a plus à hésiter, vous pouvez leur faire confiance. Allez y les yeux fermés !
         </p>
         </aside>
+    </section>
     </section>
   )
 }

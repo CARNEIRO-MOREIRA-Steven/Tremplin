@@ -116,3 +116,30 @@ h3 {
     color-scheme: dark;
   }
 }
+.texte-give{
+  font-family: 'GiveYouGlory';
+  font-size: 18px;
+}
+.btn-pink{
+  color: #B64F98;
+  border: solid 1px #B64F98;
+  padding: 10px 100px;
+  border-radius: 50px;
+  font-size: 25px;
+  font-family: 'Kodchasan';
+  text-transform: uppercase;
+}
+.btn-white{
+  color: #fff;
+  border: solid 1px #fff;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 25px;
+  font-family: 'Kodchasan';
+  text-transform: uppercase;
+}
+.texte-opensans{
+  font-family: 'OpenSans';
+  font-weight: 400;
+  text-transform: uppercase;
+}

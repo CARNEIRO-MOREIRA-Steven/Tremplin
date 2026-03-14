@@ -1,0 +1,41 @@
+.difference {
+  background-image: url('../../../../public/tremplin-background-green.png');
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.difference-title {
+  text-align: center;
+  background-color: #5B904C;
+  margin-bottom: 36px;
+}
+.difference-title .section-title {
+  font-size: clamp(0.95rem, 2vw, 1.2rem);
+  line-height: 1.4;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.difference-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.diff-card {
+  background-color: #B64F98;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+.diff-card strong {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 8px;
+}
