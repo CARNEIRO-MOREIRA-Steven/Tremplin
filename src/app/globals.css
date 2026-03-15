@@ -123,7 +123,7 @@ h3 {
 .btn-pink{
   color: #B64F98;
   border: solid 1px #B64F98;
-  padding: 10px 100px;
+  padding: 10px 50px;
   border-radius: 50px;
   font-size: 25px;
   font-family: 'Kodchasan';
@@ -143,3 +143,22 @@ h3 {
   font-weight: 400;
   text-transform: uppercase;
 }
+.neon-title{
+    text-align: center;
+    font-size: 28px;
+    color: #B64F98;
+    padding: 15px 35px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    font-weight: 200;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #B64F98;
+    box-shadow: 0 0 6px #B64F98, 0 0 12px #B64F98, 0 0 24px #B64F98;
+    text-shadow: 0 0 3px #B64F98, 0 0 6px #B64F98, 0 0 48px #B64F98;
+}
+
+.little-btn{
+  border: #fff 1px solid;
+  border-radius: 50px;
+}
+

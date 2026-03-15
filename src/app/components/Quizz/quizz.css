@@ -1,6 +1,5 @@
 .quizz-container {
     width: 100%;
-    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -220,4 +219,26 @@
         font-size: 18px;
         margin-top: 15px;
     }
+}
+
+.quizz-personna {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0; /* ← ajoute */
+}
+
+/* Chaque li a une hauteur fixe pour que la roulette fonctionne */
+.quizz-personna li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quizz-roulette-outer {
+    overflow: hidden;
+    height: 250px; /* 5 items × 50px */
 }

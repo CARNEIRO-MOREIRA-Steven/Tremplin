@@ -79,7 +79,7 @@ export default function AuditPage() {
           SECTION 6 — FAQ
       ══════════════════════════════════════════════════════ */}
       <section className="faq">
-        <div className="wrap">
+        <div className="faq-container">
 
           <h2 className="faq-title">J&apos;ai des questions…</h2>
 
@@ -103,16 +103,9 @@ export default function AuditPage() {
           SECTION 7 — CTA FINAL + JE ME LANCE
       ══════════════════════════════════════════════════════ */}
       <section className="cta-final">
-        <div className="wrap">
-
-          <div className="cta-final-btn-wrap">
-            <Link href="/contact" className="btn-main">
+            <Link href="/contact" className="btn-main btn-pink">
               JE ME LANCE
-              <span className="arrow">→</span>
             </Link>
-          </div>
-
-        </div>
       </section>
 
         <Footer />

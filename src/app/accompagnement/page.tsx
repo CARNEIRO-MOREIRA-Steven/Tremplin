@@ -114,11 +114,6 @@ export default function AccompagnementsPage() {
       {/* ── HERO ── */}
       <section className="hero">
         <Header />
-        <div className="wrap">
-          <div className="hero-logo">
-            <div className="logo-pill">
-            </div>
-          </div>
           <h1 className="hero-title">
             Nos accompagnements pour<br />
             monter une communication<br />
@@ -132,7 +127,6 @@ export default function AccompagnementsPage() {
             Que tu souhaites relancer ta communication, que tu aies besoin d&apos;un nouveau souffle, de
             monter un step ou d&apos;une stratégie complète, on a pensé trois offres adaptées à ta réalité.
           </p>
-        </div>
       </section>
 
       {/* ── 3 OFFRES ── */}
@@ -142,7 +136,7 @@ export default function AccompagnementsPage() {
 
           <div className="offers-grid">
             {/* Audit Express */}
-            <div className="offer-card">
+            <div className="offer-card first">
               <span className="offer-tag">Le pack mini</span>
               <div className="offer-name">audit express</div>
               <div className="offer-subtitle">physique du visio</div>
@@ -161,14 +155,11 @@ export default function AccompagnementsPage() {
                 <li>Recommandations stratégiques</li>
                 <li>Outils pour organiser et gérer ta com&apos;</li>
               </ul>
-              <Link href="/contact" className="offer-cta">
-                Je choisis l&apos;audit express <span className="arr">→</span>
-              </Link>
               <span className="offer-details-link">Découvrir tout ce qui est inclus</span>
             </div>
 
             {/* Alignement */}
-            <div className="offer-card highlight">
+            <div className="offer-card second highlight">
               <span className="offer-tag">Refonte de communication</span>
               <div className="offer-name green">alignement</div>
               <div className="offer-subtitle">physique ou visio</div>
@@ -186,14 +177,11 @@ export default function AccompagnementsPage() {
                 <li>Suivi illimité sur WhatsApp (même après l&apos;accompagnement)</li>
                 <li>Espace de travail partagé privé</li>
               </ul>
-              <Link href="/contact" className="offer-cta">
-                Je choisis l&apos;offre alignement <span className="arr">→</span>
-              </Link>
               <span className="offer-details-link">Découvrir tout ce qui est inclus</span>
             </div>
 
             {/* Rebranding */}
-            <div className="offer-card">
+            <div className="offer-card three">
               <span className="offer-tag">Création image de marque</span>
               <div className="offer-name cyan">rebranding</div>
               <div className="offer-subtitle">physique ou visio</div>
@@ -211,9 +199,6 @@ export default function AccompagnementsPage() {
                 <li>Suivi illimité sur WhatsApp (même après l&apos;accompagnement)</li>
                 <li>Espace de travail partagé privé</li>
               </ul>
-              <Link href="/contact" className="offer-cta">
-                Je choisis l&apos;offre rebranding <span className="arr">→</span>
-              </Link>
               <span className="offer-details-link">Découvrir tout ce qui est inclus</span>
             </div>
           </div>

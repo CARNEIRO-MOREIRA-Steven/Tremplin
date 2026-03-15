@@ -30,13 +30,17 @@ const ContentAudit = () => {
             </div>
         </div>
 
+
         <div className='content-audit-right'>
           <div className="audit-content-header">
-            <h2 className="section-title">
+            <h2 className="neon-title">
               Ce que contient l&apos;Audit de Communication Express&#8482;{' '}
               <em>Signé Tremplin</em>
             </h2>
           </div>
+
+          <div className='glass'>
+
 
           <div className="audit-content-grid">
             {/* Colonne droite — détails */}
@@ -71,21 +75,18 @@ const ContentAudit = () => {
                   Conseils personnalisés
                 </p>
               </div>
+              </div>
+              </div>
+              </div>
 
               <div className="audit-bonus">
                 <p className="audit-bonus-title">Bonus : Boîte à outils personnalisée</p>
               </div>
 
-              {/* CTA dans la section */}
-              <div style={{ textAlign: 'center', marginTop: 8 }}>
-                <Link href="/contact" className="btn-main">
+                <Link href="/contact" className="little-btn">
                   Je réserve mon audit express
-                  <span className="arrow">→</span>
                 </Link>
-              </div>
 
-            </div>
-          </div>
           </div>
       </section>
   )

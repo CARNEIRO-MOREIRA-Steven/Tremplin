@@ -5,6 +5,10 @@ import "./header.css";
 import LogoBlack from "../../../../public/logo-black.png";
 import LogoColor from "../../../../public/logo-color.png";
 
+import LogoEteint from "../../../../public/logo-eteint.png"
+import LogoAlume from "../../../../public/logo-alumé.png"
+
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -16,7 +20,7 @@ const Header = () => {
     <header className="header">
       {/* Logo qui change selon l'état du menu */}
       <img
-        src={menuOpen ? LogoColor.src : LogoBlack.src}
+        src={menuOpen ? LogoAlume.src : LogoEteint.src}
         alt="Logo"
         className="logo"
         onClick={toggleMenu} // click pour ouvrir/fermer le menu
