@@ -4,6 +4,7 @@ import Link from 'next/link';
 import './page.css';
 
 import Footer from '../components/Footer/Footer';
+import Banner from './components/Banner';
 import Header from '../components/Header/Header';
 
 const FAQ_ITEMS = [
@@ -36,41 +37,17 @@ export default function ComPage() {
       {/* ── HERO ── */}
       <section className="hero">
         <Header />
-        <div className="wrap">
-          <div className="hero-top">
-
-            <span className="hero-photo-caption">Boîte de la photo : &apos;refonte de communication et création d&apos;une stratégie de communication&apos;</span>
-          </div>
-          <h1 className="hero-title">Réalignement de Com&apos;</h1>
-          <p className="hero-subtitle">
-            Clarifier ton positionnement et <strong>harmoniser</strong> ta communication pour <strong>attirer</strong> les bons clients
-          </p>
-
-          <div className="hero-box">
-            <div className="hero-box-text">
-              <h2>Tu avances, et ta communication te semble inefficace ou floue.</h2>
-              <p>Avec notre <strong>offre alignement</strong>, on remet tes fondations au clair : ton message, ton identité, ta présence en ligne et la cohérence de l&apos;ensemble.</p>
-              <p><em>L&apos;objectif : repositionner ton entreprise sans repartir de zéro, pour communiquer avec assurance, impact et stratégie.</em></p>
-            </div>
-            <div className="hero-box-img">Boîte de la photo : &apos;Duo d&apos;experts en communication sur Saint Quentin : Tremplin propulse ton business.&apos;</div>
-          </div>
-        </div>
+        <Banner />
       </section>
 
       {/* ── POURQUOI ── */}
-      <section className="pourquoi">
-        <div className="wrap">
-          <div className="neon-title-wrap">
-            <div className="logo-pill"><span className="menu">menu</span> Tremplin</div>
-            <div>
-              <p className="title-text">Pourquoi faire un réalignement de communication ?</p>
-              <span className="sub">Aussi appelé &apos;refonte de communication&apos;</span>
-            </div>
-          </div>
+      <section className="refonte">
+        <h2 className="neon-title">Pourquoi faire un réalignement de communication ? <br /><span className="sub">Aussi appelé &apos;refonte de communication&apos;</span></h2>
+        
 
           <div className="green-btns">
             {["Pour clarifier ton positionnement", "Pour viser un objectif avec ta communication", "Pour te différencier et rendre ton entreprise unique", "Pour créer une communication qui te ressemble et qui attire"].map(t => (
-              <button key={t} className="green-btn">{t}</button>
+              <p key={t} className="green-btn">{t}</p>
             ))}
           </div>
 
@@ -83,20 +60,13 @@ export default function ComPage() {
             <p>On pose <strong>un nouveau cadre, une direction, un message qui percute</strong>, et une énergie qui <strong>reflète enfin qui tu es aujourd&apos;hui</strong> (pas qui tu étais il y a deux ans) et tu vas ainsi attirer à toi les bons clients.</p>
           </div>
 
-          <div className="pourquoi-cta">
-            <Link href="/contact" className="btn-main">Je veux refondre ma communication <span className="arr">→</span></Link>
-            <p className="btn-sub">Lien vers la page contact</p>
-          </div>
-        </div>
+            <Link href="/contact" className="little-btn-green">Je veux refondre ma communication</Link>
       </section>
 
       {/* ── POUR QUI ── */}
       <section className="pour-qui">
-        <div className="wrap">
-          <div className="pour-qui-neon">
-            <div className="logo-pill"><span className="menu">menu</span> Tremplin</div>
-            <p className="title-text">Être accompagné pour refondre sa communication — Comment savoir si c&apos;est pour moi ?</p>
-          </div>
+
+            <p className="neon-title">Être accompagné pour refondre sa communication<br /> — Comment savoir si c&apos;est pour moi ?</p>
           <div className="pour-qui-grid">
             {[
               "Ton activité tourne, mais tu stagnes dans ta visibilité ou tes ventes.",
@@ -107,8 +77,6 @@ export default function ComPage() {
               "Tu veux une stratégie claire, structurée et une direction à suivre, simple et efficace.",
             ].map((t, i) => <div key={i} className="pour-qui-card">{t}</div>)}
           </div>
-          <p className="pour-qui-text">Si tu veux que ton image devienne un accélérateur, c&apos;est la bonne offre.</p>
-        </div>
       </section>
 
       {/* ── NOTRE FORCE ── */}
@@ -126,10 +94,8 @@ export default function ComPage() {
       {/* ── PROCESS 6 ÉTAPES ── */}
       <section className="process">
         <div className="wrap-wide">
-          <div className="process-neon">
-            <div className="logo-pill"><span className="menu">menu</span> Tremplin</div>
+
             <p className="title-text">Comment se passe un accompagnement chez Tremplin — sur l&apos;offre alignement ?</p>
-          </div>
 
           <div style={{ position: 'relative' }}>
             <p className="process-aside">Quand on défile vers le bas on fait comme si le fil descendait et les cases s&apos;allumaient</p>

@@ -1,0 +1,73 @@
+.banner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #000;
+    width: 100%;
+    padding: 50px;
+}
+
+.title{
+    font-size: 50px;
+}
+.hero-subtitle{
+    font-family: 'OpenSans';
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.banner-container h1{
+    text-align: center;
+}
+
+.banner-container img{
+    width: 400px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-media img{
+    width: 100%;
+    height: auto;
+}
+.hero-analyse{
+    padding: 50px;
+}
+.Give-text{
+    font-family: 'GiveYouGlory';
+}
+.hero-details{
+    display: flex;
+    gap: 25px;
+    width: 80%;
+    background-color: #B64F98;
+    padding: 50px;
+    position: relative;
+}
+.hero-div-details{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+    text-align: center;
+}
+.hero-div-details p, .hero-div-details h2{
+    color: #000;
+}
+.hero-div-image{
+    width: 30%;
+    position: absolute;
+    right: -20px;
+    bottom: -5px;
+}
+.hero-div-image img{
+    height: 450px;
+    object-fit: contain;
+}
+.hero{
+    overflow: hidden;
+}

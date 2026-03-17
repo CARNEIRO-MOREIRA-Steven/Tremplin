@@ -2,9 +2,15 @@ import Link from 'next/link';
 import './page.css';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
+import Rebranding from '../../../public/rebranding.png'
+import Audit from '../../../public/auditExpress.png'
+import Alignement from '../../../public/alignement.png'
+
+
 
 const TABLE_SECTIONS = [
   {
+    id: 'clarte',
     section: 'CLARTÉ & STRATÉGIE DE MARQUE',
     rows: [
       { label: 'Diagnostic stratégique', audit: '✓ version express', align: '✓', rebrand: '✓' },
@@ -18,12 +24,13 @@ const TABLE_SECTIONS = [
       { label: 'Apprendre à raconter son histoire pour mieux vendre', audit: '✗', align: '✓ base', rebrand: '✓ complet' },
       { label: 'Recommandations stratégiques de publication', audit: '✓', align: '✓ + assistance à la mise en place', rebrand: '✓ + assistance à la mise en place' },
       { label: 'Stratégie lancement nouveau produit', audit: '✗', align: '✓', rebrand: '✓' },
-      { label: 'Stratégie de lancement / activation (événementiel / communautaire)', audit: '✗', align: '✓', rebrand: '✓ avec suivi et supervision' },
+      { label: 'Stratégie de lancement / activation (événementiel / promotionnel)', audit: '✗', align: '✓', rebrand: '✓ avec suivi et supervision' },
       { label: 'Stratégie de communication en ligne et locale', audit: '✗', align: '✓', rebrand: '✓' },
       { label: 'Plan d\'action stratégique', audit: '✓', align: '✓', rebrand: '✓' },
     ],
   },
   {
+    id: 'identite',
     section: 'IDENTITÉ VISUELLE & UNIVERS DE MARQUE',
     rows: [
       { label: 'Axes visuels', audit: '✗', align: '✓', rebrand: '✓' },
@@ -40,6 +47,7 @@ const TABLE_SECTIONS = [
     ],
   },
   {
+    id: 'communication',
     section: 'COMMUNICATION & PRÉSENCE DIGITALE',
     rows: [
       { label: 'Analyse des canaux de communication (site, page Google, réseaux sociaux, pipeline…)', audit: '✓', align: '✓', rebrand: '✓' },
@@ -57,6 +65,7 @@ const TABLE_SECTIONS = [
     ],
   },
   {
+    id: 'sessions',
     section: 'SESSIONS & ACCOMPAGNEMENT',
     rows: [
       { label: 'Session stratégique 1h–2h', audit: '✓', align: '✓', rebrand: '✓' },
@@ -73,6 +82,7 @@ const TABLE_SECTIONS = [
     ],
   },
   {
+    id: 'livrables',
     section: 'LIVRABLES & OUTILS',
     rows: [
       { label: 'Synthèse audit', audit: '✓ résumé bref', align: '✓', rebrand: '✓' },
@@ -87,6 +97,7 @@ const TABLE_SECTIONS = [
     ],
   },
   {
+    id: 'experience',
     section: "EXPÉRIENCE & NIVEAU D'ACCOMPAGNEMENT",
     rows: [
       { label: 'Format flash', audit: '✓', align: '✗', rebrand: '✗' },
@@ -120,32 +131,33 @@ export default function AccompagnementsPage() {
             qui attire des clients.
           </h1>
           <p className="hero-subtitle">
-            <strong>Chaque accompagnement = une étape à ton prochain niveau</strong>
+            <span>Chaque accompagnement</span> = une étape à ton prochain niveau
           </p>
-          <p className="hero-desc">
-            3 niveaux pour propulser ton entreprise vers sa pleine puissance.<br />
-            Que tu souhaites relancer ta communication, que tu aies besoin d&apos;un nouveau souffle, de
-            monter un step ou d&apos;une stratégie complète, on a pensé trois offres adaptées à ta réalité.
-          </p>
+          <div className="hero-desc">
+            <p><strong>3 niveaux pour propulser ton entreprise vers sa pleine puissance.</strong><br /></p>
+            <p>Que tu souhaites relancer ta communication, que tu aies besoin d&apos;un nouveau souffle, <br /> de
+            monter un step ou d&apos;une stratégie complète, on a pensé trois offres adaptées à ta réalité.</p>
+          </div>
       </section>
 
       {/* ── 3 OFFRES ── */}
       <section className="offers">
         <div className="wrap-wide">
-          <p className="offers-note">Les blocs arrivent de gauche - droite et celui du milieu d&apos;en bas</p>
 
           <div className="offers-grid">
             {/* Audit Express */}
             <div className="offer-card first">
-              <span className="offer-tag">Le pack mini</span>
+              <span className="offer-tag">Le prix mini</span>
               <div className="offer-name">audit express</div>
-              <div className="offer-subtitle">physique du visio</div>
-              <div className="offer-price">239 euros</div>
-              <p className="offer-tagline">Identifier ce qui t&apos;empêche de décoller et comprendre comment ajuster…</p>
               <p className="offer-desc">
                 Tu sens que quelque chose cloche dans ta communication mais tu ne sais pas quoi.
-                Tu veux un <em>diagnostic franc</em>, rapide et concret.
+                Tu veux <strong>un diagnostic franc</strong>, rapide et concret.
               </p>
+              <div className="offer-price">239 euros</div>
+              <p className="offer-tagline">Identifier ce qui t&apos;empêche de décoller et comprendre comment ajuster…</p>
+              <p className='offer-subtagline'>Tu vas enfin <strong>comprendre ce qui ne fait pas passer ton audiance à l&apos;action.</strong><br /> Tu vas enfin pouvoir changer de cap avec une feuille de route pour <strong>arrêter de t&apos;éparpiller.</strong></p>
+              <a href="">Je choisis l&apos;audit express</a>
+              <span className='border-offer'></span>
               <ul className="offer-includes">
                 <li>2h d&apos;entretien (visio)</li>
                 <li>Vision de la comm&apos; visuelle + verbale</li>
@@ -161,14 +173,18 @@ export default function AccompagnementsPage() {
             {/* Alignement */}
             <div className="offer-card second highlight">
               <span className="offer-tag">Refonte de communication</span>
+              <div className='offer-title-group'>
               <div className="offer-name green">alignement</div>
               <div className="offer-subtitle">physique ou visio</div>
+              </div>
+              <p className="offer-desc">
+                Tu veux <strong>(re)formuler ton positionnement et clarifier ton message</strong> pour enfin attirer les bons clients. <br /><strong>Tu veux monter d&apos;un step</strong> 
+              </p>
               <div className="offer-price">1290 euros</div>
               <p className="offer-tagline">Structurer ta vision, ton message et tes fondations pour communiquer avec cohérence.</p>
-              <p className="offer-desc">
-                Tu veux trouver la clarté de formuler ton message à ta communication et te sentir dans ce que tu proposes et te reconnaître dans ta communication.
-                Tu veux avoir enfin une direction avec ce que tu proposes.
-              </p>
+              <p className='offer-subtagline'>Tu vas être soulagé(e)<strong>d&apos;avoir enfin une direction</strong>avec ta communication. <br /> Tu vas te <strong>sentir clair(e)</strong> dans ce que tu proposes et <strong>te reconnaitre dans ta communication.</strong></p>
+              <a href="">Je choisis l&apos;offre alignement</a>
+              <span className='border-offer'></span>
               <ul className="offer-includes">
                 <li>14 semaines minimum d&apos;accompagnement</li>
                 <li>3 RDV pour travailler la stratégie</li>
@@ -183,13 +199,19 @@ export default function AccompagnementsPage() {
             {/* Rebranding */}
             <div className="offer-card three">
               <span className="offer-tag">Création image de marque</span>
-              <div className="offer-name cyan">rebranding</div>
-              <div className="offer-subtitle">physique ou visio</div>
-              <div className="offer-price">2 100 euros</div>
-              <p className="offer-tagline">Recréer une identité complète, alignée et ambitieuse – à ton image.</p>
+              <div className='offer-title-group'>
+                <div className="offer-name cyan">rebranding</div>
+                <div className="offer-subtitle">physique ou visio</div>
+              </div>
               <p className="offer-desc">
-                Ton image ne colle plus à qui tu es devenu(e). Tu veux refondre ton image, tout repartir, créer la singularité. Tu veux être reconnu pour ton expertise.
+               <strong>Ton image ne colle plus à qui tu es devenu(e).</strong> Tu veux <strong>refondre ton image,</strong>  ton univers, créer ta légitimité. Tu veux
+               <strong> être reconnu(e) pour ton expertise.</strong>
               </p>
+              <div className="offer-price">2190 euros</div>
+              <p className="offer-tagline">Recréer une identité complète, alignée et ambitieuse – à ton image.</p>
+              <p className='offer-subtagline'><strong>Ton image va enfin parler pour toi,</strong>ce qui va te rendre confiant(e) et crédible. <br /> Ta communication va refléter ce que tu es et <strong>va attirer à toi naturellement tes clients idéaux.</strong></p>
+              <a href="">Je choisis l&apos;offre rebranding</a>
+              <span className='border-offer'></span>
               <ul className="offer-includes">
                 <li>16 semaines minimum d&apos;accompagnement</li>
                 <li>2 sessions de démarrage : Audit + Bilan de départ</li>
@@ -207,26 +229,26 @@ export default function AccompagnementsPage() {
 
       {/* ── TABLEAU COMPARATIF ── */}
       <section className="compare">
-        <div className="wrap-wide">
-          <p className="compare-title">Comparez les offres</p>
-          <p className="compare-intro">
-            Quand le visiteur descend sur le site : le tableau déroule mais les titres des colonnes restent en place
-          </p>
+          <h2 className="compare-title">Comparez les offres</h2>
 
           <div className="table-wrap">
             <table>
               <thead>
                 <tr>
                   <th></th>
-                  <th className="col-pink">Audit Express<br /><span style={{fontSize:'0.75rem', fontWeight:400}}>239€</span></th>
-                  <th className="col-green">Réalignement<br /><span style={{fontSize:'0.75rem', fontWeight:400}}>1290€</span></th>
-                  <th className="col-cyan">Rebranding<br /><span style={{fontSize:'0.75rem', fontWeight:400}}>2100€</span></th>
+                  <th><img src={Audit.src} alt="" /><br /><div className="offer-name-audit">audit express</div><span>239€</span></th>
+                  <th><img src={Alignement.src} alt="" /><br /><div className="offer-name-alignement">alignement</div>
+                  <span>1290€</span></th>
+                  <th><img src={Rebranding.src} alt="" /><br /><div className="offer-name-rebranding">rebranding</div><span>2100€</span></th>
                 </tr>
               </thead>
               <tbody>
                 {TABLE_SECTIONS.map((section) => (
                   <>
-                    <tr key={section.section} className="section-row">
+                    <tr
+                      key={section.section}
+                      className={`section-row ${section.id}`}
+                    >
                       <td colSpan={4}>{section.section}</td>
                     </tr>
                     {section.rows.map((row) => (
@@ -242,21 +264,12 @@ export default function AccompagnementsPage() {
               </tbody>
             </table>
           </div>
-        </div>
       </section>
 
       {/* ── CTA FINAL ── */}
       <section className="cta-final">
-        <div className="wrap">
-          <p>Tu es intéressé(e) par une de ces offres ?</p>
-          <h2 className="cta-final-title">Voilà comment ça se passe</h2>
-          <Link href="/contact" className="btn-main">
-            Parler de mon projet <span className="arr">→</span>
-          </Link>
-          <p className="btn-sub" style={{marginTop:10}}>
-            quand on survole ce bouton il y a une animation pour qu&apos;on puisse comprendre que c&apos;est un lien cliquable. Ce lien renvoie à &apos;notre agence&apos; ancre &gt; &apos;notre process&apos;
-          </p>
-        </div>
+          <p className='subtitle'>T&apos;es intéressé(e) par une de ces offres ?</p>
+          <Link href="/agence#process" className="cta-final-title">Voilà comment ça se passe</Link>
       </section>
 
       {/* ── FOOTER ── */}

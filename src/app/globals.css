@@ -145,14 +145,16 @@ h3 {
 }
 .neon-title{
     text-align: center;
-    font-size: 28px;
-    color: #B64F98;
+    font-family: 'Kodchasan';
+    font-size: 27px;
+    width: fit-content;
+    color: #c67ab1;
+    text-transform: uppercase;
     padding: 15px 35px;
     border-radius: 12px;
-    margin-bottom: 25px;
     font-weight: 200;
     background: rgba(0, 0, 0, 0.7);
-    border: 2px solid #B64F98;
+    border: 2px solid #c67ab1;
     box-shadow: 0 0 6px #B64F98, 0 0 12px #B64F98, 0 0 24px #B64F98;
     text-shadow: 0 0 3px #B64F98, 0 0 6px #B64F98, 0 0 48px #B64F98;
 }
@@ -160,5 +162,13 @@ h3 {
 .little-btn{
   border: #fff 1px solid;
   border-radius: 50px;
+}
+.little-btn-green{
+  border: #568C52 1px solid;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-family: 'Kodchasan';
+  color: #568C52;
+  font-size: 20px;
 }
 

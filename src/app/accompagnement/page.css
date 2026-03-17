@@ -1,28 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
-
 .accompagnements-page {
-  --pink:       #e91e8c;
-  --pink-dark:  #c4006e;
-  --pink-bg:    rgba(233,30,140,0.12);
-  --pink-border:rgba(233,30,140,0.4);
-  --cyan:       #00d4e8;
-  --green:      #4a8c3f;
-  --black:      #0d0d0d;
-  --dark:       #111111;
-  --card:       #1a1a1a;
-  --white:      #ffffff;
-  --off:        #f0e8e8;
-  --gray:       #aaaaaa;
-  --border:     rgba(255,255,255,0.08);
-
-  font-family: 'Open Sans', sans-serif;
-  background: var(--black);
+  background: #000;
   color: var(--white);
   overflow-x: hidden;
 }
 .accompagnements-page *, .accompagnements-page *::before, .accompagnements-page *::after { box-sizing: border-box; margin: 0; padding: 0; }
 .accompagnements-page a { color: inherit; text-decoration: none; }
-.accompagnements-page ul { list-style: none; }
+
 
 
 /* ── Bouton principal ── */
@@ -56,19 +39,11 @@
   padding: 25px;
 }
 .hero-subtitle {
-  font-family: 'Oswald', sans-serif;
-  font-size: clamp(0.85rem, 1.8vw, 1.05rem);
-  font-weight: 600; text-transform: uppercase;
-  color: var(--off); letter-spacing: 0.3px;
-  max-width: 680px; margin: 0 auto 10px;
+  text-transform: uppercase;
+  font-family: 'OpenSans';
 }
 .hero-subtitle strong { color: var(--white); }
 
-.hero-desc {
-  font-size: 0.9rem; color: var(--gray);
-  line-height: 1.7; max-width: 640px;
-  margin: 0 auto 10px;
-}
 
 /* ══════════════════════════════════════════════
    3 OFFRES CARDS
@@ -128,20 +103,17 @@
 /* ══════════════════════════════════════════════
    TABLEAU COMPARATIF
 ══════════════════════════════════════════════ */
-.compare {
-  background: var(--dark);
-  padding: 60px 0;
-  border-bottom: 1px solid var(--border);
-}
+
 .compare-title {
-  font-family: 'Oswald', sans-serif;
-  font-size: 0.8rem; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 1px;
-  color: var(--off); text-align: center; margin-bottom: 24px;
+  text-transform: uppercase;
+  text-align: center; 
+  margin-bottom: 24px;
 }
 .compare-intro { text-align: center; font-size: 0.8rem; color: var(--gray); margin-bottom: 8px; }
 
-.table-wrap { overflow-x: auto; }
+.table-wrap { 
+    border: solid 25px #B64F98;
+    padding: 20px;}
 
 table {
   width: 100%; border-collapse: collapse;
@@ -153,37 +125,34 @@ thead th {
   text-align: center; border: 1px solid var(--border);
   font-size: 0.85rem;
 }
-thead th:first-child { text-align: left; min-width: 200px; }
-thead th.col-pink { color: var(--pink); }
-thead th.col-green { color: #7ec87a; }
-thead th.col-cyan { color: var(--cyan); }
 
 tbody tr.section-row td {
-  background: rgba(233,30,140,0.08);
-  font-family: 'Oswald', sans-serif; font-weight: 700;
-  text-transform: uppercase; font-size: 0.7rem;
-  letter-spacing: 1px; color: var(--pink);
+  text-transform: uppercase;
   padding: 10px 12px;
-  border: 1px solid var(--border);
+  font-family: 'OpenSans';
+  font-weight: 700;
 }
 tbody td {
   padding: 10px 12px; text-align: center;
   border: 1px solid var(--border); color: var(--gray);
   vertical-align: middle; line-height: 1.4;
 }
-tbody td:first-child { text-align: left; color: var(--off); }
+tbody td:first-child {padding: 10px; text-align: left; color: var(--off); }
 tbody tr:hover td { background: rgba(255,255,255,0.02); }
 
-.check { color: #7ec87a; font-weight: 700; }
-.cross { color: rgba(255,255,255,0.18); }
+.check { color: #568C52; font-weight: 700; }
+.cross { color: rgb(255, 0, 0); }
 .note  { font-size: 0.7rem; color: var(--gray); font-style: italic; }
 
 /* ══════════════════════════════════════════════
    CTA FINAL
 ══════════════════════════════════════════════ */
 .cta-final {
-  background: var(--black); padding: 52px 0;
-  text-align: center; border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
 }
 .cta-final p { font-size: 0.9rem; color: var(--gray); margin-bottom: 6px; }
 .cta-final-title {
@@ -208,6 +177,9 @@ tbody tr:hover td { background: rgba(255,255,255,0.02); }
   .offers-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
 }
+.offer-title-group{
+  position: relative;
+}
 
 .offer-card.first{
   background-color: #B64F98;
@@ -219,4 +191,165 @@ tbody tr:hover td { background: rgba(255,255,255,0.02); }
 
 .offer-card.three{
   background-color: #3FB3E4;
+}
+
+.offer-tag{
+  text-transform: uppercase;
+  font-family: 'OpenSans';
+}
+.offer-name{
+  font-family: 'JosefinSans';
+  font-size: 35px;
+  font-weight: 300;
+  color: #fff;
+}
+.first .offer-name{
+  text-shadow: 0 0 3px #3FB3E3, 0 0 6px #3FB3E3, 0 0 48px #3FB3E3;
+}
+.second .offer-name{
+  text-shadow: 0 0 3px #B64F98, 0 0 6px #B64F98, 0 0 48px #B64F98;
+}
+.three .offer-name{
+  text-shadow: 0 0 3px #568C52, 0 0 6px #568C52, 0 0 48px #568C52;
+}
+
+.offer-price{
+  font-family: 'JosefinSans';
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 48px #fff;
+}
+.accompagnements-page ul { 
+  list-style: none; 
+  text-align: start;
+}
+.offer-subtitle{
+  /* position: absolute;
+  top: 35px; */
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.first .offer-name{
+  margin-bottom: 14px;
+}
+/* .second .offer-subtitle{
+  width: 120px;
+  text-align: center;
+  right: 25%;
+}
+.three .offer-subtitle{
+  width: 120px;
+  text-align: center;
+  left: 35%;
+} */
+.border-offer{
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+.offer-desc{
+  height: 120px;
+}
+.offer-tagline{
+  height: 55px;
+}
+.offer-subtagline{
+  height: 135px;
+}
+.offer-includes{
+  height: 280px;
+}
+
+.compare{
+  padding: 50px;
+}
+tbody tr td{
+  padding: 10px;
+}
+th{
+  width: 25%;
+}
+th img{
+  width: 100px;
+  object-fit: cover;
+  height: 50px;
+}
+.offer-name-audit{
+  font-family: 'JosefinSans';
+  text-shadow: 0 0 3px #3FB3E3, 0 0 6px #3FB3E3, 0 0 48px #3FB3E3;
+}
+.offer-name-alignement{
+  font-family: 'JosefinSans';
+  text-shadow: 0 0 3px #B64F98, 0 0 6px #B64F98, 0 0 48px #B64F98;
+}
+.offer-name-rebranding{
+  font-family: 'JosefinSans';
+  font-weight: 500;
+  text-shadow: 0 0 3px #568C52, 0 0 6px #568C52, 0 0 48px #568C52;
+}
+th span{
+  font-weight: 500;
+  font-family: 'JosefinSans';
+}
+
+/* CLARTÉ */
+.section-row.clarte td {
+  color: #B64F98;
+}
+
+/* IDENTITÉ VISUELLE */
+.section-row.identite td {
+  color: #3FB3E3;
+}
+
+/* COMMUNICATION */
+.section-row.communication td {
+  color: #568C52;
+}
+
+/* SESSIONS */
+.section-row.sessions td {
+  color: #B64F98;
+}
+
+/* LIVRABLES */
+.section-row.livrables td {
+  color: #3FB3E3;
+}
+
+/* EXPÉRIENCE */
+.section-row.experience td {
+  color: #568C52;
+}
+
+.compare-title{
+  font-size: 30px;
+}
+.cta-final .subtitle{
+  font-family: 'GiveYouGlory';
+  font-size: 20px;
+}
+.cta-final-title{
+  font-family: 'Kodchasan';
+  width: fit-content;
+  border: solid 1px #fff;
+  padding: 10px 30px;
+  border-radius: 50px;
+  gap: 50px;
+}
+.hero-subtitle{
+  font-size: 25px;
+}
+.hero-subtitle span{
+  color: #B64F98;
+}
+.hero-desc{
+  font-family: 'OpenSans';
+  padding: 0 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
