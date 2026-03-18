@@ -81,7 +81,7 @@ export default function AuditPage() {
       <section className="faq">
         <div className="faq-container">
 
-          <h2 className="faq-title">J&apos;ai des questions…</h2>
+          <h2 className="faq-title texte-give">J&apos;ai des questions…</h2>
 
           <ul className="faq-list">
             {FAQ_ITEMS.map((item) => (

@@ -6,6 +6,7 @@ import './page.css';
 import Footer from '../components/Footer/Footer';
 import Banner from './components/Banner';
 import Header from '../components/Header/Header';
+import TremplinAuBureau from '../../../public/tremplin-au-bureau.jpg'
 
 const FAQ_ITEMS = [
   { q: "QUELLE EST LA DIFFÉRENCE ENTRE VOS OFFRES (AUDIT, ALIGNEMENT, REBRANDING) ?", a: "L'audit te donne un diagnostic clair. L'Alignement t'aide à poser un message fort et une direction juste. Le Rebranding transforme en profondeur ton image pour qu'elle reflète ton niveau réel. Chaque offre correspond à un moment précis de ton business." },
@@ -81,163 +82,166 @@ export default function ComPage() {
 
       {/* ── NOTRE FORCE ── */}
       <section className="methode">
-        <div className="wrap">
+        <div className='methode-content'>
           <p>On a accompagné plusieurs entrepreneurs pour savoir aujourd&apos;hui reconnaître ce qui fait décoller une communication… et ce qui la bloque.</p>
           <p>Notre force c&apos;est la finesse du regard. <strong>On identifie les angles morts, les incohérences et les leviers cachés qu&apos;on ne voit pas quand on a &apos;la tête dans son business&apos;.</strong></p>
           <p>Ce qui fait la différence chez nous, c&apos;est la double vision : stratégie + design.</p>
           <p className="methode-bold">Une méthode qui te permet d&apos;avancer avec plus de clarté, plus d&apos;impact et une image qui travaille enfin pour toi.</p>
-          <Link href="/contact" className="btn-main">Je veux me faire accompagner <span className="arr">→</span></Link>
-          <p className="btn-sub">Lien vers la page contact</p>
+          
+          <Link href="/contact" className="little-btn-blue">
+          Je veux me faire accompagner
+          </Link>
         </div>
       </section>
 
       {/* ── PROCESS 6 ÉTAPES ── */}
-      <section className="process">
-        <div className="wrap-wide">
+ <section className="process">
 
-            <p className="title-text">Comment se passe un accompagnement chez Tremplin — sur l&apos;offre alignement ?</p>
+  <p className="neon-title">
+    Comment se passe un accompagnement chez <br />
+    Tremplin — sur l&apos;offre alignement ?
+  </p>
 
-          <div style={{ position: 'relative' }}>
-            <p className="process-aside">Quand on défile vers le bas on fait comme si le fil descendait et les cases s&apos;allumaient</p>
-            <div className="process-grid">
-              <div className="step-block">
-                <div className="step-num">1</div>
-                <div className="step-content" style={{ marginTop: 40 }}>
-                  <p className="step-title">Audit complet</p>
-                  <div className="step-body">
-                    <p>À cette étape on va chercher à comprendre ce qui bloque (et ce qui fonctionne déjà).</p>
-                    <p>Cet audit comprend : un entretien, l&apos;analyse de ton parcours client, de tes chiffres, de ta présence en ligne et de la concurrence.</p>
-                    <p>On va chercher à identifier clairement :</p>
-                    <ul>
-                      <li>les axes forts,</li>
-                      <li>les axes d&apos;amélioration,</li>
-                      <li>les urgences à corriger.</li>
-                    </ul>
-                    <p>Ce retour se fait en RDV.</p>
-                  </div>
-                </div>
-              </div>
+  <div className='process-content'>
+    <div className="process-grid">
 
-              <div className="step-block">
-                <div className="step-num">2</div>
-                <div className="step-content" style={{ marginTop: 40 }}>
-                  <p className="step-title">Stratégie de communication</p>
-                  <div className="step-body">
-                    <p>On clarifie tes objectifs et on t&apos;aide à faire les bons choix.</p>
-                    <p>Tu prends des décisions éclairées grâce à nos conseils simples et concrets.</p>
-                    <p>On explore toutes les options stratégiques : présence en ligne, événementiel, promotion, lancement, prospection… selon ce qui sera vraiment ton activité.</p>
-                    <p>Tu repars avec un carnet PDF de stratégie de marque, c&apos;est à dire qui tu es, à qui tu parles, ce qui te rend unique, comment tu veux te montrer, ce que tu veux dire + un plan d&apos;action pour mettre en place cette stratégie.</p>
-                  </div>
-                </div>
-              </div>
+      {/* COLONNE GAUCHE */}
+      <div className="col">
 
-              <div className="step-block">
-                <div className="step-num">3</div>
-                <div className="step-content" style={{ marginTop: 40 }}>
-                  <p className="step-title">On définit ton univers visuel</p>
-                  <div className="step-body">
-                    <p>À partir de ton identité actuelle, on construit un univers graphique affirmé, solide et aligné avec ta personnalité.</p>
-                    <p>Un questionnaire nous permet de comprendre qui tu es et de traduire ça en image.</p>
-                    <p>Résultat : une base visuelle claire pour toutes tes futures communications.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="step-block">
-                <div className="step-num">4</div>
-                <div className="step-content" style={{ marginTop: 40 }}>
-                  <p className="step-title">Refonte complète de ta communication</p>
-                  <div className="step-body">
-                    <p>On réorganise toute ta communication autour de :</p>
-                    <ul>
-                      <li>la stratégie validée,</li>
-                      <li>ton nouvel univers graphique,</li>
-                      <li>tes objectifs.</li>
-                    </ul>
-                    <p>Tu remplis un court questionnaire et on crée pour toi un calendrier éditorial d&apos;un mois pour lancer la nouvelle communication.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="step-block large">
-                <div className="step-num">5</div>
-                <div className="step-content" style={{ marginTop: 40 }}>
-                  <p className="step-title">Test, supervision & ajustements</p>
-                  <div className="step-body">
-                    <p>On gère tes réseaux pendant 4 semaines : on teste, on mesure, on ajuste.</p>
-                    <p>Pendant ce temps :</p>
-                    <ul>
-                      <li>on crée ton tableau de bord de communication personnalisé,</li>
-                      <li>on t&apos;installe des outils simples et efficaces,</li>
-                      <li>on te forme pour reprendre ta communication sereinement.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="step-block large">
-                <div className="step-num">6</div>
-                <div className="step-content" style={{ marginTop: 40 }}>
-                  <p className="step-title">Suivi illimité : tu n&apos;es jamais seul(e)</p>
-                  <div className="step-body">
-                    <p>Après un dernier bilan pour clôturer ton parcours, tu gardes un accès illimité à nos conseils, ajustements, retours et soutien.</p>
-                    <p>Le but : que tu deviennes totalement autonome tout en étant rassuré(e).</p>
-                  </div>
-                </div>
-              </div>
+        <div className="step-block">
+          <div className="step-num">1</div>
+          <div className="step-content">
+            <p className="step-title">Audit complet</p>
+            <div className="step-body">
+              <p>À cette étape on va chercher à comprendre ce qui bloque (et ce qui fonctionne déjà).</p>
+              <p>Cet audit comprend : un entretien, l&apos;analyse de ton parcours client, de tes chiffres, de ta présence en ligne et de la concurrence.</p>
+              <p>On va chercher à identifier clairement :</p>
+              <ul>
+                <li>les axes forts,</li>
+                <li>les axes d&apos;amélioration,</li>
+                <li>les urgences à corriger.</li>
+              </ul>
+              <p>Ce retour se fait en RDV.</p>
             </div>
           </div>
-
-          <p style={{ textAlign: 'center', fontStyle: 'italic', fontSize: '0.8rem', color: 'var(--gray)', marginTop: 20 }}>
-            L&apos;accompagnement dure environ 14 semaines.<br />
-            Il dépend de nos plannings respectifs. Cette durée est la moyenne relevée sur nos accompagnements précédents.
-          </p>
         </div>
-      </section>
 
-      {/* ── RÉSULTATS ── */}
-      <section className="resultats">
-        <div className="wrap">
-          <h2 className="resultats-title">À partir de quand verrai-je des résultats ?</h2>
-          <div className="resultats-box">
-            <p>Dès les premières semaines, <strong>tu sens déjà un changement intérieur</strong> : clarté, confiance, direction.<br />
-            <strong>Après les premières sessions,</strong> ton message devient plus simple, plus fluide, plus évident.</p>
-            <p>Et dès que tu commences à l&apos;appliquer, tu vois rapidement :</p>
-            <ul>
-              <li>des réactions différentes,</li>
-              <li>une audience plus qualifiée,</li>
-              <li>des prises de contact plus fréquentes.</li>
-            </ul>
-            <p><strong>L&apos;offre alignement de ta com&apos; crée des résultats visibles très vite, parce qu&apos;on agit sur la structure même de ta communication.</strong></p>
+        <div className="step-block">
+          <div className="step-num">3</div>
+          <div className="step-content">
+            <p className="step-title">On définit ton univers visuel</p>
+            <div className="step-body">
+              <p>À partir de ton identité actuelle, on construit un univers graphique affirmé, solide et aligné avec ta personnalité.</p>
+              <p>Un questionnaire nous permet de comprendre qui tu es et de traduire ça en image.</p>
+              <p>Résultat : une base visuelle claire pour toutes tes futures communications.</p>
+            </div>
           </div>
         </div>
-      </section>
 
-      {/* ── DURÉE ── */}
-      <section className="duree">
-        <div className="wrap">
-          <h2 className="duree-title">Combien de temps dure l&apos;accompagnement ?</h2>
-          <div className="duree-box">
-            <p>L&apos;offre alignement de ta com&apos; <strong>se déroule sur environ 14 semaines.</strong></p>
-            <ul>
-              <li>3 sessions stratégiques</li>
-              <li>Suivi entre chaque étape</li>
-              <li>Accompagnement WhatsApp continu</li>
-              <li>4 semaines de gestion de ta communication – BONUS</li>
-              <li>Temps de formation sur tes nouveaux outils</li>
-              <li>Bilan de fin d&apos;accompagnement pour s&apos;assurer que tu es au clair pour la suite</li>
-            </ul>
-            <p><strong>À la fin, tu repars avec une direction claire,</strong> un message solide et un plan d&apos;action que tu sauras continuer à suivre.</p>
+        <div className="step-block">
+          <div className="step-num">5</div>
+          <div className="step-content">
+            <p className="step-title">Test, supervision & ajustements</p>
+            <div className="step-body">
+              <p>On gère tes réseaux pendant 4 semaines : on teste, on mesure, on ajuste.</p>
+              <p>Pendant ce temps :</p>
+              <ul>
+                <li>on crée ton tableau de bord de communication personnalisé,</li>
+                <li>on t&apos;installe des outils simples et efficaces,</li>
+                <li>on te forme pour reprendre ta communication sereinement.</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </section>
 
-      {/* ── INCLUS ── */}
-      <section className="inclus">
-        <div className="wrap-wide">
-          <div className="inclus-neon">
-            <p className="title-text">Dans tous nos accompagnements, c&apos;est inclus :</p>
+      </div>
+
+      {/* COLONNE DROITE */}
+      <div className="col">
+
+        <div className="step-block">
+          <div className="step-num">2</div>
+          <div className="step-content">
+            <p className="step-title">Stratégie de communication</p>
+            <div className="step-body">
+              <p>On clarifie tes objectifs et on t&apos;aide à faire les bons choix.</p>
+              <p>Tu prends des décisions éclairées grâce à nos conseils simples et concrets.</p>
+              <p>On explore toutes les options stratégiques : présence en ligne, événementiel, promotion, lancement, prospection… selon ce qui sera vraiment ton activité.</p>
+              <p>Tu repars avec un carnet PDF de stratégie de marque, c&apos;est à dire qui tu es, à qui tu parles, ce qui te rend unique, comment tu veux te montrer, ce que tu veux dire + un plan d&apos;action pour mettre en place cette stratégie.</p>
+            </div>
           </div>
+        </div>
+
+        <div className="step-block">
+          <div className="step-num">4</div>
+          <div className="step-content">
+            <p className="step-title">Refonte complète de ta communication</p>
+            <div className="step-body">
+              <p>On réorganise toute ta communication autour de :</p>
+              <ul>
+                <li>la stratégie validée,</li>
+                <li>ton nouvel univers graphique,</li>
+                <li>tes objectifs.</li>
+              </ul>
+              <p>Tu remplis un court questionnaire et on crée pour toi un calendrier éditorial d&apos;un mois pour lancer la nouvelle communication.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="step-block">
+          <div className="step-num">6</div>
+          <div className="step-content">
+            <p className="step-title">Suivi illimité : tu n&apos;es jamais seul(e)</p>
+            <div className="step-body">
+              <p>Après un dernier bilan pour clôturer ton parcours, tu gardes un accès illimité à nos conseils, ajustements, retours et soutien.</p>
+              <p>Le but : que tu deviennes totalement autonome tout en étant rassuré(e).</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <p className='process-texte-bottom'>
+    L&apos;accompagnement dure environ 14 semaines.<br />
+    Il dépend de nos plannings respectifs. Cette durée est la moyenne <br /> relevée sur nos accompagnements précédents.
+  </p>
+
+</section>
+
+       <section className='start-projet' id='start-projet'>
+        <h2 className='neon-title'>Comment prendre rendez-vous ?</h2>
+        <div className='start-projet-details'>
+            <aside>
+                <p className='number'>1 </p>
+                <h3>Prise de contact</h3>
+                <p>Tu <a href="/contact">remplis le formualire</a> et tu nous explique ton projet et tes besoins.</p>
+                <p className='number'>2 </p>
+                <h3>Proposition de rendez-vous</h3>
+                <p>Dès qu&apos;on reçoit ta demande, on l&apos;étudie et on te recontacte pour te proposer un rendez-vous en visio ou en physique.</p>
+                <p className='number'>3 </p>
+                <h3>Devis & planning</h3>
+                <p>Lors de notre entretien nous définisons ensemble les actions à prioriser et nous t&apos;établissons le devis.</p>
+                <p className='number'>4 </p>
+                <h3>Paiement de l&apos;accompte</h3>
+                <p>C&apos;est ok pour toi suite au devis - tu n&apos;as plus qu&apos;à régler l&apos;accompte et signer le devis pour démarrer notre collaboration.</p>
+                <p className='number'>5 </p>
+                <h3>on démarre</h3>
+                <p>L&apos;équipe se met en acion et on démarre l&apos;étape 1 comme expliqué et validé lors de l&apos;explication de l&apos;offre.</p>
+            </aside>
+            <div className=''>
+            <img src={TremplinAuBureau.src} alt="Es-tu prêt à révéler le plein potentiel de ta boite ? Tremplin communication est là pour ça." />
+            </div>
+        </div>
+        <p className='texte-give'>Sinon tu peux directement booker ton appel téléphonique pour discuter de ton projet.</p>
+        <a className='btn-pink' href="./">Parler de mon projet</a>
+    </section>
+
+      <section className="inclus" >
+        <div className='inclus-container'>
+            <p className="neon-title">Dans tous nos accompagnements, c&apos;est inclus :</p>
           <div className="inclus-grid">
             {[
               { title: 'Suivi WhatsApp illimité', body: "Tu n'avances jamais seul. Tu peux nous écrire à tout moment pour poser une question, valider une idée ou débloquer une situation. Réactivité, clarté et soutien en continu." },
@@ -253,93 +257,100 @@ export default function ComPage() {
               </div>
             ))}
           </div>
-          <div className="inclus-cta">
-            <Link href="/contact" className="btn-main">Je veux un accompagnement Tremplin <span className="arr">→</span></Link>
-            <p className="btn-sub">ENVOI VERS NOTRE PAGE CONTACT</p>
-          </div>
-        </div>
+            <Link href="/contact" className="little-btn-green">Je veux un accompagnement Tremplin
+            </Link>
+            </div>
       </section>
 
       {/* ── TÉMOIGNAGES ── */}
       <section className="temoignages">
-        <div className="wrap">
-          <p className="temo-label">Témoignages</p>
-          <h2 className="temo-title">Ils ont choisi de refondre leur communication<br />Ils ont choisis l&apos;offre alignement</h2>
-          <div className="temo-grid">
+        <div className='temoignage-container'>
+        <div className='div-title'>
+          <p className="texte-give intro-title">Témoignages</p>
+          <h2 className="neon-title">Ils ont choisi de refondre leur communication<br />Ils ont choisis l&apos;offre alignement</h2>
+        </div>
+          <div className="temoignage-grid">
+        
             {[
-              { activite: 'Salon de coiffure', probleme: 'Présence d\'aucun dans sa com\'', prenom: 'Aurélie' },
-              { activite: 'Conseil en image', probleme: 'Message flou / plusieurs offres', prenom: 'Marthe' },
+              { activite: 'Salon de coiffure', probleme: "Peur de se spécialisé dans son domaine d'expertise", prenom: 'Aurélie' },
+              { activite: 'Conseil en image', probleme: "Ne réalise pas qu'elle incarne son entreprise et est le meilleure atout de sa boutique", prenom: 'Marie' },
             ].map((t, i) => (
-              <div key={i} className="temo-card">
-                <div className="temo-tags">
-                  <span className="temo-tag pink">Activité : {t.activite}</span>
-                  <span className="temo-tag gray">Problème essentiel travail : {t.probleme}</span>
+              <div key={i} className="temoignage-card">
+                <div className="temoignage-tags">
+                  <span className="temoignage-tag-activite">Activité<br /><p>{t.activite}</p></span>
+                  <span className="temoignage-tag-probleme">Problème essentiel trouvé<br /><p>{t.probleme}</p></span>
                 </div>
-                <p className="temo-words">Ses mots<br />&apos;témoignage {t.prenom}&apos;</p>
+                <p className="temoignage-words">Ses mots<br />&apos;témoignage {t.prenom}&apos;</p>
               </div>
             ))}
           </div>
-        </div>
+          </div>
       </section>
 
-      {/* ── PRISE DE RDV ── */}
-      <section className="rdv">
-        <div className="wrap">
-          <div className="rdv-neon">
-            <p className="title-text">Comment prendre rendez-vous ?</p>
-          </div>
-          <div className="rdv-inner">
-            <div className="rdv-steps">
-              {[
-                { n: '1', t: 'Prise de contact', b: <>Tu <a href="/contact">remplis le formulaire</a> et tu nous expliques ton projet et tes besoins. <span style={{color:'var(--pink)'}}>Lien vers la page de contact</span></> },
-                { n: '2', t: 'Proposition de rendez-vous', b: 'Dès qu\'on reçoit ta demande, on l\'étudie et on te recontacte pour te proposer un rendez-vous en visio ou en physique.' },
-                { n: '3', t: 'Devis & Planning', b: 'Lors de notre entretien nous définissons ensemble les actions à prioriser et nous l\'établissons un devis.' },
-                { n: '4', t: 'Paiement de l\'acompte', b: "C'est pour toi aussi au delà – tu n'as plus qu'à régler l'acompte et signer le devis pour démarrer notre collaboration." },
-                { n: '5', t: 'On démarre', b: "L'équipe se met en action et on démarre l'étape 1 comme expliqué et validé lors de l'explication de l'offre." },
-              ].map((s) => (
-                <div key={s.n} className="rdv-step">
-                  <span className="rdv-num">{s.n}</span>
-                  <div>
-                    <p className="rdv-step-title">{s.t}</p>
-                    <p className="rdv-step-body">{s.b}</p>
-                  </div>
-                </div>
-              ))}
-              <p className="rdv-aside">Sais-tu, pour facilement lancer, tu auras téléphonique, pour discuter de ton projet.</p>
-              <div className="rdv-cta">
-                <Link href="/contact" className="btn-main">Parler de mon projet <span className="arr">→</span></Link>
-                <p className="btn-sub">ENVOI VERS NOTRE PAGE CALENDLY</p>
-              </div>
+          <section className="resultats">
+            <h2 className="neon-title">
+              A partir de quand verrai-je des résultats ?
+            </h2>
+            <div className='resultats-container'>
+              <aside>
+                <p>Dès <strong>les premières semaines, tu ressentiras</strong> un gain de clarté, de confiance et de cohérence. </p>
+                <ul><p>Les retours clients et l&apos;impact sur ton positionnement <strong>deviennent visibles dès la mise en ligne</strong> de ta nouvelle image, souvent accompagnés de :</p>
+                  <li>Plus de réponse à tes posts,</li>
+                  <li>Meilleure perception &apos;pro&apos;,</li>
+                  <li>Des clients plus alignés,</li>
+                  <li>Positionnement naturel plus haut de gamme.</li>
+                </ul>
+                <p><strong>La puissance de l&apos;offre rebranding réside dans le fait que ton image va enfin refléter qui tu es, ce qui rendra ta communication magnétique et puissante.</strong></p>
+              </aside>
             </div>
-            <div className="rdv-photo">Boîte de la photo : &apos;Es-tu prêt à révéler le plein potentiel de ta boîte ? Tremplin communication est là pour ça.&apos;</div>
-          </div>
-        </div>
-      </section>
+          </section>
+
+          <section className="duree">
+            <h2 className="neon-title">
+              A partir de quand verrai-je des résultats ?
+            </h2>
+            <div className='duree-container'>
+              <aside>
+                <p>Le Réalignement<strong> se déroule sur environ 16 semaines.</strong></p>
+                <ul>
+                  <li>- 2 sessions de démarrage</li>
+                  <li>- 3 sessions stratégiques</li>
+                  <li>- Suivi entre chaque étape</li>
+                  <li>- Accompagnement WhatsApp continu</li>
+                  <li>- 4 semaines de gestion de ta communication - BONUS</li>
+                  <li>- Temps de formation sur tes nouveaux outils</li>
+                  <li>- Bilan de fin d&apos;accompagnement pour s&apos;assurer que tu es au clair pour la suite</li>
+                </ul>
+                <p><strong>à la fin, tu repars avec une direction claire,</strong>un message solide et un plan d&apos;action que tu sauras continuer à suivre.</p>
+              </aside>
+            </div>
+          </section>
+
+  
 
       {/* ── FAQ ── */}
       <section className="faq">
-        <div className="wrap">
-          <h2 className="faq-title">J&apos;ai des questions…</h2>
+        <div className="faq-container">
+          <h2 className="faq-title texte-give">J&apos;ai des questions…</h2>
           <ul className="faq-list">
-            {FAQ_ITEMS.map(item => <FaqItem key={item.q} q={item.q} a={item.a} />)}
+            {FAQ_ITEMS.map((item) => (
+              <FaqItem key={item.q} q={item.q} a={item.a} />
+            ))}
           </ul>
           <div className="faq-footer">
-            <Link href="/faq" className="faq-btn">J&apos;AI D&apos;AUTRES QUESTIONS</Link>
-            <p className="faq-link">ENVOI VERS NOTRE PAGE <a href="/faq">&apos;foire aux questions&apos;</a></p>
+            <Link href="/contact" className="faq-footer-btn">
+              J&apos;AI D&apos;AUTRES QUESTIONS
+            </Link>
           </div>
         </div>
       </section>
 
       {/* ── CTA FINAL ── */}
-      <section className="cta-final">
-        <div className="wrap" style={{ textAlign: 'center' }}>
-          <Link href="/contact" className="btn-main">Je me lance <span className="arr">→</span></Link>
-          <p className="btn-sub">ENVOI VERS NOTRE PAGE Contact</p>
-        </div>
+      <section className='final-cta'>        
+        <Link href="/contact" className="btn-pink">Je me lance</Link>
       </section>
-
-              <Footer />
-
+      
+      <Footer />
     </div>
   );
 }

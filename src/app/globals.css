@@ -170,5 +170,15 @@ h3 {
   font-family: 'Kodchasan';
   color: #568C52;
   font-size: 20px;
+  width: fit-content;
+}
+.little-btn-blue{
+  border: #3FB3E3 1px solid;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-family: 'Kodchasan';
+  color: #3FB3E3;
+  font-size: 20px;
+  width: fit-content;
 }
 
