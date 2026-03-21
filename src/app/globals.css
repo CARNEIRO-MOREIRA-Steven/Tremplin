@@ -181,4 +181,7 @@ h3 {
   font-size: 20px;
   width: fit-content;
 }
+.texte-uppercase{
+  text-transform: uppercase;
+}
 

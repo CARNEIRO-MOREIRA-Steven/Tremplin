@@ -10,12 +10,11 @@ import TremplinAuBureau from '../../../public/tremplin-au-bureau.jpg'
 
 const FAQ_ITEMS = [
   { q: "QUELLE EST LA DIFFÉRENCE ENTRE VOS OFFRES (AUDIT, ALIGNEMENT, REBRANDING) ?", a: "L'audit te donne un diagnostic clair. L'Alignement t'aide à poser un message fort et une direction juste. Le Rebranding transforme en profondeur ton image pour qu'elle reflète ton niveau réel. Chaque offre correspond à un moment précis de ton business." },
-  { q: "EST-CE QUE VOUS TRAVAILLEZ AVEC DES ENTREPRENEURS DÉBUTANTS OU DÉJÀ INSTALLÉS ?", a: "On travaille avec les deux. Des entrepreneurs qui lancent leur activité, comme des entreprises déjà en place mais en perte de clarté. Ce qui compte, c'est ta volonté de construire quelque chose de solide." },
+  { q: "J'AI DÉJà un logo / une identité : est ce que je dois tout refaire ?", a: "Pas forcément, On garde ce qui fonctionne et on améliore le reste. L'objectif n'est jamais de 'tout casser', mais de rendre ton image plus juste, plus cohérante et plus crédible." },
   { q: "EN COMBIEN DE TEMPS VAIS-JE VOIR DES RÉSULTATS ?", a: "Les premiers déclics arrivent souvent dès les premières semaines. Plus de clarté, plus d'assurance, des messages plus fluides. Les vrais résultats s'installent dans la durée, parce que ta communication repose enfin sur des bases solides." },
   { q: "EST-CE QUE JE VAIS ÊTRE ACCOMPAGNÉ(E) OU SIMPLEMENT RECEVOIR DES LIVRABLES ?", a: "Tu es accompagné(e) du début à la fin. On t'explique, on échange, on ajuste ensemble. Tu ne repars pas avec des fichiers à utiliser seul(e), mais avec une vraie compréhension de ta communication." },
   { q: "COMMENT SE PASSE CONCRÈTEMENT L'ACCOMPAGNEMENT ?", a: "On avance étape par étape. On commence par comprendre ta situation, puis on construit une stratégie claire, avant de travailler ton message et ton image. Tu sais toujours où tu en es, ce qu'on fait et pourquoi, grâce à l'espace de travail partagé." },
-  { q: "EST-CE QUE JE POURRAI GÉRER MA COMMUNICATION SEUL(E) APRÈS ?", a: "Oui, et c'est même l'objectif. On te donne une méthode, des outils et une vision claire. Tu gagnes en autonomie, sans te sentir perdu(e) ni dépendant(e)." },
-  { q: "ET SI JE NE SUIS PAS SÛR(E) DE MON POSITIONNEMENT AUJOURD'HUI ?", a: "C'est très courant. Dans ce cas, on commence par un Audit Express ou un alignement. Ces offres sont justement là pour t'aider à y voir clair avant d'aller plus loin." },
+  { q: "Pourquoi investir dans le branding plutôt que dans la publicité ?", a: "La publicité attire. Le branding fait rester et fait choisir. Sans une image claire et un message fort, la pub amplifie... la confusion. Un bon branding travaille pour toi sur le long termer, même quand tu ne communiques pas." },
   { q: "COMMENT PRENDRE RENDEZ-VOUS ET PAR QUOI COMMENCER ?", a: "Tu peux réserver un Call Déclic directement. C'est un premier échange pour comprendre ta situation et t'orienter vers l'offre la plus adaptée. Simple, sans pression." },
 ];
 
@@ -43,47 +42,48 @@ export default function ComPage() {
 
       {/* ── POURQUOI ── */}
       <section className="refonte">
-        <h2 className="neon-title">Pourquoi faire un réalignement de communication ? <br /><span className="sub">Aussi appelé &apos;refonte de communication&apos;</span></h2>
+        <h2 className="neon-title">Pourquoi faire un rebranding de mon entreprise ? <br /><span className="sub">Aussi appelé &apos;création de marque&apos;</span></h2>
         
 
           <div className="green-btns">
-            {["Pour clarifier ton positionnement", "Pour viser un objectif avec ta communication", "Pour te différencier et rendre ton entreprise unique", "Pour créer une communication qui te ressemble et qui attire"].map(t => (
+            {["Pour aligner ton image avec ta vraie valeur", "Pour attirer des clients plus alignés (et prêts à acheter)", "Pour gagner en crédibilité dans ton marché", "Pour structurer et faire évoluer ta stratégie de marque"].map(t => (
               <p key={t} className="green-btn">{t}</p>
             ))}
           </div>
 
           <div className="pourquoi-body">
-            <p>Parce qu&apos;à un moment, <strong>ta communication ne raconte plus la bonne histoire.</strong><br />
-            Ton message sonne juste… mais pas assez fort. Ton image n&apos;est pas vraiment toi.<br />
-            Tes mots ne vendent pas ce que tu as réellement à offrir.</p>
-            <p>Résultat : tu attires &apos;un peu tout le monde&apos;, et parfois… pas assez ou pas les bons clients.</p>
-            <p>L&apos;alignement de communication sert à <strong>remettre de la clarté</strong>, de la cohérence et du sens dans ton positionnement et ton message.</p>
-            <p>On pose <strong>un nouveau cadre, une direction, un message qui percute</strong>, et une énergie qui <strong>reflète enfin qui tu es aujourd&apos;hui</strong> (pas qui tu étais il y a deux ans) et tu vas ainsi attirer à toi les bons clients.</p>
+            <p>Parce qu&apos;à un moment, <strong>ton image n&apos;est plus à la hauteur</strong> de ce que tu es devenu(e)</p>
+            <p>
+            Ton business a évolué, ton expertise aussi... mais ton image est restée bloquée à ta version &apos;debut&apos;. Ton univers visuel ne raconte plus ton niveau.</p>
+            <p><strong>Résultat :</strong> tu inspires la bonne énergie... mais <strong>pas la bonne perception.</strong> Tu te retrouve à convaincre, expliquer, justifier... <strong>alors qu&apos;une image juste ferait le travail à ta place.</strong></p>
+            <p><strong>L&apos;offre rebranding  sert à te redonner un visuel qui dit vrai, qui impressionne sans en faire trop, et qui reflète enfin ta valeur réelle.</strong></p>
+            <p>On repart de <strong>ton essence</strong>, on <strong>clarifie ton positionnement</strong>, on <strong>crée un univers</strong> graphique qui t&apos;incarne et <strong>on construit une image de marque </strong>qui ouvre des portes avant même que tu parles.</p>
           </div>
 
-            <Link href="/contact" className="little-btn-green">Je veux refondre ma communication</Link>
+            <Link href="/contact" className="little-btn-green">Je veux une image à ma hauteur</Link>
       </section>
 
       {/* ── POUR QUI ── */}
       <section className="pour-qui">
 
-            <p className="neon-title">Être accompagné pour refondre sa communication<br /> — Comment savoir si c&apos;est pour moi ?</p>
+            <p className="neon-title">Transformer l&apos;identité de mon entreprise en image de marque <br /> comment savoir si c&apos;est pour moi ?</p>
           <div className="pour-qui-grid">
             {[
-              "Ton activité tourne, mais tu stagnes dans ta visibilité ou tes ventes.",
-              "Tu sais que tu as un vrai potentiel, mais tu n'arrives pas à l'exprimer clairement.",
-              "Tu te sens tiré(e) dans tous les sens : beaucoup d'idées, peu d'axes clairs.",
-              "Tu communiques déjà, mais rien n'est vraiment cohérent (ou attractif).",
-              "Tu veux monter en gamme sans refaire un branding complet (pas encore).",
-              "Tu veux une stratégie claire, structurée et une direction à suivre, simple et efficace.",
+              "Tu sens que tu pourrais viser plus haut... si seulement ça se voyait.",
+              "Ton identité actuelle te bloque clairement dans ta croissance.",
+              "Tu veux une image prenium, cohérente, signature et arrêter de bricoler.",
+              "Tu as changé d'ambition, de direction, de posture.",
+              "Tes clients idéaux ne te remarquent pas ou ne voient pas ton plein potentiel.",
+              "Tu veux une stratégie + design travaillent ensemble, au milimètre près.",
             ].map((t, i) => <div key={i} className="pour-qui-card">{t}</div>)}
           </div>
+          <p className='Give-texte'>Si tu veux que ton image devienne un accélérateur c&apos;est la bonne offre.</p>
       </section>
 
       {/* ── NOTRE FORCE ── */}
       <section className="methode">
         <div className='methode-content'>
-          <p>On a accompagné plusieurs entrepreneurs pour savoir aujourd&apos;hui reconnaître ce qui fait décoller une communication… et ce qui la bloque.</p>
+          <p>On a accompagné plusieurs entreprise dans la refonte de leurs images ce qui nous permet de savoir aujourd&apos;hui comment transformer une entreprise en marque, comment aller plus loin grâce au design et précisément dans l&apos;identité visuelle.</p>
           <p>Notre force c&apos;est la finesse du regard. <strong>On identifie les angles morts, les incohérences et les leviers cachés qu&apos;on ne voit pas quand on a &apos;la tête dans son business&apos;.</strong></p>
           <p>Ce qui fait la différence chez nous, c&apos;est la double vision : stratégie + design.</p>
           <p className="methode-bold">Une méthode qui te permet d&apos;avancer avec plus de clarté, plus d&apos;impact et une image qui travaille enfin pour toi.</p>
@@ -99,7 +99,7 @@ export default function ComPage() {
 
   <p className="neon-title">
     Comment se passe un accompagnement chez <br />
-    Tremplin — sur l&apos;offre alignement ?
+    Tremplin — sur l&apos;offre rebranding ?
   </p>
 
   <div className='process-content'>
@@ -117,11 +117,11 @@ export default function ComPage() {
               <p>Cet audit comprend : un entretien, l&apos;analyse de ton parcours client, de tes chiffres, de ta présence en ligne et de la concurrence.</p>
               <p>On va chercher à identifier clairement :</p>
               <ul>
-                <li>les axes forts,</li>
+                <li>tes points forts,</li>
                 <li>les axes d&apos;amélioration,</li>
                 <li>les urgences à corriger.</li>
               </ul>
-              <p>Ce retour se fait en RDV.</p>
+              <p>Objectif : comprendre pourquoi ton image ne reflète plus ton expertise - et ce qu&apos;il faut transfomer pour viser plus haut.</p>
             </div>
           </div>
         </div>
@@ -129,11 +129,17 @@ export default function ComPage() {
         <div className="step-block">
           <div className="step-num">3</div>
           <div className="step-content">
-            <p className="step-title">On définit ton univers visuel</p>
+            <p className="step-title">Créer ton image signature</p>
             <div className="step-body">
-              <p>À partir de ton identité actuelle, on construit un univers graphique affirmé, solide et aligné avec ta personnalité.</p>
-              <p>Un questionnaire nous permet de comprendre qui tu es et de traduire ça en image.</p>
-              <p>Résultat : une base visuelle claire pour toutes tes futures communications.</p>
+              <p>À partir de ton repositionnement, Fabrice, graphiste, conçoit une identité visuelle 100% sur-mesure :</p>
+              <p>- logo + variations,<br />
+              - palette couleurs,<br />
+              - typographies,<br />
+              - univers graphique,<br />
+              - premiers visuels réseaux,<br />
+              - mini charte d&apos;utilisation,<br /></p>
+              <p>On co-créer avec toi : questionnaire émotionnel, retours guidés, ajustements...</p>
+              <p>Objectif : créer une image qui te ressemble vraiment et qui pote ton niveau d&apos;expertise.</p>
             </div>
           </div>
         </div>
@@ -141,16 +147,23 @@ export default function ComPage() {
         <div className="step-block">
           <div className="step-num">5</div>
           <div className="step-content">
-            <p className="step-title">Test, supervision & ajustements</p>
+            <p className="step-title">Test, supervision, ajustements & livraison finale</p>
             <div className="step-body">
               <p>On gère tes réseaux pendant 4 semaines : on teste, on mesure, on ajuste.</p>
               <p>Pendant ce temps :</p>
               <ul>
-                <li>on crée ton tableau de bord de communication personnalisé,</li>
+                <li>on crée ton tableau de bord personnalisé,</li>
                 <li>on t&apos;installe des outils simples et efficaces,</li>
                 <li>on te forme pour reprendre ta communication sereinement.</li>
               </ul>
             </div>
+            <p>En fin d&apos;accompagnement, tu reçois :</p>
+            <p>- ton Brand Book complet,<br />
+              - tous les fichiers sources,<br />
+              - les règles d&apos;utilisation,<br />
+              - les déclinaisons nécessaires,<br />
+              - ton plan d&apos;action court terme.<br /></p>
+              <p>Ces éléments te permettent d&apos;utiliser ta nouvelle image en autonomie totale, sans perte de cohérence</p>
           </div>
         </div>
 
@@ -183,7 +196,8 @@ export default function ComPage() {
                 <li>ton nouvel univers graphique,</li>
                 <li>tes objectifs.</li>
               </ul>
-              <p>Tu remplis un court questionnaire et on crée pour toi un calendrier éditorial d&apos;un mois pour lancer la nouvelle communication.</p>
+              <p>On créé des visuels qui correspondent à ta nouvelle identité. Au delà des mots on te reconnaitra par l&apos;apparence et le design.</p>
+              <p>Et afin qu&apos;on puisse te porposer un calendrier de contenu qui suive tes exigences, tes demandes et tes attentes, tu remplis un court questionnaire et on crée pour toi un calendrier éditorial d&apos;un mois pour lancer ta nouvelle communication.</p>
             </div>
           </div>
         </div>
@@ -205,7 +219,7 @@ export default function ComPage() {
   </div>
 
   <p className='process-texte-bottom'>
-    L&apos;accompagnement dure environ 14 semaines.<br />
+    L&apos;accompagnement dure environ 16 semaines.<br />
     Il dépend de nos plannings respectifs. Cette durée est la moyenne <br /> relevée sur nos accompagnements précédents.
   </p>
 
@@ -272,8 +286,8 @@ export default function ComPage() {
           <div className="temoignage-grid">
         
             {[
-              { activite: 'Salon de coiffure', probleme: "Peur de se spécialisé dans son domaine d'expertise", prenom: 'Aurélie' },
-              { activite: 'Conseil en image', probleme: "Ne réalise pas qu'elle incarne son entreprise et est le meilleure atout de sa boutique", prenom: 'Marie' },
+              { activite: 'Fascialiste', probleme: "Peur de se spécialisé dans son domaine d'expertise", prenom: 'Aurélie' },
+              { activite: 'Boutique de prêt à porter féminin', probleme: "Ne réalise pas qu'elle incarne son entreprise et est le meilleure atout de sa boutique", prenom: 'Marie' },
             ].map((t, i) => (
               <div key={i} className="temoignage-card">
                 <div className="temoignage-tags">

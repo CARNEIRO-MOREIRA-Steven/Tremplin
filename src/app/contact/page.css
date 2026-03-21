@@ -1,0 +1,10 @@
+.form-container{
+    background-color: #B64F98;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-container h1{
+    color: #000;
+}
