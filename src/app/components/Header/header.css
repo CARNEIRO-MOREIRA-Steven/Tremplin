@@ -49,14 +49,17 @@ header img{
 }
 
 @media screen and (max-width : 767px){
+  header{
+    width: 150px;
+  }
     header img{
-        width: 150px;
+        width: 100px;
     }
     .nav{
         height: auto;
         width: 100%;
     }
     .nav.open{
-        padding: 98px 0 0 0;
+        padding: 78px 0 0 0;
     }
 }

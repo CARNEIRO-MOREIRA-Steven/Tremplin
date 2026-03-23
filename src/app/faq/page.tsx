@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import './page.css';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 const FAQ_ITEMS = [
   { q: "EST-CE QUE VOTRE AGENCE EST FAITE POUR MOI ?", a: "Tremplin est fait pour toi si tu sais que tu as de la valeur, mais que ta communication ne la montre pas encore. Si tu manques de clarté, de cohérence ou de confiance dans ton message, tu es au bon endroit." },
@@ -39,38 +41,25 @@ export default function FAQPage() {
 
       {/* ── HERO ── */}
       <section className="hero">
-        <div className="wrap">
-          <div className="hero-top">
-            <div className="logo-pill"><span className="menu">menu</span> Tremplin</div>
-          </div>
-          <h1 className="hero-title">La foire à questions</h1>
-        </div>
+          <Header />
+          <h1 className="hero-title texte-give">La foire à questions</h1>
       </section>
 
       {/* ── FAQ ── */}
       <section className="faq-main">
-        <div className="wrap">
           <ul className="faq-list">
             {FAQ_ITEMS.map(item => <FaqItem key={item.q} q={item.q} a={item.a} />)}
           </ul>
-
-          <div className="faq-footer">
-            <Link href="/contact" className="faq-btn">JE ME LANCE</Link>
-            <p className="faq-link">ENVOI VERS NOTRE PAGE <a href="/contact">Contact</a></p>
-          </div>
-        </div>
       </section>
 
+      <section className="cta-final">
+            <Link href="/contact" className="btn-main btn-pink">
+              JE ME LANCE
+            </Link>
+      </section>
+      
       {/* ── FOOTER ── */}
-      <footer className="page-footer">
-        <div className="wrap">
-          <p>Tremplin – Agence de communication hybride et agence de branding à Saint-Quentin (02) dans les Hauts-de-France.</p>
-          <div className="footer-inner">
-            <div className="footer-left">Tremplin-entreprendre est au service des entrepreneurs. Révélateurs de puissances invisibles, nous allons stratégie, création et coaching pour propulser ton business grâce à la communication.</div>
-            <div className="footer-right">Reprendre les éléments du menu + ajouter les coordonnées + les réseaux + les éléments légaux</div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
     </div>
   );
