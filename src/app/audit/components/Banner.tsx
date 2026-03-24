@@ -13,7 +13,7 @@ const Banner = () => {
 
         <div className="wrap">
           <img src={ImageAudit.src} alt="Audit de communication" className='audit-image-hero' />
-          <h1 className="title">
+          <h1>
             Faire un audit<br />de communication
           </h1>
 

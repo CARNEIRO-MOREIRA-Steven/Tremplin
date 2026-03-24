@@ -78,7 +78,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <button className='white-btn' type='submit'>J&apos;envoie ma demande</button>
+            <button className='little-btn-white' type='submit'>J&apos;envoie ma demande</button>
           </form>
         </section>
         <aside>

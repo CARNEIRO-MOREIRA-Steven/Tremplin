@@ -42,7 +42,7 @@ export default function FAQPage() {
       {/* ── HERO ── */}
       <section className="hero">
           <Header />
-          <h1 className="hero-title texte-give">La foire à questions</h1>
+          <h1 className="texte-give">La foire à questions</h1>
       </section>
 
       {/* ── FAQ ── */}
@@ -52,10 +52,8 @@ export default function FAQPage() {
           </ul>
       </section>
 
-      <section className="cta-final">
-            <Link href="/contact" className="btn-main btn-pink">
-              JE ME LANCE
-            </Link>
+      <section className='final-cta'>        
+        <Link href="/contact" className="little-btn-pink">Je me lance</Link>
       </section>
       
       {/* ── FOOTER ── */}

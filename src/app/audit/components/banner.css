@@ -10,7 +10,7 @@
 
 .banner-container h1{
     text-align: center;
-    margin-bottom: 50px;
+    padding: 50px;
 }
 
 .banner-container img{
@@ -35,4 +35,17 @@
 }
 .hero-analyse{
     padding: 50px;
+}
+@media (max-width : 768px) {
+    .hero-tu-te-demandes, .hero-analyse{
+        padding: 20px;
+        gap: 20px;
+    }
+    .banner-container h1{
+        word-wrap: break-word;
+        padding: 20px;
+    }
+    .hero-analyse{
+        width: auto;
+    }
 }

@@ -72,3 +72,27 @@
 .hero{
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .banner-container{
+    padding: 20px;
+    gap: 20px;
+  }
+  .banner-container h2{
+    text-align: center;
+  }
+  .hero-details{
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .hero-div-details{
+    width: 100%;
+  }
+  .hero-div-image{
+    position: initial;
+  }
+  .final-cta{
+  padding: 20px;
+}
+}

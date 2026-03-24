@@ -130,9 +130,9 @@ export default function AccompagnementsPage() {
             monter une communication<br />
             qui attire des clients.
           </h1>
-          <p className="hero-subtitle">
+          <h2 className="hero-subtitle">
             <span>Chaque accompagnement</span> = une étape à ton prochain niveau
-          </p>
+          </h2>
           <div className="hero-desc">
             <p><strong>3 niveaux pour propulser ton entreprise vers sa pleine puissance.</strong><br /></p>
             <p>Que tu souhaites relancer ta communication, que tu aies besoin d&apos;un nouveau souffle, <br /> de
@@ -269,7 +269,7 @@ export default function AccompagnementsPage() {
       {/* ── CTA FINAL ── */}
       <section className="cta-final">
           <p className='subtitle'>T&apos;es intéressé(e) par une de ces offres ?</p>
-          <Link href="/agence#process" className="cta-final-title">Voilà comment ça se passe</Link>
+          <Link href="/agence#process" className="little-btn-white">Voilà comment ça se passe</Link>
       </section>
 
       {/* ── FOOTER ── */}

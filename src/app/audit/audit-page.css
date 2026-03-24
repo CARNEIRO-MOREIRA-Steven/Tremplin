@@ -67,7 +67,6 @@
 
 .hero-analyse{
   width: 980px;
-  font-size: 25px;
   text-align: center;
 }
 
@@ -549,4 +548,33 @@
   background-color: #3FB3E5;
   padding: 50px;
   color: #000;
+}
+.final-cta{
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+@media (max-width : 768px) {
+  .promise, .promise-intro{
+    padding: 20px;
+    width: auto;
+  }
+  .final-cta{
+  padding: 20px;
+}
+.wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.promise-grid{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 20px;
+}
+.promise-content{
+  width: 100%;
+}
 }

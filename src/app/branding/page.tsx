@@ -352,8 +352,8 @@ export default function ComPage() {
             ))}
           </ul>
           <div className="faq-footer">
-            <Link href="/contact" className="faq-footer-btn">
-              J&apos;AI D&apos;AUTRES QUESTIONS
+            <Link href="/contact" className="little-btn-black">
+              J&apos;ai d&apos;autres questions
             </Link>
           </div>
         </div>
@@ -361,7 +361,7 @@ export default function ComPage() {
 
       {/* ── CTA FINAL ── */}
       <section className='final-cta'>        
-        <Link href="/contact" className="btn-pink">Je me lance</Link>
+        <Link href="/contact" className="little-btn-pink">Je me lance</Link>
       </section>
       
       <Footer />

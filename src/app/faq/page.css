@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 .faq-page {
-  --pink: #e91e8c; --black: #0d0d0d; --dark: #111111; --card: #1a1a1a;
-  --white: #fff; --off: #f0e8e8; --gray: #aaa; --border: rgba(255,255,255,0.08);
   --cyan-bg: #3FB3E3;
   font-family: 'Open Sans', sans-serif; background: var(--cyan-bg); color: var(--black); overflow-x: hidden;
 }
-.faq-page *, .faq-page *::before, .faq-page *::after { box-sizing: border-box; margin: 0; padding: 0; }
-.faq-page ul { list-style: none; }
-
 .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
 
 /* ── HERO ── */
@@ -39,6 +34,11 @@
 .footer-right { color: rgba(255,255,255,0.5); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px; }
 
 @media (max-width: 700px) { .footer-inner { grid-template-columns: 1fr; } }
+
+.faq-page h1{
+  text-align: center;
+  color: #000;
+}
 
 
 .faq {
@@ -131,12 +131,24 @@
   flex-direction: column;
 }
 
-.cta-final {
+.final-cta{
   padding: 50px;
-  border-top: 1px solid var(--border);
-  text-align: center;
+  display: flex;
+  justify-content: center;
   background-color: #000;
 }
 .btn-main{
   padding: 10px 50px;
+}
+
+@media (max-width : 768px){
+  .hero{
+    padding: 20px 0 0 0;
+  }
+  .faq-main{
+    padding: 20px;
+  }
+.final-cta{
+  padding: 20px;
+}
 }

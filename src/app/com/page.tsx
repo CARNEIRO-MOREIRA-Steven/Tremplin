@@ -204,6 +204,96 @@ export default function ComPage() {
     </div>
   </div>
 
+<div className="process-grid-mobile">
+
+        <div className="step-block">
+          <div className="step-num">1</div>
+          <div className="step-content">
+            <p className="step-title">Audit complet</p>
+            <div className="step-body">
+              <p>À cette étape on va chercher à comprendre ce qui bloque (et ce qui fonctionne déjà).</p>
+              <p>Cet audit comprend : un entretien, l&apos;analyse de ton parcours client, de tes chiffres, de ta présence en ligne et de la concurrence.</p>
+              <p>On va chercher à identifier clairement :</p>
+              <ul>
+                <li>les axes forts,</li>
+                <li>les axes d&apos;amélioration,</li>
+                <li>les urgences à corriger.</li>
+              </ul>
+              <p>Ce retour se fait en RDV.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="step-block">
+          <div className="step-num">2</div>
+          <div className="step-content">
+            <p className="step-title">Stratégie de communication</p>
+            <div className="step-body">
+              <p>On clarifie tes objectifs et on t&apos;aide à faire les bons choix.</p>
+              <p>Tu prends des décisions éclairées grâce à nos conseils simples et concrets.</p>
+              <p>On explore toutes les options stratégiques : présence en ligne, événementiel, promotion, lancement, prospection… selon ce qui sera vraiment ton activité.</p>
+              <p>Tu repars avec un carnet PDF de stratégie de marque, c&apos;est à dire qui tu es, à qui tu parles, ce qui te rend unique, comment tu veux te montrer, ce que tu veux dire + un plan d&apos;action pour mettre en place cette stratégie.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="step-block">
+          <div className="step-num">3</div>
+          <div className="step-content">
+            <p className="step-title">On définit ton univers visuel</p>
+            <div className="step-body">
+              <p>À partir de ton identité actuelle, on construit un univers graphique affirmé, solide et aligné avec ta personnalité.</p>
+              <p>Un questionnaire nous permet de comprendre qui tu es et de traduire ça en image.</p>
+              <p>Résultat : une base visuelle claire pour toutes tes futures communications.</p>
+            </div>
+          </div>
+        </div>
+
+                <div className="step-block">
+          <div className="step-num">4</div>
+          <div className="step-content">
+            <p className="step-title">Refonte complète de ta communication</p>
+            <div className="step-body">
+              <p>On réorganise toute ta communication autour de :</p>
+              <ul>
+                <li>la stratégie validée,</li>
+                <li>ton nouvel univers graphique,</li>
+                <li>tes objectifs.</li>
+              </ul>
+              <p>Tu remplis un court questionnaire et on crée pour toi un calendrier éditorial d&apos;un mois pour lancer la nouvelle communication.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="step-block">
+          <div className="step-num">5</div>
+          <div className="step-content">
+            <p className="step-title">Test, supervision & ajustements</p>
+            <div className="step-body">
+              <p>On gère tes réseaux pendant 4 semaines : on teste, on mesure, on ajuste.</p>
+              <p>Pendant ce temps :</p>
+              <ul>
+                <li>on crée ton tableau de bord de communication personnalisé,</li>
+                <li>on t&apos;installe des outils simples et efficaces,</li>
+                <li>on te forme pour reprendre ta communication sereinement.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="step-block">
+          <div className="step-num">6</div>
+          <div className="step-content">
+            <p className="step-title">Suivi illimité : tu n&apos;es jamais seul(e)</p>
+            <div className="step-body">
+              <p>Après un dernier bilan pour clôturer ton parcours, tu gardes un accès illimité à nos conseils, ajustements, retours et soutien.</p>
+              <p>Le but : que tu deviennes totalement autonome tout en étant rassuré(e).</p>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
   <p className='process-texte-bottom'>
     L&apos;accompagnement dure environ 14 semaines.<br />
     Il dépend de nos plannings respectifs. Cette durée est la moyenne <br /> relevée sur nos accompagnements précédents.
@@ -236,7 +326,7 @@ export default function ComPage() {
             </div>
         </div>
         <p className='texte-give'>Sinon tu peux directement booker ton appel téléphonique pour discuter de ton projet.</p>
-        <a className='btn-pink' href="./">Parler de mon projet</a>
+        <a className='little-btn-pink' href="./">Parler de mon projet</a>
     </section>
 
       <section className="inclus" >
@@ -338,8 +428,8 @@ export default function ComPage() {
             ))}
           </ul>
           <div className="faq-footer">
-            <Link href="/contact" className="faq-footer-btn">
-              J&apos;AI D&apos;AUTRES QUESTIONS
+            <Link href="/contact" className="little-btn-black">
+              J&apos;ai d&apos;autres questions
             </Link>
           </div>
         </div>
@@ -347,7 +437,7 @@ export default function ComPage() {
 
       {/* ── CTA FINAL ── */}
       <section className='final-cta'>        
-        <Link href="/contact" className="btn-pink">Je me lance</Link>
+        <Link href="/contact" className="little-btn-pink">Je me lance</Link>
       </section>
       
       <Footer />

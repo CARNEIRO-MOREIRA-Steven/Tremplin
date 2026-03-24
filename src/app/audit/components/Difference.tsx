@@ -4,7 +4,6 @@ import './difference.css'
 const Difference = () => {
   return (
     <section className="difference">
-        <div className="wrap-wide">
           <div className="difference-title">
             <h2 className="section-title">
               Pourquoi cet audit de communication est différent de ce que<br />
@@ -23,7 +22,6 @@ const Difference = () => {
               </div>
             ))}
           </div>
-        </div>
       </section>
   )
 }

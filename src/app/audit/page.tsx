@@ -90,8 +90,8 @@ export default function AuditPage() {
           </ul>
 
           <div className="faq-footer">
-            <Link href="/contact" className="faq-footer-btn">
-              J&apos;AI D&apos;AUTRES QUESTIONS
+            <Link href="/contact" className="little-btn-black">
+              J&apos;ai d&apos;autres questions
             </Link>
           </div>
 
@@ -102,10 +102,8 @@ export default function AuditPage() {
       {/* ══════════════════════════════════════════════════════
           SECTION 7 — CTA FINAL + JE ME LANCE
       ══════════════════════════════════════════════════════ */}
-      <section className="cta-final">
-            <Link href="/contact" className="btn-main btn-pink">
-              JE ME LANCE
-            </Link>
+      <section className='final-cta'>        
+        <Link href="/contact" className="little-btn-pink">Je me lance</Link>
       </section>
 
         <Footer />

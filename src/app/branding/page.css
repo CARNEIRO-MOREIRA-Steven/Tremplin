@@ -664,3 +664,72 @@ color: #000;
   display: flex;
   justify-content: center;
 }
+
+
+@media (max-width: 768px) {
+  .refonte, .pour-qui, .methode, .process, .start-projet, .inclus, .temoignages, .resultats-container, .resultats-container aside, .duree-container, .duree-container aside, .faq, .final-cta{
+    padding: 20px;
+    gap: 20px;
+  }
+  .green-btns{
+    width: auto;
+  }
+  .green-btn{
+    padding: 15px;
+  }
+  .pour-qui-grid, .start-projet-details, .temoignage-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .methode-content, .inclus-container, .temoignage-container{
+    width: 100%;
+  }
+  .inclus-container, .temoignage-container, .pourquoi-body, .start-projet-details, .temoignage-grid, .resultats, .duree{
+    gap: 20px;
+  }
+  .start-projet-details{
+    padding: 0;
+  }
+  .process-grid{
+    display: none;
+  }
+  .process-grid-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .step-block{
+    padding: 20px;
+  }
+  .start-projet-details aside{
+    width: auto;
+  }
+  .start-projet-details div{
+    width: 70%;
+  }
+  .start-projet-details img{
+    width: 100%;
+  }
+  .start-projet .texte-give{
+    text-align: center;
+  }
+  .inclus-grid, .temoignage-grid{
+    display: flex;
+    flex-direction: column;
+  }
+  .inclus-card-title{
+    height: auto;
+  }
+  .temoignage-card{
+    width: 100%;
+  }
+  .resultats, .duree{
+    padding: 20px 0;
+  }
+  .resultats .neon-title, .duree .neon-title{
+    margin: 0 20px;
+  }
+  .faq-title{
+    margin-bottom: 20px;
+  }
+}

@@ -9,7 +9,6 @@ const AccessAudit = () => {
 
   return (
      <section className="social-proof">
-        <div className="wrap">
 
 
           <div className="proof-labels">
@@ -36,11 +35,10 @@ const AccessAudit = () => {
           </div>
           </div>
 
-            <Link href="/contact" className="btn-white">
+            <Link href="/contact" className="little-btn-white">
               Je réserve mon audit maintenant
             </Link>
 
-        </div>
       </section>
   )
 }

@@ -83,7 +83,7 @@ const ContentAudit = () => {
                 <p className="audit-bonus-title">Bonus : Boîte à outils personnalisée</p>
               </div>
 
-                <Link href="/contact" className="little-btn">
+                <Link href="/contact" className="little-btn-white">
                   Je réserve mon audit express
                 </Link>
 

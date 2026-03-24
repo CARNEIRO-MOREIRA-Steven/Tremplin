@@ -12,10 +12,10 @@ const Banner = () => {
     <section className='banner-container'>
 
           <img src={Alignement.src} alt="refonte de communication et création d'une stratégie de communication." className='audit-image-hero' />
-          <h1 className="title">
+          <h1>
             Réalignement de com&apos;
           </h1>
-          <h2 className="hero-subtitle">
+          <h2>
             <strong>Clarifier</strong> ton positionnement et <strong>harmoniser</strong><br /> ta communication pour <strong>attirer</strong> les bons clients
           </h2>
 
