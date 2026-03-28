@@ -16,20 +16,21 @@ header img{
   top: 0;
   height: auto;
   right: 0;
-  background: #000;
+  background: #00000085;
   width: 200px;
   transform: translateY(-20px);
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 0 0 20px 0;
 }
 
 .nav.open {
   transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
-  padding: 130px 0 0 0;
+  padding: 150px 0 0 0;
 }
 
 .nav ul {
@@ -49,9 +50,9 @@ header img{
 }
 
 @media screen and (max-width : 767px){
-  header{
-    width: 150px;
-  }
+    header{
+      width: 150px;
+    }
     header img{
         width: 100px;
     }

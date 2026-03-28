@@ -163,6 +163,10 @@ p{
     box-shadow: 0 0 6px #B64F98, 0 0 12px #B64F98, 0 0 24px #B64F98;
     text-shadow: 0 0 3px #B64F98, 0 0 6px #B64F98, 0 0 48px #B64F98;
 }
+.texte-neon{
+  color: #c67ab1;
+  text-shadow: 0 0 3px #B64F98, 0 0 6px #B64F98, 0 0 48px #B64F98;
+}
 .little-btn-green{
   border: #568C52 1px solid;
   padding: 10px 30px;
@@ -171,6 +175,8 @@ p{
   color: #568C52;
   font-size: 20px;
   width: fit-content;
+  text-transform: initial;
+
 }
 .little-btn-blue{
   border: #3FB3E3 1px solid;
@@ -180,6 +186,8 @@ p{
   color: #3FB3E3;
   font-size: 20px;
   width: fit-content;
+  text-transform: initial;
+
 }
 .little-btn-pink{
   border: #B64F98 1px solid;
@@ -189,6 +197,8 @@ p{
   color: #B64F98;
   font-size: 20px;
   width: fit-content;
+  text-transform: initial;
+
 }
 .little-btn-black{
   border: #000 1px solid;
@@ -198,6 +208,8 @@ p{
   color: #000;
   font-size: 20px;
   width: fit-content;
+  text-transform: initial;
+
 }
 .little-btn-white{
   border: #fff 1px solid;
@@ -208,6 +220,7 @@ p{
   font-size: 20px;
   background-color: transparent;
   width: fit-content;
+  text-transform: initial;
 }
 .texte-uppercase{
   text-transform: uppercase;

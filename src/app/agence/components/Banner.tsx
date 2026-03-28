@@ -31,8 +31,8 @@ const Banner = () => {
                 <aside>
                     <p>Nous serons tes meilleurs alliés pour <strong>reprendre les bases de ta communication</strong> et passer au niveau supérieur.</p>
                     <p>Grâce à un discours clair et une image alignée, ton audience te fait enfin confiance. Fini de courir après les clients : <strong>ta communication travaille pour toi</strong></p>
-                    <p>Ici, pas de recettes toutes faites, pas de jargon marketing, pas de solutions hots-sol. Juste du sens, de l&apos;humain et une vision stratégique long terme pour construire une marque solide.</p>
-                    <p>Sur cette page, tu découvriras qui nous sommes, comment on travaille et <strong>comment on peut t&apos; à construire une communication qui te ressemble - et qui vend.</strong></p>
+                    <p>Ici, pas de recettes toutes faites, pas de jargon marketing, pas de solutions hors-sol. Juste du sens, de l&apos;humain et une vision stratégique long terme pour <strong>construire une marque solide.</strong></p>
+                    <p>Sur cette page, tu découvriras qui nous sommes, comment on travaille et <strong>comment on peut t&apos;aider à construire une communication qui te ressemble - et qui vend.</strong></p>
                 </aside>
                 <img src={MarionFabrice.src} alt="" className='banner-marionfabrice'/>
             </div>
@@ -42,12 +42,11 @@ const Banner = () => {
             <div>
             <img src={DefiLogo.src} alt="" />
             <img src={LogoCasamance.src} alt="" />
-            <img src={DressingLogo.src} alt="" />
             <img src={LeveilDesSensLogo.src} alt="" />
             <img src={SalonIntuitionLogo.src} alt="" />
+            <img src={DressingLogo.src} alt="" />
             <img src={BeYouLogo.src} alt="" />
             </div>
-            <a href="./#cas-clients">Découvrir nos cas clients</a>
         </div>
     </section>
   )

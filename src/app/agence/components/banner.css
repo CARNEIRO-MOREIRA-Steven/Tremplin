@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px 50px 50px 50px;
+    padding: 50px;
 }
 .banner-avis{
     display: flex;
@@ -54,7 +54,7 @@
 }
 .banner-logo{
     height: auto;
-    padding: 30px;
+    padding: 50px;
     background-position: top;
     background-image: url('../../../../public/background-blue.png');
     display: flex;
@@ -73,6 +73,10 @@
     width: 150px;
     gap: auto;
     object-fit: contain;
+}
+.banner-logo img:hover{
+    transform : scale(1.2);
+    transition: 0.5s;
 }
 .banner-image{
     width: 30px;

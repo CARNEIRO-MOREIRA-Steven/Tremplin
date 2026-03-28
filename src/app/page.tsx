@@ -8,6 +8,7 @@ import Services from "./components/Services/Services";
 import About from "./components/About/About";
 import ListServices from "./components/ListServices/ListServices";
 import ReviewsClient from "./components/Reviews/ReviewsClient";
+import Modal from "./components/Modal/Modal";
 import AboutAgence from "./components/AtoutTremplin/AtoutTremplin";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -17,7 +18,7 @@ import SmileIcon from '../../public/smile-icon.png'
 
 export default function Home() {
   return (
-    <LoaderVideo>
+    // <LoaderVideo>
     <section>
       <Header />
       <Banner />
@@ -27,11 +28,14 @@ export default function Home() {
       <Services />
       <About />
       <ListServices />
+      <Modal 
+      title = {<> <h2 className='neon-title'>Ils ont travaillés avec nous</h2> <br /><h3 className="modal-subtitle">100% de nos clients satisfaits</h3> </>}
+      />
       <ReviewsClient 
-      title = 'Tu peux te projeter, ou écouter ce qui sont déjà passé par la.'
+      title = 'Tu peux te projeter, ou lire ceux qui sont déjà passés par la.'
       subtitle = {
       <>
-        Voici ce qu&apos;ils ont vécu, <img className="icon-smile" src={SmileIcon.src} /> et ce que <br /> tremplin a changé pour eux
+        Voici ce que nos clients ont vécu, <img className="icon-smile" src={SmileIcon.src} /> et ce <br /> que l&apos;agence tremplin a changé pour eux
       </>
       } 
       details = '100% des clients sont conquis'
@@ -42,6 +46,6 @@ export default function Home() {
       <AboutAgence />
       <Footer /> 
    </section>
-   </LoaderVideo>
+  //  </LoaderVideo>
   );
 }

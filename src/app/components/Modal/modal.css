@@ -1,0 +1,18 @@
+.satisfaction-title{
+    padding: 50px 50px 0 50px;
+}
+.modal-subtitle{
+    font-size: 20px;
+    text-align: center;
+}
+.modal-cta{
+    text-align: end;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'OpenSans';
+    font-size: 20px;
+    padding: 0 50px 50px 50px;
+    align-items: center;
+    gap: 25px;
+    }

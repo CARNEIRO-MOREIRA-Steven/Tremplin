@@ -1,7 +1,7 @@
 .banner-container {
     width: auto;
     position: relative;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -10,7 +10,6 @@
     background-color: #000000;
 }
 .banner-top{
-    height: 5vh;
     width: 100%;
     text-align: center;
     padding: 0px;
@@ -23,12 +22,11 @@
 }
 .banner-image {
     width: 100%;
-    height: 65vh;
+    height: 500px;
     object-fit: cover;
 }
 .banner-section-texte{
     width: 900px;
-    height: 30vh;
     display: flex;
     position: relative;
     right: 0;
@@ -43,7 +41,7 @@
     
 }
 .decoration-banner {
-    position: absolute;
+    /* position: absolute; */
     width: 105%;
     z-index: 1;
     height: 20vh;
@@ -54,7 +52,7 @@
     z-index: 1;
 }
 .banner-section-title {
-    position: absolute;
+    /* position: absolute; */
     bottom: 7%;
     text-align: center;
     width: 110%;
@@ -99,6 +97,17 @@
     border: solid 1px;
     padding: 5px 15px;
 }
+.quizz-intro{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+    text-align: center;
+}
 
 /* Responsive styles */
 @media (max-width: 1023px) {
@@ -134,9 +143,6 @@
 }
 
 @media (max-width: 767px) {
-    .banner-top{
-        height: 10vh;
-    }
     .banner-container {
         height: auto;
         padding-bottom: 0;

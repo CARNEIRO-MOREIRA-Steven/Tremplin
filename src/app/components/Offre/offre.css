@@ -148,3 +148,6 @@
         display: flex; flex-direction: column; gap: 20px;    }
     }
 
+    .problemes{
+        list-style: none;
+    }

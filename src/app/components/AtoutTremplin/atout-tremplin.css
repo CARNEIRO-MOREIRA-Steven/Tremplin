@@ -1,5 +1,6 @@
 .about-agence-container{
-    padding: 30px;
+    padding: 50px;
+    gap: 50px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -14,7 +15,6 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 50px;
 }
 .about-agence-content section{
     display: flex;
@@ -42,7 +42,7 @@
     font-size: 17px;
     text-transform :initial;
 }
-.about-agence-content a{
+/* .about-agence-content a{
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -50,7 +50,7 @@
     border: 1px solid white;
     border-radius: 25px;
     padding: 5px 15px;
-}
+} */
 .about-agence-cta{
     display: grid;
     width: 100%;
@@ -64,6 +64,16 @@
     align-items: flex-start;
     gap: 15px;
     font-size: 30px;
+    font-family: 'Kodchasan';
+}
+.about-agence-cta-left h2{
+    font-family: 'Kodchasan';
+    text-align: start;
+    max-width: 450px;
+}
+.subtitle-atout{
+    text-transform: initial;
+    width: 400px;
 }
 .about-agence-cta-right{
     display: flex;
@@ -73,12 +83,12 @@
     text-transform: initial;
     gap: 10px;
 }
-.about-agence-cta-right a{
+/* .about-agence-cta-right a{
     font-size: 14px;
     border: 1px solid #FFF;
     border-radius: 25px;
     padding: 5px 10px;
-}
+} */
 
 @media screen and (max-width : 767px) {
     .about-agence-container{

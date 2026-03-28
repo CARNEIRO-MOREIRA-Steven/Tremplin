@@ -5,20 +5,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    gap: 50px;
 }
 
 .about-marionfabrice{
-    display: grid;
+    gap: 100px;
+    display: flex;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
 }
 .about-marionfabrice div {
     display: flex;
     height: 100%;
-    width: 350px;
+    width: 400px;
+    gap: 25px;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 .about-marionfabrice .banner-cta{
@@ -36,7 +39,7 @@
     justify-content: space-around;
 }
 .list-services .marionfabrice{
-    height: 400px;
+    height: 450px;
     width: 400px;
     object-fit: cover;
 }
@@ -79,14 +82,19 @@
     margin: 0;
     max-width: 200px;
 }
-.list-services h2{
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    margin: 50px 0 20px 0;
-    text-transform: uppercase;
+
+.satisfaction-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
-.list-services-details{
+.satisfaction-title h3{
+    font-family: 'Kodchasan';
+    text-transform: uppercase;
+
+}
+/* .list-services-details{
     color: white;
     font-size: 20px;
     position: relative;
@@ -96,18 +104,28 @@
     justify-content: space-evenly;
     height: 50vh;
     align-items: center;
+} */
+.list-services-details{
+    background-image: url('../../../../public/background-pink.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh; /* ou ce que tu veux */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    width: 100%;
 }
 .background-services{
     height: 50vh;
-    width: calc(100% + 65px);
+    width: calc(100% + 110px);
     object-fit: cover;
     position: absolute;
 }
 .list-intervention-detail{
-    height: 35vh;
     z-index: 1;
     width: 20%;
-    background-color: #B64E98;
 }
 
 /* NOUVEAU CSS POUR LE CARROUSEL */
@@ -183,11 +201,14 @@
 }
 
 .project-card-content {
-    background: #B64E98;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     height: 100%;
     color: black;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1); /* transparence */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari */
 }
 
 .project-image-container {
@@ -196,8 +217,8 @@
 
 .project-image {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
+    height: 100px;
+    object-fit: contain;
 }
 
 .project-category {
@@ -455,6 +476,7 @@
     font-size: 12px;
     font-weight: 500;
 }
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {

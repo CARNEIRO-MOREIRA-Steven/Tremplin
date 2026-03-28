@@ -128,9 +128,8 @@ const Quizz = () => {
 
   return (
     <section ref={sectionRef} className='quizz-container'>
-      <h2 className='quizz-intro special-title'>Qu&apos;est ce qui t&apos;empêche (encore) de cartonner avec ta com&apos; ?</h2>
       <section className='quizz-section-title'>
-        <h2 className='quizz-title'>FAIS LE QUIZZ <br />
+        <h2 className='quizz-title'>FAIS LE QUIZ <br />
           <span>&quot;QUEL COMMUNIQUANT ES-TU ?&quot;</span>
         </h2>
       </section>
@@ -138,14 +137,14 @@ const Quizz = () => {
         <section className='quizz-details'>
           <div className='quizz-roulette-outer'>
             <ul ref={listRef} className='quizz-personna'>
-              <li className='quizz-visionnaire'>LA VISIONNAIRE</li>
+              <li className='quizz-visionnaire'>LE VISIONNAIRE</li>
               <li className='quizz-authentique'>L&apos;AUTHENTIQUE BRIDÉ.E</li>
               <li className='quizz-multicasquette'>LE MULTICASQUETTE DÉROUTÉ</li>
               <li className='quizz-stratege'>LA STRATÈGE TÉTANISÉE</li>
               <li className='quizz-cameleon'>LE CAMÉLÉON</li>
             </ul>
           </div>
-          <p className='details-background'>UN QUIZZ AUSSI FUN QU&apos;UTILE POUR LEVER LE VOILE SUR TON STYLE... ET TES BLOCAGES INVISIBLES.</p>
+          <p className='details-background'>UN QUIZ AUSSI FUN QU&apos;UTILE POUR LEVER LE VOILE SUR TON STYLE... ET TES BLOCAGES INVISIBLES.</p>
           <ul className='list-details-quizz'>
             <li>10 QUESTIONS</li>
             <li>2 MINUTES</li>
@@ -157,8 +156,8 @@ const Quizz = () => {
         </section>
       </section>
       <h3 className='quizz-resultat'>RÉSULTAT 100% PERSONNALISÉ + DES PISTES CONCRÈTES POUR (RE)PRENDRE LE LEAD</h3>
-      <a className='quizz-button' href="/quizz">Je fais le quizz</a>
-      <img className='banner-green' src={BannerGreen.src} />
+      <a className='little-btn-white' href="/quizz">Je fais le quiz</a>
+      {/* <img className='banner-green' src={BannerGreen.src} /> */}
     </section>
   )
 }

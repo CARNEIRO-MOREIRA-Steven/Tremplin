@@ -17,9 +17,10 @@ const Banner = () => {
           canal d&apos;aquisition : <span>Audit de communication - Stratégie de communication - Création de marque</span>
         </p>
         <div className='banner-cta'>
-          <a > Tu veux bosser avec l&apos;agence </a>
+          <a href='/agence'> Tu veux bosser avec l&apos;agence </a>
           <img src={ArrowRight.src} alt="flèche droite" />
         </div>
+        <h2 className='quizz-intro special-title'>Qu&apos;est ce qui t&apos;empêche (encore) de cartonner avec ta com&apos; ?</h2>
     </section>
     </section>
   )
