@@ -49,3 +49,37 @@
 .agence-details-second-texte{
     padding: 25px 0 0 0;
 }
+.detail-agence{
+    display: flex;
+    flex-direction: column;
+}
+#about-agence-logo{
+    width: 200px;
+    position: initial;
+}
+.about-agence div{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#arrow-blue{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    top: -20px;
+}
+@media (max-width : 1459px) {
+    .about-agence-details aside{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-agence img{
+    width: 400px;
+    position: sticky;
+    top: 25px;
+    height: 100%;
+}
+}

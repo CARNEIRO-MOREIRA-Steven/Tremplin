@@ -18,9 +18,6 @@ const Agence = () => {
     <section>
     <Header />
     <Banner />
-    <Modal 
-    title = { <h2 className='neon-title'>Découvrez nos cas clients</h2>}
-    />
     <About />
     <AgenceDetails />
     <AgenceReview />

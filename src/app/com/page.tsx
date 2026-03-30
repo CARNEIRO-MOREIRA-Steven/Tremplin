@@ -109,7 +109,7 @@ export default function ComPage() {
       <div className="col">
 
         <div className="step-block">
-          <div className="step-num">1</div>
+          <div className="neon-num">1</div>
           <div className="step-content">
             <p className="step-title">Audit complet</p>
             <div className="step-body">
@@ -127,7 +127,7 @@ export default function ComPage() {
         </div>
 
         <div className="step-block">
-          <div className="step-num">3</div>
+          <div className="neon-num">3</div>
           <div className="step-content">
             <p className="step-title">On définit ton univers visuel</p>
             <div className="step-body">
@@ -139,7 +139,7 @@ export default function ComPage() {
         </div>
 
         <div className="step-block">
-          <div className="step-num">5</div>
+          <div className="neon-num">5</div>
           <div className="step-content">
             <p className="step-title">Test, supervision & ajustements</p>
             <div className="step-body">
@@ -160,7 +160,7 @@ export default function ComPage() {
       <div className="col">
 
         <div className="step-block">
-          <div className="step-num">2</div>
+          <div className="neon-num">2</div>
           <div className="step-content">
             <p className="step-title">Stratégie de communication</p>
             <div className="step-body">
@@ -173,7 +173,7 @@ export default function ComPage() {
         </div>
 
         <div className="step-block">
-          <div className="step-num">4</div>
+          <div className="neon-num">4</div>
           <div className="step-content">
             <p className="step-title">Refonte complète de ta communication</p>
             <div className="step-body">
@@ -189,7 +189,7 @@ export default function ComPage() {
         </div>
 
         <div className="step-block">
-          <div className="step-num">6</div>
+          <div className="neon-num">6</div>
           <div className="step-content">
             <p className="step-title">Suivi illimité : tu n&apos;es jamais seul(e)</p>
             <div className="step-body">
@@ -207,7 +207,7 @@ export default function ComPage() {
 <div className="process-grid-mobile">
 
         <div className="step-block">
-          <div className="step-num">1</div>
+          <div className="neon-num">1</div>
           <div className="step-content">
             <p className="step-title">Audit complet</p>
             <div className="step-body">
@@ -225,7 +225,7 @@ export default function ComPage() {
         </div>
 
         <div className="step-block">
-          <div className="step-num">2</div>
+          <div className="neon-num">2</div>
           <div className="step-content">
             <p className="step-title">Stratégie de communication</p>
             <div className="step-body">
@@ -238,7 +238,7 @@ export default function ComPage() {
         </div>
 
         <div className="step-block">
-          <div className="step-num">3</div>
+          <div className="neon-num">3</div>
           <div className="step-content">
             <p className="step-title">On définit ton univers visuel</p>
             <div className="step-body">
@@ -250,7 +250,7 @@ export default function ComPage() {
         </div>
 
                 <div className="step-block">
-          <div className="step-num">4</div>
+          <div className="neon-num">4</div>
           <div className="step-content">
             <p className="step-title">Refonte complète de ta communication</p>
             <div className="step-body">
@@ -266,7 +266,7 @@ export default function ComPage() {
         </div>
 
         <div className="step-block">
-          <div className="step-num">5</div>
+          <div className="neon-num">5</div>
           <div className="step-content">
             <p className="step-title">Test, supervision & ajustements</p>
             <div className="step-body">
@@ -282,7 +282,7 @@ export default function ComPage() {
         </div>
 
         <div className="step-block">
-          <div className="step-num">6</div>
+          <div className="neon-num">6</div>
           <div className="step-content">
             <p className="step-title">Suivi illimité : tu n&apos;es jamais seul(e)</p>
             <div className="step-body">

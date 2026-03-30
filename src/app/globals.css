@@ -117,6 +117,17 @@ p{
   font-family: 'GiveYouGlory', cursive;
   font-size: 25px;
 }
+.container{
+  max-width: 1000px;
+}
+
+svg.lucide{
+    width: 30px;
+    height: 25px;
+    object-fit: contain;
+    vertical-align: text-top;
+    margin-right: 5px;
+}
 
 
 @media (prefers-color-scheme: dark) {
@@ -225,6 +236,15 @@ p{
 }
 .texte-uppercase{
   text-transform: uppercase;
+}
+.neon-num {
+  font-size: 80px;
+  position: absolute;
+  top: -40px;
+  font-weight: 300;
+  left: 16px;
+  font-family: 'JosefinSans';
+  text-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 48px #fff;
 }
 @media (max-width: 768px) {
   h1{

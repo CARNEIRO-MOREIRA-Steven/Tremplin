@@ -31,8 +31,9 @@ const Modal = (props: { title: React.ReactNode }) => {
     setSelectedProject(null);
   };
 
+
   return (
-    <section className='list-services'>
+    <section className='list-services' id='cas-client'>
 
       <section className='satisfaction-title'>
         <h2>{props.title} </h2>
@@ -51,13 +52,10 @@ const Modal = (props: { title: React.ReactNode }) => {
               ref={carouselRef}
               id='cas-clients'
               className="projects-track"
-              style={{
-                transform: `translateX(-${currentIndex * (100 / projectsPerView)}%)`
-              }}
             >
-              {projects.map((project) => (
+                  {[...projects, ...projects].map((project, index) => (                
                 <aside
-                  key={project.id}
+                  key={`${project.id}-${index}`}                  
                   className='list-intervention-detail project-card'
                   onClick={() => openProjectModal(project)}
                 >

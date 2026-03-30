@@ -16,10 +16,7 @@ const Banner = () => {
           Tu peux te faire connaitre grâce à la communication. Et on peut t&apos;apprendre à communiquer sur les réseaux sociaux pour en faire un vrai
           canal d&apos;aquisition : <span>Audit de communication - Stratégie de communication - Création de marque</span>
         </p>
-        <div className='banner-cta'>
-          <a href='/agence'> Tu veux bosser avec l&apos;agence </a>
-          <img src={ArrowRight.src} alt="flèche droite" />
-        </div>
+          <a className='little-btn-white' href='/agence'> Tu veux bosser avec l&apos;agence </a>
         <h2 className='quizz-intro special-title'>Qu&apos;est ce qui t&apos;empêche (encore) de cartonner avec ta com&apos; ?</h2>
     </section>
     </section>

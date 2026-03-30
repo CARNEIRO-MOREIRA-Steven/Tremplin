@@ -47,6 +47,7 @@ const Banner = () => {
             <img src={DressingLogo.src} alt="" />
             <img src={BeYouLogo.src} alt="" />
             </div>
+            <a href="./#cas-client">Découvrez nos cas clients</a>
         </div>
     </section>
   )

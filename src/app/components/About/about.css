@@ -219,6 +219,12 @@
         padding : 20px 10px
 
     }
+    .about-marionfabrice{
+        gap: 25px;
+    }
+    .list-services{
+        padding: 20px 10px;
+    }
     .about-mission-title {
         font-size: 18px;
     }

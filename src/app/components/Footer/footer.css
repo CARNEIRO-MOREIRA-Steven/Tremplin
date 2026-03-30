@@ -46,6 +46,8 @@ footer h2{
 }
 @media (max-width : 768px) {
     footer {
-        padding: 20px;
+        padding: 20px 10px;
     }
+    .footer-grid{
+        grid-template-columns: repeat(1, 1fr);    }
 }

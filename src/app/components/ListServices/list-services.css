@@ -83,17 +83,6 @@
     max-width: 200px;
 }
 
-.satisfaction-title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-}
-.satisfaction-title h3{
-    font-family: 'Kodchasan';
-    text-transform: uppercase;
-
-}
 /* .list-services-details{
     color: white;
     font-size: 20px;
@@ -105,167 +94,7 @@
     height: 50vh;
     align-items: center;
 } */
-.list-services-details{
-    background-image: url('../../../../public/background-pink.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh; /* ou ce que tu veux */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    width: 100%;
-}
-.background-services{
-    height: 50vh;
-    width: calc(100% + 110px);
-    object-fit: cover;
-    position: absolute;
-}
-.list-intervention-detail{
-    z-index: 1;
-    width: 20%;
-}
 
-/* NOUVEAU CSS POUR LE CARROUSEL */
-.carousel-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    background: rgba(255,255,255,0.9);
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-}
-
-.carousel-btn:hover {
-    background: white;
-    transform: translateY(-50%) scale(1.05);
-}
-
-.carousel-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-.carousel-btn-prev {
-    left: 10px;
-    background-color: #B64E98;
-}
-
-.carousel-btn-next {
-    right: 10px;
-    background-color: #B64E98;
-}
-
-.projects-carousel {
-    overflow: hidden;
-    margin: 0 60px;
-    position: relative;
-    z-index: 2;
-    height: 100%;
-}
-
-.projects-track {
-    display: flex;
-    align-items: center;
-    transition: transform 0.5s ease;
-    height: 100%;
-    gap: 10px;
-}
-
-.project-card {
-    flex-shrink: 0;
-    width: 25%;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-card-content {
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    height: 100%;
-    color: black;
-    padding: 25px;
-    background: rgba(255, 255, 255, 0.1); /* transparence */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Safari */
-}
-
-.project-image-container {
-    position: relative;
-}
-
-.project-image {
-    width: 100%;
-    height: 100px;
-    object-fit: contain;
-}
-
-.project-category {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    background: rgba(255,255,255,0.9);
-    padding: 4px 8px;
-    border-radius: 12px;
-    font-size: 10px;
-    font-weight: bold;
-    color: black;
-}
-
-.project-info {
-    padding: 15px;
-}
-
-.project-name {
-    margin: 0 0 8px 0;
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-}
-
-.project-description {
-    margin: 0 0 10px 0;
-    font-size: 12px;
-    color: #666;
-    line-height: 1.4;
-}
-
-.project-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 10px;
-    color: #888;
-}
-
-.project-date {
-    color: #888;
-}
-
-.project-link-icon {
-    color: #888;
-}
 
 /* NOUVEAU CSS POUR LA POPUP */
 .project-modal {
@@ -401,16 +230,14 @@
     }
     .about-marionfabrice{
         width: 100%;
-        grid-template-columns: 1fr;
+        gap: 25px;
+        flex-direction: column;
     }
     .about-marionfabrice .banner-cta {
         margin-top: 10px;
     }
     .about-marionfabrice div { 
         width: 100%;
-    }
-    .list-services{
-        padding : 20px 10px
     }
     .project-card{
         width: 100%;

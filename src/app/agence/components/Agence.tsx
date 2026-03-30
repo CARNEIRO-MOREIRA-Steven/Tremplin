@@ -1,12 +1,24 @@
 import React from 'react'
 import AssociesAgenceImage from '../../../../public/TREMPLIN_POSING_COUPLE-11.jpg'
 import './agence.css'
+import MarionNameNeon from '../../../../public/marion-neon.png'
+import FabriceNameNeon from '../../../../public/fabrice-neon.png'
+
 
 const Agence = () => {
   return (
     <section className='agence-container'>
         <div className='agence-content-image'>
+            <div className='fabrice-name'>
+            <img id='fabrice-name-neon' src={FabriceNameNeon.src} alt="" />
+            <p>Directeur artistique <br />graphiste & illustrateur</p>
+            </div>
+            <div className='marion-name'>
+            <img id='marion-name-neon' src={MarionNameNeon.src} alt="" />
+            <p>Cheffe de la direction stratégie de <br /> communication & consultante design</p>
+            </div>
             <img src={AssociesAgenceImage.src} alt="Equipe de Tremplin poutr vos conseils en communication : une sonsultante en " />
+        
         </div>
         <div className='agence-details'>
             <h2 className='agence-details-first-content'>Une agence, deux associés, une vision commune</h2>

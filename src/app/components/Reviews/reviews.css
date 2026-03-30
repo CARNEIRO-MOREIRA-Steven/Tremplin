@@ -81,7 +81,7 @@
     .reviews-content{
         flex-wrap: wrap;
         height: auto;
-        margin-bottom: 20px;
+        gap: 25px;
 
     }
     .reviews-container{
