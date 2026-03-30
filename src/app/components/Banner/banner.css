@@ -41,12 +41,12 @@
     
 }
 .decoration-banner {
-    /* position: absolute; */
+    position: absolute;
     width: 105%;
     z-index: 1;
     height: 20vh;
     background: #000000;
-    top: 67%;
+    top: 500px;
     rotate: -2deg;
     left: 0;
     z-index: 1;
@@ -148,7 +148,7 @@
         padding-bottom: 0;
     }
     .banner-image {
-        height: 30vh;
+        height: 100%;
     }
     .banner-section-texte {
         flex-direction: column;
@@ -171,7 +171,6 @@
     }
     .decoration-banner {
         height: 10vh;
-        top: 60%;
     }
     .banner-section-title {
         height: 10vh;

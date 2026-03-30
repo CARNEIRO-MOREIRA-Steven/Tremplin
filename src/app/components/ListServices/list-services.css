@@ -309,16 +309,6 @@
     border-radius: 20px 20px 0 0;
 }
 
-.modal-header-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
-    border-radius: 20px 20px 0 0;
-}
-
 .modal-close-btn {
     position: absolute;
     top: 15px;
@@ -366,115 +356,11 @@
     color: white;
 }
 
-.modal-body {
-    padding: 30px;
-}
 
 .modal-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 30px;
-}
-
-.modal-section-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.modal-description {
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.modal-subsection-title {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.modal-results-list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-.modal-result-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 8px;
-}
-
-.modal-result-bullet {
-    width: 6px;
-    height: 6px;
-    background-color: #B64E98;
-    border-radius: 50%;
-    margin-top: 7px;
-    margin-right: 10px;
-    flex-shrink: 0;
-}
-
-.modal-result-item span {
-    color: #555;
-}
-
-.modal-cta-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: linear-gradient(135deg, #B64E98, #9c27b0);
-    color: white;
-    padding: 12px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.modal-cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(182, 78, 152, 0.3);
-}
-
-.modal-info-card {
-    background: #f8f9fa;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.modal-info-title {
-    font-weight: bold;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #333;
-}
-
-.modal-info-text {
-    margin: 0;
-    font-weight: 500;
-    color: #333;
-}
-
-.modal-tech-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.modal-tech-tag {
-    background: linear-gradient(135deg, #fce4ec, #f3e5f5);
-    color: #333;
-    padding: 4px 10px;
-    border-radius: 8px;
-    font-size: 12px;
-    font-weight: 500;
 }
 
 
