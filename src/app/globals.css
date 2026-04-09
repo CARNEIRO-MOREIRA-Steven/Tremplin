@@ -13,7 +13,7 @@
    =============================== */
 @font-face {
   font-family: 'Kodchasan';
-  src: url('/fonts/Kodchasan-Regular.ttf') format('truetype');
+  src: url('/fonts/NegritaPro.ttf') format('truetype');
   font-style: normal;
   font-display: swap;
 }
@@ -23,7 +23,7 @@
    =============================== */
 @font-face {
   font-family: 'JosefinSans';
-  src: url('/fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
+  src: url('/fonts/TAN St. Canard Regular.otf') format('truetype');
   font-style: normal;
   font-display: swap;
 }
@@ -139,8 +139,8 @@ svg.lucide{
   font-family: 'GiveYouGlory';
 }
 .btn-pink{
-  color: #B64F98;
-  border: solid 1px #B64F98;
+  color: #ce82bb;
+  border: solid 1px #ce82bb;
   padding: 10px 50px;
   border-radius: 50px;
   font-size: 25px;
@@ -165,48 +165,48 @@ svg.lucide{
     text-align: center;
     font-family: 'Kodchasan';
     width: fit-content;
-    color: #c67ab1;
+    color: #ce82bb;
     text-transform: uppercase;
     padding: 15px 35px;
     border-radius: 12px;
     font-weight: 200;
     background: rgba(0, 0, 0, 0.7);
-    border: 2px solid #c67ab1;
-    box-shadow: 0 0 6px #B64F98, 0 0 12px #B64F98, 0 0 24px #B64F98;
-    text-shadow: 0 0 3px #B64F98, 0 0 6px #B64F98, 0 0 48px #B64F98;
+    border: 2px solid #ce82bb;
+    box-shadow: 0 0 6px #ce82bb, 0 0 12px #ce82bb, 0 0 24px #ce82bb;
+    text-shadow: 0 0 3px #ce82bb, 0 0 6px #ce82bb, 0 0 48px #ce82bb;
 }
 .texte-neon{
-  color: #c67ab1;
-  text-shadow: 0 0 3px #B64F98, 0 0 6px #B64F98, 0 0 48px #B64F98;
+  color: #ce82bb;
+  text-shadow: 0 0 3px #ce82bb, 0 0 6px #ce82bb, 0 0 48px #ce82bb;
 }
 .little-btn-green{
-  border: #568C52 1px solid;
+  border: #7abd73 1px solid;
   padding: 10px 30px;
   border-radius: 50px;
   font-family: 'Kodchasan';
-  color: #568C52;
+  color: #7abd73;
   font-size: 20px;
   width: fit-content;
   text-transform: initial;
 
 }
 .little-btn-blue{
-  border: #3FB3E3 1px solid;
+  border: #5aceb8 1px solid;
   padding: 10px 30px;
   border-radius: 50px;
   font-family: 'Kodchasan';
-  color: #3FB3E3;
+  color: #5aceb8;
   font-size: 20px;
   width: fit-content;
   text-transform: initial;
 
 }
 .little-btn-pink{
-  border: #B64F98 1px solid;
+  border: #ce82bb 1px solid;
   padding: 10px 30px;
   border-radius: 50px;
   font-family: 'Kodchasan';
-  color: #B64F98;
+  color: #ce82bb;
   font-size: 20px;
   width: fit-content;
   text-transform: initial;

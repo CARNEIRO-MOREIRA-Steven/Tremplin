@@ -156,7 +156,7 @@ const Quizz = () => {
         </section>
       </section>
       <h3 className='quizz-resultat'>RÉSULTAT 100% PERSONNALISÉ + DES PISTES CONCRÈTES POUR (RE)PRENDRE LE LEAD</h3>
-      <a className='little-btn-white' href="/quizz">Je fais le quiz</a>
+      <a className='little-btn-white' href="/quiz">Je fais le quiz</a>
       {/* <img className='banner-green' src={BannerGreen.src} /> */}
     </section>
   )

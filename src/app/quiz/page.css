@@ -1,0 +1,71 @@
+.quiz-page, .result-screen{
+    background-color: #000;
+}
+
+.quiz-wrapper{
+    background-image: url('../../../public/banner-green.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.quiz-container{
+    max-width: 1000px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.result-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.question-counter{
+    font-size: 30px;
+    width: fit-content;
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: #00000070;
+    text-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 48px #fff;
+}
+.answers-list{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.answers-list li{
+    list-style: none;
+    cursor: pointer;
+}
+.little-btn-pink, .little-btn-blue{
+    background-color: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.free-answer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+}
+.free-answer input{
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    border: none;
+}
