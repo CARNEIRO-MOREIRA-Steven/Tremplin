@@ -53,13 +53,14 @@ export async function POST(req: NextRequest) {
       printBackground: true,
     });
 
-    return new NextResponse(pdfBuffer, {
-      headers: {
-        "Content-Type": "application/pdf",
-        "Content-Disposition":
-          'attachment; filename="profil.pdf"',
-      },
-    });
+    const buffer = Buffer.from(pdfBuffer);
+
+return new NextResponse(buffer, {
+  headers: {
+    "Content-Type": "application/pdf",
+    "Content-Disposition": 'attachment; filename="profil.pdf"',
+  },
+});
   } catch (err: any) {
     console.error("🔥 PDF ERROR:", err);
 
