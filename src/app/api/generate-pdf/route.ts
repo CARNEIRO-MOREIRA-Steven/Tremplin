@@ -54,6 +54,7 @@ export async function POST(req: NextRequest) {
     });
 
     const buffer = Buffer.from(pdfBuffer);
+    
 
 return new NextResponse(buffer, {
   headers: {
