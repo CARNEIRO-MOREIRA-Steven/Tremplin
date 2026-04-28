@@ -63,7 +63,6 @@ body {
 body {
   color: #FFFFFF;
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -80,7 +79,7 @@ h1, h2, h3, h4{
 
 p,a,ul,li{
   color: #ffffff;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', sans-serif;
 }
 
 a {
@@ -99,7 +98,7 @@ h1{
 }
 
 h2{
-  font-family: 'OpenSans';
+  font-family: 'Gill Sans', sans-serif;
   font-weight: 400;
   font-size: 30px;
 }
@@ -109,7 +108,7 @@ h3 {
 }
 
 p{
-  font-family: 'OpenSans';
+  font-family: 'Gill Sans', sans-serif;
   font-size: 18px;
 }
 
@@ -144,7 +143,7 @@ svg.lucide{
   padding: 10px 50px;
   border-radius: 50px;
   font-size: 25px;
-  font-family: 'Kodchasan';
+  font-family: 'Gill Sans', sans-serif;
   text-transform: uppercase;
 }
 .btn-white{
@@ -153,7 +152,7 @@ svg.lucide{
   padding: 10px 30px;
   border-radius: 50px;
   font-size: 25px;
-  font-family: 'Kodchasan';
+  font-family: 'Gill Sans', sans-serif;
   text-transform: uppercase;
 }
 .texte-opensans{
@@ -173,7 +172,7 @@ svg.lucide{
     background: rgba(0, 0, 0, 0.7);
     border: 2px solid #ce82bb;
     box-shadow: 0 0 6px #ce82bb, 0 0 12px #ce82bb, 0 0 24px #ce82bb;
-    text-shadow: 0 0 3px #ce82bb, 0 0 6px #ce82bb, 0 0 48px #ce82bb;
+    text-shadow: 0 0 3px #000, 0 0 6px #ce82bb, 0 0 48px #000;
 }
 .texte-neon{
   color: #ce82bb;
@@ -183,7 +182,7 @@ svg.lucide{
   border: #7abd73 1px solid;
   padding: 10px 30px;
   border-radius: 50px;
-  font-family: 'Kodchasan';
+  font-family: 'Gill Sans', sans-serif;
   color: #7abd73;
   font-size: 20px;
   width: fit-content;
@@ -194,7 +193,7 @@ svg.lucide{
   border: #5aceb8 1px solid;
   padding: 10px 30px;
   border-radius: 50px;
-  font-family: 'Kodchasan';
+  font-family: 'Gill Sans', sans-serif;
   color: #5aceb8;
   font-size: 20px;
   width: fit-content;
@@ -205,7 +204,7 @@ svg.lucide{
   border: #ce82bb 1px solid;
   padding: 10px 30px;
   border-radius: 50px;
-  font-family: 'Kodchasan';
+  font-family: 'Gill Sans', sans-serif;
   color: #ce82bb;
   font-size: 20px;
   width: fit-content;
@@ -216,7 +215,7 @@ svg.lucide{
   border: #000 1px solid;
   padding: 10px 30px;
   border-radius: 50px;
-  font-family: 'Kodchasan';
+  font-family: 'Gill Sans', sans-serif;
   color: #000;
   font-size: 20px;
   width: fit-content;
@@ -227,7 +226,7 @@ svg.lucide{
   border: #fff 1px solid;
   padding: 10px 30px;
   border-radius: 50px;
-  font-family: 'Kodchasan';
+  font-family: 'Gill Sans', sans-serif;
   color: #fff;
   font-size: 20px;
   background-color: transparent;
@@ -244,7 +243,7 @@ svg.lucide{
   font-weight: 300;
   left: 16px;
   font-family: 'JosefinSans';
-  text-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 48px #fff;
+  text-shadow: 0 0 3px #fff, 0 0 6px #000, 0 0 24px #fff;
 }
 @media (max-width: 768px) {
   h1{

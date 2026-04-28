@@ -365,13 +365,13 @@ color: #000;
 .step-block.large { grid-column: span 2; }
 
 .step-num {
-  font-size: 80px;
+  font-size: 70px;
   position: absolute;
   top: -40px;
   font-weight: 300;
   left: 16px;
   font-family: 'JosefinSans';
-  text-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 48px #fff;
+  text-shadow: 0 0 3px #fff, 0 0 6px #000, 0 0 24px #fff;
 }
 .step-content { 
   padding-left: 0;
