@@ -1,4 +1,103 @@
-.banner-container{
+/* ===================== AUDIT - DIFFERENCE - RESPONSIVE ===================== */
+
+.difference {
+    background-image: url('../../../../public/background-green.png');
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.difference-title {
+    text-align: center;
+    background-color: #5B904C;
+    margin-bottom: 36px;
+    padding: 20px;
+}
+
+.difference-title .section-title {
+    font-size: clamp(0.95rem, 2vw, 1.2rem);
+    line-height: 1.4;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.difference-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.diff-card {
+    background-color: #B64F98;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.diff-card strong {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+/* ===================== TABLET (max 1024px) ===================== */
+@media (max-width: 1024px) {
+    .difference {
+        padding: 40px 30px;
+    }
+
+    .difference-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+
+    .diff-card {
+        width: 100%;
+    }
+}
+
+/* ===================== MOBILE (max 768px) ===================== */
+@media (max-width: 768px) {
+    .difference {
+        padding: 30px 20px;
+    }
+
+    .difference-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .diff-card {
+        width: 100%;
+    }
+
+    .difference-title {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+}
+
+/* ===================== SMALL MOBILE (max 480px) ===================== */
+@media (max-width: 480px) {
+    .difference {
+        padding: 25px 12px;
+    }
+
+    .difference-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ===================== AUDIT - BANNER - RESPONSIVE ===================== */
+
+.banner-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,19 +107,19 @@
     width: 100%;
 }
 
-.banner-container h1{
+.banner-container h1 {
     text-align: center;
     padding: 50px;
 }
 
-.banner-container img{
+.banner-container img {
     width: 400px;
     height: 300px;
     object-fit: cover;
     object-position: top;
 }
 
-.hero-tu-te-demandes{
+.hero-tu-te-demandes {
     background-color: #B64F98;
     width: 100%;
     padding: 50px;
@@ -29,23 +128,98 @@
     flex-direction: column;
     gap: 25px;
 }
-.hero-media img{
+
+.hero-media img {
     width: 100%;
     height: auto;
 }
-.hero-analyse{
+
+.hero-analyse {
     padding: 50px;
 }
-@media (max-width : 768px) {
-    .hero-tu-te-demandes, .hero-analyse{
-        padding: 20px;
+
+/* ===================== TABLET (max 1024px) ===================== */
+@media (max-width: 1024px) {
+    .banner-container {
+        gap: 30px;
+    }
+
+    .banner-container img {
+        width: 280px;
+        height: 220px;
+    }
+
+    .banner-container h1 {
+        padding: 30px;
+        font-size: clamp(1.8rem, 5vw, 3rem);
+    }
+
+    .hero-tu-te-demandes {
+        padding: 35px 30px;
+    }
+
+    .hero-analyse {
+        padding: 30px;
+        width: 90%;
+    }
+}
+
+/* ===================== MOBILE (max 768px) ===================== */
+@media (max-width: 768px) {
+    .banner-container {
         gap: 20px;
     }
-    .banner-container h1{
+
+    .banner-container img {
+        width: 220px;
+        height: 170px;
+    }
+
+    .hero-tu-te-demandes,
+    .hero-analyse {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .banner-container h1 {
         word-wrap: break-word;
         padding: 20px;
+        font-size: clamp(1.5rem, 7vw, 2.2rem);
     }
-    .hero-analyse{
+
+    .hero-analyse {
         width: auto;
+        font-size: 0.95rem;
+    }
+
+    .hero-tu-te-demandes p {
+        font-size: 0.95rem;
+    }
+}
+
+/* ===================== SMALL MOBILE (max 480px) ===================== */
+@media (max-width: 480px) {
+    .banner-container img {
+        width: 180px;
+        height: 140px;
+    }
+
+    .banner-container h1 {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    .hero-tu-te-demandes {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .hero-tu-te-demandes p {
+        font-size: 0.88rem;
+    }
+
+    .hero-analyse {
+        padding: 15px;
+        font-size: 0.88rem;
     }
 }

@@ -1,6 +1,8 @@
-.banner-agence{
+/* ===================== BANNER - RESPONSIVE ===================== */
+
+.banner-agence {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url('../../../../public/un-bureau-lumineux.jpg');
+        url('../../../../public/un-bureau-lumineux.jpg');
     background-size: cover;
     background-position: center;
     height: auto;
@@ -11,34 +13,39 @@
     justify-content: center;
     padding: 50px;
 }
-.banner-avis{
+
+.banner-avis {
     display: flex;
     flex-direction: row;
     gap: 10px;
     justify-content: center;
     padding: 25px;
 }
-.avis-glass-effect{
-    background: rgba(255, 255, 255, 0.2); /* fond semi-transparent */
-    border-radius: 50px;                  /* coins arrondis */
+
+.avis-glass-effect {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
     padding: 0px 20px;
-    backdrop-filter: blur(10px);          /* flou derrière le container */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* bordure subtile */
-    box-shadow: 0 4px 30px rgba(0,0,0,0.1);     /* ombre légère */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     width: fit-content;
     display: flex;
 }
-.banner-avis-texte{
+
+.banner-avis-texte {
     display: flex;
     flex-direction: column;
 }
-.banner-agence-texte{
+
+.banner-agence-texte {
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: space-around;
 }
-.banner-agence-texte aside{
+
+.banner-agence-texte aside {
     font-size: 18px;
     color: white;
     display: flex;
@@ -46,13 +53,15 @@
     gap: 15px;
     width: 50%;
 }
-.banner-marionfabrice{
+
+.banner-marionfabrice {
     width: 400px;
     object-fit: cover;
     position: relative;
     bottom: -50px;
 }
-.banner-logo{
+
+.banner-logo {
     height: auto;
     padding: 50px;
     background-position: top;
@@ -62,27 +71,146 @@
     flex-direction: column;
     gap: 25px;
 }
-.banner-logo div{
+
+.banner-logo div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-.banner-logo img{
+
+.banner-logo img {
     height: 150px;
     width: 150px;
     gap: auto;
     object-fit: contain;
 }
-.banner-logo img:hover{
-    transform : scale(1.2);
+
+.banner-logo img:hover {
+    transform: scale(1.2);
     transition: 0.5s;
 }
-.banner-image{
+
+.banner-image {
     width: 30px;
     object-fit: contain;
 }
+
 .banner-logo a {
     text-decoration: underline;
     font-size: 20px;
+}
+
+/* ===================== TABLET (max 1024px) ===================== */
+@media (max-width: 1024px) {
+    .banner-agence {
+        padding: 40px 30px;
+    }
+
+    .banner-agence-texte {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .banner-agence-texte aside {
+        width: 100%;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .banner-marionfabrice {
+        width: 320px;
+        bottom: -30px;
+    }
+
+    .banner-logo {
+        padding: 40px 30px;
+    }
+
+    .banner-logo div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .banner-logo img {
+        height: 110px;
+        width: 110px;
+    }
+}
+
+/* ===================== MOBILE (max 768px) ===================== */
+@media (max-width: 768px) {
+    .banner-agence {
+        padding: 30px 20px;
+    }
+
+    .banner-agence-texte {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .banner-agence-texte aside {
+        width: 100%;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .banner-marionfabrice {
+        width: 260px;
+        bottom: -20px;
+        align-self: center;
+    }
+
+    .banner-avis {
+        padding: 15px;
+    }
+
+    .banner-logo {
+        padding: 30px 20px;
+    }
+
+    .banner-logo h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .banner-logo div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .banner-logo img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .banner-logo a {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* ===================== SMALL MOBILE (max 480px) ===================== */
+@media (max-width: 480px) {
+    .banner-agence {
+        padding: 25px 15px;
+    }
+
+    .banner-marionfabrice {
+        width: 220px;
+        bottom: -10px;
+    }
+
+    .banner-logo img {
+        height: 65px;
+        width: 65px;
+    }
+
+    .avis-glass-effect {
+        padding: 0 12px;
+    }
 }

@@ -1,10 +1,13 @@
-.about-agence{
+/* ===================== ABOUT - RESPONSIVE ===================== */
+
+.about-agence {
     display: flex;
     flex-direction: row;
     padding: 50px;
     justify-content: space-between;
 }
-.about-agence-details{
+
+.about-agence-details {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,28 +16,33 @@
     padding: 0 10px;
     justify-content: space-between;
 }
-.about-agence-details a{
+
+.about-agence-details a {
     color: #40B3E5;
     border: solid 1px #40B3E5;
     width: max-content;
     padding: 10px;
     border-radius: 50px;
 }
-.about-agence-details ul{
+
+.about-agence-details ul {
     margin-left: 40px;
     padding: 25px;
 }
-.about-agence img{
+
+.about-agence img {
     width: 400px;
     max-width: 40%;
 }
-.about-agence-details aside{
+
+.about-agence-details aside {
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
     justify-content: center;
 }
-.about-agence-details aside div{
+
+.about-agence-details aside div {
     display: flex;
     padding: 20px;
     background-color: #40B3E5;
@@ -42,44 +50,152 @@
     text-align: center;
     justify-content: center;
 }
-.about-agence-details aside div span{
+
+.about-agence-details aside div span {
     font-size: 25px;
     font-weight: 700;
 }
-.agence-details-second-texte{
+
+.agence-details-second-texte {
     padding: 25px 0 0 0;
 }
-.detail-agence{
+
+.detail-agence {
     display: flex;
     flex-direction: column;
 }
-#about-agence-logo{
+
+#about-agence-logo {
     width: 200px;
     position: initial;
 }
-.about-agence div{
+
+.about-agence div {
     position: relative;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#arrow-blue{
+
+#arrow-blue {
     position: absolute;
     width: 50px;
     height: 50px;
     object-fit: contain;
     top: -20px;
 }
-@media (max-width : 1459px) {
-    .about-agence-details aside{
+
+/* ===================== TABLET large (max 1459px) ===================== */
+@media (max-width: 1459px) {
+    .about-agence-details aside {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .about-agence img{
-    width: 400px;
-    position: sticky;
-    top: 25px;
-    height: 100%;
+
+    .about-agence img {
+        width: 400px;
+        position: sticky;
+        top: 25px;
+        height: 100%;
+    }
 }
+
+/* ===================== TABLET (max 1024px) ===================== */
+@media (max-width: 1024px) {
+    .about-agence {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 30px;
+        gap: 40px;
+    }
+
+    .about-agence-details {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-agence > img {
+        width: 100%;
+        max-width: 500px;
+        position: static;
+        height: auto;
+    }
+
+    .about-agence-details aside {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .about-agence-details aside div {
+        width: 100%;
+    }
+
+    #about-agence-logo {
+        width: 160px;
+    }
+}
+
+/* ===================== MOBILE (max 768px) ===================== */
+@media (max-width: 768px) {
+    .about-agence {
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .about-agence-details {
+        gap: 15px;
+    }
+
+    .about-agence-details ul {
+        margin-left: 15px;
+        padding: 15px 10px;
+    }
+
+    .about-agence > img {
+        max-width: 100%;
+        border-radius: 4px;
+    }
+
+    .about-agence-details aside {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .about-agence-details aside div {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .about-agence-details aside div span {
+        font-size: 20px;
+    }
+}
+
+/* ===================== SMALL MOBILE (max 480px) ===================== */
+@media (max-width: 480px) {
+    .about-agence {
+        padding: 25px 15px;
+    }
+
+    .about-agence-details aside {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        max-width: 100%;
+    }
+
+    .about-agence-details aside div {
+        padding: 12px 8px;
+    }
+
+    .about-agence-details aside div span {
+        font-size: 18px;
+    }
+
+    #about-agence-logo {
+        width: 130px;
+    }
 }
