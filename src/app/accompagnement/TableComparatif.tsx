@@ -180,7 +180,7 @@ export default function TableComparatif() {
 
   return (
     <section className="compare">
-      <h2 className="compare-title">Comparez les offres</h2>
+      <h2 id='compare' className="compare-title">Comparez les offres</h2>
 
       {/* ── UX navigation mobile ── */}
       {isMobile && (

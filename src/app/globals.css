@@ -193,7 +193,7 @@ svg.lucide{
   border: #5aceb8 1px solid;
   padding: 10px 30px;
   border-radius: 50px;
-  font-family: 'Gill Sans', sans-serif;
+  font-family: 'Kodchasan';
   color: #5aceb8;
   font-size: 20px;
   width: fit-content;
@@ -244,6 +244,9 @@ svg.lucide{
   left: 16px;
   font-family: 'JosefinSans';
   text-shadow: 0 0 3px #fff, 0 0 6px #000, 0 0 24px #fff;
+}
+.neon-white{
+  text-shadow: 0 0 3px #fff, 0 0 6px #000, 0 0 12px #fff;
 }
 @media (max-width: 768px) {
   h1{

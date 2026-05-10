@@ -23,15 +23,15 @@ const AccessAudit = () => {
 
           {/* Témoignages */}
           <div className="testimonials-grid-left">
-            <div className="testi-item">Cet audit tient tout ses promesses »</div>
-            <div className="testi-item second-item-left">Ça m&apos;a permis d&apos;avoir une perspective bien autre que ce que je faisais jusqu&apos;à là »</div>
-            <div className="testi-item">J&apos;ai su appliquer les conseils qui m&apos;ont été donnés et je me suis rendu compte que les résultats étaient là… j&apos;ai observé des changements »</div>
+            <div className="testi-item">Cet audit tient toutes ses promesses »</div>
+            <div className="testi-item second-item-left">Ça m&apos;a permis d&apos;avoir une perspective tout autre que ce que je faisais jusqu&apos;à là »</div>
+            <div className="testi-item">J&apos;ai de suite appliqué les conseils qui m&apos;ont été donnés et je ne m&apos;attendais pas à un tel résultat. Dès le premier post, j&apos;ai observé des changements. »</div>
             </div>
 
           <div className="testimonials-grid-right">
-            <div className="testi-item">Cet audit m&apos;a donné les clés nécessaires pour apporter le changement et booster sa communication »</div>
-            <div className="testi-item second-item-right">Cet audit est un véritable déclencheur si se veut faire depuis longtemps »</div>
-            <div className="testi-item">Il n&apos;y avait d&apos;yeux plus clair et de me ranger mes idées comment le communiqué à la communauté signé Tremplin»</div>
+            <div className="testi-item">Cet audit m&apos;a donné les clés nécessaires pour apporter du changement et booster ma communication »</div>
+            <div className="testi-item second-item-right">Cet audit à été un véritable déclencheur de ce que je voulais faire depuis longtemps »</div>
+            <div className="testi-item">Il m&apos;a permis d&apos;y voir plus clair et de corriger ma façon de communiquer !»</div>
           </div>
           </div>
 

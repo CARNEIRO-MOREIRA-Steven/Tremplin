@@ -67,7 +67,7 @@ export default function ComPage() {
       {/* ── POUR QUI ── */}
       <section className="pour-qui">
 
-            <p className="neon-title">Être accompagné pour refondre sa communication<br /> — Comment savoir si c&apos;est pour moi ?</p>
+            <h2 className="neon-title">Être accompagné pour refondre sa communication<br /> — Comment savoir si c&apos;est pour moi ?</h2>
           <div className="pour-qui-grid">
             {[
               "Ton activité tourne, mais tu stagnes dans ta visibilité ou tes ventes.",
@@ -97,10 +97,10 @@ export default function ComPage() {
       {/* ── PROCESS 6 ÉTAPES ── */}
  <section className="process">
 
-  <p className="neon-title">
+  <h2 className="neon-title">
     Comment se passe un accompagnement chez <br />
     Tremplin — sur l&apos;offre alignement ?
-  </p>
+  </h2>
 
   <div className='process-content'>
     <div className="process-grid">
@@ -331,7 +331,7 @@ export default function ComPage() {
 
       <section className="inclus" >
         <div className='inclus-container'>
-            <p className="neon-title">Dans tous nos accompagnements, c&apos;est inclus :</p>
+            <h2 className="neon-title">Dans tous nos accompagnements, c&apos;est inclus :</h2>
           <div className="inclus-grid">
             {[
               { title: 'Suivi WhatsApp illimité', body: "Tu n'avances jamais seul. Tu peux nous écrire à tout moment pour poser une question, valider une idée ou débloquer une situation. Réactivité, clarté et soutien en continu." },
@@ -357,7 +357,7 @@ export default function ComPage() {
         <div className='temoignage-container'>
         <div className='div-title'>
           <p className="texte-give intro-title">Témoignages</p>
-          <h2 className="neon-title">Ils ont choisi de refondre leur communication<br />Ils ont choisis l&apos;offre alignement</h2>
+          <h2 className="temoignage-subtitle">Ils ont choisi de refondre leur communication<br />Ils ont choisis l&apos;offre alignement</h2>
         </div>
           <div className="temoignage-grid">
         
@@ -378,8 +378,8 @@ export default function ComPage() {
       </section>
 
           <section className="resultats">
-            <h2 className="neon-title">
-              A partir de quand verrai-je des résultats ?
+            <h2 className="">
+              &apos;&apos; A partir de quand verrai-je des résultats ? &apos;&apos;
             </h2>
             <div className='resultats-container'>
               <aside>
@@ -396,8 +396,10 @@ export default function ComPage() {
           </section>
 
           <section className="duree">
-            <h2 className="neon-title">
-              A partir de quand verrai-je des résultats ?
+            <h2 className="">
+              &apos;&apos; Combien de temps dure l&apos;accompagnement ? 
+&apos;&apos;
+
             </h2>
             <div className='duree-container'>
               <aside>

@@ -22,6 +22,12 @@
     text-align: center;
 }
 
+.banner-container h2 {
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+}
+
 .banner-container img{
     width: 400px;
     height: 180px;
@@ -38,12 +44,16 @@
 }
 .Give-text{
     font-family: 'GiveYouGlory';
+    color: #fff !important; 
+    font-weight: 700;
+    font-size: 20px;
+
 }
 .hero-details{
     display: flex;
     gap: 25px;
     width: 80%;
-    background-color: #B64F98;
+    background-color: #ce82bb;
     padding: 50px;
     max-width: 1000px;
     position: relative;
@@ -56,6 +66,9 @@
     flex-direction: column;
     text-align: center;
 }
+ .hero-div-details h2{
+    font-weight: 700;
+ }
 .hero-div-details p, .hero-div-details h2{
     color: #000;
 }
@@ -66,7 +79,7 @@
     bottom: -5px;
 }
 .hero-div-image img{
-    height: 450px;
+    height: 550px;
     object-fit: contain;
 }
 .hero{

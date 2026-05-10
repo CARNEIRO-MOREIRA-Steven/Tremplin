@@ -7,7 +7,7 @@ import MessageIcon from '../../../../public/icon-message.png'
 const AtoutTremplin = () => {
   return (
     <section className='about-agence-container'>
-        <h2>Les atouts de tremplin</h2>
+        <h2 className='neon-title'>Les atouts de tremplin</h2>
         <section className='about-agence-content'>
             <section>
                 <img src={FranceIcon.src}/>
@@ -35,7 +35,7 @@ const AtoutTremplin = () => {
         <p className='subtitle-atout texte-give'>Tremplin c&apos;est ton agence de communication hybrid une version 2.0 des egnces de com&apos; que tu connais. Tremplin devient ton allié réussite, c&apos;est ton nouveau collaborateur.</p>
         <section className='about-agence-cta'>
             <aside className='about-agence-cta-left'>
-                <h2>PRET A révéler le plein potentiel de ta marque ?</h2>
+                <h2 className='neon-white'>PRET A révéler le plein potentiel de ta marque ?</h2>
             </aside>
             <aside className='about-agence-cta-right'>
                 <p>Deux chemins, un seul objectif: te révéler.</p>

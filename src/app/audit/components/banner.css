@@ -30,7 +30,7 @@
 }
 
 .diff-card {
-    background-color: #B64F98;
+    background-color: #ce82bb;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
@@ -39,7 +39,6 @@
 
 .diff-card strong {
     display: block;
-    font-family: 'Oswald', sans-serif;
     font-size: 0.85rem;
     text-transform: uppercase;
     color: var(--white);
@@ -120,7 +119,7 @@
 }
 
 .hero-tu-te-demandes {
-    background-color: #B64F98;
+    background-color: #ce82bb;
     width: 100%;
     padding: 50px;
     text-align: center;
@@ -222,4 +221,9 @@
         padding: 15px;
         font-size: 0.88rem;
     }
+}
+
+.neon{
+    font-size: 30px;
+    text-shadow: 0 0 3px #000, 0 0 6px #fff, 0 0 48px #fff;
 }

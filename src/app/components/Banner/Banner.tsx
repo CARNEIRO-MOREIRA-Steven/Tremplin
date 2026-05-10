@@ -7,7 +7,7 @@ import './banner.css'
 const Banner = () => {
   return (
     <section className='banner-container'>
-      <p className='banner-top'>Pas de panique : on a une vision claire sur l&apos;intelligence artificielle dans la communication - et on l&apos;intègre déjà dans nos accompagnements </p>
+      <p className='banner-top'> 🤪 <strong>Pas de panique </strong> : on a une vision claire sur l&apos;intelligence artificielle dans la communication - et on l&apos;intègre déjà dans nos accompagnements </p>
         <img className='banner-image' src={BannerImage.src} alt=''/>
         <aside className='decoration-banner'></aside>
         <section className='banner-section-texte'>
@@ -17,7 +17,6 @@ const Banner = () => {
           canal d&apos;aquisition : <span>Audit de communication - Stratégie de communication - Création de marque</span>
         </p>
           <a className='little-btn-white' href='/agence'> Tu veux bosser avec l&apos;agence </a>
-        <h2 className='quizz-intro special-title'>Qu&apos;est ce qui t&apos;empêche (encore) de cartonner avec ta com&apos; ?</h2>
     </section>
     </section>
   )

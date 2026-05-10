@@ -1,5 +1,5 @@
 .form-container{
-    background-color: #B64F98;
+    background-color: #ce82bb;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -19,12 +19,13 @@ form{
 }
 
 input{
-    background-color: #B64F98;
+    background-color: #ce82bb;
     border: solid 1px #000;
     height: 50px;
 }
 form label{
     font-size: 22px;
+    font-family: 'Gill Sans', sans-serif;
 }
 
 form div{
@@ -57,7 +58,7 @@ form div{
 }
 #select-offre{
     height: 50px;
-    background-color: #B64F98;
+    background-color: #ce82bb;
     color: #000;
     border: #000 1px solid;
     font-size: 20px;
@@ -108,6 +109,8 @@ aside p{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Gill Sans', sans-serif;
+
 }
 .contact-reseau{
     display: flex;
@@ -151,7 +154,7 @@ a img{
     }
     aside{
         position: initial;
-        background-color: #B64F98;
+        background-color: #ce82bb;
         padding: 20px;
         display: flex;
         justify-content: space-between;

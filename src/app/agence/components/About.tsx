@@ -22,7 +22,7 @@ const About = () => {
             </ul>
             <p><strong>Notre rôle : remettre de la clarté là où il y a du flou, et transformer une expertise en une marque forte et crédible.</strong></p>
             </div>
-            <a href="/contact">Travailler avec Tremplin</a>
+            <a className='little-btn-blue' href="/contact">Travailler avec Tremplin</a>
             <div>
             <img id='about-agence-logo' src={LogoColor.src} alt="" />
             {/* <img id='arrow-blue' src={ArrowBlue.src} alt="" /> */}

@@ -30,6 +30,12 @@ strong {
     flex-direction: column;
     align-items: center;
 }
+.agence-review h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 3px #000000, 0 0 6px #000, 0 0 48px #000;
+}
 
 .process-container {
     display: flex;
@@ -42,7 +48,7 @@ strong {
     width: 25%;
     display: flex;
     align-items: center;
-    background-color: #B64F98;
+    background-color: #ce82bb;
 }
 
 .process-details img {
@@ -68,7 +74,7 @@ strong {
 }
 
 .process-details h3 {
-    color: #B64F98;
+    color: #ce82bb;
     text-transform: uppercase;
     font-family: 'OpenSans';
     font-weight: 300;
@@ -81,6 +87,7 @@ strong {
 
 .process-details p {
     margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .etape-title {
@@ -121,7 +128,7 @@ strong {
 
 #prochaine-etape li h3 {
     color: #000;
-    font-family: 'OpenSans';
+    font-family: 'Gill Sans', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 25px;
@@ -129,24 +136,25 @@ strong {
 
 #prochaine-etape li p {
     color: #000;
-    font-family: 'OpenSans';
+    font-family: 'Gill Sans', sans-serif;
 }
 
 .first-list {
-    background-color: #B64F98;
+    background-color: #ce82bb;
 }
 
 .second-list {
-    background-color: #3FB3E4;
+    background-color: #5aceb8;
 }
 
 .third-list {
-    background-color: #568C52;
+    background-color: #7abd73;
 }
 
 #prochaine-etape div {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .image-left {
@@ -155,7 +163,7 @@ strong {
 }
 
 .image-right {
-    height: 550px;
+    height: 750px;
     object-fit: contain;
 }
 

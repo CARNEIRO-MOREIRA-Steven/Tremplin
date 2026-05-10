@@ -31,12 +31,12 @@ const Header = () => {
         <ul>
           <li><a href="./">Accueil</a></li>
           <li><a href="/agence">Notre Agence</a></li>
-          <li><a href="/audit">Faire un audit de ma com&apos;</a></li>
-          <li><a href="/accompagnement">Me faire accompagner</a></li>
-          <li><a href="/com">Refondre ma com&apos;</a></li>
-          <li><a href="/branding">Me creer une image de marque</a></li>
+          <li><a href="/audit">Audit de com&apos;</a></li>
+          <li><a href="/accompagnement">Nos accompagnements</a></li>
+          {/* <li><a href="/com">Refondre ma com&apos;</a></li>
+          <li><a href="/branding">Me creer une image de marque</a></li> */}
           <li><a href="/contact">Contact</a></li>
-          <li><a href="/faq">J&apos;ai des questions</a></li>
+          {/* <li><a href="/faq">J&apos;ai des questions</a></li> */}
         </ul>
       </nav>
     </header>

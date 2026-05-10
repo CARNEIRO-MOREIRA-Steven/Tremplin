@@ -18,8 +18,8 @@
 }
 
 .about-agence-details a {
-    color: #40B3E5;
-    border: solid 1px #40B3E5;
+    color: #5aceb8;
+    border: solid 1px #5aceb8;
     width: max-content;
     padding: 10px;
     border-radius: 50px;
@@ -45,7 +45,7 @@
 .about-agence-details aside div {
     display: flex;
     padding: 20px;
-    background-color: #40B3E5;
+    background-color: #5aceb8;
     width: 180px;
     text-align: center;
     justify-content: center;
@@ -84,6 +84,13 @@
     height: 50px;
     object-fit: contain;
     top: -20px;
+}
+.detail-agence p, .detail-agence li{
+    font-family: 'Gill Sans', sans-serif ;
+}
+
+aside p {
+    font-family: 'Kodchassan';
 }
 
 /* ===================== TABLET large (max 1459px) ===================== */

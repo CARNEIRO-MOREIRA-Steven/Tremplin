@@ -16,7 +16,7 @@
 
 /* Wrapper avec bordure rose */
 .table-wrap {
-  border: solid 25px #B64F98;
+  border: solid 25px #ce82bb;
   padding: 20px;
 }
 
@@ -28,7 +28,6 @@
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.78rem;
 }
 
 /* ── En-tête ── */
@@ -39,7 +38,6 @@ thead th {
   font-weight: 700;
   text-align: center;
   border: 1px solid rgba(255,255,255,0.08);
-  font-size: 0.85rem;
   color: #fff;
 }
 
@@ -60,15 +58,13 @@ thead th {
 
 .th-name {
   font-family: 'JosefinSans', sans-serif;
-  font-size: 14px;
   margin: 4px 0 2px;
   font-weight: 400;
 }
 
 .th-price {
   font-family: 'JosefinSans', sans-serif;
-  font-size: 12px;
-  color: rgba(255,255,255,0.5);
+  color: #fff !important;
   font-weight: 300;
 }
 
@@ -78,7 +74,6 @@ tbody tr.section-row td {
   padding: 10px 12px;
   font-family: 'OpenSans', sans-serif;
   font-weight: 700;
-  font-size: 0.72rem;
   letter-spacing: 0.5px;
 }
 
@@ -94,7 +89,6 @@ tbody td {
 .td-label {
   text-align: left;
   color: rgba(255,255,255,0.85) !important;
-  font-size: 0.76rem;
 }
 
 tbody tr:hover td {
@@ -102,22 +96,22 @@ tbody tr:hover td {
 }
 
 /* Couleurs des cellules check/cross/note */
-.check { color: #568C52; font-weight: 700; }
+.check { color: #7abd73; font-weight: 700; }
 .cross { color: #e03; }
 .note  { font-size: 0.7rem; color: rgba(255,255,255,0.4); font-style: italic; display: block; margin-top: 2px; }
 
 /* Couleurs sections */
-.section-row.clarte       td { color: #B64F98; }
-.section-row.identite     td { color: #3FB3E3; }
-.section-row.communication td { color: #568C52; }
-.section-row.sessions     td { color: #B64F98; }
-.section-row.livrables    td { color: #3FB3E3; }
-.section-row.experience   td { color: #568C52; }
+.section-row.clarte       td { color: #ce82bb; }
+.section-row.identite     td { color: #5aceb8; }
+.section-row.communication td { color: #7abd73; }
+.section-row.sessions     td { color: #ce82bb; }
+.section-row.livrables    td { color: #5aceb8; }
+.section-row.experience   td { color: #7abd73; }
 
 /* Noms offres dans header tableau */
-.offer-name-audit      { font-family: 'JosefinSans', sans-serif; text-shadow: 0 0 6px #3FB3E3; color: #3FB3E3; }
-.offer-name-alignement { font-family: 'JosefinSans', sans-serif; text-shadow: 0 0 6px #B64F98; color: #B64F98; }
-.offer-name-rebranding { font-family: 'JosefinSans', sans-serif; text-shadow: 0 0 6px #568C52; color: #568C52; font-weight: 500; }
+.offer-name-audit      { font-family: 'JosefinSans', sans-serif; text-shadow: 0 0 6px #5aceb8; color: #5aceb8; }
+.offer-name-alignement { font-family: 'JosefinSans', sans-serif; text-shadow: 0 0 6px #ce82bb; color: #ce82bb; }
+.offer-name-rebranding { font-family: 'JosefinSans', sans-serif; text-shadow: 0 0 6px #7abd73; color: #7abd73; font-weight: 500; }
 
 thead th span {
   font-weight: 500;
@@ -228,7 +222,7 @@ thead th span {
 
   /* Tableau scrollable horizontalement */
   .table-wrap {
-    border: 12px solid #B64F98;
+    border: 12px solid #ce82bb;
     padding: 0;
   }
 
@@ -299,7 +293,6 @@ thead th span {
   }
 
   .td-label {
-    font-size: 0.66rem;
     padding: 8px 6px;
   }
 

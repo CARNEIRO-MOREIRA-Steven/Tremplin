@@ -281,7 +281,7 @@ export default function ComPage() {
         <div className='temoignage-container'>
         <div className='div-title'>
           <p className="texte-give intro-title">Témoignages</p>
-          <h2 className="neon-title">Ils ont choisi de refondre leur communication<br />Ils ont choisis l&apos;offre alignement</h2>
+          <h2 className="intro-subtitle">Ils ont choisi de refondre leur communication<br />Ils ont choisis l&apos;offre alignement</h2>
         </div>
           <div className="temoignage-grid">
         

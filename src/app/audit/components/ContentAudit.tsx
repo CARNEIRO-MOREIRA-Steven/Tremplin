@@ -6,7 +6,17 @@ const ContentAudit = () => {
   return (
         <section className="audit-content">
 
-        <div className='content-audit-left'>
+
+
+        <div className='content-audit-right'>
+          <div className="audit-content-header">
+            <h2 className="neon-title">
+              Ce que contient l&apos;Audit de Communication Express 
+              Signé Tremplin
+            </h2>
+          </div>
+
+                  <div className='content-audit-left'>
             <img src={TremplinTabeltte.src} alt="Tremplin communication, au service des entreprises" />
             <div className="audit-col-left">
               <p>Pendant 2h on fait le point sur :</p>
@@ -29,15 +39,6 @@ const ContentAudit = () => {
               </ol>
             </div>
         </div>
-
-
-        <div className='content-audit-right'>
-          <div className="audit-content-header">
-            <h2 className="neon-title">
-              Ce que contient l&apos;Audit de Communication Express&#8482;{' '}
-              <em>Signé Tremplin</em>
-            </h2>
-          </div>
 
           <div className='glass'>
 

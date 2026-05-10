@@ -14,6 +14,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 }
 .about-marionfabrice div {
     display: flex;
@@ -37,6 +38,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+
+.about-marionfabrice p {
+    font-family: 'Gill Sans', sans-serif;
 }
 .list-services .marionfabrice{
     height: 450px;
@@ -81,6 +86,7 @@
     line-height: 1.4;
     margin: 0;
     max-width: 200px;
+    font-family: 'Gill Sans', sans-serif;
 }
 
 /* .list-services-details{
@@ -112,7 +118,7 @@
 }
 
 .modal-content {
-    background-color: #B64E98;
+    background-color: #ce82bb87;
     border-radius: 20px;
     text-align: center;
     max-width: 800px;

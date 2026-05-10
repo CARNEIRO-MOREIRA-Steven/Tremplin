@@ -29,7 +29,7 @@ li.services-texte{
 .modal-cta{
     text-align: end;
     width: 100%;
-    font-family: 'OpenSans';
+    font-family: 'Gill Sans', sans-serif;
     font-size: 20px;
     padding: 0 50px 50px 50px;
     }
@@ -40,7 +40,6 @@ li.services-texte{
 
 .modal-header h2{
     padding: 20px;
-    background-color: #B64F98;
     font-family: 'JosefinSans';
     text-transform: uppercase;
     font-weight: 700;
@@ -89,7 +88,7 @@ li.services-texte{
     justify-content: center;
 }
 .detail-projet-tag{
-    background-color: #B64F98;
+    background-color: #ce82bb;
     padding: 10px;
     width: 230px;
     border-radius: 50px;
@@ -130,7 +129,7 @@ li.services-texte{
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    font-family: 'OpenSans';
+    font-family: 'Gill Sans', sans-serif;
 }
 .list-services-details{
     background-image: url('../../../../public/background-pink.png');

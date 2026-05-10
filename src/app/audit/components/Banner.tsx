@@ -18,12 +18,12 @@ const Banner = () => {
           </h1>
 
           <div className="hero-tu-te-demandes">
-            <p>Tu te demandes :</p>
+            <p className='neon'>Tu te demandes :</p>
             <p>
-              Le <strong>site</strong> internet est-il <strong>obligatoire</strong> pour communiquer ?<br />
-              <strong>Par où commencer</strong> pour communiquer ?<br />
-              <strong>Comment</strong> coupler de ses <strong>réseaux sociaux</strong> ?<br />
-              Comment <strong>m&apos;organiser</strong> pour une communication régulière ?<br />
+              <strong>Le site internet est-il obligatoire</strong> pour communiquer ?<br />
+              <strong>Par où commencer pour communiquer ?</strong><br />
+              <strong>Comment s&apos;occuper de ses réseaux sociaux</strong> ?<br />
+              Comment m&apos;organiser<strong> pour une communication régulière ?</strong><br />
               Faut-il communiquer de la même façon sur ses différents réseaux ?
             </p>
           </div>
@@ -32,10 +32,10 @@ const Banner = () => {
             <img src={ImageAuditExpress.src} alt="Pourquoi faire un audit de communication" />
           </div>
 
-          <p className="hero-analyse texte-opensans">
+          <p className="hero-analyse">
             Obtiens une analyse rapide et efficace de ta communication
-            pour <strong>faire le point</strong>, puis comprends{' '}
-            <strong>comment la transformer</strong> en une communication qui te permet d&apos;atteindre tes objectifs
+            pour faire le point, puis comprends{' '}
+            comment la transformer en une communication qui te permet d&apos;atteindre tes objectifs
           </p>
         </div>
     </section>

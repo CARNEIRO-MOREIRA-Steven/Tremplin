@@ -10,7 +10,7 @@ const DetailsAudit = () => {
           <div className="promise-intro">
             <p>
               Tu es un entrepreneur(se) ou dirigeant(e) <strong>déjà lancé(e)</strong> mais qui stagne.<br />
-              Tu sais que <strong>tu as du potentiel</strong> mais tu <strong>manques de structure</strong>.<br />
+              Tu sais que <strong>tu as du potentiel mais tu manques de structure</strong>.<br />
               Tu veux comprendre pourquoi ça ne marche pas comme tu voudrais et quoi changer.
             </p>
           </div>

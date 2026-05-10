@@ -53,6 +53,9 @@
     gap: 15px;
     width: 50%;
 }
+.banner-agence-texte p{
+    font-family: 'Gill Sans', sans-serif ;
+}
 
 .banner-marionfabrice {
     width: 400px;
@@ -99,6 +102,7 @@
 .banner-logo a {
     text-decoration: underline;
     font-size: 20px;
+    font-family: 'Gill Sans', sans-serif ;
 }
 
 /* ===================== TABLET (max 1024px) ===================== */

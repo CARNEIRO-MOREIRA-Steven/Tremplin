@@ -13,7 +13,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100vh; /* ou ce que tu veux */
+    /* min-height: 100vh; ou ce que tu veux */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,6 +93,7 @@
     font-size: 22px;
     font-size: 200;
     margin-bottom: 10px;
+    font-family: 'OpenSans';
 }
 .texte-left{
     position: absolute;

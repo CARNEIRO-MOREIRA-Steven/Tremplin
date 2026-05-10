@@ -15,6 +15,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 50px;
 }
 .about-agence-content section{
     display: flex;
@@ -32,6 +33,7 @@
 .about-agence-content h2{
     font-size: 17px;
     text-transform :initial;
+    font-family: 'Kodchasan';
 }
 .about-agence-content p{
     font-size: 16px;

@@ -50,7 +50,7 @@ export default function AccompagnementsPage() {
                 Tu vas enfin <strong>comprendre ce qui ne fait pas passer ton audience à l&apos;action.</strong><br />
                 Tu vas enfin pouvoir changer de cap avec une feuille de route pour <strong>arrêter de t&apos;éparpiller.</strong>
               </p>
-              <a href="/contact">Je choisis l&apos;audit express</a>
+              <a className='little-btn-white' href="/audit">Je choisis l&apos;audit express</a>
               <span className="border-offer" />
               <ul className="offer-includes">
                 <li>2h d&apos;entretien (visio)</li>
@@ -61,7 +61,7 @@ export default function AccompagnementsPage() {
                 <li>Recommandations stratégiques</li>
                 <li>Outils pour organiser et gérer ta com&apos;</li>
               </ul>
-              <span className="offer-details-link">Découvrir tout ce qui est inclus</span>
+              <a className="offer-details-link"  href='#compare'>Découvrir tout ce qui est inclus</a>
             </div>
 
             {/* Alignement */}
@@ -81,7 +81,7 @@ export default function AccompagnementsPage() {
                 Tu vas être soulagé(e) <strong>d&apos;avoir enfin une direction</strong> avec ta communication.<br />
                 Tu vas te <strong>sentir clair(e)</strong> dans ce que tu proposes et <strong>te reconnaître dans ta communication.</strong>
               </p>
-              <a href="/contact">Je choisis l&apos;offre alignement</a>
+              <a className='little-btn-white' href="/com">Je choisis l&apos;offre alignement</a>
               <span className="border-offer" />
               <ul className="offer-includes">
                 <li>14 semaines minimum d&apos;accompagnement</li>
@@ -91,7 +91,7 @@ export default function AccompagnementsPage() {
                 <li>Suivi illimité sur WhatsApp (même après l&apos;accompagnement)</li>
                 <li>Espace de travail partagé privé</li>
               </ul>
-              <span className="offer-details-link">Découvrir tout ce qui est inclus</span>
+              <a className="offer-details-link"  href='#compare'>Découvrir tout ce qui est inclus</a>
             </div>
 
             {/* Rebranding */}
@@ -111,7 +111,7 @@ export default function AccompagnementsPage() {
                 <strong>Ton image va enfin parler pour toi,</strong> ce qui va te rendre confiant(e) et crédible.<br />
                 Ta communication va refléter ce que tu es et <strong>va attirer à toi naturellement tes clients idéaux.</strong>
               </p>
-              <a href="/contact">Je choisis l&apos;offre rebranding</a>
+              <a className='little-btn-white' href="/branding">Je choisis l&apos;offre rebranding</a>
               <span className="border-offer" />
               <ul className="offer-includes">
                 <li>16 semaines minimum d&apos;accompagnement</li>
@@ -122,7 +122,7 @@ export default function AccompagnementsPage() {
                 <li>Suivi illimité sur WhatsApp (même après l&apos;accompagnement)</li>
                 <li>Espace de travail partagé privé</li>
               </ul>
-              <span className="offer-details-link">Découvrir tout ce qui est inclus</span>
+              <a className="offer-details-link" href='#compare'>Découvrir tout ce qui est inclus</a>
             </div>
 
           </div>
