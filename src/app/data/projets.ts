@@ -3,6 +3,7 @@ import BeforLogoOAD from '../../../public/logo-oad-ancien.jpg'
 import LogoMadaakin from '../../../public/madaakin.png'
 import LogoAfterCharlotte from '../../../public/leveil-des-sens-logo.png'
 
+import Madaakin from '../../../public/Sans titre76 1.png'
 import DefiLogo from '../../../public/defilogo lumineux - sans fond.png'
 
 import LogoBeforeCharlotte from '../../../public/logo-before-charlotte.jpg'
@@ -49,23 +50,23 @@ export const projectsData: Project[] = [
   {
 
     id: 2,
-    name: "projet client : création d'une marque, refonte du logo et identité visuelle",
-    description: "Une esthéticienne dans un milieu concurentiel",
-    longDescription: "Audit de communication - création d'identité viseulle - création de préence en ligne (site - blog - linkedin) - création de la stratégie de communication",
-    image: LogoBeforeCharlotte.src,
+    name: "Madaakin",
+    description: "Lionel a crée une marque avec un positionnement prenium",
+    longDescription: "Audit de projet - Recherche de concept - Création de charte graphique - Création de logo",
+    image: Madaakin.src,
     image1Details : [
-      "Design bas de gamme"
+      "Recherche d'identité"
     ],
-    image2 : LogoAfterCharlotte.src,
+    image2 : LogoMadaakin.src,
         image2Details : [
-      "Identité visuelle forte"
+      "Création univers graphique"
     ],
     category: "Web",
     date: "2024",
-    client: "Grâce",
+    client: "Il a choisi de se positionner sur du haut de gamme dès le départ, ce qui a impliqué la création d'une identité visuelle puissante et des résultats dès le départ",
     technologies: ["Vue.js", "Laravel", "PostgreSQL"],
-    results: ["Retour sur invéstissement immédiat", "Positionnement dans le top 3 Google dans un secteur concurentiel sur Paris"],
-    bestResult : "Se positionne en experte visage et bien être et se démarque des autres entreprises",
+    results: ["Vente dès le premier salon, au prix fort", "Bon positionnement sur un marché concurentiel"],
+    bestResult : "On l'a accompagné au lancemen de son produit",
 
   },
   {
@@ -77,6 +78,7 @@ export const projectsData: Project[] = [
         image1Details : [
       "Design bas de gamme"
     ],
+    image2 : LogoBeforeCharlotte.src,
         image2Details : [
       "Identité visuelle forte", "Positionnement marqué"
     ],
@@ -90,20 +92,21 @@ export const projectsData: Project[] = [
   {
     id: 4,
     name: "Defi",
-    description: "Site vitrine luxe",
-    longDescription: "Conception et développement d'un site vitrine haut de gamme pour une marque de luxe avec design épuré et animations subtiles.",
+    description: "Minh a racheté une boite d'informatique vieille de 25 ans",
+    longDescription: "Audit de communication - Création identité visuelle - Création présence en ligne (site - blog - linkedin) - Création de la stratégie de communication",
     image: DefiLogo.src,
         image1Details : [
-      "Design bas de gamme",
+      "Refonte de site",
     ],
+    // image2 : PHOTO-2025-08-05-07-37-37.jpg.src,
         image2Details : [
-      "Identité visuelle forte", "Positionnement marqué"
+      "Stratégie de contenu"
     ],
     category: "Web",
     date: "2024",
-    client: "Marque de Luxe",
+    client: "Grâce à la refonte de l'identité visuelle et la création de sa présence en ligne bien ciblée, cette entreprise a généré ses premiers clients en ligne et a intégré un réseau B2B qualifié.",
     technologies: ["Next.js", "Tailwind", "Framer Motion"],
-    results: ["Temps de chargement < 2s", "Taux de conversion +80%", "Design Award 2024"],
-    bestResult : 'Son entreprise a explosée',
+    results: ["Retour sur son investissement immédiat", "Positionnement dans le top 3 Google dans un secteur concurentiel sur Paris"],
+    bestResult : '',
   },
 ];

@@ -504,7 +504,6 @@ export default function Quiz() {
           )}
         </div>
       </div>
-      <Footer />
     </section>
   );
 }

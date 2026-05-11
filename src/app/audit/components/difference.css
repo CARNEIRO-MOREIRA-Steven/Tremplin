@@ -30,15 +30,14 @@
 
 .diff-card {
   background-color: #ce82bbbc;
-  border-radius: 5px;
   padding: 20px;
   text-align: center;
   width: 300px;
   font-family: 'Gill Sans', sans-serif;
+  text-align: justify;
 }
 .diff-card strong {
   display: block;
-  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   color: var(--white);
   margin-bottom: 8px;

@@ -54,6 +54,11 @@
 .about-agence-details aside div span {
     font-size: 25px;
     font-weight: 700;
+    color: #000;
+}
+.about-agence-details aside div p {
+    font-weight: 700;
+    color: #000;
 }
 
 .agence-details-second-texte {

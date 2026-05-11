@@ -14,8 +14,6 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import LoaderVideo from "./components/LoaderVideo/LoaderVideo";
 
-import SmileIcon from '../../public/smile-icon.png'
-
 export default function Home() {
   return (
     // <LoaderVideo>
@@ -35,7 +33,6 @@ export default function Home() {
       title = 'Tu peux te projeter, ou lire ceux qui sont déjà passés par la.'
       subtitle = {
       <>
-        Voici ce que nos clients ont vécu, <img className="icon-smile" src={SmileIcon.src} /> et ce <br /> que l&apos;agence tremplin a changé pour eux
       </>
       } 
       details = '100% des clients sont conquis'

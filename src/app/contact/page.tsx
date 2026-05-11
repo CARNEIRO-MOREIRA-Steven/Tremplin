@@ -19,7 +19,7 @@ const page = () => {
     <>
       <Header />
         <section className='form-container'>
-          <h1>Reste focus, tu touches ton but :</h1>
+          <h1>Reste focus ! tu touches ton but :</h1>
           <form action="">
             <div className='group-form'>
             <div>

@@ -72,16 +72,15 @@ thead th {
 tbody tr.section-row td {
   text-transform: uppercase;
   padding: 10px 12px;
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'Gill Sans' sans-serif;
   font-weight: 700;
-  letter-spacing: 0.5px;
 }
 
 tbody td {
   padding: 10px 12px;
   text-align: center;
   border: 1px solid rgba(255,255,255,0.06);
-  color: rgba(255,255,255,0.6);
+  color: #fff;
   vertical-align: middle;
   line-height: 1.4;
 }
@@ -98,7 +97,7 @@ tbody tr:hover td {
 /* Couleurs des cellules check/cross/note */
 .check { color: #7abd73; font-weight: 700; }
 .cross { color: #e03; }
-.note  { font-size: 0.7rem; color: rgba(255,255,255,0.4); font-style: italic; display: block; margin-top: 2px; }
+.note  { color: #fff; font-style: italic; display: block; margin-top: 2px; }
 
 /* Couleurs sections */
 .section-row.clarte       td { color: #ce82bb; }
@@ -240,7 +239,6 @@ thead th span {
   table {
     /* largeur min pour que les 3 colonnes soient toutes partiellement visibles */
     min-width: 600px;
-    font-size: 0.7rem;
   }
 
   /* Colonne labels sticky */
@@ -288,7 +286,6 @@ thead th span {
 
   tbody td {
     padding: 8px 6px;
-    font-size: 0.68rem;
     min-width: 140px;
   }
 
@@ -315,7 +312,6 @@ thead th span {
 
   table {
     min-width: 520px;
-    font-size: 0.64rem;
   }
 
   .th-label-corner,
@@ -329,7 +325,4 @@ thead th span {
     min-width: 120px;
   }
 
-  .td-label {
-    font-size: 0.62rem;
-  }
 }

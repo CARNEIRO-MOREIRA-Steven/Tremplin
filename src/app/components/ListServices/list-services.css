@@ -42,6 +42,8 @@
 
 .about-marionfabrice p {
     font-family: 'Gill Sans', sans-serif;
+    text-align: justify;
+    color: #000;
 }
 .list-services .marionfabrice{
     height: 450px;
