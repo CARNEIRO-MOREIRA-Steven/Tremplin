@@ -67,7 +67,7 @@
     padding: 5px 10px 10px 25px ;
     font-size: 15px;
     margin: 10px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 .first-offre h3, .second-offre h3, .third-offre h3{
     text-align: center;
@@ -151,3 +151,159 @@
     .problemes{
         list-style: none;
     }
+
+
+
+
+    /* Test new version */
+
+    /* -------------------- */
+/* TITRE */
+/* -------------------- */
+.offre-heading {
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+}
+
+.offre-heading.show-title {
+  opacity: 1;
+  animation: typing 1.4s steps(40, end) forwards;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.little-btn-white.special {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.6s ease;
+}
+
+.little-btn-white.special.show-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+    /* ── Retire les border existantes sur intro et content ── */
+/* -------------------- */
+/* BLOCS */
+/* -------------------- */
+
+.problemes,
+.obtiens {
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+}
+
+/* -------------------- */
+/* CONTENU INVISIBLE */
+/* -------------------- */
+
+.problemes li,
+.problemes span,
+.obtiens li,
+.obtiens span {
+  opacity: 0;
+  transform: translateY(15px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+/* Quand le contenu apparaît */
+
+.problemes.show-content li,
+.problemes.show-content span,
+.obtiens.show-content li,
+.obtiens.show-content span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* -------------------- */
+/* BORDURE */
+/* -------------------- */
+
+.problemes::before,
+.obtiens::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    linear-gradient(#fff, #fff) top    left  / 0% 1px,
+    linear-gradient(#fff, #fff) bottom    left  / 1px 0%,
+    linear-gradient(#fff, #fff) right    bottom / 0% 1px,
+    linear-gradient(#fff, #fff) top right / 1px 0%;
+  background-repeat: no-repeat;
+}
+
+/* Lance le tracé */
+
+.problemes.draw::before,
+.obtiens.draw::before {
+  animation: draw-border 1.2s ease forwards;
+}
+
+/* -------------------- */
+/* KEYFRAMES */
+/* -------------------- */
+
+@keyframes draw-border {
+  0%   {
+    background-size:
+      0% 1px,
+      1px 0%,
+      0% 1px,
+      1px 0%;
+  }
+  /* haut gauche → droite */
+  25%  {
+    background-size:
+      100% 1px,
+      1px 0%,
+      0% 1px,
+      1px 0%;
+  }
+  /* côté gauche descend */
+  50%  {
+    background-size:
+      100% 1px,
+      1px 0%,
+      0% 1px,
+      1px 100%;
+  }
+  /* haut droite → gauche */
+  75%  {
+    background-size:
+      100% 1px,
+      1px 0%,
+      100% 1px,
+      1px 100%;
+  }
+  /* côté droit remonte */
+  100% {
+    background-size:
+      100% 1px,
+      1px 100%,
+      100% 1px,
+      1px 100%;
+    box-shadow: 0 0 15px #fff;
+  }
+}

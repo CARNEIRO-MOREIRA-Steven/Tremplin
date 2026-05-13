@@ -256,16 +256,15 @@ article li{
 
     /* Neon names: repositionner sur mobile pour rester lisibles */
     .fabrice-name {
-        position: static;
         width: 100%;
         flex-direction: row;
         justify-content: flex-start;
         gap: 10px;
         padding: 8px 0;
+        display: none;
     }
 
     .marion-name {
-        position: static;
         width: 100%;
         flex-direction: row;
         justify-content: flex-end;
@@ -273,6 +272,7 @@ article li{
         padding: 8px 0;
         top: unset;
         right: unset;
+        display: none;
     }
 
     #fabrice-name-neon,
@@ -289,43 +289,5 @@ article li{
 
     .agence-content-image {
         gap: 8px;
-    }
-}
-
-/* ===================== SMALL MOBILE (max 480px) ===================== */
-@media (max-width: 480px) {
-    .agence-container {
-        padding: 25px 12px;
-    }
-
-    .agence-details h2 {
-        font-size: 20px;
-    }
-
-    .agence-details h3 {
-        font-size: 17px;
-    }
-
-    .agence-articles-container article {
-        max-width: 100%;
-    }
-
-    article h4 {
-        font-size: 17px;
-    }
-
-    article p {
-        font-size: 14px;
-    }
-
-    #fabrice-name-neon,
-    #marion-name-neon {
-        width: 100px;
-        height: 42px;
-    }
-
-    .marion-name p,
-    .fabrice-name p {
-        font-size: 10px;
     }
 }

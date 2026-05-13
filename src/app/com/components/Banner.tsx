@@ -2,7 +2,7 @@ import React from 'react'
 import AuditIcon from "../../../../public/auditExpress.png"
 import './banner.css'
 
-import Alignement from '../../../../public/alignement.png'
+import Alignement from '../../../../public/alignement 1.png'
 import MarionFabriceAlignement from '../../../../public/marion-fabrice-alignement.png'
 
 

@@ -1,7 +1,6 @@
 /* ===================== GLOBAL / PROCESS / ETAPES - RESPONSIVE ===================== */
 
 h1, h2 {
-    font-size: 20px;
     text-transform: uppercase;
     text-align: center;
     font-family: "Kodchasan";
@@ -35,59 +34,6 @@ strong {
     text-transform: uppercase;
     color: #fff;
     text-shadow: 0 0 3px #000000, 0 0 6px #000, 0 0 48px #000;
-}
-
-.process-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-}
-
-.process-details div {
-    width: 25%;
-    display: flex;
-    align-items: center;
-    background-color: #ce82bb;
-}
-
-.process-details img {
-    width: 100%;
-    position: relative;
-    left: -30px;
-    scale: 0.95;
-}
-
-.process-details {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    padding: 25px;
-}
-
-.process-details aside {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-}
-
-.process-details h3 {
-    color: #ce82bb;
-    text-transform: uppercase;
-    font-family: 'OpenSans';
-    font-weight: 300;
-    position: relative;
-}
-
-.process-details a {
-    text-decoration: underline;
-}
-
-.process-details p {
-    margin-bottom: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .etape-title {
@@ -127,11 +73,16 @@ strong {
 }
 
 #prochaine-etape li h3 {
-    color: #000;
-    font-family: 'Gill Sans', sans-serif;
+    /* color: #000; */
+    /* font-family: 'Gill Sans', sans-serif; */
+    font-family: 'Kodchasan';
     text-transform: uppercase;
     font-weight: 600;
     font-size: 25px;
+    color: #fff;
+    text-shadow: 0 0 3px #000000, 0 0 6px #000, 0 0 48px #000;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 #prochaine-etape li p {
@@ -173,7 +124,7 @@ strong {
         font-size: 40px;
     }
 
-    .process-container {
+    /* .process-container {
         padding: 40px 30px;
     }
 
@@ -198,7 +149,7 @@ strong {
         left: 0;
         scale: 1;
         width: 100%;
-    }
+    } */
 
     .etape-title {
         font-size: 20px;
@@ -275,6 +226,9 @@ strong {
         flex-direction: column;
         align-items: center;
         gap: 15px;
+    }
+    .image-left{
+        width: 150px !important;
     }
 
     .image-left,

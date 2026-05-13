@@ -78,10 +78,10 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <button className='little-btn-white' type='submit'>J&apos;envoie ma demande</button>
+            <button className='little-btn-black' type='submit'>J&apos;envoie ma demande</button>
           </form>
         </section>
-        <aside>
+        <aside className='aside-contact'>
           <p>Rempli le formulaire ou utilise un de nos moyens de communication ici</p>
           <div className='contact-reseau'>
             <a target='blanck' href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x6b30328a877e9bff:0xe01d7ce34c83b88b?sa=X&ved=1t:8290&ictx=111"><img src={LogoLocalisation.src} alt="Icon de localisation de Tremplin" /></a>
@@ -93,7 +93,7 @@ const page = () => {
             <a target='blanck' href="https://www.facebook.com/p/Tremplinentreprendre-100090948333418/"><img src={LogoFacebook.src} alt="Icon Facebook de l'agence Tremplin" /></a>
           </div>
         </aside>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

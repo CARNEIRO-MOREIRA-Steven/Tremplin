@@ -2,7 +2,7 @@ import React from 'react'
 import AuditIcon from "../../../../public/auditExpress.png"
 import './banner.css'
 
-import ImageAudit from '../../../../public/auditExpress.png'
+import ImageAudit from '../../../../public/audit express 1.png'
 import ImageAuditExpress from '../../../../public/audit-express.png';
 
 
@@ -18,7 +18,7 @@ const Banner = () => {
           </h1>
 
           <div className="hero-tu-te-demandes">
-            <p className='neon'>Tu te demandes :</p>
+            <h2 className='neon'>Tu te demandes :</h2>
             <p>
               <strong>Le site internet est-il obligatoire</strong> pour communiquer ?<br />
               <strong>Par où commencer pour communiquer ?</strong><br />

@@ -71,7 +71,10 @@ const ReviewsClient = (props: {
 
         headerObserver.disconnect()
       },
-      { threshold: 0.9 }
+      {
+        threshold: 0.2,
+        rootMargin: '0px 0px -10% 0px',
+      }
     )
     if (title) headerObserver.observe(title)
 
@@ -94,7 +97,10 @@ const ReviewsClient = (props: {
           cardObserver.unobserve(card)
         })
       },
-      { threshold: 0.5 }
+      {
+  threshold: 0.15,
+  rootMargin: '0px 0px -5% 0px',
+}
     )
     cards.forEach(card => { if (card) cardObserver.observe(card) })
 

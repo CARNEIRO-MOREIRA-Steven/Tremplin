@@ -93,7 +93,7 @@
 .offer-card.second { background-color: #7abd73; }
 .offer-card.three { background-color: #5aceb8; }
 
-.offer-tag { text-transform: uppercase; font-family: 'JosefinSans'; }
+.offer-tag { text-transform: uppercase; font-family: 'Gill Sans', sans-serif; }
 
 .offer-name {
     font-family: 'JosefinSans';
@@ -541,12 +541,7 @@ thead th span {
   font-family: 'JosefinSans', sans-serif;
 }
 
-/* ══════════════════════════════════════════════
-   NAVIGATION UX MOBILE (cachée sur desktop)
-══════════════════════════════════════════════ */
-.table-nav {
-  display: none;
-}
+
 
 /* ══════════════════════════════════════════════
    MOBILE (max 768px)

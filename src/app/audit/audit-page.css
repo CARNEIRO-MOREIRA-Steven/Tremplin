@@ -49,14 +49,6 @@
     border-bottom: 1px solid var(--border);
 }
 
-.audit-image-hero {
-    width: 300px;
-    height: 225px;
-    margin-bottom: 15px;
-    object-position: top;
-    object-fit: cover;
-}
-
 .title {
     font-size: 50px;
 }
@@ -384,7 +376,7 @@
 
 .testi-item {
     padding: 14px 16px;
-    text-align: center;
+    text-align: justify;
     background-color: #7abd73b8;
     font-family: 'Gill Sans', sans-serif;
 }
@@ -909,11 +901,6 @@
     .price-badge {
         bottom: -35px;
         right: -10px;
-    }
-
-    .price-badge-inner {
-        width: 75px;
-        height: 75px;
     }
 
     .price-badge-num {

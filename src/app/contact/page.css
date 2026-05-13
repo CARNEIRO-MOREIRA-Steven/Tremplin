@@ -93,13 +93,13 @@ input[type="checkbox"]:checked::after {
   border-radius: 50%;
 }
 
-aside{
+.aside-contact{
     position: absolute;
-    top: 50px;
+    top: 100px;
     right: 50px;
 }
 
-aside p{
+.aside-contact p{
     width: 140px;
     height: 140px;
     text-align: center;
@@ -127,6 +127,9 @@ a img{
 .contact-reseau a:hover{
     transform: scale(1.15);
     transition: all 0.3s ease-in-out;
+}
+.little-btn-black{
+    background-color: #ce82bb;
 }
 
 @media screen and (min-width : 320px) and (max-width : 768px) {

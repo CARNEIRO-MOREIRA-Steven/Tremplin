@@ -58,10 +58,11 @@
 }
 
 .banner-marionfabrice {
-    width: 400px;
+    width: auto;
     object-fit: cover;
     position: relative;
     bottom: -50px;
+    height: 250px;
 }
 
 .banner-logo {
@@ -146,9 +147,11 @@
 
 /* ===================== MOBILE (max 768px) ===================== */
 @media (max-width: 768px) {
-    .banner-agence {
-        padding: 30px 20px;
+
+        .banner-agence {
+        padding: 65px 15px 0;
     }
+
 
     .banner-agence-texte {
         flex-direction: column;
@@ -163,9 +166,11 @@
     }
 
     .banner-marionfabrice {
-        width: 260px;
-        bottom: -20px;
+        width: 100%;
+        bottom: 0px;
         align-self: center;
+        object-fit: contain;
+        height: auto;
     }
 
     .banner-avis {
@@ -195,26 +200,5 @@
     .banner-logo a {
         font-size: 16px;
         text-align: center;
-    }
-}
-
-/* ===================== SMALL MOBILE (max 480px) ===================== */
-@media (max-width: 480px) {
-    .banner-agence {
-        padding: 25px 15px;
-    }
-
-    .banner-marionfabrice {
-        width: 220px;
-        bottom: -10px;
-    }
-
-    .banner-logo img {
-        height: 65px;
-        width: 65px;
-    }
-
-    .avis-glass-effect {
-        padding: 0 12px;
     }
 }

@@ -163,7 +163,8 @@
         text-align: center;
     }
     .about-dirigeant{
-        height: 400px;
+        height: auto;
+        
     }
     .about-section-texte {
         height: 100%;
@@ -190,8 +191,8 @@
         flex-wrap: wrap;
     }
     .about-image-dirigeant-mobile{
-        height: 100px;
-        width: 100px;
+        height: auto;
+        width: 180px;
         object-fit: cover;
     }
     .marion-container{
@@ -201,7 +202,7 @@
     }
     .texte-left{
         position: relative;
-        top: 0px;
+        top: 70px;
         right: -20px;
         width: 200px;
         font-size: 15px;
@@ -211,10 +212,11 @@
         flex-direction: row;
         align-items: flex-end;
         width: 100%;
+        margin-top: -70px;
     }
     .texte-right{
         position: relative;
-        top: 0px;
+        top: -50px;
         left: -10px;
         width: 200px;
         font-size: 15px;

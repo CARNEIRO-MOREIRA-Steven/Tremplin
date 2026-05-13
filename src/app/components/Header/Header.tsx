@@ -6,7 +6,7 @@ import LogoBlack from "../../../../public/logo-black.png";
 import LogoColor from "../../../../public/logo-color.png";
 
 import LogoAlume from "../../../../public/logo-eteint.png"
-import LogoEteint from "../../../../public/logo-alumé.png"
+import LogoEteint from "../../../../public/Logo-éteint.png"
 
 
 const Header = () => {

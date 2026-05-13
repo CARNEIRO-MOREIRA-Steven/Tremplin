@@ -42,7 +42,7 @@ const DetailsAudit = () => {
         <div className="promise-grid">
 
           <div className='promise-content'>
-            <p className="promise-col-title">Ce que tu obtiens</p>
+            <h2 className="promise-col-title">Ce que tu obtiens</h2>
             {[
               { title: 'Une vision claire',                desc: 'De la communication et de ton image' },
               { title: 'La conscience de tes forces',      desc: 'Et la lucidité sur ce qui te freine' },
@@ -58,7 +58,7 @@ const DetailsAudit = () => {
           </div>
 
           <div className='promise-content'>
-            <p className="promise-col-title">Pourquoi cet audit ?</p>
+            <h2 className="promise-col-title">Pourquoi cet audit ?</h2>
             {[
               { title: 'Rapide & efficace :',   desc: "En quelques jours, tu obtiens une vision claire de ta communication et un plan concret pour l'améliorer (contre plusieurs semaines pour un audit complet)." },
               { title: 'Un prix accessible :', desc: "L'Audit express à 239€, alors qu'un audit complet coûte généralement aux alentours de 1000€ !" },

@@ -205,6 +205,7 @@ text-align: justify;
   display : flex;
   flex-direction: column;
   gap: 20px;
+  text-align: justify;
 }
 .inclus-card:nth-child(1) { background: #ce82bb;}
 .inclus-card:nth-child(2) { background: #7abd73;}
@@ -214,12 +215,11 @@ text-align: justify;
 .inclus-card:nth-child(6) { background: #5aceb8; }
 
 .inclus-card-title {
-  text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  height: 45px;
-  color: #000;
+  font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 3px #000000, 0 0 6px #000, 0 0 48px #000;
+    text-align: center;
 }
 .inclus-card-body { 
   color: #000;
@@ -276,7 +276,7 @@ text-align: justify;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 60%;
+  width: 80%;
   max-width: 1000px;
 }
 .green-btn {
@@ -290,7 +290,7 @@ text-align: justify;
   display: flex;
   flex-direction: column;
   gap: 25px;
-  width: 60%;
+  width: 80%;
   text-align: center;
   max-width: 1000px;
 }
@@ -305,7 +305,7 @@ text-align: justify;
 .pour-qui-grid {
   display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  width: 60%;
+  width: 80%;
   max-width: 1000px;
 }
 .pour-qui {
@@ -327,7 +327,7 @@ text-align: justify;
   align-items: center;
 }
 .methode-content{
-  width: 60%;
+  width: 80%;
   max-width: 1000px;
   display: flex;
   flex-direction: column;
@@ -371,7 +371,7 @@ text-align: justify;
 .step-block {
   background-color: #ce82bb;
   display: flex;
-  padding: 50px 25px;
+  padding: 60px 25px;
   position: relative;
   height: fit-content;
   break-inside: avoid;
@@ -394,25 +394,52 @@ text-align: justify;
   flex-direction: column;
   gap: 20px;
 }
-.step-title {
-  font-family: 'Gill Sans', sans-serif;
-  font-weight: 700;
-  text-align: center;
+.step-content p {
   color: #000;
+}
+.step-title {
+  font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 3px #000000, 0 0 6px #000, 0 0 48px #000;
+    text-align: center;
 }
 .step-body {
   display: flex;
   flex-direction: column;
   gap: 20px;
   color: #000;
+  text-align: justify;
 }
 .step-body p {
-    color: #000;
+  color: #000;
+  text-align: justify;
+
 }
-.step-body strong { color: var(--off);     color: #000;}
-.step-body ul { display: flex; flex-direction: column; gap: 4px; margin-top: 8px; }
-.step-body li { display: flex; align-items: flex-start; gap: 6px;     color: #000;}
-.step-body li::before { content: '–'; color: var(--pink); flex-shrink: 0; }
+.step-body strong {
+  color: #000;
+}
+
+.step-body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px; 
+}
+
+.step-body li { 
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  color: #000;
+  font-size: 18px;
+  text-align: justify;
+}
+.step-body li::before {
+  content: '–';
+  color: var(--pink);
+  flex-shrink: 0; 
+}
 
 .process-texte-bottom{
   font-family: 'GiveYouGlory';
@@ -559,10 +586,18 @@ text-align: justify;
 .resultats-container{
   background-image: url('../../../public/background-green.png');
   display: flex;
-  width: 100%;
-  object-fit: cover;
-  padding: 50px;
-  justify-content: center;
+    width: 100%;
+    object-fit: cover;
+    padding: 50px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.resultats-container h2{
+  background-color: #0000007d;
+  padding: 20px;
 }
 .resultats-container aside{
   padding: 50px;
@@ -578,10 +613,18 @@ text-align: justify;
 .duree-container{
   background-image: url('../../../public/background-blue.png');
   display: flex;
-  width: 100%;
-  object-fit: cover;
-  padding: 50px;
-  justify-content: center;
+    width: 100%;
+    object-fit: cover;
+    padding: 50px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.duree-container h2{
+  background-color: #0000007d;
+  padding: 20px;
 }
 
 .duree-container aside{
@@ -595,6 +638,9 @@ text-align: justify;
 
 .duree-container li{
   list-style: none;
+}
+.duree{
+    padding-bottom: 150px;
 }
 
 .faq {

@@ -59,6 +59,7 @@
 .about-agence-details aside div p {
     font-weight: 700;
     color: #000;
+    font-family: 'Gill Sans', sans-serif;
 }
 
 .agence-details-second-texte {
@@ -184,30 +185,5 @@ aside p {
 
     .about-agence-details aside div span {
         font-size: 20px;
-    }
-}
-
-/* ===================== SMALL MOBILE (max 480px) ===================== */
-@media (max-width: 480px) {
-    .about-agence {
-        padding: 25px 15px;
-    }
-
-    .about-agence-details aside {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        max-width: 100%;
-    }
-
-    .about-agence-details aside div {
-        padding: 12px 8px;
-    }
-
-    .about-agence-details aside div span {
-        font-size: 18px;
-    }
-
-    #about-agence-logo {
-        width: 130px;
     }
 }

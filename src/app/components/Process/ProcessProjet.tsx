@@ -1,5 +1,6 @@
 import React from 'react'
 import TremplinAuBureau from '../../../../public/tremplin-au-bureau.jpg'
+import './process-projet.css'
 
 const ProcessProjet = () => {
   return (
@@ -23,7 +24,7 @@ const ProcessProjet = () => {
             </div>
         </div>
         <p className='texte-give'>Sinon tu peux directement booker ton appel téléphonique pour discuter de ton projet.</p>
-        <a className='btn-pink' target='blanck' href="https://calendly.com/email-tremplin-entreprendre/call-declic?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAQvm3lleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafUKgy4fU_A_xLz1RLZ0ixkNu5TOz2gAAJhdXgTFKMSQrJ-bKqMTQAcOKJTIA_aem_ozoWz0D6AS_5QGgulviPJw&month=2026-05">Prendre mon rdv</a>
+        <a className='little-btn-pink' target='blanck' href="https://calendly.com/email-tremplin-entreprendre/call-declic?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAQvm3lleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafUKgy4fU_A_xLz1RLZ0ixkNu5TOz2gAAJhdXgTFKMSQrJ-bKqMTQAcOKJTIA_aem_ozoWz0D6AS_5QGgulviPJw&month=2026-05">Prendre mon rdv</a>
     </section>
   )
 }

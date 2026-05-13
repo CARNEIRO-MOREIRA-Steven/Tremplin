@@ -6,6 +6,7 @@ import './page.css';
 import Footer from '../components/Footer/Footer';
 import Banner from './components/Banner';
 import Header from '../components/Header/Header';
+import ProcessProjet from '../components/Process/ProcessProjet';
 import TremplinAuBureau from '../../../public/tremplin-au-bureau.jpg'
 
 const FAQ_ITEMS = [
@@ -111,7 +112,7 @@ export default function ComPage() {
         <div className="step-block">
           <div className="step-num">1</div>
           <div className="step-content">
-            <p className="step-title">Audit complet</p>
+            <h4 className="step-title">Audit complet</h4>
             <div className="step-body">
               <p>À cette étape on va chercher à comprendre ce qui bloque (et ce qui fonctionne déjà).</p>
               <p>Cet audit comprend : un entretien, l&apos;analyse de ton parcours client, de tes chiffres, de ta présence en ligne et de la concurrence.</p>
@@ -129,7 +130,7 @@ export default function ComPage() {
         <div className="step-block">
           <div className="step-num">3</div>
           <div className="step-content">
-            <p className="step-title">Créer ton image signature</p>
+            <h4 className="step-title">Créer ton image signature</h4>
             <div className="step-body">
               <p>À partir de ton repositionnement, Fabrice, graphiste, conçoit une identité visuelle 100% sur-mesure :</p>
               <p>- logo + variations,<br />
@@ -147,7 +148,7 @@ export default function ComPage() {
         <div className="step-block">
           <div className="step-num">5</div>
           <div className="step-content">
-            <p className="step-title">Test, supervision, ajustements & livraison finale</p>
+            <h4 className="step-title">Test, supervision, ajustements & livraison finale</h4>
             <div className="step-body">
               <p>On gère tes réseaux pendant 4 semaines : on teste, on mesure, on ajuste.</p>
               <p>Pendant ce temps :</p>
@@ -175,7 +176,7 @@ export default function ComPage() {
         <div className="step-block">
           <div className="step-num">2</div>
           <div className="step-content">
-            <p className="step-title">Stratégie de communication</p>
+            <h4 className="step-title">Stratégie de communication</h4>
             <div className="step-body">
               <p>On clarifie tes objectifs et on t&apos;aide à faire les bons choix.</p>
               <p>Tu prends des décisions éclairées grâce à nos conseils simples et concrets.</p>
@@ -188,7 +189,7 @@ export default function ComPage() {
         <div className="step-block">
           <div className="step-num">4</div>
           <div className="step-content">
-            <p className="step-title">Refonte complète de ta communication</p>
+            <h4 className="step-title">Refonte complète de ta communication</h4>
             <div className="step-body">
               <p>On réorganise toute ta communication autour de :</p>
               <ul>
@@ -205,7 +206,7 @@ export default function ComPage() {
         <div className="step-block">
           <div className="step-num">6</div>
           <div className="step-content">
-            <p className="step-title">Suivi illimité : tu n&apos;es jamais seul(e)</p>
+            <h4 className="step-title">Suivi illimité : tu n&apos;es jamais seul(e)</h4>
             <div className="step-body">
               <p>Après un dernier bilan pour clôturer ton parcours, tu gardes un accès illimité à nos conseils, ajustements, retours et soutien.</p>
               <p>Le but : que tu deviennes totalement autonome tout en étant rassuré(e).</p>
@@ -225,33 +226,7 @@ export default function ComPage() {
 
 </section>
 
-       <section className='start-projet' id='start-projet'>
-        <h2 className='neon-title'>Comment prendre rendez-vous ?</h2>
-        <div className='start-projet-details'>
-            <aside>
-                <p className='number'>1 </p>
-                <h3>Prise de contact</h3>
-                <p>Tu <a href="/contact">remplis le formualire</a> et tu nous explique ton projet et tes besoins.</p>
-                <p className='number'>2 </p>
-                <h3>Proposition de rendez-vous</h3>
-                <p>Dès qu&apos;on reçoit ta demande, on l&apos;étudie et on te recontacte pour te proposer un rendez-vous en visio ou en physique.</p>
-                <p className='number'>3 </p>
-                <h3>Devis & planning</h3>
-                <p>Lors de notre entretien nous définisons ensemble les actions à prioriser et nous t&apos;établissons le devis.</p>
-                <p className='number'>4 </p>
-                <h3>Paiement de l&apos;accompte</h3>
-                <p>C&apos;est ok pour toi suite au devis - tu n&apos;as plus qu&apos;à régler l&apos;accompte et signer le devis pour démarrer notre collaboration.</p>
-                <p className='number'>5 </p>
-                <h3>on démarre</h3>
-                <p>L&apos;équipe se met en acion et on démarre l&apos;étape 1 comme expliqué et validé lors de l&apos;explication de l&apos;offre.</p>
-            </aside>
-            <div className=''>
-            <img src={TremplinAuBureau.src} alt="Es-tu prêt à révéler le plein potentiel de ta boite ? Tremplin communication est là pour ça." />
-            </div>
-        </div>
-        <p className='texte-give'>Sinon tu peux directement booker ton appel téléphonique pour discuter de ton projet.</p>
-        <a className='btn-pink' href="./">Parler de mon projet</a>
-    </section>
+<ProcessProjet />
 
       <section className="inclus" >
         <div className='inclus-container'>
@@ -266,7 +241,7 @@ export default function ComPage() {
               { title: 'RDV bilan', body: "Un rendez-vous dédié en fin d'accompagnement pour faire le point, sur la suite de ta communication et l'organisation que tu as prévue afin de sécuriser la continuité de ta communication." },
             ].map((c, i) => (
               <div key={i} className="inclus-card">
-                <p className="inclus-card-title">{c.title}</p>
+                <h4 className="inclus-card-title">{c.title}</h4>
                 <p className="inclus-card-body">{c.body}</p>
               </div>
             ))}
@@ -302,10 +277,11 @@ export default function ComPage() {
       </section>
 
           <section className="resultats">
-            <h2 className="">
+
+            <div className='resultats-container'>
+                          <h2 className="">
               &apos;&apos; A partir de quand verrai-je des résultats ? &apos;&apos;
             </h2>
-            <div className='resultats-container'>
               <aside>
                 <p>Dès <strong>les premières semaines, tu ressentiras</strong> un gain de clarté, de confiance et de cohérence. </p>
                 <ul><p>Les retours clients et l&apos;impact sur ton positionnement <strong>deviennent visibles dès la mise en ligne</strong> de ta nouvelle image, souvent accompagnés de :</p>
@@ -320,12 +296,13 @@ export default function ComPage() {
           </section>
 
           <section className="duree">
-            <h2 className="">
+
+            <div className='duree-container'>
+                          <h2 className="">
               &apos;&apos; Combien de temps dure l&apos;accompagnement ? 
 &apos;&apos;
 
             </h2>
-            <div className='duree-container'>
               <aside>
                 <p>Le Réalignement<strong> se déroule sur environ 16 semaines.</strong></p>
                 <ul>

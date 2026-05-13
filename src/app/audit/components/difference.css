@@ -4,12 +4,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .difference-title {
   text-align: center;
   background-color: #7abd73b8;
   margin-bottom: 36px;
+  padding: 20px;
 }
 .difference-title .section-title {
   font-size: clamp(0.95rem, 2vw, 1.2rem);

@@ -60,6 +60,10 @@ body {
   background-color: #000;
 }
 
+section{
+  color: #fff;
+}
+
 body {
   color: #FFFFFF;
   background: var(--background);
@@ -143,7 +147,7 @@ svg.lucide{
   padding: 10px 50px;
   border-radius: 50px;
   font-size: 25px;
-  font-family: 'Gill Sans', sans-serif;
+  font-family: 'Kodchasan';
   text-transform: uppercase;
 }
 .btn-white{
@@ -152,7 +156,7 @@ svg.lucide{
   padding: 10px 30px;
   border-radius: 50px;
   font-size: 25px;
-  font-family: 'Gill Sans', sans-serif;
+  font-family: 'Kodchasan';
   text-transform: uppercase;
 }
 .texte-opensans{
@@ -182,7 +186,7 @@ svg.lucide{
   border: #7abd73 1px solid;
   padding: 10px 30px;
   border-radius: 50px;
-  font-family: 'Gill Sans', sans-serif;
+  font-family: 'Kodchasan';
   color: #7abd73;
   font-size: 20px;
   width: fit-content;
@@ -204,7 +208,7 @@ svg.lucide{
   border: #ce82bb 1px solid;
   padding: 10px 30px;
   border-radius: 50px;
-  font-family: 'Gill Sans', sans-serif;
+  font-family: 'Kodchasan';
   color: #ce82bb;
   font-size: 20px;
   width: fit-content;
@@ -215,7 +219,7 @@ svg.lucide{
   border: #000 1px solid;
   padding: 10px 30px;
   border-radius: 50px;
-  font-family: 'Gill Sans', sans-serif;
+  font-family: 'Kodchasan';
   color: #000;
   font-size: 20px;
   width: fit-content;
@@ -226,7 +230,7 @@ svg.lucide{
   border: #fff 1px solid;
   padding: 10px 30px;
   border-radius: 50px;
-  font-family: 'Gill Sans', sans-serif;
+  font-family: 'Kodchasan';
   color: #fff;
   font-size: 20px;
   background-color: transparent;
@@ -265,5 +269,8 @@ svg.lucide{
     font-size: 18px;
     text-align: center;
     padding: 10px;
+  }
+  .btn-pink{
+    text-align: center;
   }
 }

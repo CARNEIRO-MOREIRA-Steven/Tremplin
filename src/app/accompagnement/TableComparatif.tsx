@@ -1,12 +1,14 @@
 'use client';
 
-import { useRef, useState, useEffect, useCallback } from 'react';
+import { useState, Fragment } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import Rebranding from '../../../public/rebranding.png';
 import Audit from '../../../public/auditExpress.png';
 import Alignement from '../../../public/alignement.png';
+import './tablecomparatif.css'
 
 /* ─── données ─── */
+
 const TABLE_SECTIONS = [
   {
     id: 'clarte',
@@ -109,10 +111,19 @@ const TABLE_SECTIONS = [
   },
 ];
 
-/* ─── helper rendu cellule ─── */
+const COLS = [
+  { key: 'audit',   label: 'audit express', price: '239€',   img: Audit,       color: '#3FB3E3' },
+  { key: 'align',   label: 'alignement',    price: '1 290€', img: Alignement,  color: '#B64F98' },
+  { key: 'rebrand', label: 'rebranding',    price: '2 190€', img: Rebranding,  color: '#568C52' },
+] as const;
+
+type ColKey = typeof COLS[number]['key'];
+
+/* ─── CELL RENDER ─── */
 function renderCell(val: string) {
   if (val === '✓') return <span className="check">✓</span>;
   if (val === '✗') return <span className="cross">✗</span>;
+
   if (val.startsWith('✓'))
     return (
       <>
@@ -120,143 +131,129 @@ function renderCell(val: string) {
         <span className="note">{val.slice(1).trim()}</span>
       </>
     );
-  if (val.startsWith('✗')) return <span className="cross">✗</span>;
+
+  if (val.startsWith('✗'))
+    return (
+      <>
+        <span className="cross">✗</span>{' '}
+        <span className="note">{val.slice(1).trim()}</span>
+      </>
+    );
+
   return <span className="note">{val}</span>;
 }
 
-/* ─── config colonnes ─── */
-const COLS = [
-  { key: 'audit', label: 'audit express', price: '239€', img: Audit, color: '#3FB3E3' },
-  { key: 'align', label: 'alignement',    price: '1290€', img: Alignement, color: '#B64F98' },
-  { key: 'rebrand', label: 'rebranding',  price: '2190€', img: Rebranding, color: '#568C52' },
-] as const;
-
-/* ─── composant principal ─── */
+/* ─── COMPONENT ─── */
 export default function TableComparatif() {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const colRefs = useRef<(HTMLTableCellElement | null)[]>([null, null, null]);
   const [active, setActive] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
 
-  /* détecte mobile */
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768);
-    check();
-    window.addEventListener('resize', check);
-    return () => window.removeEventListener('resize', check);
-  }, []);
+  const activeCol = COLS[active];
 
-  /* synchro dots au scroll */
-  const onScroll = useCallback(() => {
-    const el = scrollRef.current;
-    if (!el) return;
-    const LABEL_W = 130;
-    let closest = 0;
-    let minDist = Infinity;
-    colRefs.current.forEach((th, i) => {
-      if (!th) return;
-      const dist = Math.abs(th.offsetLeft - LABEL_W - el.scrollLeft);
-      if (dist < minDist) { minDist = dist; closest = i; }
-    });
-    setActive(closest);
-  }, []);
-
-  useEffect(() => {
-    const el = scrollRef.current;
-    if (!el) return;
-    el.addEventListener('scroll', onScroll, { passive: true });
-    return () => el.removeEventListener('scroll', onScroll);
-  }, [onScroll]);
-
-  /* navigation flèches / dots */
-  const goTo = useCallback((idx: number) => {
-    const el = scrollRef.current;
-    const th = colRefs.current[idx];
-    if (!el || !th) return;
-    const LABEL_W = 130;
-    el.scrollTo({ left: th.offsetLeft - LABEL_W, behavior: 'smooth' });
-    setActive(idx);
-  }, []);
+  const goTo = (idx: number) => {
+    setActive(Math.max(0, Math.min(COLS.length - 1, idx)));
+  };
 
   return (
     <section className="compare">
-      <h2 id='compare' className="compare-title">Comparez les offres</h2>
+      <h2 className="compare-title">Comparez les offres</h2>
 
-      {/* ── UX navigation mobile ── */}
-      {isMobile && (
-        <div className="table-nav">
-          <div className="table-nav-dots">
-            {COLS.map((col, i) => (
-              <button
-                key={col.key}
-                className={`table-nav-dot${active === i ? ' active' : ''}`}
-                style={{ '--dot-color': col.color } as React.CSSProperties}
-                onClick={() => goTo(i)}
-                aria-label={`Voir ${col.label}`}
-              />
-            ))}
-          </div>
-          <div className="table-nav-arrows">
+      {/* NAV */}
+      <div className="table-nav">
+        <div className="table-nav-dots">
+          {COLS.map((col, i) => (
             <button
-              className="table-nav-arrow"
-              onClick={() => goTo(Math.max(0, active - 1))}
-              disabled={active === 0}
-              aria-label="Colonne précédente"
-            >
-              ←
-            </button>
-            <span className="table-nav-label" style={{ color: COLS[active].color }}>
-              {COLS[active].label}
-            </span>
-            <button
-              className="table-nav-arrow"
-              onClick={() => goTo(Math.min(2, active + 1))}
-              disabled={active === 2}
-              aria-label="Colonne suivante"
-            >
-              →
-            </button>
-          </div>
-          <p className="table-scroll-hint">← glisse pour comparer →</p>
+              key={col.key}
+              className={`table-nav-dot ${active === i ? 'active' : ''}`}
+              style={{ '--dot-color': col.color } as React.CSSProperties}
+              onClick={() => goTo(i)}
+              aria-label={`Voir l'offre ${col.label}`}
+            />
+          ))}
         </div>
-      )}
 
-      <div className="table-wrap">
-        <div className="table-scroll" ref={scrollRef}>
+        <div className="table-nav-arrows">
+          <button
+            className="table-nav-arrow"
+            onClick={() => goTo(active - 1)}
+            disabled={active === 0}
+            aria-label="Offre précédente"
+          >
+            ←
+          </button>
+
+          <span className="nav-label" style={{ color: activeCol.color }}>
+            {activeCol.label}
+          </span>
+
+          <button
+            className="table-nav-arrow"
+            onClick={() => goTo(active + 1)}
+            disabled={active === COLS.length - 1}
+            aria-label="Offre suivante"
+          >
+            →
+          </button>
+        </div>
+      </div>
+
+      {/* TABLE — bordure qui suit la couleur de l'offre active */}
+      <div
+        className="table-wrap"
+        style={{ borderColor: activeCol.color } as React.CSSProperties}
+      >
+        <div className="table-scroll">
           <table>
             <thead>
               <tr>
-                {/* cellule vide sticky coin */}
                 <th className="th-label-corner" />
+
                 {COLS.map((col, i) => (
-                  <th
-                    key={col.key}
-                    ref={(el) => { colRefs.current[i] = el; }}
-                    className={`th-offer${active === i && isMobile ? ' th-active' : ''}`}
-                    style={{ '--col-color': col.color } as React.CSSProperties}
-                  >
-                    <Image src={col.img as StaticImageData} alt={col.label} width={80} height={40} style={{ objectFit: 'contain' }} />
-                    <div className="th-name" style={{ color: col.color }}>{col.label}</div>
+  <th
+    key={col.key}
+    className={`th-offer ${active === i ? 'is-active' : ''}`}
+    style={{
+      '--col-color': col.color,
+      transform: `translateX(-${active * 100}%)`,
+    } as React.CSSProperties}
+  >
+                    <Image
+                      src={col.img as StaticImageData}
+                      alt={col.label}
+                      width={80}
+                      height={40}
+                    />
+                    <div className="th-name">{col.label}</div>
                     <span className="th-price">{col.price}</span>
                   </th>
                 ))}
               </tr>
             </thead>
+
             <tbody>
               {TABLE_SECTIONS.map((section) => (
-                <>
-                  <tr key={section.id} className={`section-row ${section.id}`}>
-                    <td colSpan={4}>{section.section}</td>
+                <Fragment key={section.id}>
+                  <tr className={`section-row ${section.id}`}>
+                    {/* colspan 2 = colonne label + 1 colonne offre */}
+                    <td colSpan={2}>{section.section}</td>
                   </tr>
+
                   {section.rows.map((row) => (
                     <tr key={row.label}>
                       <td className="td-label">{row.label}</td>
-                      <td>{renderCell(row.audit)}</td>
-                      <td>{renderCell(row.align)}</td>
-                      <td>{renderCell(row.rebrand)}</td>
+                      {COLS.map((col, i) => (
+                        <td
+  key={col.key}
+  className="td-offer"
+  style={{
+    transform: `translateX(-${active * 100}%)`,
+  }}
+>
+                          {renderCell(row[col.key as ColKey])}
+                        </td>
+                      ))}
                     </tr>
                   ))}
-                </>
+                </Fragment>
               ))}
             </tbody>
           </table>
