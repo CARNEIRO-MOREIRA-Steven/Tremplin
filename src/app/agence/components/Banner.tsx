@@ -37,16 +37,29 @@ const Banner = () => {
                 <img src={MarionFabrice.src} alt="" className='banner-marionfabrice'/>
             </div>
         </div>
-        <div className='banner-logo'>
-            <h2>Les projets de refonte de communication qu&apos;on a accompagné</h2>
-            <div>
-            <img src={DefiLogo.src} alt="" />
-            <img src={LogoCasamance.src} alt="" />
-            <img src={LeveilDesSensLogo.src} alt="" />
-            <img src={SalonIntuitionLogo.src} alt="" />
-            <img src={DressingLogo.src} alt="" />
-            <img src={BeYouLogo.src} alt="" />
-            </div>
+<div className="banner-logo">
+  <h2>Les projets de refonte de communication qu&apos;on a accompagné</h2>
+
+  <div className="logo-marquee">
+    <div className="logo-track">
+
+      <img src={DefiLogo.src} alt="" />
+      <img src={LogoCasamance.src} alt="" />
+      <img src={LeveilDesSensLogo.src} alt="" />
+      <img src={DressingLogo.src} alt="" />
+      <img src={SalonIntuitionLogo.src} alt="" />
+      <img src={BeYouLogo.src} alt="" />
+
+      {/* 🔁 duplication obligatoire */}
+      <img src={DefiLogo.src} alt="" />
+      <img src={LogoCasamance.src} alt="" />
+      <img src={LeveilDesSensLogo.src} alt="" />
+      <img src={DressingLogo.src} alt="" />
+      <img src={SalonIntuitionLogo.src} alt="" />
+      <img src={BeYouLogo.src} alt="" />
+
+    </div>
+  </div>
             <a href="./#cas-client">Découvrez nos cas clients</a>
         </div>
     </section>

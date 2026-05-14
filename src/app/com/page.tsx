@@ -45,7 +45,7 @@ export default function ComPage() {
 
       {/* ── POURQUOI ── */}
       <section className="refonte">
-        <h2 className="neon-title">Pourquoi faire un réalignement de communication ? <br /><span className="sub">Aussi appelé &apos;refonte de communication&apos;</span></h2>
+        <h2 className="neon-title" data-neon>Pourquoi faire un réalignement de communication ? <br /><span className="sub">Aussi appelé &apos;refonte de communication&apos;</span></h2>
         
 
           <div className="green-btns">
@@ -69,7 +69,7 @@ export default function ComPage() {
       {/* ── POUR QUI ── */}
       <section className="pour-qui">
 
-            <h2 className="neon-title">Être accompagné pour refondre sa communication<br /> — Comment savoir si c&apos;est pour moi ?</h2>
+            <h2 className="neon-title" data-neon>Être accompagné pour refondre sa communication<br /> — Comment savoir si c&apos;est pour moi ?</h2>
           <div className="pour-qui-grid">
             {[
               "Ton activité tourne, mais tu stagnes dans ta visibilité ou tes ventes.",
@@ -99,7 +99,7 @@ export default function ComPage() {
       {/* ── PROCESS 6 ÉTAPES ── */}
  <section className="process">
 
-  <h2 className="neon-title">
+  <h2 className="neon-title" data-neon>
     Comment se passe un accompagnement chez <br />
     Tremplin — sur l&apos;offre alignement ?
   </h2>
@@ -308,7 +308,7 @@ export default function ComPage() {
 
       <section className="inclus" >
         <div className='inclus-container'>
-            <h2 className="neon-title">Dans tous nos accompagnements, c&apos;est inclus :</h2>
+            <h2 className="neon-title" data-neon>Dans tous nos accompagnements, c&apos;est inclus :</h2>
           <div className="inclus-grid">
             {[
               { title: 'Suivi WhatsApp illimité', body: "Tu n'avances jamais seul. Tu peux nous écrire à tout moment pour poser une question, valider une idée ou débloquer une situation. Réactivité, clarté et soutien en continu." },

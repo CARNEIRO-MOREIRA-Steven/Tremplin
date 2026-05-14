@@ -83,6 +83,7 @@ const page = () => {
         </section>
         <aside className='aside-contact'>
           <p>Rempli le formulaire ou utilise un de nos moyens de communication ici</p>
+          <img className='arrow-contact' src={Arrow.src} alt="" />
           <div className='contact-reseau'>
             <a target='blanck' href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x6b30328a877e9bff:0xe01d7ce34c83b88b?sa=X&ved=1t:8290&ictx=111"><img src={LogoLocalisation.src} alt="Icon de localisation de Tremplin" /></a>
             <a target='blanck' href="tel:0676200099"><img src={LogoPhone.src} alt="Icon de téléphone de l'agence Tremplin" /></a>

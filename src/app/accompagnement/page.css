@@ -143,8 +143,8 @@
 }
 .border-offer { width: 100%; height: 1px; background-color: #000; }
 
-.offer-desc { height: 120px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
-.offer-tagline { height: 55px; text-transform: uppercase; margin-bottom: 15px;}
+.offer-desc { height: 140px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.offer-tagline { height: 75px; text-transform: uppercase; margin-bottom: 15px;}
 .offer-subtagline { height: 135px; text-align: justify; }
 .offer-includes { height: 280px; }
 
@@ -188,10 +188,9 @@ tbody tr:hover td { background: rgba(255,255,255,0.02); }
 
 .check { color: #7abd73; font-weight: 700; }
 .cross { color: rgb(255, 0, 0); }
-.note {  color: var(--gray); font-style: italic; }
 
 th { width: 25%; }
-th img { width: 100px; object-fit: cover; height: 50px; }
+th img { width: 100px; object-fit: cover; height: auto; }
 
 .offer-name-audit { font-family: 'JosefinSans'; text-shadow: 0 0 3px #5aceb8, 0 0 6px #5aceb8, 0 0 48px #5aceb8; }
 .offer-name-alignement { font-family: 'JosefinSans'; text-shadow: 0 0 3px #ce82bb, 0 0 6px #ce82bb, 0 0 48px #ce82bb; }
@@ -244,7 +243,8 @@ th span { font-weight: 500; font-family: 'JosefinSans'; }
 .footer-left { text-align: left; color: var(--gray); line-height: 1.7; }
 .footer-right { color: var(--pink); text-transform: uppercase; letter-spacing: 0.5px; }
 
-.offer-title-group { position: relative; }
+.offer-title-group { position: relative;
+height: 70px; }
 
 /* ══════════════════════════════════════════════
    TABLET LARGE (max 1024px)
@@ -280,6 +280,10 @@ th span { font-weight: 500; font-family: 'JosefinSans'; }
         gap: 20px;
     }
 
+    .offer-name{
+      font-size: 30px;
+    }
+
     .hero-subtitle, .hero-desc {
         padding: 20px;
     }
@@ -304,118 +308,9 @@ th span { font-weight: 500; font-family: 'JosefinSans'; }
     /* TABLEAU — scroll horizontal */
     .compare { padding: 0; }
 
-    .table-wrap {
-        border: 12px solid #ce82bb;
-        padding: 0;
-        /* Scroll horizontal activé ici */
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        /* Indicateur visuel de scroll */
-        position: relative;
-    }
-
-    /* Hint de scroll */
-    .table-wrap::after {
-        content: '← Défiler →';
-        display: block;
-        text-align: center;
-        color: #ce82bb;
-        padding: 6px;
-        font-style: italic;
-        letter-spacing: 1px;
-        background: #000;
-    }
-
-    table {
-        /* Largeur minimale : label + 3 colonnes lisibles */
-        min-width: 680px;
-        width: 100%;
-    }
-
-    /* Colonne labels : position sticky pour rester visible au scroll */
-    thead th:first-child,
-    tbody td:first-child {
-        position: sticky;
-        left: 0;
-        z-index: 2;
-        background: #111; /* fond pour masquer le contenu qui défile dessous */
-        min-width: 130px;
-        max-width: 150px;
-        word-break: break-word;
-    }
-
-    /* Section rows (titres catégories) : sticky aussi */
-    tbody tr.section-row td {
-        position: sticky;
-        left: 0;
-        background: #111;
-        z-index: 2;
-    }
-
-    /* Header sticky (titres des offres restent visibles au scroll vertical) */
-    thead th {
-        position: sticky;
-        top: 0;
-        z-index: 3;
-        background: #111;
-        padding: 10px 6px;
-    }
-
-    thead th:first-child {
-        z-index: 4; /* coin supérieur gauche au-dessus de tout */
-    }
-
-    /* Images dans le header */
-    th img {
-        width: 60px;
-        height: 35px;
-    }
-
-    /* Colonnes offres */
-    thead th:not(:first-child),
-    tbody td:not(:first-child) {
-        min-width: 140px;
-    }
 
     /* Footer */
     .footer-inner { grid-template-columns: 1fr; }
-}
-
-/* ══════════════════════════════════════════════
-   SMALL MOBILE (max 480px)
-══════════════════════════════════════════════ */
-@media (max-width: 480px) {
-    .hero-title {
-        padding: 20px 15px;
-    }
-
-    .hero-subtitle {  padding: 0 15px; }
-
-
-    .offers { padding: 15px; }
-
-
-
-    .cta-final { padding: 15px; }
-
-    .table-wrap {
-        border-width: 8px;
-    }
-
-    table { min-width: 560px; }
-
-    thead th:first-child,
-    tbody td:first-child {
-        min-width: 110px;
-        max-width: 120px;
-    }
-
-    thead th:not(:first-child),
-    tbody td:not(:first-child) {
-        min-width: 115px;
-    }
-
-    th img { width: 45px; height: 28px; }
 }
 
 /* ══════════════════════════════════════════════
@@ -484,9 +379,9 @@ thead th {
 }
 
 .th-price {
-  font-family: 'JosefinSans', sans-serif;
-  font-size: 12px;
-  color: rgba(255,255,255,0.5);
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 15px;
+  color: #fff;
   font-weight: 300;
 }
 
@@ -655,10 +550,6 @@ thead th span {
     display: none;
   }
 
-  table {
-    /* largeur min pour que les 3 colonnes soient toutes partiellement visibles */
-    min-width: 600px;
-  }
 
   /* Colonne labels sticky */
   .th-label-corner,
@@ -718,29 +609,5 @@ thead th span {
 
   .th-price {
     font-size: 11px;
-  }
-}
-
-/* ══════════════════════════════════════════════
-   SMALL MOBILE (max 480px)
-══════════════════════════════════════════════ */
-@media (max-width: 480px) {
-  .table-wrap {
-    border-width: 8px;
-  }
-
-  table {
-    min-width: 520px;
-  }
-
-  .th-label-corner,
-  .td-label {
-    min-width: 105px;
-    max-width: 115px;
-  }
-
-  .th-offer,
-  tbody td {
-    min-width: 120px;
   }
 }

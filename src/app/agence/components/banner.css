@@ -134,14 +134,14 @@
     }
 
     .banner-logo div {
-        flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
+        flex-wrap: nowrap;
     }
 
     .banner-logo img {
-        height: 110px;
-        width: 110px;
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -187,13 +187,13 @@
     }
 
     .banner-logo div {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
         gap: 15px;
     }
 
     .banner-logo img {
-        height: 80px;
+        height: 80px !important;
         width: 80px;
     }
 
@@ -201,4 +201,45 @@
         font-size: 16px;
         text-align: center;
     }
+    .logo-track {
+    animation: scroll 5s linear infinite !important;
+    }
+}
+
+/* Animation Logo Banner */
+
+.banner-logo {
+  overflow: hidden;
+}
+
+.logo-marquee {
+  overflow: hidden;
+  width: 100%;
+    padding: 50px 0;
+
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.logo-track img {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Animation infinie */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

@@ -39,7 +39,9 @@ export default function AccompagnementsPage() {
             {/* Audit Express */}
             <div className="offer-card first">
               <span className="offer-tag">Le prix mini</span>
+              <div className="offer-title-group">
               <div className="offer-name">audit express</div>
+              </div>
               <p className="offer-desc">
                 Tu sens que quelque chose cloche dans ta communication mais tu ne sais pas quoi.
                 Tu veux <strong>un diagnostic franc</strong>, rapide et concret.

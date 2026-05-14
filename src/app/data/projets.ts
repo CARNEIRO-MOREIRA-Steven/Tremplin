@@ -54,11 +54,11 @@ export const projectsData: Project[] = [
     name: "Madaakin",
     description: "Création d'une marque de spiritueux pour un positionnement prenium",
     longDescription: "Audit de projet - Recherche de concept - Création de charte graphique - Création de logo",
-    image: Madaakin.src,
+    image: LogoMadaakin.src,
     image1Details : [
       "Recherche d'identité"
     ],
-    image2 : LogoMadaakin.src,
+    image2 : Madaakin.src,
         image2Details : [
       "Création univers graphique"
     ],

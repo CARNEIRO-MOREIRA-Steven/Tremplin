@@ -32,7 +32,23 @@ const Header = () => {
           <li><a href="./">Accueil</a></li>
           <li><a href="/agence">Notre Agence</a></li>
           <li><a href="/audit">Audit de com&apos;</a></li>
-          <li><a href="/accompagnement">Nos accompagnements</a></li>
+          <li className="dropdown">
+            <a href="/accompagnement">Nos accompagnements</a>
+
+            <ul className="submenu">
+        <li>
+            <a href="/branding">
+                Rebranding
+            </a>
+        </li>
+
+        <li>
+            <a href="/com">
+                Réalignement de com&apos;
+            </a>
+        </li>
+    </ul>
+          </li>
           {/* <li><a href="/com">Refondre ma com&apos;</a></li>
           <li><a href="/branding">Me creer une image de marque</a></li> */}
           <li><a href="/contact">Contact</a></li>

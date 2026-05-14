@@ -172,6 +172,14 @@
   animation: typing 1.4s steps(40, end) forwards;
 }
 
+.problemes-title{
+  opacity: 0;
+}
+.problemes-title.show-title{
+    opacity: 1;
+    animation: typing 1.4s steps(40, end) forwards;
+}
+
 @keyframes typing {
   from { width: 0; }
   to { width: 100%; }
@@ -217,7 +225,9 @@
 .problemes li,
 .problemes span,
 .obtiens li,
-.obtiens span {
+.obtiens span,
+.problemes h4,
+.obtiens h4 {
   opacity: 0;
   transform: translateY(15px);
   transition:
@@ -230,7 +240,9 @@
 .problemes.show-content li,
 .problemes.show-content span,
 .obtiens.show-content li,
-.obtiens.show-content span {
+.obtiens.show-content span,
+.problemes.show-content h4,
+.obtiens.show-content h4 {
   opacity: 1;
   transform: translateY(0);
 }
@@ -306,4 +318,14 @@
       1px 100%;
     box-shadow: 0 0 15px #fff;
   }
+}
+
+
+.problemes h4, .obtiens h4{
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 3px #000000, 0 0 6px #000, 0 0 48px #000;
+    text-align: center;
+    font-family: "Kodchasan", sans-serif;
+    padding: 5px;
 }

@@ -64,3 +64,44 @@ header img{
         padding: 78px 0 0 0;
     }
 }
+
+
+/* SOUS MENU */
+
+.dropdown {
+    list-style: none;
+}
+
+/* lien principal */
+.dropdown > a {
+    display: block;
+}
+
+/* sous menu intégré */
+.submenu {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* items */
+.submenu li a {
+    display: block;
+    color: #fff;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+/* hover = le menu s'agrandit */
+.dropdown:hover .submenu {
+    max-height: 100px; /* assez grand pour contenir les items */
+    opacity: 1;
+    transform: translateY(0);
+}

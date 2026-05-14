@@ -272,7 +272,7 @@
 .proof-labels {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 50px;
     margin-bottom: 20px;
     font-family: 'Kodchasan';
 }
@@ -883,6 +883,15 @@
         width: auto;
     }
 
+    .content-audit-left{
+        position: initial;
+    }
+
+    .audit-col-left p, .audit-bonus-title{
+        width: auto;
+        text-align: center;
+    }
+
     .promise-intro p {
         font-size: 16px;
     }
@@ -910,17 +919,18 @@
     /* Social proof */
     .social-proof {
         padding: 30px 0;
+        gap: 15px;
     }
 
     .proof-labels {
         grid-template-columns: 1fr;
         padding: 0 15px;
         gap: 8px;
+        margin: 0;
     }
 
     .proof-label {
         width: 100%;
-        font-size: 0.8rem;
         padding: 8px 10px;
     }
 
@@ -932,12 +942,17 @@
     .testimonials-grid-left,
     .testimonials-grid-right {
         flex-direction: column;
-        padding: 0 15px;
+        padding: 0 ;
+        text-align: center;
     }
 
     .testi-item {
         width: 100%;
-        font-size: 0.82rem;
+        text-align: center;
+    }
+
+    .testimonials-grid-left{
+        margin-bottom: 15px;
     }
 
     /* Audit content */
@@ -1005,63 +1020,5 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-    }
-}
-
-/* ============================================================
-   RESPONSIVE — SMALL MOBILE (max 480px)
-   ============================================================ */
-@media (max-width: 480px) {
-    .difference-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .big-title {
-        font-size: 1.8rem;
-    }
-
-    .proof-labels {
-        grid-template-columns: 1fr;
-    }
-
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .audit-content-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .promise-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .audit-image-hero {
-        width: 200px;
-        height: 150px;
-    }
-
-    .hero-analyse {
-        width: 100%;
-        padding: 0 15px;
-        font-size: 0.9rem;
-    }
-
-    .price-badge {
-        right: 0;
-        bottom: -30px;
-    }
-
-    .price-badge-inner {
-        width: 65px;
-        height: 65px;
-    }
-
-    .price-badge-num {
-        font-size: 1rem;
-    }
-
-    .faq-title {
-        font-size: 16px;
     }
 }

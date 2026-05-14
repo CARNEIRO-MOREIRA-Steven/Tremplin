@@ -28,15 +28,29 @@ const Footer = () => {
             <a target='blanck' href="https://www.facebook.com/p/Tremplinentreprendre-100090948333418/"><img src={LogoFacebook.src} alt="Icon Facebook de l'agence Tremplin" /></a>
           </div>
         <nav>
-        <ul>
+<ul>
           <li><a href="./">Accueil</a></li>
           <li><a href="/agence">Notre Agence</a></li>
-          <li><a href="/audit">Faire un audit de ma com&apos;</a></li>
-          <li><a href="/accompagnement">Me faire accompagner</a></li>
-          <li><a href="/com">Refondre ma com&apos;</a></li>
-          <li><a href="/branding">Me creer une image de marque</a></li>
+          <li><a href="/audit">Audit de com&apos;</a></li>
+          <li className="dropdown">
+            <a href="/accompagnement">Nos accompagnements</a>
+
+        <li>
+            <a href="/branding">
+                Rebranding
+            </a>
+        </li>
+
+        <li>
+            <a href="/com">
+                Réalignement de com&apos;
+            </a>
+        </li>
+          </li>
+          {/* <li><a href="/com">Refondre ma com&apos;</a></li>
+          <li><a href="/branding">Me creer une image de marque</a></li> */}
           <li><a href="/contact">Contact</a></li>
-          <li><a href="/faq">J&apos;ai des questions</a></li>
+          {/* <li><a href="/faq">J&apos;ai des questions</a></li> */}
         </ul>
         </nav>
         </div>

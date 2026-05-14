@@ -32,8 +32,7 @@ const Offre = () => {
           const obtiens = card.querySelector<HTMLElement>('.obtiens')
           const button = card.querySelector<HTMLElement>('a')
 
-          const baseDelay = cardIndex * 5500
-
+          const baseDelay = 0
           /* ---------------- */
           /* TITRE (typing) */
           /* ---------------- */
@@ -42,13 +41,13 @@ const Offre = () => {
             title?.classList.add('show-title')
           }, baseDelay)
 
-          /* ---------------- */
-          /* PROBLEMES BORDER */
-          /* ---------------- */
+          // /* ---------------- */
+          // /* PROBLEMES BORDER */
+          // /* ---------------- */
 
           setTimeout(() => {
-            problemes?.classList.add('draw')
-          }, baseDelay + 1200)
+            problemes?.classList.add('show-title')
+          }, baseDelay + 1000)
 
           /* ---------------- */
           /* PROBLEMES CONTENT */
@@ -56,15 +55,15 @@ const Offre = () => {
 
           setTimeout(() => {
             problemes?.classList.add('show-content')
-          }, baseDelay + 2300)
+          }, baseDelay + 2000)
 
-          /* ---------------- */
-          /* OBTIENS BORDER */
-          /* ---------------- */
+          // /* ---------------- */
+          // /* OBTIENS BORDER */
+          // /* ---------------- */
 
-          setTimeout(() => {
-            obtiens?.classList.add('draw')
-          }, baseDelay + 3300)
+          // setTimeout(() => {
+          //   obtiens?.classList.add('draw')
+          // }, baseDelay + 3300)
 
           /* ---------------- */
           /* OBTIENS CONTENT */
@@ -72,7 +71,7 @@ const Offre = () => {
 
           setTimeout(() => {
             obtiens?.classList.add('show-content')
-          }, baseDelay + 4400)
+          }, baseDelay + 3000)
 
           /* ---------------- */
           /* BOUTON */
@@ -80,7 +79,7 @@ const Offre = () => {
 
           setTimeout(() => {
             button?.classList.add('show-btn')
-          }, baseDelay + 5200)
+          }, baseDelay + 4000)
 
         })
 
@@ -117,13 +116,14 @@ const Offre = () => {
           <section>
 
             <ul className='problemes'>
-              <li>Tu ne sais pas ce que tu fais est &quot;bien&quot;</li>
+              <h4>Tes problèmes</h4>
+              <li>Tu ne sais pas si ce que tu fais est &quot;bien&quot;</li>
               <li>Tu sens qu&apos;un truc bloque, mais tu ne sais pas quoi</li>
               <li>Tu as <strong>besoin de conseils pour mieux communiquer</strong></li>
             </ul>
 
             <ul className='obtiens'>
-              <span>Obtiens :</span>
+              <h4>Obtiens :</h4>
               <li>Un <strong>éclairage limpide sur ce qui freine ta com&apos;</strong></li>
               <li>Des <strong>pistes concrètes</strong> à activer immédiatement</li>
               <li>Le sentiment de savoir enfin où tu vas</li>
@@ -149,6 +149,7 @@ const Offre = () => {
           <section>
 
             <ul className='problemes'>
+              <h4>Tes problèmes</h4>
               <li><strong>Tu ne sais plus comment te présenter</strong>, parler de ton entreprise</li>
               <li><strong>Tu n&apos;as pas les bons mots</strong> et n&apos;attire pas les bons clients</li>
               <li>Tu sens que <strong>ton message manque de structure</strong></li>
@@ -156,7 +157,7 @@ const Offre = () => {
             </ul>
 
             <ul className='obtiens'>
-              <span>Obtiens :</span>
+              <h4>Obtiens :</h4>
               <li><strong>Une direction claire</strong> et assumée</li>
               <li>Une refonte <strong>totale de ta communication</strong>, alignée à ton business</li>
               <li>Une <strong>communication qui te ressemble</strong></li>
@@ -183,13 +184,14 @@ const Offre = () => {
           <section>
 
             <ul className='problemes'>
+                            <h4>Tes problèmes</h4>
               <li>Tu sens que <strong>ton image ne te ressemble plus</strong></li>
               <li><strong>Ton business a évolué</strong>, mais pas ta communication</li>
               <li><strong>Tu veux être perçu à la hauteur de ton expertise</strong></li>
             </ul>
 
             <ul className='obtiens'>
-              <span>Obtiens :</span>
+              <h4>Obtiens :</h4>
               <li><strong>Une image qui incarne ton évolution</strong></li>
               <li><strong>Une communication puissante</strong> qui marque les esprits</li>
               <li><strong>Un univers entier qui reflète exactement ce que tu es</strong></li>

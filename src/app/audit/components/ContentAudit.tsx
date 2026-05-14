@@ -10,7 +10,7 @@ const ContentAudit = () => {
 
         <div className='content-audit-right'>
           <div className="audit-content-header">
-            <h2 className="neon-title">
+            <h2 className="neon-title" data-neon>
               Ce que contient l&apos;Audit de Communication Express 
               Signé Tremplin
             </h2>

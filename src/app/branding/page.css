@@ -751,8 +751,12 @@ text-align: justify;
   .methode-content, .inclus-container, .temoignage-container{
     width: 100%;
   }
-  .inclus-container, .temoignage-container, .pourquoi-body, .start-projet-details, .temoignage-grid, .resultats, .duree{
+  .inclus-container, .temoignage-container, .pourquoi-body, .start-projet-details, .temoignage-grid, .resultats, .duree, .pour-qui-grid{
     gap: 20px;
+    width: 100%;
+  }
+  .pour-qui .neon-title{
+    width: 100%;
   }
   .start-projet-details{
     padding: 0;

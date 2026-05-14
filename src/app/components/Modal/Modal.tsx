@@ -70,10 +70,10 @@ const Modal = (props: { title: React.ReactNode }) => {
                     <h2 className="project-name">
                       {project.description}
                     </h2>
-                    <p>
+                    {/* <p>
                       <MoveRight />
                       {project.bestResult}
-                      </p>
+                      </p> */}
                   </div>
                 </aside>
               ))}

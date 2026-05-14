@@ -53,6 +53,11 @@ strong {
     padding: 50px 30px;
 }
 
+#prochaine-etape div{
+        width: 80%;
+    max-width: 1000px;
+}
+
 .neon-num {
     position: initial;
     color: #fff;
@@ -109,12 +114,12 @@ strong {
 }
 
 .image-left {
-    height: 550px;
+    width: 25%;
     object-fit: contain;
 }
 
 .image-right {
-    height: 750px;
+    width: 80%;
     object-fit: contain;
 }
 
@@ -228,7 +233,7 @@ strong {
         gap: 15px;
     }
     .image-left{
-        width: 150px !important;
+        width: 100px !important;
     }
 
     .image-left,
@@ -250,49 +255,5 @@ strong {
         font-size: 14px;
         text-align: center;
         padding: 0 10px;
-    }
-}
-
-/* ===================== SMALL MOBILE (max 480px) ===================== */
-@media (max-width: 480px) {
-    h1 span {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 14px;
-    }
-
-    .process-container {
-        padding: 25px 15px;
-    }
-
-    .process-details div {
-        max-width: 100%;
-    }
-
-    #prochaine-etape {
-        padding: 25px 12px;
-    }
-
-    #prochaine-etape li h3 {
-        font-size: 16px;
-    }
-
-    .neon-num {
-        font-size: 26px;
-    }
-
-    .etape-title {
-        font-size: 15px;
-    }
-
-    .etape-bottom-title {
-        font-size: 20px;
-    }
-
-    .image-left,
-    .image-right {
-        max-width: 100%;
     }
 }

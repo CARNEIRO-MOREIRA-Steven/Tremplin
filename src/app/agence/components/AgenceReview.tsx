@@ -6,7 +6,7 @@ const AgenceReview = () => {
     <section className='agence-review'>
     <ReviewsClient 
     title = {
-          <h2 className='neon-title'>Ils nous ont fait confiance</h2>
+          <h2 className='neon-title' data-neon>Ils nous ont fait confiance</h2>
     } 
     subtitle=''
     details=''

@@ -196,26 +196,26 @@ export default function TableComparatif() {
         </div>
       </div>
 
-      {/* TABLE — bordure qui suit la couleur de l'offre active */}
+      {/* TABLE */}
       <div
         className="table-wrap"
         style={{ borderColor: activeCol.color } as React.CSSProperties}
       >
         <div className="table-scroll">
           <table>
+            <colgroup>
+              <col style={{ width: '50%' }} />
+              <col style={{ width: '50%' }} />
+            </colgroup>
             <thead>
               <tr>
                 <th className="th-label-corner" />
-
                 {COLS.map((col, i) => (
-  <th
-    key={col.key}
-    className={`th-offer ${active === i ? 'is-active' : ''}`}
-    style={{
-      '--col-color': col.color,
-      transform: `translateX(-${active * 100}%)`,
-    } as React.CSSProperties}
-  >
+                  <th
+                    key={col.key}
+                    className={`th-offer ${active === i ? 'is-active' : 'is-hidden'}`}
+                    style={{ '--col-color': col.color } as React.CSSProperties}
+                  >
                     <Image
                       src={col.img as StaticImageData}
                       alt={col.label}
@@ -233,7 +233,6 @@ export default function TableComparatif() {
               {TABLE_SECTIONS.map((section) => (
                 <Fragment key={section.id}>
                   <tr className={`section-row ${section.id}`}>
-                    {/* colspan 2 = colonne label + 1 colonne offre */}
                     <td colSpan={2}>{section.section}</td>
                   </tr>
 
@@ -242,12 +241,9 @@ export default function TableComparatif() {
                       <td className="td-label">{row.label}</td>
                       {COLS.map((col, i) => (
                         <td
-  key={col.key}
-  className="td-offer"
-  style={{
-    transform: `translateX(-${active * 100}%)`,
-  }}
->
+                          key={col.key}
+                          className={`td-offer ${active === i ? 'is-active' : 'is-hidden'}`}
+                        >
                           {renderCell(row[col.key as ColKey])}
                         </td>
                       ))}

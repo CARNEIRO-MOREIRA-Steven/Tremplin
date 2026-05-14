@@ -3,7 +3,7 @@ import AuditIcon from "../../../../public/auditExpress.png"
 import './banner.css'
 
 import Branding from '../../../../public/rebranding interieur  1.png'
-import MarionFabriceAlignement from '../../../../public/marion-fabrice-alignement.png'
+import MarionFabriceAlignement from '../../../../public/2.png'
 
 
 

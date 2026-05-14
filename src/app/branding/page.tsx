@@ -43,7 +43,7 @@ export default function ComPage() {
 
       {/* ── POURQUOI ── */}
       <section className="refonte">
-        <h2 className="neon-title">Pourquoi faire un rebranding de mon entreprise ? <br /><span className="sub">Aussi appelé &apos;création de marque&apos;</span></h2>
+        <h2 className="neon-title" data-neon>Pourquoi faire un rebranding de mon entreprise ? <br /><span className="sub">Aussi appelé &apos;création de marque&apos;</span></h2>
         
 
           <div className="green-btns">
@@ -67,7 +67,7 @@ export default function ComPage() {
       {/* ── POUR QUI ── */}
       <section className="pour-qui">
 
-            <h2 className="neon-title">Transformer l&apos;identité de mon entreprise en image de marque comment savoir si c&apos;est pour moi ?</h2>
+            <h2 className="neon-title" data-neon>Transformer l&apos;identité de mon entreprise en image de marque comment savoir si c&apos;est pour moi ?</h2>
           <div className="pour-qui-grid">
             {[
               "Tu sens que tu pourrais viser plus haut... si seulement ça se voyait.",
@@ -98,7 +98,7 @@ export default function ComPage() {
       {/* ── PROCESS 6 ÉTAPES ── */}
  <section className="process">
 
-  <h2 className="neon-title">
+  <h2 className="neon-title" data-neon>
     Comment se passe un accompagnement chez <br />
     Tremplin — sur l&apos;offre rebranding ?
   </h2>
@@ -230,7 +230,7 @@ export default function ComPage() {
 
       <section className="inclus" >
         <div className='inclus-container'>
-            <h2 className="neon-title">Dans tous nos accompagnements, c&apos;est inclus :</h2>
+            <h2 className="neon-title" data-neon>Dans tous nos accompagnements, c&apos;est inclus :</h2>
           <div className="inclus-grid">
             {[
               { title: 'Suivi WhatsApp illimité', body: "Tu n'avances jamais seul. Tu peux nous écrire à tout moment pour poser une question, valider une idée ou débloquer une situation. Réactivité, clarté et soutien en continu." },
@@ -256,7 +256,7 @@ export default function ComPage() {
         <div className='temoignage-container'>
         <div className='div-title'>
           <p className="texte-give intro-title">Témoignages</p>
-          <h2 className="intro-subtitle">Ils ont choisi de refondre leur communication<br />Ils ont choisis l&apos;offre alignement</h2>
+          <h2 className="intro-subtitle">Ils ont choisi de refondre leur communication<br />Ils ont choisis l&apos;offre rebranding</h2>
         </div>
           <div className="temoignage-grid">
         

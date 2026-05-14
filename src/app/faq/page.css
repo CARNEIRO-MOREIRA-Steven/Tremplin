@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 .faq-page {
-  --cyan-bg: #3FB3E3;
+  --cyan-bg: #5aceb8;
   font-family: 'Open Sans', sans-serif; background: var(--cyan-bg); color: var(--black); overflow-x: hidden;
 }
 .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }

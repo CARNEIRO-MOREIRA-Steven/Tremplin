@@ -698,8 +698,9 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   .methode-content, .inclus-container, .temoignage-container{
     width: 100%;
   }
-  .inclus-container, .temoignage-container, .pourquoi-body, .start-projet-details, .temoignage-grid, .resultats, .duree{
+  .inclus-container, .temoignage-container, .pourquoi-body, .start-projet-details, .temoignage-grid, .resultats, .duree, .pour-qui-grid{
     gap: 20px;
+    width: 100%;
   }
   .process-grid{
     display: none;

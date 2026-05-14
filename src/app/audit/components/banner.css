@@ -189,6 +189,7 @@
     text-shadow: 0 0 6px #000;
 }
 
-    .hero-tu-te-demandes p {
-        color: #000;
-    }
+.hero-tu-te-demandes p {
+    color: #000;
+    line-height: 2;
+}
