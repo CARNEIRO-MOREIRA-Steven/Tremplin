@@ -6,6 +6,8 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
+import NeonAnimate from './NeonAnimate/NeonAnimate'
+
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -24,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <NeonAnimate />
         {children}
       </body>
     </html>

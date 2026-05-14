@@ -164,7 +164,7 @@ svg.lucide{
   font-weight: 400;
   text-transform: uppercase;
 }
-.neon-title{
+.neon-title {
     text-align: center;
     font-family: 'Kodchasan';
     width: fit-content;
@@ -173,10 +173,73 @@ svg.lucide{
     padding: 15px 35px;
     border-radius: 12px;
     font-weight: 200;
+
     background: rgba(0, 0, 0, 0.7);
     border: 2px solid #ce82bb;
-    box-shadow: 0 0 6px #ce82bb, 0 0 12px #ce82bb, 0 0 24px #ce82bb;
-    text-shadow: 0 0 3px #000, 0 0 6px #ce82bb, 0 0 48px #000;
+
+    /* OFF */
+    opacity: 0.2;
+
+    box-shadow:
+        0 0 2px #ce82bb;
+
+    text-shadow:
+        0 0 2px #000;
+}
+
+/* ÉTAT FINAL */
+.neon-title.active {
+
+    opacity: 1;
+
+    box-shadow:
+        0 0 6px #ce82bb,
+        0 0 12px #ce82bb,
+        0 0 24px #ce82bb,
+        0 0 48px #ce82bb;
+
+    text-shadow:
+        0 0 3px #000,
+        0 0 6px #ce82bb,
+        0 0 12px #ce82bb,
+        0 0 24px #ce82bb;
+
+    animation: neonStartup 1.5s ease;
+}
+
+@keyframes neonStartup {
+
+    0% {
+        opacity: 0.1;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0.2;
+        box-shadow: none;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0.3;
+        box-shadow: none;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 .texte-neon{
   color: #ce82bb;

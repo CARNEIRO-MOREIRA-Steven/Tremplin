@@ -27,7 +27,7 @@ export default function Home() {
       <About />
       <ListServices />
       <Modal 
-      title = {<> <h2 className='neon-title'>Ils ont travaillés avec nous</h2> <br /><h3 className="modal-subtitle">100% de nos clients satisfaits</h3> </>}
+      title = {<> <h2 className='neon-title' data-neon>Ils ont travaillés avec nous</h2> <br /><h3 className="modal-subtitle">100% de nos clients satisfaits</h3> </>}
       />
       <ReviewsClient 
       title = 'Tu peux te projeter, ou lire ceux qui sont déjà passés par la.'

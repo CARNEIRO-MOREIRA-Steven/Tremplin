@@ -99,7 +99,7 @@ const Offre = () => {
   return (
     <section ref={sectionRef} className='offre-container'>
 
-      <h2 className='neon-title'>
+      <h2 className='neon-title' data-neon>
         Les 3 offres de l&apos;agence
       </h2>
 

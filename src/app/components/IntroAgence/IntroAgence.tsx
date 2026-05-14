@@ -5,7 +5,7 @@ import ImageVisio from '../../../../public/image-visio.png'
 const IntroAgence = () => {
   return (
     <section className='intro-agence-container'>
-        <h2 className='neon-title'>
+        <h2 className='neon-title' data-neon>
             Prêt.e à révéler le plein potentiel de ta boite ?
         </h2>
         <p className='intro-agence-texte'>LE MONDE N&apos;A PAS BESOIN D&apos;UNE ÉNIÈME <strong>AGENCE DE COMMUNICATION </strong>

@@ -7,7 +7,7 @@ import MessageIcon from '../../../../public/icon-message.png'
 const AtoutTremplin = () => {
   return (
     <section className='about-agence-container'>
-        <h2 className='neon-title'>Les atouts de tremplin</h2>
+        <h2 className='neon-title' data-neon>Les atouts de tremplin</h2>
         <section className='about-agence-content'>
             <section>
                 <img src={FranceIcon.src}/>

@@ -5,7 +5,7 @@ import './process-projet.css'
 const ProcessProjet = () => {
   return (
     <section className='process-container' id='process'>
-        <h2 className='neon-title'>Comment ça ce passe quand tu nous confies un projet ?</h2>
+        <h2 className='neon-title' data-neon>Comment ça ce passe quand tu nous confies un projet ?</h2>
         <div className='process-details'>
             <aside>
                 <h3><span className='neon-num'>1</span> Prise de contact</h3>

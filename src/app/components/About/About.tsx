@@ -36,7 +36,7 @@ const About = () => {
       </div>
        
        <section className='about-mission'>
-        <h2 className='neon-title'>Notre mission</h2>
+        <h2 className='neon-title' data-neon>Notre mission</h2>
         <h2 className='about-mission-subtitle'>Propulser ton business en révélant la puissance de ton offre grâce à <br></br> une communication claire, alignée et autonome. <br /> <br /><span className='texte-neon'>Tremplin au service des entreprneurs</span></h2>
         <a href="/agence" className='little-btn-white'>En savoir plus</a>
        </section>
