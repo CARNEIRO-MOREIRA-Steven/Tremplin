@@ -265,7 +265,7 @@ export default function Quiz() {
 
             {/* Calendly */}
             <a
-              href="https://calendly.com/PLACEHOLDER"
+              href="https://calendly.com/email-tremplin-entreprendre/call-declic"
               target="_blank"
               rel="noopener noreferrer"
               className="action-btn action-btn--blue"
@@ -273,12 +273,6 @@ export default function Quiz() {
               <span className="action-btn__icon">📞</span>
               Je prends mon call découverte
             </a>
-
-            {/* Formulaire contact */}
-            <button className="action-btn action-btn--purple" onClick={() => setModal("contact")}>
-              <span className="action-btn__icon">✉️</span>
-              Recevoir mes résultats par mail
-            </button>
 
           </div>
 
@@ -353,101 +347,6 @@ export default function Quiz() {
         )}
 
         {/* ── Modal Contact ──────────────────────────────────────────────────── */}
-        {modal === "contact" && (
-          <div className="modal-overlay" onClick={() => setModal(null)}>
-            <div className="modal-box" onClick={(e) => e.stopPropagation()}>
-              <button className="modal-close" onClick={() => setModal(null)}>✕</button>
-
-              {sendSuccess ? (
-                <div className="send-success">
-                  <p className="send-success__icon">✅</p>
-                  <h3 className="modal-title">C&apos;est envoyé !</h3>
-                  <p className="modal-desc">
-                    Tes résultats sont dans ta boîte mail.
-                    {contactForm.consentShare && " Tremplin a également reçu une copie."}
-                  </p>
-                  <button className="little-btn-pink" onClick={() => setModal(null)}>Fermer</button>
-                </div>
-              ) : (
-                <>
-                  <h3 className="modal-title">Recevoir tes résultats par mail</h3>
-                  <p className="modal-desc">
-                    Reçois ton profil directement dans ta boîte mail. Tu choisis ce que tu partages.
-                  </p>
-
-                  <label className="form-label">Prénom *
-                    <input
-                      className="form-input"
-                      type="text"
-                      placeholder="Marie"
-                      value={contactForm.name}
-                      maxLength={50}
-                      onChange={(e) => setContactForm({ ...contactForm, name: e.target.value })}
-                    />
-                  </label>
-
-                  <label className="form-label">Email *
-                    <input
-                      className="form-input"
-                      type="email"
-                      placeholder="marie@exemple.fr"
-                      value={contactForm.email}
-                      onChange={(e) => setContactForm({ ...contactForm, email: e.target.value })}
-                    />
-                  </label>
-
-                  {/* Consent email obligatoire */}
-                  <label className="consent-row consent-row--required">
-                    <input
-                      type="checkbox"
-                      checked={contactForm.consentEmail}
-                      onChange={(e) => setContactForm({ ...contactForm, consentEmail: e.target.checked })}
-                    />
-                    <span>
-                      J&apos;accepte de recevoir mes résultats par email. *
-                      <br />
-                      <small className="rgpd-note">Email utilisé uniquement pour l&apos;envoi de ce résultat.</small>
-                    </span>
-                  </label>
-
-                  {/* Consent partage optionnel */}
-                  <label className="consent-row">
-                    <input
-                      type="checkbox"
-                      checked={contactForm.consentShare}
-                      onChange={(e) => setContactForm({ ...contactForm, consentShare: e.target.checked })}
-                    />
-                    <span>
-                      J&apos;accepte de partager mes résultats avec Tremplin pour être recontacté·e. (optionnel)
-                      <br />
-                      <small className="rgpd-note">Données conservées 12 mois, non revendues, supprimables sur demande.</small>
-                    </span>
-                  </label>
-
-                  <p className="rgpd-footer">
-                    🔒 Conformément au RGPD, tes données sont protégées. Aucun spam, désinscription à tout moment via contact@tremplin.fr.
-                    Consulte notre <a href="/politique-confidentialite" className="rgpd-link">politique de confidentialité</a>.
-                  </p>
-
-                  {sendError && <p className="form-error">{sendError}</p>}
-
-                  <button
-                    className="little-btn-pink modal-submit"
-                    onClick={handleSendResults}
-                    disabled={
-                      sendLoading ||
-                      !contactForm.name.trim() ||
-                      !contactForm.email.trim() ||
-                      !contactForm.consentEmail
-                    }
-                  >
-                    {sendLoading ? "Envoi en cours…" : "Envoyer mes résultats →"}
-                  </button>
-                </>
-              )}
-            </div>
-          </div>
-        )}
 
         <Footer />
       </section>
@@ -467,7 +366,7 @@ export default function Quiz() {
             {currentIndex + 1} / {questions.length}
           </p>
 
-          <h2 className="question-text neon-title">{currentQuestion.question}</h2>
+          <h2 className="question-text neon-title" data-neon>{currentQuestion.question}</h2>
 
           {currentQuestion.type === "single" && (
             <ul className="answers-list">

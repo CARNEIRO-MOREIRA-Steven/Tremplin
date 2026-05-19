@@ -9,10 +9,10 @@ const Banner = () => {
   return (
     <section className='banner-container'>
       <p className='banner-top'> 🤪 <strong>Pas de panique </strong> : on a une vision claire sur l&apos;intelligence artificielle dans la communication - et on l&apos;intègre déjà dans nos accompagnements </p>
-        <img className='banner-image' src={BannerImage.src} alt=''/>
+        <img className='banner-image' src={BannerImage.src} alt='idée créative pour une communication visible'/>
         <div className='bloc-title'>
         <h1 className='banner-title'>La communication pour <br /> propulser ton business.</h1>
-        <img src={LogoTremplin.src} alt="" />
+        <img src={LogoTremplin.src} alt="logo tremplin" />
         </div>
         <section className='banner-section-texte'>
         <p className='banner-texte'>La communication n&apos;a rien de mystérieux et elle peut même être ton levier de croissance. Tu peux avoir une communication qui vend.

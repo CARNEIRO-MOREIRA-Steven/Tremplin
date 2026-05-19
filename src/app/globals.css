@@ -129,7 +129,6 @@ svg.lucide{
     height: 25px;
     object-fit: contain;
     vertical-align: text-top;
-    margin-right: 5px;
 }
 
 
@@ -336,4 +335,9 @@ svg.lucide{
   .btn-pink{
     text-align: center;
   }
+}
+
+.little-btn-white:hover, .little-btn-blue:hover, .little-btn-black:hover, .little-btn-green:hover, .little-btn-pink{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 }

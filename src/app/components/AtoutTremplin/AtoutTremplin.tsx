@@ -13,7 +13,7 @@ const AtoutTremplin = () => {
                 <img src={FranceIcon.src}/>
                 <h2>Une agence de branding à Saint-Quentin (02)</h2>
                 <p>On est là, vraiment là. Créé par des entrepreneurs, au services des entrepreneurs. On connaît le terrain, les enjeux, et les dirigeants d&apos;ici.</p>
-                <h3>Même fuseau horaire, même vibes.</h3>
+                <h3>Même fuseau horaire, même vibe.</h3>
                 <a className='little-btn-white' href="/agence#prochaine-etape">Lire plus</a>
             </section>
             <section>
@@ -32,14 +32,14 @@ const AtoutTremplin = () => {
                 <a className='little-btn-white' href="/agence#prochaine-etape">Lire plus</a>
             </section>
         </section>
-        <p className='subtitle-atout texte-give'>Tremplin c&apos;est ton agence de communication hybrid une version 2.0 des egnces de com&apos; que tu connais. Tremplin devient ton allié réussite, c&apos;est ton nouveau collaborateur.</p>
+        <p className='subtitle-atout texte-give'>Tremplin c&apos;est ton agence de communication hybrid une version 2.0 des agences de com&apos; que tu connais. Tremplin devient ton allié réussite, c&apos;est ton nouveau collaborateur.</p>
         <section className='about-agence-cta'>
             <aside className='about-agence-cta-left'>
                 <h2 className='neon-white'>PRET A révéler le plein potentiel de ta marque ?</h2>
             </aside>
             <aside className='about-agence-cta-right'>
                 <p>Deux chemins, un seul objectif: te révéler.</p>
-                <a className='little-btn-white' href="https://calendly.com/email-tremplin-entreprendre/call-declic">Je réserve mon Call Déclic - GRATUIT-</a>
+                <a className='little-btn-white' href="https://calendly.com/email-tremplin-entreprendre/call-declic">Je réserve mon Call Déclic - OFFERT-</a>
                 <a className='little-btn-white' href="/contact">Je passe par le formulaire de contact</a>
             </aside>
         </section>

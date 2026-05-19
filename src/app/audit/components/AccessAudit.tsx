@@ -24,7 +24,7 @@ const AccessAudit = () => {
           {/* Témoignages */}
           <div className="testimonials-grid-left">
             <div className="testi-item">Cet audit tient toutes ses promesses »</div>
-            <div className="testi-item second-item-left">Ça m&apos;a permis d&apos;avoir une perspective tout autre que ce que je faisais jusqu&apos;à là »</div>
+            <div className="testi-item second-item-left">Ça m&apos;a permis d&apos;avoir une perspective tout autre que ce que je faisais jusque là »</div>
             <div className="testi-item">J&apos;ai de suite appliqué les conseils qui m&apos;ont été donnés et je ne m&apos;attendais pas à un tel résultat. Dès le premier post, j&apos;ai observé des changements. »</div>
             </div>
 

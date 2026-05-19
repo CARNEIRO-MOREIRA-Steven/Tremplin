@@ -15,7 +15,7 @@ const FAQ_ITEMS = [
   { q: "EN COMBIEN DE TEMPS VAIS-JE VOIR DES RÉSULTATS ?", a: "Les premiers déclics arrivent souvent dès les premières semaines. Plus de clarté, plus d'assurance, des messages plus fluides. Les vrais résultats s'installent dans la durée, parce que ta communication repose enfin sur des bases solides." },
   { q: "EST-CE QUE JE VAIS ÊTRE ACCOMPAGNÉ(E) OU SIMPLEMENT RECEVOIR DES LIVRABLES ?", a: "Tu es accompagné(e) du début à la fin. On t'explique, on échange, on ajuste ensemble. Tu ne repars pas avec des fichiers à utiliser seul(e), mais avec une vraie compréhension de ta communication." },
   { q: "COMMENT SE PASSE CONCRÈTEMENT L'ACCOMPAGNEMENT ?", a: "On avance étape par étape. On commence par comprendre ta situation, puis on construit une stratégie claire, avant de travailler ton message et ton image. Tu sais toujours où tu en es, ce qu'on fait et pourquoi, grâce à l'espace de travail partagé." },
-  { q: "Pourquoi investir dans le branding plutôt que dans la publicité ?", a: "La publicité attire. Le branding fait rester et fait choisir. Sans une image claire et un message fort, la pub amplifie... la confusion. Un bon branding travaille pour toi sur le long termer, même quand tu ne communiques pas." },
+  { q: "Pourquoi investir dans le branding plutôt que dans la publicité ?", a: "La publicité attire. Le branding fait rester et fait choisir. Sans une image claire et un message fort, la pub amplifie... la confusion. Un bon branding travaille pour toi sur le long terme, même quand tu ne communiques pas." },
   { q: "COMMENT PRENDRE RENDEZ-VOUS ET PAR QUOI COMMENCER ?", a: "Tu peux réserver un Call Déclic directement. C'est un premier échange pour comprendre ta situation et t'orienter vers l'offre la plus adaptée. Simple, sans pression." },
 ];
 
@@ -55,7 +55,7 @@ export default function ComPage() {
           <div className="pourquoi-body">
             <p>Parce qu&apos;à un moment, <strong>ton image n&apos;est plus à la hauteur</strong> de ce que tu es devenu(e)</p>
             <p>
-            Ton business a évolué, ton expertise aussi... mais ton image est restée bloquée à ta version &apos;debut&apos;. Ton univers visuel ne raconte plus ton niveau.</p>
+            Ton business a évolué, ton expertise aussi... mais ton image est restée bloquée à ta version &apos;début&apos;.&nbsp;Ton univers visuel ne raconte plus ton niveau.</p>
             <p><strong>Résultat :</strong> tu inspires la bonne énergie... mais <strong>pas la bonne perception.</strong> Tu te retrouve à convaincre, expliquer, justifier... <strong>alors qu&apos;une image juste ferait le travail à ta place.</strong></p>
             <p><strong>L&apos;offre rebranding  sert à te redonner un visuel qui dit vrai, qui impressionne sans en faire trop, et qui reflète enfin ta valeur réelle.</strong></p>
             <p>On repart de <strong>ton essence</strong>, on <strong>clarifie ton positionnement</strong>, on <strong>crée un univers</strong> graphique qui t&apos;incarne et <strong>on construit une image de marque </strong>qui ouvre des portes avant même que tu parles.</p>
@@ -72,7 +72,7 @@ export default function ComPage() {
             {[
               "Tu sens que tu pourrais viser plus haut... si seulement ça se voyait.",
               "Ton identité actuelle te bloque clairement dans ta croissance.",
-              "Tu veux une image prenium, cohérente, signature et arrêter de bricoler.",
+              "Tu veux une image premium, cohérente, signature et arrêter de bricoler.",
               "Tu as changé d'ambition, de direction, de posture.",
               "Tes clients idéaux ne te remarquent pas ou ne voient pas ton plein potentiel.",
               "Tu veux une stratégie + design travaillent ensemble, au milimètre près.",
@@ -140,7 +140,7 @@ export default function ComPage() {
               - premiers visuels réseaux,<br />
               - mini charte d&apos;utilisation,<br /></p>
               <p>On co-créer avec toi : questionnaire émotionnel, retours guidés, ajustements...</p>
-              <p>Objectif : créer une image qui te ressemble vraiment et qui pote ton niveau d&apos;expertise.</p>
+              <p>Objectif : créer une image qui te ressemble vraiment et qui porte ton niveau d&apos;expertise.</p>
             </div>
           </div>
         </div>
@@ -180,7 +180,7 @@ export default function ComPage() {
             <div className="step-body">
               <p>On clarifie tes objectifs et on t&apos;aide à faire les bons choix.</p>
               <p>Tu prends des décisions éclairées grâce à nos conseils simples et concrets.</p>
-              <p>On explore toutes les options stratégiques : présence en ligne, événementiel, promotion, lancement, prospection… selon ce qui sera vraiment ton activité.</p>
+              <p>On explore toutes les options stratégiques : présence en ligne, événementiel, promotion, lancement, prospection… selon ce que sera vraiment ton activité.</p>
               <p>Tu repars avec un carnet PDF de stratégie de marque, c&apos;est à dire qui tu es, à qui tu parles, ce qui te rend unique, comment tu veux te montrer, ce que tu veux dire + un plan d&apos;action pour mettre en place cette stratégie.</p>
             </div>
           </div>
@@ -198,7 +198,7 @@ export default function ComPage() {
                 <li>tes objectifs.</li>
               </ul>
               <p>On créé des visuels qui correspondent à ta nouvelle identité. Au delà des mots on te reconnaitra par l&apos;apparence et le design.</p>
-              <p>Et afin qu&apos;on puisse te porposer un calendrier de contenu qui suive tes exigences, tes demandes et tes attentes, tu remplis un court questionnaire et on crée pour toi un calendrier éditorial d&apos;un mois pour lancer ta nouvelle communication.</p>
+              <p>Et afin qu&apos;on puisse te proposer un calendrier de contenu qui suive tes exigences, tes demandes et tes attentes, tu remplis un court questionnaire et on crée pour toi un calendrier éditorial d&apos;un mois pour lancer ta nouvelle communication.</p>
             </div>
           </div>
         </div>
@@ -314,7 +314,7 @@ export default function ComPage() {
                   <li>- Temps de formation sur tes nouveaux outils</li>
                   <li>- Bilan de fin d&apos;accompagnement pour s&apos;assurer que tu es au clair pour la suite</li>
                 </ul>
-                <p><strong>à la fin, tu repars avec une direction claire,</strong>un message solide et un plan d&apos;action que tu sauras continuer à suivre.</p>
+                <p><strong>à la fin, tu repars avec une direction claire,</strong> un message solide et un plan d&apos;action que tu sauras continuer à suivre.</p>
               </aside>
             </div>
           </section>
@@ -331,7 +331,7 @@ export default function ComPage() {
             ))}
           </ul>
           <div className="faq-footer">
-            <Link href="/contact" className="little-btn-black">
+            <Link href="/faq" className="little-btn-black">
               J&apos;ai d&apos;autres questions
             </Link>
           </div>

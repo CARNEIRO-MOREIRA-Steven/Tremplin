@@ -110,6 +110,7 @@ input[type="checkbox"]:checked::after {
     align-items: center;
     justify-content: center;
     font-family: 'Gill Sans', sans-serif;
+    z-index: 2;
 }
 
 .arrow-contact{
@@ -149,7 +150,7 @@ a img{
         text-align: center;
     }
     form{
-        width: auto;
+        width: 80%;
     }
     .group-form{
         flex-direction: column;
@@ -171,6 +172,8 @@ a img{
         display: flex;
         justify-content: space-between;
         gap: 15px;
+        flex-direction: column;
+        align-items: center;
     }
     .aside-contact{
         position: relative;
@@ -178,8 +181,8 @@ a img{
         right: 0;
     }
     .arrow-contact{
-        left: 100px;
-        top: 140px;
+        right: auto;
+        rotate: 280deg;
     }
     .contact-reseau{
         position: initial;

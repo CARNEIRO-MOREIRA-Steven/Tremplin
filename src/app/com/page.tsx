@@ -361,14 +361,14 @@ export default function ComPage() {
               &apos;&apos; A partir de quand verrai-je des résultats ? &apos;&apos;
             </h2>
               <aside>
-                <p>Dès <strong>les premières semaines, tu ressentiras</strong> un gain de clarté, de confiance et de cohérence. </p>
-                <ul><p>Les retours clients et l&apos;impact sur ton positionnement <strong>deviennent visibles dès la mise en ligne</strong> de ta nouvelle image, souvent accompagnés de :</p>
-                  <li>Plus de réponse à tes posts,</li>
-                  <li>Meilleure perception &apos;pro&apos;,</li>
-                  <li>Des clients plus alignés,</li>
-                  <li>Positionnement naturel plus haut de gamme.</li>
+                <p>Dès les premières semaines, tu sens déjà un changement intérieur : clarté, confiance, direction.</p>
+                  <p>Après les premières sessions, ton message devient plus simple, plus fluide, plus évident.</p>
+                  <ul> Et dès que tu commences à l’appliquer, tu vois rapidement :
+                  <li>des réactions différentes,</li>
+                  <li>une audience plus qualifiée,</li>
+                  <li>des prises de contact plus fréquentes.</li>
                 </ul>
-                <p><strong>La puissance de l&apos;offre rebranding réside dans le fait que ton image va enfin refléter qui tu es, ce qui rendra ta communication magnétique et puissante.</strong></p>
+                <p>L&apos;offre alignement de ta com&apos; crée des résultats visibles très vite, parce qu&apos;on agit sur la structure même de ta communication.</p>
               </aside>
             </div>
           </section>
@@ -382,9 +382,8 @@ export default function ComPage() {
 
             </h2>
               <aside>
-                <p>Le Réalignement<strong> se déroule sur environ 16 semaines.</strong></p>
+                <p><strong>L&apos;offre alignement de ta com&apos; se déroule sur environ 14 semaines.</strong></p>
                 <ul>
-                  <li>- 2 sessions de démarrage</li>
                   <li>- 3 sessions stratégiques</li>
                   <li>- Suivi entre chaque étape</li>
                   <li>- Accompagnement WhatsApp continu</li>
@@ -392,7 +391,7 @@ export default function ComPage() {
                   <li>- Temps de formation sur tes nouveaux outils</li>
                   <li>- Bilan de fin d&apos;accompagnement pour s&apos;assurer que tu es au clair pour la suite</li>
                 </ul>
-                <p><strong>à la fin, tu repars avec une direction claire,</strong>un message solide et un plan d&apos;action que tu sauras continuer à suivre.</p>
+                <p><strong>À la fin, tu repars avec une direction claire,</strong>un message solide et un plan d&apos;action que tu sauras continuer à suivre.</p>
               </aside>
             </div>
           </section>
@@ -409,7 +408,7 @@ export default function ComPage() {
             ))}
           </ul>
           <div className="faq-footer">
-            <Link href="/contact" className="little-btn-black">
+            <Link href="/faq" className="little-btn-black">
               J&apos;ai d&apos;autres questions
             </Link>
           </div>

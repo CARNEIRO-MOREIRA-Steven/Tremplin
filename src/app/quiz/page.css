@@ -301,17 +301,6 @@
   box-shadow: 0 0 20px rgba(123, 47, 190, 0.5);
 }
 
-/* Bouton recommencer */
-.restart-btn {
-  opacity: 0.5;
-  font-size: 0.85rem;
-  margin-top: -20px;
-  transition: opacity 0.15s;
-}
-
-.restart-btn:hover {
-  opacity: 1;
-}
 
 /* ═══════════════════════════════════════════════════════════════════════════
    MODALS

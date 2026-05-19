@@ -24,7 +24,7 @@ const About = () => {
             </div>
             <a className='little-btn-blue' href="/contact">Travailler avec Tremplin</a>
             <div>
-            <img id='about-agence-logo' src={LogoColor.src} alt="" />
+            <img id='about-agence-logo' src={LogoColor.src} alt="logo tremplin" />
             {/* <img id='arrow-blue' src={ArrowBlue.src} alt="" /> */}
             </div>
             <aside>
@@ -34,7 +34,7 @@ const About = () => {
                 <div><p><span>5/5</span><br />Note Google</p></div>
             </aside>
         </div>
-        <img src={BureauDesignImage.src} alt="Image d'un bureau moderne avec nenon" />
+        <img src={BureauDesignImage.src} alt="agence de communication moderne et accueillante, avec des néons " />
     </section>
   )
 }

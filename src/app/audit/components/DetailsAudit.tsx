@@ -44,11 +44,11 @@ const DetailsAudit = () => {
           <div className='promise-content'>
             <h2 className="promise-col-title">Ce que tu obtiens</h2>
             {[
-              { title: 'Une vision claire',                desc: 'De la communication et de ton image' },
-              { title: 'La conscience de tes forces',      desc: 'Et la lucidité sur ce qui te freine' },
-              { title: "Un plan d'action simple",          desc: "Et concret pour savoir exactement quoi faire après" },
-              { title: 'La confiance de reprendre la main', desc: 'Sur ta communication' },
-              { title: 'Une boîte à outils personnalisée', desc: "Pour appliquer directement les bonnes pratiques et avancer dès maintenant" },
+              { title: 'Une vision claire',                desc: 'de la communication et de ton image' },
+              { title: 'La conscience de tes forces',      desc: 'et la lucidité sur ce qui te freine' },
+              { title: "Un plan d'action simple",          desc: "et concret pour savoir exactement quoi faire après" },
+              { title: 'La confiance de reprendre la main', desc: 'sur ta communication' },
+              { title: 'Une boîte à outils personnalisée', desc: "pour appliquer directement les bonnes pratiques et avancer dès maintenant" },
             ].map((item) => (
               <div key={item.title} className="promise-item">
                 <p className="promise-item-title">{item.title}</p>
@@ -60,9 +60,9 @@ const DetailsAudit = () => {
           <div className='promise-content'>
             <h2 className="promise-col-title">Pourquoi cet audit ?</h2>
             {[
-              { title: 'Rapide & efficace :',   desc: "En quelques jours, tu obtiens une vision claire de ta communication et un plan concret pour l'améliorer (contre plusieurs semaines pour un audit complet)." },
-              { title: 'Un prix accessible :', desc: "L'Audit express à 239€, alors qu'un audit complet coûte généralement aux alentours de 1000€ !" },
-              { title: 'Un regard expert :',   desc: "Bénéficie de l'expertise de deux spécialistes en communication (stratégie et design)" },
+              { title: 'Rapide & efficace :',   desc: "en quelques jours, tu obtiens une vision claire de ta communication et un plan concret pour l'améliorer (contre plusieurs semaines pour un audit complet)." },
+              { title: 'Un prix accessible :', desc: "l'Audit express à 239€, alors qu'un audit complet coûte généralement aux alentours de 1000€ !" },
+              { title: 'Un regard expert :',   desc: "bénéficie de l'expertise de deux spécialistes en communication (stratégie et design)" },
             ].map((item) => (
               <div key={item.title} className="promise-item">
                 <p className="promise-item-title">{item.title}</p>

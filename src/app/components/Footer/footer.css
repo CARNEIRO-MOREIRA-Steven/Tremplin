@@ -51,3 +51,7 @@ footer h2{
     .footer-grid{
         grid-template-columns: repeat(1, 1fr);    }
 }
+
+footer .dropdown > a {
+    justify-content: flex-end;
+}

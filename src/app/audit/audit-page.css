@@ -195,7 +195,7 @@
 
 .promise-item-desc {
     color: var(--gray);
-    text-align: justify;    
+    text-align: center;    
 }
 
 .price-badge {
@@ -376,7 +376,7 @@
 
 .testi-item {
     padding: 14px 16px;
-    text-align: justify;
+    text-align: center;
     background-color: #7abd73b8;
     font-family: 'Gill Sans', sans-serif;
 }

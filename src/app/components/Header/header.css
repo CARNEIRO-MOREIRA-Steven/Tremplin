@@ -39,7 +39,7 @@ header img{
 }
 
 .nav li {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   text-align: center;
 }
 
@@ -72,11 +72,6 @@ header img{
     list-style: none;
 }
 
-/* lien principal */
-.dropdown > a {
-    display: block;
-}
-
 /* sous menu intégré */
 .submenu {
     list-style: none;
@@ -101,7 +96,29 @@ header img{
 
 /* hover = le menu s'agrandit */
 .dropdown:hover .submenu {
-    max-height: 100px; /* assez grand pour contenir les items */
+    max-height: 85px; /* assez grand pour contenir les items */
     opacity: 1;
     transform: translateY(0);
+}
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arrow {
+  font-size: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* rotation quand hover */
+.dropdown:hover .arrow {
+  transform: rotate(-90deg);
+}
+
+.dropdown > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }

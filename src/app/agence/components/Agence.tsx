@@ -25,8 +25,8 @@ const Agence = () => {
         </div>
         <div className='agence-details'>
             <h2 className='agence-details-first-content'>Une agence, deux associés, une vision commune</h2>
-            <p>Tremplin, c&apos;est avant tout <strong> deux experts en communication,</strong> complémentaires, réunis par une même conviction :
-            <strong>une communication efficace commence toujours par de la clarté, du sens et de l&apos;alignement.</strong>
+            <p>Tremplin, c&apos;est avant tout <strong> deux experts en communication,</strong> complémentaires, réunis par une même conviction : 
+            <strong> une communication efficace commence toujours par de la clarté, du sens et de l&apos;alignement.</strong>
             </p>
             <p>À deux, on mêle<strong> stratégie, direction artistique</strong> et accompagnement, pour <strong> aider les entrepreneurs à construire une communication crédible, cohérente et durable.</strong>
             Chaque projet est suivi directement par nous 2 : pas d&apos;intermédiaire, pas de dilution, juste une relation de confiance.
@@ -68,10 +68,10 @@ const Agence = () => {
                 <h4>Notre vision</h4>
                 <p>La conviction que <strong>chaque entrepreneur peut réussir.</strong></p>
                 <p><strong>Une approche humaine et pédagogique.</strong></p>
-                <p>Une vraie<strong> double vision stratégie + design</strong></p>
-                <p>Un <strong>accompagnement sur-mesure,</strong> 100% adapté à ton business</p>
+                <p>Une vraie<strong> double vision stratégie + design.</strong></p>
+                <p>Un <strong>accompagnement sur-mesure,</strong> 100% adapté à ton business.</p>
                 <p>Une <strong>communication alignée à qui tu es,</strong> pas à une tendance.</p>
-                <p> <strong>Un objectif clair :te rendre confiant(e), crédible et autonome.</strong></p>
+                <p> <strong>Un objectif clair : te rendre confiant(e), crédible et autonome.</strong></p>
             </article>
         </div>
         <a className='little-btn-blue' href="/contact">Travailler avec Tremplin</a>

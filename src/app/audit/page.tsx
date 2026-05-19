@@ -35,11 +35,11 @@ const FAQ_ITEMS = [
   },
   {
     q: "Par quoi commencer si je ne sais pas encore ce dont j'ai besoin ?",
-    a: "Commencer par un Call Début : un échange pour comprendre la situation et l'orienter. Si tu préfères avancer sans engagement important, on démarre avec l'Audit Express.",
+    a: "Commencer par un Call Déclic : un échange pour comprendre la situation et l'orienter. Si tu préfères avancer sans engagement important, on démarre avec l'Audit Express.",
   },
   {
     q: "Comment prendre rendez-vous et par quoi commencer ?",
-    a: "Tu peux réserver le Call Début directement. C'est un premier échange pour comprendre la situation et t'orienter vers l'offre la plus adaptée. Simple, sans pression.",
+    a: "Tu peux réserver le Call Déclic directement. C'est un premier échange pour comprendre la situation et t'orienter vers l'offre la plus adaptée. Simple, sans pression.",
   },
 ];
 
@@ -90,7 +90,7 @@ export default function AuditPage() {
           </ul>
 
           <div className="faq-footer">
-            <Link href="/contact" className="little-btn-black">
+            <Link href="/faq" className="little-btn-black">
               J&apos;ai d&apos;autres questions
             </Link>
           </div>

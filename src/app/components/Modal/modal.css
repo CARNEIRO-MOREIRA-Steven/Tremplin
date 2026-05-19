@@ -80,6 +80,7 @@ li.services-texte{
     width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .detail-projet-before, .detail-projet-after{
     height: 100px;
@@ -88,6 +89,7 @@ li.services-texte{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 .detail-projet-tag{
     background-color: #ce82bb;
@@ -228,6 +230,11 @@ li.services-texte{
 .satisfaction-title h3{
     font-family: 'Kodchasan';
     text-transform: uppercase;
+}
+.arrow-projet{
+    height: 50px;
+    width: 50px;
+    position: relative;
 
 }
 @media (max-width : 767px) {
@@ -255,5 +262,40 @@ li.services-texte{
 }
 .modal-cta{
     padding: 0 10px 20px 10px;
+}
+.modal-header h2, .modal-objectif-results h2{
+    font-size: 18px;
+}
+.modal-header h3{
+    font-size: 15px;
+}
+.group-image{
+    width: 40%;
+}
+.group-detail{
+    width: 60%;
+    gap: 25px;
+    position: relative;
+}
+.detail-projet-tag{
+    width: auto;
+}
+.group-image-details{
+    gap: 10px;
+}
+
+.detail-projet-tag p{
+    font-size: 15px;
+}
+.arrow-projet{
+    height: 50px;
+    width: 50px;
+}
+
+.modal-objectif-results{
+    padding: 10px;
+}
+.detail-projet-before, .detail-projet-after{
+    height: auto;
 }
 }

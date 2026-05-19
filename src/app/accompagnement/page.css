@@ -303,7 +303,8 @@ height: 70px; }
     }
 
     /* CTA FINAL */
-    .cta-final { padding: 20px; gap: 15px; }
+    .cta-final { padding:20px 20px 50px 20px; gap: 15px;
+    text-align: center; }
 
     /* TABLEAU — scroll horizontal */
     .compare { padding: 0; }
@@ -610,4 +611,12 @@ thead th span {
   .th-price {
     font-size: 11px;
   }
+}
+
+.offer-price span{
+  color: #000;
+  text-shadow: none;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
 }

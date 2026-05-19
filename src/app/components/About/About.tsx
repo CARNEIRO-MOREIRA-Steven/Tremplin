@@ -19,7 +19,7 @@ const About = () => {
         <aside className='dirigeant-desktop'>        
           <h3 className='texte-left'>Cheffe de la stratégie de communication & consultante design</h3>
           <img src={MarionFabrice.src} className='about-image-dirigeant-desktop' alt='Illustration de Marion & Fabrice fondateurs et dirigeants de Tremplin'/>
-          <h3 className='texte-right'>Directeur artistique graphiqte & illustrateur</h3>
+          <h3 className='texte-right'>Directeur artistique graphiste & illustrateur</h3>
           <h3 className='texte-center'>Un duo expert en communication</h3>
         </aside>
         <aside className='dirigeant-mobile'>
@@ -29,7 +29,7 @@ const About = () => {
           </div>
           <div className='fabrice-container'>
             <img src={Fabrice.src} className='about-image-dirigeant-mobile' alt='Illustration de Marion fondateurs et dirigeants de Tremplin'/>
-            <h3 className='texte-right'>Directeur artistique graphiqte & illustrateur</h3>
+            <h3 className='texte-right'>Directeur artistique graphiste & illustrateur</h3>
           </div>       
         </aside>
        </section>

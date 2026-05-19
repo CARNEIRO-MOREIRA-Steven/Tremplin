@@ -2,9 +2,9 @@
 
 import { useState, Fragment } from 'react';
 import Image, { StaticImageData } from 'next/image';
-import Rebranding from '../../../public/rebranding.png';
-import Audit from '../../../public/auditExpress.png';
-import Alignement from '../../../public/alignement.png';
+import Rebranding from '../../../public/rebranding interieur  1.png';
+import Audit from '../../../public/audit express 1.png';
+import Alignement from '../../../public/alignement 1.png';
 import './tablecomparatif.css'
 
 /* ─── données ─── */

@@ -5,8 +5,8 @@ import "./header.css";
 import LogoBlack from "../../../../public/logo-black.png";
 import LogoColor from "../../../../public/logo-color.png";
 
-import LogoAlume from "../../../../public/logo-eteint.png"
-import LogoEteint from "../../../../public/Logo-éteint.png"
+import LogoAlume from "../../../../public/logoallumé.png"
+import LogoEteint from "../../../../public/logoeteint.png"
 
 
 const Header = () => {
@@ -33,21 +33,24 @@ const Header = () => {
           <li><a href="/agence">Notre Agence</a></li>
           <li><a href="/audit">Audit de com&apos;</a></li>
           <li className="dropdown">
-            <a href="/accompagnement">Nos accompagnements</a>
+            <a href="/accompagnement" className="dropdown-link">
+              Nos accompagnements
+              <span className="arrow">▼</span>
+            </a>
 
             <ul className="submenu">
-        <li>
-            <a href="/branding">
-                Rebranding
-            </a>
-        </li>
+              <li>
+                <a href="/com">
+                  Réalignement de com&apos;
+                </a>
+              </li>
 
-        <li>
-            <a href="/com">
-                Réalignement de com&apos;
-            </a>
-        </li>
-    </ul>
+              <li>
+                <a href="/branding">
+                  Rebranding
+                </a>
+              </li>
+            </ul>
           </li>
           {/* <li><a href="/com">Refondre ma com&apos;</a></li>
           <li><a href="/branding">Me creer une image de marque</a></li> */}

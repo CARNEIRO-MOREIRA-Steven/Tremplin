@@ -13,9 +13,9 @@ const Difference = () => {
 
           <div className="difference-grid">
             {[
-              { desc: "Uniquement le vocabulaire afin que tu comprennes ce qu'on t'explique. Tu repars avec des clés claires et un plan pratique à utiliser immédiatement." },
-              {  desc: "Tu profiteras des conseils de deux experts en chaque partie (communication & design). Une approche désorientation à notre carnet et le besoin des créatifs." },
-              {  desc: "Un format court, efficace, sans engagement minimal. C'est un point de départ, une amorce ou bilan de là où tu es." },
+              { desc: "Uniquement du vocabulaire que tu comprends ou qu’on t’explique. Tu repars avec des clés concrètes et un plan d’action que tu pourras mettre en place immédiatement." },
+              {  desc: "Tu profiteras des conseils de deux experts aux casquettes différentes : un regard porté design et un regard porté stratégie." },
+              {  desc: "Un format court, efficace, sans engagement, ni blabla. C’est un RDV de 2H et une livraison du bilan sous 48h." },
             ].map((card) => (
               <div key={card.desc} className="diff-card">
                 {card.desc}

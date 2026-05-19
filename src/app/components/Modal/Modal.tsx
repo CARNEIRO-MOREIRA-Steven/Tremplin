@@ -8,7 +8,7 @@ import './modal.css'
 import { X, MoveRight } from 'lucide-react'
 
 import { projectsData, Project } from '../../data/projets'
-
+import Arrow from "../../../../public/icons/angles-down-solid-full.svg"
 
 
 const Modal = (props: { title: React.ReactNode }) => {
@@ -134,6 +134,7 @@ const Modal = (props: { title: React.ReactNode }) => {
                     ))
                     }
                   </div>
+                  <img src={Arrow.src} className='arrow-projet' alt="" />
                   <div className='detail-projet-after'>
                     {selectedProject.image2Details?.map((detail, index) => (
                       <p key={index} className='detail-projet-tag'>{detail}</p>

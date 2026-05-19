@@ -43,7 +43,7 @@ const page = () => {
               <label htmlFor="offre">Offre souhaitée</label>
               <select name="offre" id="select-offre">
                 <option value="audit">Audit Express</option>
-                <option value="realignement">Offre réalignement</option>
+                <option value="realignement">Réalignement</option>
                 <option value="branding">Rebranding</option>
               </select>
             </div>
@@ -88,9 +88,9 @@ const page = () => {
             <a target='blanck' href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x6b30328a877e9bff:0xe01d7ce34c83b88b?sa=X&ved=1t:8290&ictx=111"><img src={LogoLocalisation.src} alt="Icon de localisation de Tremplin" /></a>
             <a target='blanck' href="tel:0676200099"><img src={LogoPhone.src} alt="Icon de téléphone de l'agence Tremplin" /></a>
             <a target='blanck' href="mailto:email@tremplin-entreprendre.fr"><img src={LogoMail.src} alt="Icon mail de l'agence Tremplin" /></a>
-            <a target='blanck' href=""><img src={LogoWhatsapp.src} alt="Icon Whatsapp de l'agence Tremplin" /></a>
+            <a target='blanck' href="https://api.whatsapp.com/send/?phone=33676200099&text&type=phone_number&app_absent=0"><img src={LogoWhatsapp.src} alt="Icon Whatsapp de l'agence Tremplin" /></a>
             <a target='blanck' href="https://www.instagram.com/tremplin.entreprendre?fbclid=IwY2xjawQs4tJleHRuA2FlbQIxMABicmlkETJiZ0QzY1QzYUlobkVwSzB3c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHv2vnZDULHmC2AuyaiU8Iex0nnUshg7ip2_KBUpr5XFIflVtkwhLkAip1THL_aem_jmq43JAJgArxaJm1pP6emg"><img src={LogoInstagram.src} alt="Icon Instagram de l'agence Tremplin" /></a>
-            <a target='blanck' href="https://www.linkedin.com/company/tremplin-entreprendre/"><img src={LogoLinkedin.src} alt="Icon Linkedin de l'agence Tremplin" /></a>
+            <a target='blanck' href="https://www.linkedin.com/in/marion-tshibangu-%F0%9F%A6%84-89aa1324b/"><img src={LogoLinkedin.src} alt="Icon Linkedin de l'agence Tremplin" /></a>
             <a target='blanck' href="https://www.facebook.com/p/Tremplinentreprendre-100090948333418/"><img src={LogoFacebook.src} alt="Icon Facebook de l'agence Tremplin" /></a>
           </div>
         </aside>

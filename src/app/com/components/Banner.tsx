@@ -11,7 +11,7 @@ const Banner = () => {
   return (
     <section className='banner-container'>
 
-          <img src={Alignement.src} alt="refonte de communication et création d'une stratégie de communication." className='audit-image-hero' />
+          <img src={Alignement.src} alt="une consultante en communication et un directeur artistique pour les projets de communication des entreprises " className='audit-image-hero' />
           <h1>
             Réalignement de com&apos;
           </h1>

@@ -117,9 +117,9 @@ const Quizz = () => {
     <section className='quizz-container'>
       <h2 className='quizz-intro special-title'>Qu&apos;est ce qui t&apos;empêche (encore) de cartonner avec ta com&apos; ?</h2>
       <section className='quizz-section-title'>
-        <h2 className='quizz-title'>FAIS LE QUIZ <br />
+        <p className='quizz-title'>FAIS LE QUIZ <br />
           <span>&quot;QUEL COMMUNIQUANT ES-TU ?&quot;</span>
-        </h2>
+        </p>
       </section>
       <section  ref={sectionRef} className='quizz-content'>
         <section className='quizz-details'>

@@ -14,6 +14,16 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import LoaderVideo from "./components/LoaderVideo/LoaderVideo";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Communication & image de marque pour entreprises | Tremplin",
+  description: "Agence de communication et création de marque pour entreprises & indépendants | ✓ Clarifiez votre message ✓ Renforcez votre image ✓ Gagnez en visibilité.",
+    icons: {
+    icon: "/favicon.ico",
+  },
+};
+
 export default function Home() {
   return (
     // <LoaderVideo>
@@ -27,7 +37,7 @@ export default function Home() {
       <About />
       <ListServices />
       <Modal 
-      title = {<> <h2 className='neon-title' data-neon>Ils ont travaillés avec nous</h2> <br /><h3 className="modal-subtitle">100% de nos clients satisfaits</h3> </>}
+      title = {<div> <h2 className='neon-title' data-neon>Ils ont travaillés avec nous</h2> <br /><h3 className="modal-subtitle">100% de nos clients satisfaits</h3> </div>}
       />
       <ReviewsClient 
       title = 'Tu peux te projeter, ou lire ceux qui sont déjà passés par la.'

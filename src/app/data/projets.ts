@@ -52,7 +52,7 @@ export const projectsData: Project[] = [
 
     id: 2,
     name: "Madaakin",
-    description: "Création d'une marque de spiritueux pour un positionnement prenium",
+    description: "Création d'une marque de spiritueux pour un positionnement premium",
     longDescription: "Audit de projet - Recherche de concept - Création de charte graphique - Création de logo",
     image: LogoMadaakin.src,
     image1Details : [
@@ -107,7 +107,7 @@ export const projectsData: Project[] = [
     date: "2024",
     client: "Grâce à la refonte de l'identité visuelle et la création de sa présence en ligne bien ciblée, cette entreprise a généré ses premiers clients en ligne et a intégré un réseau B2B qualifié.",
     technologies: ["Next.js", "Tailwind", "Framer Motion"],
-    results: ["Retour sur son investissement immédiat", "Positionnement dans le top 3 Google dans un secteur concurentiel sur Paris"],
+    results: ["Retour sur son investissement immédiat", "Positionnement dans le top 3 Google dans un secteur concurentiel sur Paris", "Intégration de groupe de prospect qualifié sur Linkedin", "Première demande de devis en ligne"],
     bestResult : 'Positionnement dans le top 3 Google',
   },
 ];
