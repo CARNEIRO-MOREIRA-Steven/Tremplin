@@ -36,7 +36,7 @@ const Modal = (props: { title: React.ReactNode }) => {
     <section className='list-services' id='cas-client'>
 
       <section className='satisfaction-title'>
-        <h2>{props.title} </h2>
+        <p>{props.title} </p>
       </section>
 
       <section className='list-services-details'>
@@ -67,9 +67,9 @@ const Modal = (props: { title: React.ReactNode }) => {
                         className="project-image"
                       />
                     </div>
-                    <h2 className="project-name">
+                    <p className="project-name">
                       {project.description}
-                    </h2>
+                    </p>
                     {/* <p>
                       <MoveRight />
                       {project.bestResult}
@@ -97,7 +97,7 @@ const Modal = (props: { title: React.ReactNode }) => {
             {/* Header avec image */}
             <div className="modal-header">
               <div className='modal-title'>
-                <h2>{selectedProject.description}</h2>
+                <p>{selectedProject.description}</p>
                 <h3>
                   <MoveRight />
                   {selectedProject.bestResult}</h3>

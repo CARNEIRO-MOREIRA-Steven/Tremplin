@@ -7,28 +7,28 @@ import MessageIcon from '../../../../public/icon-message.png'
 const AtoutTremplin = () => {
   return (
     <section className='about-agence-container'>
-        <h2 className='neon-title' data-neon>Les atouts de tremplin</h2>
+        <p className='neon-title' data-neon>Les atouts de tremplin</p>
         <section className='about-agence-content'>
             <section>
                 <img src={FranceIcon.src}/>
                 <h2>Une agence de branding à Saint-Quentin (02)</h2>
                 <p>On est là, vraiment là. Créé par des entrepreneurs, au services des entrepreneurs. On connaît le terrain, les enjeux, et les dirigeants d&apos;ici.</p>
-                <h3>Même fuseau horaire, même vibe.</h3>
+                <p className='texte-give'>Même fuseau horaire, même vibe.</p>
                 <a className='little-btn-white' href="/agence#prochaine-etape">Lire plus</a>
             </section>
             <section>
                 <img src={MessageIcon.src}/>
-                <h2>Une proximitée et un suivi personnalisé</h2>
+                <p className='about-agence-title'>Une proximitée et un suivi personnalisé</p>
                 <p>Tu as accès à un canal privé pour poser tes questions, débloquer un point, partager une idée. Pas besoin d&apos;attendre le prochain RDV : tu avances à ton rythme, sans pression.</p>
-                <h3>Moins de mails, plus de déclics.</h3>
+                <p className='texte-give'>Moins de mails, plus de déclics.</p>
                 <a className='little-btn-white' href="/agence#prochaine-etape">Lire plus</a>
             </section>
             <section>
                 <img src={DigitalIcon.src}/>
-                <h2>Un tableau de bord pour suivre facilement</h2>
+                <p className='about-agence-title'>Un tableau de bord pour suivre facilement</p>
                 <p>Un espace simple, structuré et rien qu&apos;à toi, pour centraliser ton plan d&apos;action, tes documents, et voir ta com&apos; se construire pas à pas. Tout est là, tout est clair.
                 Tu sais quoi faire, et quand.</p>
-                <h3>Le GPS de ta communnication.</h3>
+                <p className='texte-give'>Le GPS de ta communnication.</p>
                 <a className='little-btn-white' href="/agence#prochaine-etape">Lire plus</a>
             </section>
         </section>

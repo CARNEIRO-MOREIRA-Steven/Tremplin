@@ -14,7 +14,7 @@ const ProcessProjet = () => {
                 <p>Dès qu&apos;on reçoit ta demande, on l&apos;étudie et on te recontacte pour te proposer un rendez-vous en visio ou en physique.</p>
                 <h3><span className='neon-num'>3</span> Devis & planning</h3>
                 <p>Lors de notre entretien nous définisons ensemble les actions à prioriser et nous t&apos;établissons un devis avec l&apos;accompagnement le plus adapté à ta situation.</p>
-                <h3><span className='neon-num'>4</span> Paiement de l&apos;accompte</h3>
+                <h3><span className='neon-num'>4</span> Paiement de l&apos;acompte</h3>
                 <p>C&apos;est ok pour toi suite au devis - tu n&apos;as plus qu&apos;à régler l&apos;acompte et signer le devis pour démarrer notre collaboration.</p>
                 <h3><span className='neon-num'>5</span> on démarre</h3>
                 <p>L&apos;équipe se met en action et on démarre la première étape de ton projet.</p>

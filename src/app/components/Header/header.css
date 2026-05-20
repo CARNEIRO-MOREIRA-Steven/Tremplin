@@ -15,9 +15,8 @@ header img{
   position: absolute;
   top: 0;
   height: auto;
-  right: 0;
   background: #00000085;
-  width: 200px;
+  width: max-content;
   transform: translateY(-20px);
   opacity: 0;
   pointer-events: none;
@@ -30,7 +29,7 @@ header img{
   transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
-  padding: 150px 0 0 0;
+  padding: 150px 10px 0 10px;
 }
 
 .nav ul {
@@ -58,10 +57,9 @@ header img{
     }
     .nav{
         height: auto;
-        width: 100%;
     }
     .nav.open{
-        padding: 78px 0 0 0;
+        padding: 78px 10px 0 10px;
     }
 }
 

@@ -85,12 +85,22 @@
     text-transform: initial;
     gap: 10px;
 }
+.about-agence-content .texte-give{
+    font-weight: 900;
+    font-size: 17px;
+}
 /* .about-agence-cta-right a{
     font-size: 14px;
     border: 1px solid #FFF;
     border-radius: 25px;
     padding: 5px 10px;
 } */
+
+.about-agence-title{
+    font-size: 17px !important;
+    text-transform: initial !important;
+    font-family: 'Kodchasan';
+}
 
 @media screen and (max-width : 767px) {
     .about-agence-container{

@@ -41,14 +41,22 @@
 .offre-container h3{
     font-size: 17px;
 }
-.first-offre h3{
+.first-offre .offre-heading{
     color: #76C7EA;
+    text-align: center;
+    font-weight: 900;
+
 }
-.second-offre h3{
+.second-offre .offre-heading{
     color: #8CC084;
+    text-align: center;
+    font-weight: 900;
+
 }
-.third-offre h3{
+.third-offre .offre-heading{
     color: #CF77B5;
+    text-align: center;
+    font-weight: 900;
 }
 .first-offre, .second-offre, .third-offre{
     height: auto;

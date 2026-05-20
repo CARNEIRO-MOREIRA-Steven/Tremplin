@@ -14,7 +14,7 @@ const About = () => {
         {/* <img src={Bureaux.src} className='about-image' /> */}
         <section className='about-section-texte'>
         <h2 className='about-title'>Qui sommes nous</h2>
-        <p className='about-texte'>Tremplin est une agence hybride - Agence de branding sur saint quentin (02) <br />
+        <p className='about-texte'>Tremplin est une agence créative - Agence de branding sur saint quentin (02) <br />
         Fondée et dirigée par :</p>
         <aside className='dirigeant-desktop'>        
           <h3 className='texte-left'>Cheffe de la stratégie de communication & consultante design</h3>
@@ -36,8 +36,8 @@ const About = () => {
       </div>
        
        <section className='about-mission'>
-        <h2 className='neon-title' data-neon>Notre mission</h2>
-        <h2 className='about-mission-subtitle'>Propulser ton business en révélant la puissance de ton offre grâce à <br></br> une communication claire, alignée et autonome. <br /> <br /><span className='texte-neon'>Tremplin au service des entreprneurs</span></h2>
+        <p className='neon-title' data-neon>Notre mission</p>
+        <p className='about-mission-subtitle'>Propulser ton business en révélant la puissance de ton offre grâce à <br></br> une communication claire, alignée et autonome. <br /> <br /><span className='texte-neon'>Tremplin au service des entreprneurs</span></p>
         <a href="/agence" className='little-btn-white'>En savoir plus</a>
        </section>
        </section>

@@ -22,7 +22,8 @@ const Banner = () => {
          <div className='banner-agence'>
             <div>
            <h1 className=''>Communication & création de marque <br /> <span> L&apos;agence tremplin <br /></span></h1>
-           <h2>L&apos;agence qui propulse ton business</h2>
+           <h2>L&apos;agence DE COMMUNICATION QUI PROPULSE TON BUSINESS</h2>
+
            <div className='banner-avis'>
             <div className='avis-glass-effect'>
            <img className='banner-image' src={GoogleLogo.src} alt="Image de l'agence" />
@@ -38,7 +39,7 @@ const Banner = () => {
                     <p>Nous serons tes meilleurs alliés pour <strong>reprendre les bases de ta communication</strong> et passer au niveau supérieur.</p>
                     <p>Grâce à un discours clair et une image alignée, ton audience te fait enfin confiance. Fini de courir après les clients : <strong>ta communication travaille pour toi.</strong></p>
                     <p>Ici, pas de recettes toutes faites, pas de jargon marketing, pas de solutions hors-sol. Juste du sens, de l&apos;humain et une vision stratégique long terme pour <strong>construire une marque solide.</strong></p>
-                    <p>Sur cette page, tu découvriras qui nous sommes, comment on travaille et <strong>comment on peut t&apos;aider à construire une communication qui te ressemble - et qui vend.</strong></p>
+                    <p>Sur cette page, tu découvriras qui nous sommes, comment on travaille et comment on peut t&apos;aider à construire une communication qui te ressemble - et qui vend.</p>
                 </aside>
                 <img src={MarionFabrice.src} alt="" className='banner-marionfabrice'/>
             </div>

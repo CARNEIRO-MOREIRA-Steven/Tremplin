@@ -12,7 +12,7 @@ const About = () => {
     <section className='about-agence'>
         <div className='about-agence-details'>
             <div className='detail-agence'>
-            <p>On a créé Tremplin après un constat simple, <strong>beaucoup d&apos;entrepreneurs sont compétents, engagés, passionnés...</strong> mais invisibles : non pas parce qu&apos;ils ne sont pas bons mais parce que leur communication est floue, bancale ou mal alignée avec ce qu&apos;ils sont vraiment.</p>
+            <p>On a créé Tremplin après un constat simple, beaucoup d&apos;entrepreneurs sont compétents, engagés, passionnés... mais invisibles : non pas parce qu&apos;ils ne sont pas bons mais parce que leur communication est floue, bancale ou mal alignée avec ce qu&apos;ils sont vraiment.</p>
             <p className='agence-details-second-texte'>Chez Tremplin, on est convaincus que :</p>
             <ul>
                 <li>une bonne image fait (presque) tout le travail,</li>
@@ -20,7 +20,7 @@ const About = () => {
                 <li>la réputation vaut plus que la publicité,</li>
                 <li>et même les meilleurs peuvent rester discrets sans une communication juste.</li>
             </ul>
-            <p><strong>Notre rôle : remettre de la clarté là où il y a du flou, et transformer une expertise en une marque forte et crédible.</strong></p>
+            <p>Notre rôle : remettre de la clarté là où il y a du flou, et transformer une expertise en une marque forte et crédible.</p>
             </div>
             <a className='little-btn-blue' href="/contact">Travailler avec Tremplin</a>
             <div>

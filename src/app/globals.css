@@ -110,6 +110,9 @@ h2{
 h3 {
   font-family: 'GiveYouGlory', cursive;
 }
+.offre-heading{
+  font-family: 'GiveYouGlory', cursive;
+}
 
 p{
   font-family: 'Gill Sans', sans-serif;
@@ -184,6 +187,10 @@ svg.lucide{
 
     text-shadow:
         0 0 2px #000;
+}
+
+p.neon-title{
+  font-size: 30px;
 }
 
 /* ÉTAT FINAL */
@@ -321,6 +328,9 @@ svg.lucide{
   h2{
     font-size: 22px;
   }
+  p.neon-title{
+  font-size: 22px;
+}
   .neon-title{
     padding: 15px;
   }
