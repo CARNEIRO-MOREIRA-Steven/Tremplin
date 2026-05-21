@@ -99,6 +99,16 @@
   display: block; margin-top: 4px;
 }
 
+.pourquoi-body h3 {
+  font-family: 'Kodchasan';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  color: #5aceb8 !important;
+  text-shadow: 0 0 6px #000, 0 0 12px #5aceb8;
+  padding-top: 20px;
+}
+
 /* ══════════════════════════════════════════
    POUR QUI (grille cyan)
 ══════════════════════════════════════════ */
@@ -595,7 +605,7 @@ text-align: justify;
     gap: 50px;
 }
 
-.resultats-container h2{
+.resultats-container .h2{
   background-color: #0000007d;
   padding: 20px;
 }
@@ -622,7 +632,7 @@ text-align: justify;
     gap: 50px;
 }
 
-.duree-container h2{
+.duree-container .h2{
   background-color: #0000007d;
   padding: 20px;
 }
@@ -737,7 +747,7 @@ text-align: justify;
     padding: 20px;
     gap: 20px;
   }
-  .resultats-container h2, .duree-container h2{
+  .resultats-container .h2, .duree-container .h2{
     text-align: center;
   }
   .green-btns{

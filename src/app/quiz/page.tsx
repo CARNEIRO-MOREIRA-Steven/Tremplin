@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import "../../page.css";
+import "./page.css";
 import { questions, computeResult } from "../data/quiz";
 import type { ProfileKey } from "../data/quiz";
 import Header from "../components/Header/Header";

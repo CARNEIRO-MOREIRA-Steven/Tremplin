@@ -1,4 +1,4 @@
-/* ===================== ABOUT - RESPONSIVE ===================== */
+/* ===================== ABOUT ===================== */
 
 .about-agence {
     display: flex;
@@ -56,6 +56,7 @@
     font-weight: 700;
     color: #000;
 }
+
 .about-agence-details aside div p {
     font-weight: 700;
     color: #000;
@@ -71,12 +72,18 @@
     flex-direction: column;
 }
 
-#about-agence-logo {
-    width: 200px;
-    position: initial;
+.detail-agence p, .detail-agence li {
+    font-family: 'Gill Sans', sans-serif;
 }
 
-.about-agence div {
+aside p {
+    font-family: 'Kodchassan';
+}
+
+/* ===================== LOGO WRAP ===================== */
+
+/* Le wrapper occupe toute la largeur et centre le logo */
+.about-logo-wrap {
     position: relative;
     width: 100%;
     display: flex;
@@ -84,19 +91,51 @@
     justify-content: center;
 }
 
-#arrow-blue {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    top: -20px;
-}
-.detail-agence p, .detail-agence li{
-    font-family: 'Gill Sans', sans-serif ;
+/* Logo éteint : taille de référence, visible par défaut */
+.about-logo-off {
+    display: block;
+    width: 200px;
+    position: relative; /* reste dans le flux = fixe la hauteur du wrapper */
+    opacity: 1;
+    transition: opacity 0.7s ease;
 }
 
-aside p {
-    font-family: 'Kodchassan';
+.about-logo-off.logo-fade-out {
+    opacity: 0;
+}
+
+/* Logo allumé : exactement superposé, même taille */
+.about-logo-on {
+    display: block;
+    width: 200px;
+    position: absolute;
+    /* centré horizontalement dans le flex wrapper */
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.about-logo-on.logo-fade-in {
+    opacity: 1;
+}
+
+/* ===================== STAT CARDS ===================== */
+
+.stat-card {
+    opacity: 0;
+    transform: scale(0.75);
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.stat-card.stat-visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* ===================== TABLET large (max 1459px) ===================== */
@@ -147,8 +186,9 @@ aside p {
         width: 100%;
     }
 
-    #about-agence-logo {
-        width: 160px;
+    .about-logo-off,
+    .about-logo-on {
+        width: 180px;
     }
 }
 
@@ -176,6 +216,8 @@ aside p {
     .about-agence-details aside {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .about-agence-details aside div {
@@ -185,5 +227,10 @@ aside p {
 
     .about-agence-details aside div span {
         font-size: 20px;
+    }
+
+    .about-logo-off,
+    .about-logo-on {
+        width: 150px;
     }
 }

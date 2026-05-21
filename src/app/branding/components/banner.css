@@ -56,6 +56,11 @@
     max-width: 1000px;
     position: relative;
 }
+.h2{
+  font-family: 'Gill Sans', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
 .hero-div-details{
     width: 70%;
     display: flex;
