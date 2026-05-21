@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link';
 import './page.css';
 
@@ -34,6 +34,46 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function ComPage() {
+
+
+   const sectionRef = useRef<HTMLElement>(null)
+    const mobileRef = useRef<HTMLDivElement>(null)
+    const [visibleCount, setVisibleCount] = useState(0)
+    const stepsCount = 6
+  
+  useEffect(() => {
+    const el = mobileRef.current
+    if (!el) return
+  
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return
+  
+        let i = 0
+  
+        const interval = setInterval(() => {
+          i++
+          setVisibleCount(i)
+  
+          if (i >= stepsCount) {
+            clearInterval(interval)
+          }
+        }, 200)
+  
+        observer.disconnect()
+      },
+      {
+        threshold: 0.2,
+        rootMargin: '0px 0px -10% 0px',
+      }
+    )
+  
+    observer.observe(el)
+  
+    return () => observer.disconnect()
+  }, [])
+  
+  console.log(visibleCount)
   return (
     <div className="com-page">
 
@@ -100,9 +140,9 @@ export default function ComPage() {
       </section>
 
       {/* ── PROCESS 6 ÉTAPES ── */}
- <section className="process">
+ <section className="process" ref={sectionRef}>
 
-  <p className="neon-title" data-neon>
+  <p className="neon-title" data-neon ref={mobileRef}>
     Comment se passe un accompagnement chez <br />
     Tremplin — sur l&apos;offre alignement ?
   </p>
@@ -113,7 +153,7 @@ export default function ComPage() {
       {/* COLONNE GAUCHE */}
       <div className="col">
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 0 ? 'step-visible' : ''}`}>
           <div className="step-num">1</div>
           <div className="step-content">
             <h4 className="step-title">Audit complet</h4>
@@ -131,7 +171,7 @@ export default function ComPage() {
           </div>
         </div>
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 2 ? 'step-visible' : ''}`}>
           <div className="step-num">3</div>
           <div className="step-content">
             <h4 className="step-title">On définit ton univers visuel</h4>
@@ -143,7 +183,7 @@ export default function ComPage() {
           </div>
         </div>
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 4 ? 'step-visible' : ''}`}>
           <div className="step-num">5</div>
           <div className="step-content">
             <h4 className="step-title">Test, supervision & ajustements</h4>
@@ -164,7 +204,7 @@ export default function ComPage() {
       {/* COLONNE DROITE */}
       <div className="col">
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 1 ? 'step-visible' : ''}`}>
           <div className="step-num">2</div>
           <div className="step-content">
             <h4 className="step-title">Stratégie de communication</h4>
@@ -177,7 +217,7 @@ export default function ComPage() {
           </div>
         </div>
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 3 ? 'step-visible' : ''}`}>
           <div className="step-num">4</div>
           <div className="step-content">
             <h4 className="step-title">Refonte complète de ta communication</h4>
@@ -194,7 +234,7 @@ export default function ComPage() {
           </div>
         </div>
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 5 ? 'step-visible' : ''}`}>
           <div className="step-num">6</div>
           <div className="step-content">
             <h4 className="step-title">Suivi illimité : tu n&apos;es jamais seul(e)</h4>
@@ -212,7 +252,7 @@ export default function ComPage() {
 
 <div className="process-grid-mobile">
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 0 ? 'step-visible' : ''}`}>
           <div className="step-num">1</div>
           <div className="step-content">
             <h4 className="step-title">Audit complet</h4>
@@ -230,7 +270,7 @@ export default function ComPage() {
           </div>
         </div>
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 1 ? 'step-visible' : ''}`}>
           <div className="step-num">2</div>
           <div className="step-content">
             <h4 className="step-title">Stratégie de communication</h4>
@@ -243,7 +283,7 @@ export default function ComPage() {
           </div>
         </div>
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 2 ? 'step-visible' : ''}`}>
           <div className="step-num">3</div>
           <div className="step-content">
             <h4 className="step-title">On définit ton univers visuel</h4>
@@ -255,7 +295,7 @@ export default function ComPage() {
           </div>
         </div>
 
-                <div className="step-block">
+                <div className={`step-block ${visibleCount > 3 ? 'step-visible' : ''}`}>
           <div className="step-num">4</div>
           <div className="step-content">
             <h4 className="step-title">Refonte complète de ta communication</h4>
@@ -271,7 +311,7 @@ export default function ComPage() {
           </div>
         </div>
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 4 ? 'step-visible' : ''}`}>
           <div className="step-num">5</div>
           <div className="step-content">
             <h4 className="step-title">Test, supervision & ajustements</h4>
@@ -287,7 +327,7 @@ export default function ComPage() {
           </div>
         </div>
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 5 ? 'step-visible' : ''}`}>
           <div className="step-num">6</div>
           <div className="step-content">
             <h4 className="step-title">Suivi illimité : tu n&apos;es jamais seul(e)</h4>

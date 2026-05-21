@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link';
 import './page.css';
 
@@ -34,6 +34,46 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function ComPage() {
+
+  const sectionRef = useRef<HTMLElement>(null)
+  const mobileRef = useRef<HTMLDivElement>(null)
+  const [visibleCount, setVisibleCount] = useState(0)
+  const stepsCount = 6
+
+useEffect(() => {
+  const el = mobileRef.current
+  if (!el) return
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (!entry.isIntersecting) return
+
+      let i = 0
+
+      const interval = setInterval(() => {
+        i++
+        setVisibleCount(i)
+
+        if (i >= stepsCount) {
+          clearInterval(interval)
+        }
+      }, 200)
+
+      observer.disconnect()
+    },
+    {
+      threshold: 0.2,
+      rootMargin: '0px 0px -10% 0px',
+    }
+  )
+
+  observer.observe(el)
+
+  return () => observer.disconnect()
+}, [])
+
+console.log(visibleCount)
+
   return (
     <div className="com-page">
 
@@ -102,9 +142,9 @@ export default function ComPage() {
       </section>
 
       {/* ── PROCESS 6 ÉTAPES ── */}
- <section className="process">
+ <section className="process" ref={sectionRef}>
 
-  <h2 className="neon-title" data-neon>
+  <h2 className="neon-title" data-neon ref={mobileRef}>
     Comment se passe un accompagnement chez <br />
     Tremplin — sur l&apos;offre rebranding ?
   </h2>
@@ -115,7 +155,7 @@ export default function ComPage() {
       {/* COLONNE GAUCHE */}
       <div className="col">
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 0 ? 'step-visible' : ''}`} >
           <div className="step-num">1</div>
           <div className="step-content">
             <h4 className="step-title">Audit complet</h4>
@@ -133,7 +173,7 @@ export default function ComPage() {
           </div>
         </div>
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 2 ? 'step-visible' : ''}`}>
           <div className="step-num">3</div>
           <div className="step-content">
             <h4 className="step-title">Créer ton image signature</h4>
@@ -151,7 +191,7 @@ export default function ComPage() {
           </div>
         </div>
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 4 ? 'step-visible' : ''}`}>
           <div className="step-num">5</div>
           <div className="step-content">
             <h4 className="step-title">Test, supervision, ajustements & livraison finale</h4>
@@ -179,7 +219,7 @@ export default function ComPage() {
       {/* COLONNE DROITE */}
       <div className="col">
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 1 ? 'step-visible' : ''}`}>
           <div className="step-num">2</div>
           <div className="step-content">
             <h4 className="step-title">Stratégie de communication</h4>
@@ -192,7 +232,7 @@ export default function ComPage() {
           </div>
         </div>
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 3 ? 'step-visible' : ''}`}>
           <div className="step-num">4</div>
           <div className="step-content">
             <h4 className="step-title">Refonte complète de ta communication</h4>
@@ -209,7 +249,7 @@ export default function ComPage() {
           </div>
         </div>
 
-        <div className="step-block">
+        <div className={`step-block ${visibleCount > 5 ? 'step-visible' : ''}`}>
           <div className="step-num">6</div>
           <div className="step-content">
             <h4 className="step-title">Suivi illimité : tu n&apos;es jamais seul(e)</h4>
@@ -219,11 +259,127 @@ export default function ComPage() {
             </div>
           </div>
         </div>
+        
 
       </div>
+      
 
     </div>
+
+        <div className="process-grid-mobile">
+
+
+        <div className={`step-block ${visibleCount > 0 ? 'step-visible' : ''}`} >
+          <div className="step-num">1</div>
+          <div className="step-content">
+            <h4 className="step-title">Audit complet</h4>
+            <div className="step-body">
+              <p>À cette étape on va chercher à comprendre ce qui bloque (et ce qui fonctionne déjà).</p>
+              <p>Cet audit comprend : un entretien, l&apos;analyse de ton parcours client, de tes chiffres, de ta présence en ligne et de la concurrence.</p>
+              <p>On va chercher à identifier clairement :</p>
+              <ul>
+                <li>tes points forts,</li>
+                <li>les axes d&apos;amélioration,</li>
+                <li>les urgences à corriger.</li>
+              </ul>
+              <p>Objectif : comprendre pourquoi ton image ne reflète plus ton expertise - et ce qu&apos;il faut transfomer pour viser plus haut.</p>
+            </div>
+          </div>
+        </div>
+                <div className={`step-block ${visibleCount > 1 ? 'step-visible' : ''}`}>
+          <div className="step-num">2</div>
+          <div className="step-content">
+            <h4 className="step-title">Stratégie de communication</h4>
+            <div className="step-body">
+              <p>On clarifie tes objectifs et on t&apos;aide à faire les bons choix.</p>
+              <p>Tu prends des décisions éclairées grâce à nos conseils simples et concrets.</p>
+              <p>On explore toutes les options stratégiques : présence en ligne, événementiel, promotion, lancement, prospection… selon ce que sera vraiment ton activité.</p>
+              <p>Tu repars avec un carnet PDF de stratégie de marque, c&apos;est à dire qui tu es, à qui tu parles, ce qui te rend unique, comment tu veux te montrer, ce que tu veux dire + un plan d&apos;action pour mettre en place cette stratégie.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className={`step-block ${visibleCount > 2 ? 'step-visible' : ''}`}>
+          <div className="step-num">3</div>
+          <div className="step-content">
+            <h4 className="step-title">Créer ton image signature</h4>
+            <div className="step-body">
+              <p>À partir de ton repositionnement, Fabrice, graphiste, conçoit une identité visuelle 100% sur-mesure :</p>
+              <p>- logo + variations,<br />
+              - palette couleurs,<br />
+              - typographies,<br />
+              - univers graphique,<br />
+              - premiers visuels réseaux,<br />
+              - mini charte d&apos;utilisation,<br /></p>
+              <p>On co-créer avec toi : questionnaire émotionnel, retours guidés, ajustements...</p>
+              <p>Objectif : créer une image qui te ressemble vraiment et qui porte ton niveau d&apos;expertise.</p>
+            </div>
+          </div>
+        </div>
+
+                <div className={`step-block ${visibleCount > 3 ? 'step-visible' : ''}`}>
+          <div className="step-num">4</div>
+          <div className="step-content">
+            <h4 className="step-title">Refonte complète de ta communication</h4>
+            <div className="step-body">
+              <p>On réorganise toute ta communication autour de :</p>
+              <ul>
+                <li>la stratégie validée,</li>
+                <li>ton nouvel univers graphique,</li>
+                <li>tes objectifs.</li>
+              </ul>
+              <p>On créé des visuels qui correspondent à ta nouvelle identité. Au delà des mots on te reconnaitra par l&apos;apparence et le design.</p>
+              <p>Et afin qu&apos;on puisse te proposer un calendrier de contenu qui suive tes exigences, tes demandes et tes attentes, tu remplis un court questionnaire et on crée pour toi un calendrier éditorial d&apos;un mois pour lancer ta nouvelle communication.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className={`step-block ${visibleCount > 4 ? 'step-visible' : ''}`}>
+          <div className="step-num">5</div>
+          <div className="step-content">
+            <h4 className="step-title">Test, supervision, ajustements & livraison finale</h4>
+            <div className="step-body">
+              <p>On gère tes réseaux pendant 4 semaines : on teste, on mesure, on ajuste.</p>
+              <p>Pendant ce temps :</p>
+              <ul>
+                <li>on crée ton tableau de bord personnalisé,</li>
+                <li>on t&apos;installe des outils simples et efficaces,</li>
+                <li>on te forme pour reprendre ta communication sereinement.</li>
+              </ul>
+            </div>
+            <p>En fin d&apos;accompagnement, tu reçois :</p>
+            <p>- ton Brand Book complet,<br />
+              - tous les fichiers sources,<br />
+              - les règles d&apos;utilisation,<br />
+              - les déclinaisons nécessaires,<br />
+              - ton plan d&apos;action court terme.<br /></p>
+              <p>Ces éléments te permettent d&apos;utiliser ta nouvelle image en autonomie totale, sans perte de cohérence</p>
+          </div>
+        </div>
+
+
+
+        <div className={`step-block ${visibleCount > 5 ? 'step-visible' : ''}`}>
+          <div className="step-num">6</div>
+          <div className="step-content">
+            <h4 className="step-title">Suivi illimité : tu n&apos;es jamais seul(e)</h4>
+            <div className="step-body">
+              <p>Après un dernier bilan pour clôturer ton parcours, tu gardes un accès illimité à nos conseils, ajustements, retours et soutien.</p>
+              <p>Le but : que tu deviennes totalement autonome tout en étant rassuré(e).</p>
+            </div>
+        </div>
+        
+
+      </div>
+      
+
+    </div>
+    
+    
   </div>
+  
+
+  
 
   <p className='process-texte-bottom'>
     L&apos;accompagnement dure environ 16 semaines.<br />
