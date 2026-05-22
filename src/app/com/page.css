@@ -201,8 +201,9 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
     text-transform: uppercase;
     color: #fff;
-    text-shadow: 0 0 3px #000000, 0 0 6px #000, 0 0 48px #000;
+    text-shadow: 0 0 3px #000000, 0 0 6px #000;
     text-align: center;
+    line-height: 1.2;
 }
 .inclus-card-body { 
   color: #000;
@@ -347,10 +348,11 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .step-title {
   font-size: 20px;
-  text-transform: uppercase;
-  color: #fff;
-  text-shadow: 0 0 3px #000000, 0 0 6px #000, 0 0 48px #000;
-  text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 3px #000000, 0 0 6px #000;
+    text-align: center;
+    line-height:1.2;
 }
 .step-body {
   display: flex;
@@ -713,6 +715,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
     .resultats-container .h2, .duree-container .h2{
     text-align: center;
+    font-size: 22px;
   }
   .green-btns{
     width: auto;

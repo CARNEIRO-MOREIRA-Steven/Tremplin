@@ -49,6 +49,7 @@
     width: 180px;
     text-align: center;
     justify-content: center;
+    align-items: center !important;
 }
 
 .about-agence-details aside div span {
@@ -149,6 +150,7 @@ aside p {
         width: 400px;
         position: sticky;
         top: 25px;
+        left: 31%;
         height: 100%;
     }
 }

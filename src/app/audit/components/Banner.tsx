@@ -3,7 +3,8 @@ import AuditIcon from "../../../../public/auditExpress.png"
 import './banner.css'
 
 import ImageAudit from '../../../../public/audit express 1.png'
-import ImageAuditExpress from '../../../../public/Formation 100 � digitale (4).png';
+import ImageAuditExpress from '../../../../public/Formation-digitale.png';
+import ImageAuditExpressMobile from '../../../../public/Formation-digitale-mobile.png'
 
 
 
@@ -11,7 +12,7 @@ const Banner = () => {
   return (
     <section className='banner-container'>
 
-        <div className="wrap">
+        <div className="wrap banner">
           <img src={ImageAudit.src} alt="Audit de communication logo" className='audit-image-hero' />
           <h1>
             Faire un audit<br />de communication
@@ -29,7 +30,8 @@ const Banner = () => {
           </div>
 
           <div className="hero-media">
-            <img src={ImageAuditExpress.src} alt="les avantages d’un audit de communication à petit prix" />
+            <img className='desktop' src={ImageAuditExpress.src} alt="les avantages d’un audit de communication à petit prix" />
+            <img className='mobile' src={ImageAuditExpressMobile.src} alt="les avantages d’un audit de communication à petit prix" />
           </div>
 
           <p className="hero-analyse">

@@ -93,6 +93,9 @@
     height: 100%;
     object-fit: cover;
 }
+.hero-media .mobile{
+    display: none;
+}
 
 .hero-analyse {
     padding: 50px;
@@ -111,7 +114,6 @@
 
     .banner-container h1 {
         padding: 30px;
-        font-size: clamp(1.8rem, 5vw, 3rem);
     }
 
     .hero-tu-te-demandes {
@@ -129,6 +131,9 @@
     .banner-container {
         gap: 20px;
     }
+    .wrap.banner{
+        gap: 0;
+    }
 
     .banner-container img {
         width: 220px;
@@ -144,43 +149,20 @@
     .banner-container h1 {
         word-wrap: break-word;
         padding: 20px;
-        font-size: clamp(1.5rem, 7vw, 2.2rem);
     }
 
     .hero-analyse {
         width: auto;
-        font-size: 0.95rem;
     }
 
-    .hero-tu-te-demandes p {
-        font-size: 0.95rem;
+    .hero-media .desktop{
+        display: none;
     }
-}
-
-/* ===================== SMALL MOBILE (max 480px) ===================== */
-@media (max-width: 480px) {
-    .banner-container img {
-        width: 180px;
-        height: 140px;
-    }
-
-    .banner-container h1 {
-        padding: 15px;
-        font-size: 1.5rem;
-    }
-
-    .hero-tu-te-demandes {
-        padding: 15px;
-        gap: 12px;
-    }
-
-    .hero-tu-te-demandes p {
-        font-size: 0.88rem;
-    }
-
-    .hero-analyse {
-        padding: 15px;
-        font-size: 0.88rem;
+    .hero-media .mobile{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
     }
 }
 
