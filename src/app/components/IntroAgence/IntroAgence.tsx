@@ -14,7 +14,7 @@ const IntroAgence = () => {
 La communication digitale permet de transmettre le bon message, de partager la bonne information et de créer une relation de confiance durable avec les bonnes personnes. <br /><br />
 
 Réseaux sociaux, site internet, identité visuelle, contenus, supports : tous ces moyens participent à l’image que votre entreprise renvoie. Une communication claire facilite les échanges, améliore la compréhension de votre activité et renforce votre crédibilité.</p>
-        <h2 className='neon-title' data-neon>
+        <h2 className='special-title' data-neon>
             Stratégies de communication efficace
         </h2>
         <p className='intro-agence-texte'>Une stratégie de communication efficace ne consiste pas à “poster plus”.

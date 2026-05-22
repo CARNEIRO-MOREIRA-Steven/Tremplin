@@ -190,7 +190,8 @@
 
 @keyframes typing {
   from { width: 0; }
-  to { width: 100%; }
+  to { width: 100%;
+}
 }
 
 .little-btn-white.special {
@@ -211,6 +212,7 @@
 
   to {
     width: 100%;
+    white-space: wrap;
   }
 }
 

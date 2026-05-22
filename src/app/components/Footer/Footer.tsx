@@ -56,7 +56,7 @@ const Footer = () => {
         </nav>
         </div>
         <p className='copyright'>&copy; 2026 Tremplin Entreprendre - Création par CodeMeta Solutions <br />
-        Mentions Légales - <a href="/cgv">Conditions générales de ventes</a></p>
+         <a href="/mentions-legales">Mentions Légales</a> - <a href="/cgv">Conditions générales de ventes</a></p>
     </footer>
   )
 }

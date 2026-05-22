@@ -35,15 +35,21 @@
     0 0 48px #B64F98;
 }
 
+.intro-agence-container .special-title{font-family: 'Kodchasan';
+    text-transform: uppercase;
+    text-align: center;
+    color: #5aceb8 !important;
+    text-shadow: 0 0 6px #000, 0 0 12px #5aceb8;
+    padding-top: 20px;
+}
+
 
 .intro-agence-texte{
     font-size: 25px;
     width: 95%;
     text-align: justify;
     margin-bottom: 20px;
-    text-transform: uppercase;
     font-family: 'Gill Sans', sans-serif;
-    text-align: center;
 }
 .intro-agence-image{
     height: 55vh;
@@ -75,7 +81,7 @@
 @media (max-width: 767px) {
     .intro-agence-container {
         height: auto;
-        padding : 20px 10px;
+        padding : 20px 20px;
         gap: 20px;
     }
     .intro-agence-title {
