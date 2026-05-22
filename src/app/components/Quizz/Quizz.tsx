@@ -161,7 +161,7 @@ const Quizz = () => {
           </div>
 
           <button
-            className='quizz-launch-btn little-btn-blue'
+            className='quizz-launch-btn little-btn-pink'
             onClick={runSpin}
             disabled={running}
           >
