@@ -233,8 +233,11 @@
         height: 100%;
         width: 100%;
         padding: 20px 10px;
-        background-attachment: fixed;
-        background-image: url('../../../../public//banner-green-mobile.jpg');
+        background-image: url('../../../../public/banner-green-mobile.jpg');
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .quizz-personna li.active{
         font-size: 16px;
