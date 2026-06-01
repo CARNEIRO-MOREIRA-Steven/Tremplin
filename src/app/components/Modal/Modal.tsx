@@ -36,7 +36,7 @@ const Modal = (props: { title: React.ReactNode }) => {
     <section className='list-services' id='cas-client'>
 
       <section className='satisfaction-title'>
-        <p>{props.title} </p>
+        <div>{props.title} </div>
       </section>
 
       <section className='list-services-details'>

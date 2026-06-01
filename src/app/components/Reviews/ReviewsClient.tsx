@@ -91,7 +91,7 @@ const ReviewsClient = (props: {
             opacity:    [0, 1],
             translateY: [directions[index], 0],
             duration:   2000,
-            delay:      index * 1000, // décalage progressif
+            delay:      index * 500, // décalage progressif
             ease:       'out(3)',
           })
           cardObserver.unobserve(card)
@@ -116,7 +116,7 @@ const ReviewsClient = (props: {
       <p ref={subtitleRef} className='reviews-subtitle'>
         {/* On réécrit le subtitle ici pour accéder au ref du smile */}
         Voici ce que nos clients ont vécu,{' '}
-        <img ref={smileRef} className='icon-smile' src={SmileIcon.src} />{' '}
+        <img ref={smileRef} alt='icon-smile' className='icon-smile' src={SmileIcon.src} />{' '}
         et ce <br /> que l&apos;agence tremplin a changé pour eux
       </p>
       <section className='reviews-content'>

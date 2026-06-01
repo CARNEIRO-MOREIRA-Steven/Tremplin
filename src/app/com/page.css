@@ -252,6 +252,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 .pourquoi-body p {
   font-family: 'Gill Sans', sans-serif;
   font-size: 18px;
+  text-align: justify;
 }
 .pourquoi-body p strong { color: var(--white); font-weight: 700; }
 
@@ -510,6 +511,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 .temoignage-tag-activite, .temoignage-tag-probleme{
   font-family: 'GiveYouGlory';
   font-size: 20px;
+  font-weight: 900;
 }
 .temoignage-tag-activite p, .temoignage-tag-probleme p{
   font-family: 'Kodchasan';
@@ -519,9 +521,11 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-radius: 50px;
   padding: 10px 20px;
   color: #000;
+  font-weight: normal;
 }
 .temoignage-words{
   margin: 50px 0;
+  color: #000;
 }
 
 .resultats, .duree{

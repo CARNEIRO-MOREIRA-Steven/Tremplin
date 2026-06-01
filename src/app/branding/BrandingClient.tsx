@@ -423,15 +423,43 @@ console.log(visibleCount)
           <div className="temoignage-grid">
         
             {[
-              { activite: 'Fascialiste', probleme: "Peur de se spécialisé dans son domaine d'expertise", prenom: 'Aurélie' },
-              { activite: 'Boutique de prêt à porter féminin', probleme: "Ne réalise pas qu'elle incarne son entreprise et est le meilleure atout de sa boutique", prenom: 'Marie' },
+              { activite: 'Coach nutritionnel ', probleme: "L’image perçue n’était pas alignée avec le positionnement souhaité. Gros manque de clarté et organisation.", details: `Avant de travailler avec Tremplin, ma communication était complètement aléatoire. Je postais au feeling, sans stratégie, sans cadre, sans vraie direction. J’avais deux offres totalement différentes et je communiquais sur l’une ou l’autre sans cohérence.
+              
+              Le plus frustrant, c’est que l’image que je renvoyais ne reflétait absolument pas ce que je voulais transmettre. Je manquais de clarté et ça devenait vraiment pesant au quotidien.
+              
+              Au départ, je pensais qu’une agence de communication était réservée aux grandes entreprises. Je me disais : “Plus tard, quand mon activité grandira.” Puis j’ai fait le bilan gratuit avec Tremplin… et j’ai compris que c’était exactement ce qu’il me fallait. Finalement, l’investissement était bien plus accessible que ce que j’imaginais — et surtout indispensable pour avancer.
+              
+              Le plus gros déclic a été le travail sur mon image de marque. Pour la première fois, je me suis dit : “Oui, ça me ressemble vraiment.”
+              
+              Aujourd’hui, tout est structuré. Je ne communique plus au hasard. Grâce à la charte graphique et à la stratégie mise en place, je sais exactement quoi publier et comment le faire. C’est fluide, clair et beaucoup plus professionnel.
+              
+              J’ai aussi adoré leur façon de travailler : simple, intuitive, accessible. Quand on est dyslexique, ce genre d’accompagnement change tout.
+              
+              Les résultats sont là : plus de visibilité, plus de followers qualifiés et surtout un parcours client beaucoup plus clair. Honnêtement, si je n’avais rien changé, ma communication serait encore brouillonne aujourd’hui… avec beaucoup moins de clients à la clé.
+              
+              Je recommande Tremplin à tous les entrepreneurs qui veulent enfin avoir une communication alignée, professionnelle et efficace.` },
+              { activite: 'Boutique de prêt à porter féminin', probleme: "Ne réalise pas qu'elle incarne son entreprise et est le meilleure atout de sa boutique", details: `Avant de travailler avec Tremplin, j’étais complètement perdue dans ma communication. Je manquais de clarté, mon image ne reflétait pas du tout mon niveau et surtout… je n’arrivais pas à vendre.
+
+Ma communication partait dans tous les sens, sans vraie direction. Aujourd’hui, tout est différent : j’ai enfin une ligne directrice claire, avec mes couleurs, mes mots et une identité qui me ressemble vraiment.
+
+Au départ, j’ai contacté Tremplin simplement pour faire un point sur ma situation. Puis j’ai décidé de passer le cap et de travailler avec eux. Ce qui m’a immédiatement attirée, c’est le professionnalisme et la bonne humeur de Fabrice et Marion. On sent chez eux une vraie passion pour leur métier, et ça a tout de suite résonné avec moi. Leur approche est dynamique, moderne et vraiment innovante.
+
+Le plus gros déclic a été toute la boîte à outils qu’ils m’ont transmise. Je ne suis pourtant pas quelqu’un de très à l’aise avec les réseaux sociaux ou les nouvelles technologies… mais ils ont réussi à me donner envie de les utiliser, notamment l’intelligence artificielle — et honnêtement, ce n’était pas gagné ! 😅
+
+Concrètement, ma manière de communiquer a complètement changé : le timing de mes publications, le contenu, le design, la cohérence visuelle grâce à la charte graphique… Aujourd’hui, chaque post est réfléchi et aligné avec mon image.
+
+Leur façon de travailler est exactement ce qu’on recherche quand on est entrepreneur : professionnelle, dynamique, humaine, toujours dans la bonne humeur et surtout à l’écoute des besoins réels. Avec eux, on ne se sent jamais comme un simple numéro.
+
+Je recommande Tremplin à toutes les petites entreprises qui veulent professionnaliser leur communication tout en gardant un accompagnement humain et proche de leurs clients.
+
+Honnêtement, sans cet accompagnement, je pense que j’aurais fini par me décourager. Aujourd’hui, je gagne du temps, je suis plus efficace et j’ai enfin une vision beaucoup plus professionnelle de ma communication.` },
             ].map((t, i) => (
               <div key={i} className="temoignage-card">
                 <div className="temoignage-tags">
                   <span className="temoignage-tag-activite">Activité<br /><p>{t.activite}</p></span>
                   <span className="temoignage-tag-probleme">Problème essentiel trouvé<br /><p>{t.probleme}</p></span>
                 </div>
-                <p className="temoignage-words">Ses mots<br />&apos;témoignage {t.prenom}&apos;</p>
+                <p style={{ whiteSpace: 'pre-line' }} className="temoignage-words">Ses mots : <br /> {t.details}</p>
               </div>
             ))}
           </div>

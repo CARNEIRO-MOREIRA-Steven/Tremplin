@@ -46,10 +46,15 @@
 
 .intro-agence-texte{
     font-size: 25px;
-    width: 95%;
+    width:80%;
     text-align: justify;
     margin-bottom: 20px;
     font-family: 'Gill Sans', sans-serif;
+    max-width: 1000px;
+}
+.intro-agence-texte.accroche{
+    text-align: center;
+    margin-bottom: 0;
 }
 .intro-agence-image{
     height: 55vh;

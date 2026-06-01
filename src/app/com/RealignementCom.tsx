@@ -383,15 +383,33 @@ export default function ComPage() {
           <div className="temoignage-grid">
         
             {[
-              { activite: 'Salon de coiffure', probleme: "Peur de se spécialisé dans son domaine d'expertise", prenom: 'Aurélie' },
-              { activite: 'Conseil en image', probleme: "Ne réalise pas qu'elle incarne son entreprise et est le meilleure atout de sa boutique", prenom: 'Marie' },
+              { activite: 'Salon de coiffure', probleme: "Communication qui manque de clarté, manque de connaissance pour créer une communication qui attire des clients", details: `Avant de travailler avec Tremplin, je sentais un vrai décalage : mon image ne reflétait pas mon niveau. J’avais du mal à être clair dans ma communication et je savais que ça freinait ma visibilité.
+
+Le déclic a été de comprendre que je n’avais pas besoin d’en faire plus… mais d’être mieux accompagné. J’avais besoin d’un vrai coup de pouce pour mieux communiquer, mieux m’organiser et surtout maîtriser mes réseaux sociaux.
+
+Avec Tremplin, j’ai trouvé une équipe très professionnelle, disponible et proche de ses clients. Il n’y a jamais eu de pression, seulement des conseils concrets et un accompagnement humain qui m’a permis de reprendre confiance dans ma communication.
+
+Aujourd’hui, je sais que sans eux, j’aurais probablement subi une baisse de chiffre d’affaires. C’est pour ça que je les recommande sans hésiter.` },
+              { activite: ' boutique de prêt à porter féminin', probleme: "L’image de la boutique et la clientèle vieillissait et ne reflétait plus la qualité de service.", details: `Avant de travailler avec Tremplin, nous manquions clairement de clarté dans notre communication. Notre image ne reflétait pas le niveau de qualité que nous proposons réellement.
+
+Nous savions qu’il nous fallait un professionnel pour nous accompagner, mais ce qui a fait la différence avec Tremplin, c’est avant tout le feeling. Dès le départ, ils ont su rendre leur métier accessible et compréhensible, même si la communication digitale reste un domaine très technique avec beaucoup de codes à maîtriser.
+
+Le plus gros déclic a été de comprendre à quel point les réseaux sociaux avaient évolué… et surtout l’impact qu’ils peuvent avoir quand ils sont bien utilisés.
+
+Grâce à l’accompagnement, notre communication est aujourd’hui beaucoup plus claire et cohérente. Le positionnement de La Casamance est enfin bien défini, notre qualité est mieux perçue et nos réseaux sont devenus plus visibles et plus professionnels.
+
+Ce que j’apprécie particulièrement chez Tremplin, c’est leur capacité à s’adapter à leurs clients. Ils prennent le temps d’expliquer, de simplifier et de rendre les choses faciles à comprendre. C’est un vrai plaisir de travailler avec eux.
+
+Honnêtement, sans ce changement, nous serions complètement dépassés par l’évolution des réseaux sociaux, avec moins de visibilité et une clientèle qui vieillit sans être renouvelée.
+
+Je recommande Tremplin à tous les commerces Saint-Quentinois qui veulent moderniser leur image et développer leur visibilité.` },
             ].map((t, i) => (
               <div key={i} className="temoignage-card">
                 <div className="temoignage-tags">
                   <span className="temoignage-tag-activite">Activité<br /><p>{t.activite}</p></span>
                   <span className="temoignage-tag-probleme">Problème essentiel trouvé<br /><p>{t.probleme}</p></span>
                 </div>
-                <p className="temoignage-words">Ses mots<br />&apos;témoignage {t.prenom}&apos;</p>
+                <p style={{ whiteSpace: 'pre-line' }} className="temoignage-words">Ses mots<br /> {t.details}</p>
               </div>
             ))}
           </div>

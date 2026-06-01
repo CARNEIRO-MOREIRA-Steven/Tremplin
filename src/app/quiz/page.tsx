@@ -68,12 +68,16 @@ export default function Quiz() {
   const [sendError, setSendError] = useState("");
 
   // ── PDF form state ─────────────────────────────────────────────────────────
-  const [pdfForm, setPdfForm] = useState<ContactForm>({
-    name: "",
-    email: "",
-    consentEmail: false,
-    consentShare: false,
-  });
+// ── PDF form state ─────────────────────────────────────────────────────────
+const [pdfForm, setPdfForm] = useState({
+  firstName: "",
+  lastName: "",
+  email: "",
+  company: "",
+  activity: "",       // facultatif
+  socials: "",        // facultatif
+  consentShare: false,
+});
 
   // ── Contact form state ─────────────────────────────────────────────────────
   const [contactForm, setContactForm] = useState<ContactForm>({
@@ -128,59 +132,45 @@ export default function Quiz() {
   }
 
   // ── PDF download ───────────────────────────────────────────────────────────
-  async function handleDownloadPdf() {
-    if (!result) return;
-    setPdfLoading(true);
-    setPdfError("");
+ async function handleDownloadPdf() {
+  if (!result) return;
+  setPdfLoading(true);
+  setPdfError("");
 
-    try {
-      const res = await fetch("/api/generate-pdf", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          result,
-          scores: computedScores(),
-          freeAnswer,
-          userName: pdfForm.name,
-          // Envoi vers Tremplin si consentShare coché
-          ...(pdfForm.consentShare && { shareWithTremplin: true }),
-        }),
-      });
+  try {
+    const res = await fetch("/api/generate-pdf", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        result,
+        scores: computedScores(),
+        freeAnswer,
+        firstName: pdfForm.firstName,
+        lastName: pdfForm.lastName,
+        email: pdfForm.email,
+        company: pdfForm.company,
+        activity: pdfForm.activity,
+        socials: pdfForm.socials,
+        consentShare: pdfForm.consentShare,
+      }),
+    });
 
-      if (!res.ok) throw new Error("Erreur génération PDF");
+    if (!res.ok) throw new Error("Erreur génération PDF");
 
-      const blob = await res.blob();
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "profil-communication-tremplin.pdf";
-      a.click();
-      URL.revokeObjectURL(url);
-
-      // Si partage consenti, on envoie aussi les données
-      if (pdfForm.consentShare && pdfForm.email && pdfForm.name) {
-        await fetch("/api/send-results", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            name: pdfForm.name,
-            email: pdfForm.email,
-            result,
-            scores: computedScores(),
-            freeAnswer,
-            consentEmail: false,
-            consentShare: true,
-          }),
-        });
-      }
-
-      setModal(null);
-    } catch {
-      setPdfError("Impossible de générer le PDF. Réessaie dans quelques instants.");
-    } finally {
-      setPdfLoading(false);
-    }
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "profil-communication-tremplin.pdf";
+    a.click();
+    URL.revokeObjectURL(url);
+    setModal(null);
+  } catch {
+    setPdfError("Impossible de générer le PDF. Réessaie dans quelques instants.");
+  } finally {
+    setPdfLoading(false);
   }
+}
 
   // ── Send results ───────────────────────────────────────────────────────────
   async function handleSendResults() {
@@ -283,68 +273,84 @@ export default function Quiz() {
 
         {/* ── Modal PDF ──────────────────────────────────────────────────────── */}
         {modal === "pdf" && (
-          <div className="modal-overlay" onClick={() => setModal(null)}>
-            <div className="modal-box" onClick={(e) => e.stopPropagation()}>
-              <button className="modal-close" onClick={() => setModal(null)}>✕</button>
-              <h3 className="modal-title">Télécharger ton profil PDF</h3>
-              <p className="modal-desc">
-                Ton PDF est généré localement. Tu peux aussi choisir de le partager avec Tremplin.
-              </p>
+  <div className="modal-overlay" onClick={() => setModal(null)}>
+    <div className="modal-box" onClick={(e) => e.stopPropagation()}>
+      <button className="modal-close" onClick={() => setModal(null)}>✕</button>
+      <h3 className="modal-title">Télécharger ton profil PDF</h3>
+      <p className="modal-desc">
+        Remplis les informations ci-dessous pour recevoir ton PDF personnalisé.
+      </p>
 
-              <label className="form-label">Prénom (optionnel)
-                <input
-                  className="form-input"
-                  type="text"
-                  placeholder="Marie"
-                  value={pdfForm.name}
-                  maxLength={50}
-                  onChange={(e) => setPdfForm({ ...pdfForm, name: e.target.value })}
-                />
-              </label>
+      <div className="form-row">
+        <label className="form-label">Prénom *
+          <input className="form-input" type="text" placeholder="Marie"
+            value={pdfForm.firstName} maxLength={50}
+            onChange={(e) => setPdfForm({ ...pdfForm, firstName: e.target.value })} />
+        </label>
+        <label className="form-label">Nom *
+          <input className="form-input" type="text" placeholder="Dupont"
+            value={pdfForm.lastName} maxLength={50}
+            onChange={(e) => setPdfForm({ ...pdfForm, lastName: e.target.value })} />
+        </label>
+      </div>
 
-              {/* Consent partage */}
-              <label className="consent-row">
-                <input
-                  type="checkbox"
-                  checked={pdfForm.consentShare}
-                  onChange={(e) => setPdfForm({ ...pdfForm, consentShare: e.target.checked })}
-                />
-                <span>
-                  J&apos;accepte de partager mes résultats avec Tremplin afin d&apos;être recontacté·e.
-                  <br />
-                  <small className="rgpd-note">Données utilisées uniquement dans le cadre du suivi Tremplin, non revendues.</small>
-                </span>
-              </label>
+      <label className="form-label">Adresse mail *
+        <input className="form-input" type="email" placeholder="marie@exemple.fr"
+          value={pdfForm.email}
+          onChange={(e) => setPdfForm({ ...pdfForm, email: e.target.value })} />
+      </label>
 
-              {pdfForm.consentShare && (
-                <label className="form-label">Email (pour être recontacté·e)
-                  <input
-                    className="form-input"
-                    type="email"
-                    placeholder="marie@exemple.fr"
-                    value={pdfForm.email}
-                    onChange={(e) => setPdfForm({ ...pdfForm, email: e.target.value })}
-                  />
-                </label>
-              )}
+      <label className="form-label">Nom de ta boîte *
+        <input className="form-input" type="text" placeholder="Mon Entreprise SAS"
+          value={pdfForm.company} maxLength={80}
+          onChange={(e) => setPdfForm({ ...pdfForm, company: e.target.value })} />
+      </label>
 
-              <p className="rgpd-footer">
-                🔒 Conformément au RGPD, tes données ne sont collectées qu&apos;avec ton consentement explicite.
-                Tu peux te désinscrire à tout moment via contact@tremplin.fr.
-              </p>
+      <label className="form-label">Activité <span className="optional">(facultatif)</span>
+        <input className="form-input" type="text" placeholder="Coach, Artisan, Consultant…"
+          value={pdfForm.activity} maxLength={80}
+          onChange={(e) => setPdfForm({ ...pdfForm, activity: e.target.value })} />
+      </label>
 
-              {pdfError && <p className="form-error">{pdfError}</p>}
+      <label className="form-label">Réseaux sociaux <span className="optional">(facultatif)</span>
+        <input className="form-input" type="text" placeholder="@moncompte / lien Instagram…"
+          value={pdfForm.socials} maxLength={120}
+          onChange={(e) => setPdfForm({ ...pdfForm, socials: e.target.value })} />
+      </label>
 
-              <button
-                className="little-btn-pink modal-submit"
-                onClick={handleDownloadPdf}
-                disabled={pdfLoading || (pdfForm.consentShare && !pdfForm.email)}
-              >
-                {pdfLoading ? "Génération en cours…" : "Télécharger mon PDF →"}
-              </button>
-            </div>
-          </div>
-        )}
+      <label className="consent-row">
+        <input type="checkbox" checked={pdfForm.consentShare}
+          onChange={(e) => setPdfForm({ ...pdfForm, consentShare: e.target.checked })} />
+        <span>
+          J&apos;accepte que Tremplin conserve mes résultats pour me recontacter.
+          <br />
+          <small className="rgpd-note">Non revendues, utilisées uniquement dans le cadre du suivi Tremplin.</small>
+        </span>
+      </label>
+
+      <p className="rgpd-footer">
+        🔒 Conformément au RGPD, tes données ne sont collectées qu&apos;avec ton consentement.
+        Désinscription : contact@tremplin.fr
+      </p>
+
+      {pdfError && <p className="form-error">{pdfError}</p>}
+
+      <button
+        className="little-btn-pink modal-submit"
+        onClick={handleDownloadPdf}
+        disabled={
+          pdfLoading ||
+          !pdfForm.email.trim() ||
+          !pdfForm.firstName.trim() ||
+          !pdfForm.lastName.trim() ||
+          !pdfForm.company.trim()
+        }
+      >
+        {pdfLoading ? "Génération en cours…" : "Télécharger mon PDF →"}
+      </button>
+    </div>
+  </div>
+)}
 
         {/* ── Modal Contact ──────────────────────────────────────────────────── */}
 

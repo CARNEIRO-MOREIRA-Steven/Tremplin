@@ -112,6 +112,11 @@
     font-weight: 300;
     color: #fff;
     text-shadow: 0 0 3px #000, 0 0 6px #fff, 0 0 48px #fff;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .accompagnements-page ul {
@@ -143,7 +148,8 @@
 }
 .border-offer { width: 100%; height: 1px; background-color: #000; }
 
-.offer-desc { height: 140px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.offer-desc {font-family: 'Gill Sans', sans-serif; height: auto;
+        max-height: 120px;}
 .offer-tagline { height: 75px; text-transform: uppercase; margin-bottom: 15px;}
 .offer-subtagline { height: 135px; text-align: justify; }
 .offer-includes { height: 280px; }

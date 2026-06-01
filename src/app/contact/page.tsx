@@ -1,86 +1,162 @@
-import React from 'react'
+"use client";
+
+import { useState } from "react";
 import "../globals.css";
-import "./page.css"
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import "./page.css";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
-import LogoLocalisation from '../../../public/icons/location-dot-solid-full.svg'
-import LogoInstagram from '../../../public/icons/instagram-brands-solid-full.svg'
-import LogoLinkedin from '../../../public/icons/linkedin-brands-solid-full.svg'
-import LogoFacebook from '../../../public/icons/facebook-f-brands-solid-full.svg'
-import LogoPhone from '../../../public/icons/phone-solid-full.svg'
-import LogoMail from '../../../public/icons/envelope-solid-full.svg'
-import LogoWhatsapp from '../../../public/icons/square-whatsapp-brands-solid-full.svg'
-import Arrow from '../../../public/icons/arrow-courbe.png'
-
+import LogoLocalisation from "../../../public/icons/location-dot-solid-full.svg";
+import LogoInstagram from "../../../public/icons/instagram-brands-solid-full.svg";
+import LogoLinkedin from "../../../public/icons/linkedin-brands-solid-full.svg";
+import LogoFacebook from "../../../public/icons/facebook-f-brands-solid-full.svg";
+import LogoPhone from "../../../public/icons/phone-solid-full.svg";
+import LogoMail from "../../../public/icons/envelope-solid-full.svg";
+import LogoWhatsapp from "../../../public/icons/square-whatsapp-brands-solid-full.svg";
+import Arrow from "../../../public/icons/arrow-courbe.png";
 
 const page = () => {
+  const [form, setForm] = useState({
+    company: "",
+    name: "",
+    activity: "",
+    need: "",
+    offer: "audit",
+    phone: "",
+    email: "",
+    contactPrefs: [] as string[],
+  });
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
+
+  function togglePref(value: string) {
+    setForm((f) => ({
+      ...f,
+      contactPrefs: f.contactPrefs.includes(value)
+        ? f.contactPrefs.filter((p) => p !== value)
+        : [...f.contactPrefs, value],
+    }));
+  }
+
+  async function handleSubmit(e: React.MouseEvent) {
+    e.preventDefault();
+    if (!form.company || !form.name || !form.email) {
+      setError("Merci de remplir au moins : boîte, nom et email.");
+      return;
+    }
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error();
+      setSuccess(true);
+    } catch {
+      setError("Erreur lors de l'envoi. Réessaie dans quelques instants.");
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
     <>
       <Header />
         <section className='form-container'>
           <h1>Reste focus ! tu touches ton but :</h1>
-          <form action="">
-            <div className='group-form'>
-            <div>
-              <label htmlFor="entreprise">Nom de ta boîte</label>
-              <input type="text" />
-            </div>
-            <div>
-              <label htmlFor="name">Ton nom et prénom</label>
-              <input type="text" />
-            </div>
-            </div>
-            <div>
-              <label htmlFor="activity">Activité</label>
-              <input type="text" />
-            </div>
-            <div>
-              <label htmlFor="besoin">Tes besoins ou blocage actuel</label>
-              <input className='besoin' type="text" />
-            </div>
-            <div>
-              <label htmlFor="offre">Offre souhaitée</label>
-              <select name="offre" id="select-offre">
-                <option value="audit">Audit Express</option>
-                <option value="realignement">Réalignement</option>
-                <option value="branding">Rebranding</option>
-              </select>
-            </div>
-            <div className='group-form'>
-            <div>
-              <label htmlFor="phone">Téléphone</label>
-              <input type="text" />
-            </div>
-            <div>
-              <label htmlFor="mail">Mail</label>
-              <input type="text" />
-            </div>
-            </div>
-            <div>
-              <label>Tu préfères être contacté :</label>
-              <div className='group-form checkbox'>
+
+          {success ? (
+            <p style={{ color: "#00FF88", marginTop: "20px" }}>
+              ✅ Ta demande a bien été envoyée ! On revient vers toi très vite.
+            </p>
+          ) : (
+            <form action="">
+              <div className='group-form'>
                 <div>
-                <input type="checkbox" id="contactChoice1" name="contact" value="email" />
-                <label htmlFor="contactChoice1">Par SMS</label>
+                  <label htmlFor="entreprise">Nom de ta boîte</label>
+                  <input type="text" value={form.company}
+                    onChange={(e) => setForm({ ...form, company: e.target.value })} />
                 </div>
                 <div>
-                <input type="checkbox" id="contactChoice2" name="contact" value="telephone" />
-                <label htmlFor="contactChoice2">Par téléphone</label>
-                </div>
-                <div>
-                <input type="checkbox" id="contactChoice3" name="contact" value="courrier" />
-                <label htmlFor="contactChoice3">Par WhatsApp</label>
-                </div>
-                <div>
-                <input type="checkbox" id="contactChoice4" name="contact" value="courrier" />
-                <label htmlFor="contactChoice4">Par e-mail</label>
+                  <label htmlFor="name">Ton nom et prénom</label>
+                  <input type="text" value={form.name}
+                    onChange={(e) => setForm({ ...form, name: e.target.value })} />
                 </div>
               </div>
-            </div>
-            <button className='little-btn-black' type='submit'>J&apos;envoie ma demande</button>
-          </form>
+              <div>
+                <label htmlFor="activity">Activité</label>
+                <input type="text" value={form.activity}
+                  onChange={(e) => setForm({ ...form, activity: e.target.value })} />
+              </div>
+              <div>
+                <label htmlFor="besoin">Tes besoins ou blocage actuel</label>
+                <input className='besoin' type="text" value={form.need}
+                  onChange={(e) => setForm({ ...form, need: e.target.value })} />
+              </div>
+              <div>
+                <label htmlFor="offre">Offre souhaitée</label>
+                <select name="offre" id="select-offre" value={form.offer}
+                  onChange={(e) => setForm({ ...form, offer: e.target.value })}>
+                  <option value="audit">Audit Express</option>
+                  <option value="realignement">Réalignement</option>
+                  <option value="branding">Rebranding</option>
+                  <option value="sur-mesure">Prestation sur mesure</option>
+                </select>
+              </div>
+              <div className='group-form'>
+                <div>
+                  <label htmlFor="phone">Téléphone</label>
+                  <input type="text" value={form.phone}
+                    onChange={(e) => setForm({ ...form, phone: e.target.value })} />
+                </div>
+                <div>
+                  <label htmlFor="mail">Mail</label>
+                  <input type="text" value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })} />
+                </div>
+              </div>
+              <div>
+                <label>Tu préfères être contacté :</label>
+                <div className='group-form checkbox'>
+                  <div>
+                    <input type="checkbox" id="contactChoice1" name="contact" value="SMS"
+                      checked={form.contactPrefs.includes("SMS")}
+                      onChange={() => togglePref("SMS")} />
+                    <label htmlFor="contactChoice1">Par SMS</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="contactChoice2" name="contact" value="Téléphone"
+                      checked={form.contactPrefs.includes("Téléphone")}
+                      onChange={() => togglePref("Téléphone")} />
+                    <label htmlFor="contactChoice2">Par téléphone</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="contactChoice3" name="contact" value="WhatsApp"
+                      checked={form.contactPrefs.includes("WhatsApp")}
+                      onChange={() => togglePref("WhatsApp")} />
+                    <label htmlFor="contactChoice3">Par WhatsApp</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="contactChoice4" name="contact" value="Email"
+                      checked={form.contactPrefs.includes("Email")}
+                      onChange={() => togglePref("Email")} />
+                    <label htmlFor="contactChoice4">Par e-mail</label>
+                  </div>
+                </div>
+              </div>
+
+              {error && <p style={{ color: "#FF2D78", fontSize: "13px" }}>{error}</p>}
+
+              <button className='little-btn-black' onClick={handleSubmit} disabled={loading}>
+                {loading ? "Envoi en cours…" : "J'envoie ma demande"}
+              </button>
+            </form>
+          )}
         </section>
+
         <aside className='aside-contact'>
           <p>Rempli le formulaire ou utilise un de nos moyens de communication ici</p>
           <img className='arrow-contact' src={Arrow.src} alt="" />
@@ -96,7 +172,7 @@ const page = () => {
         </aside>
       {/* <Footer /> */}
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;

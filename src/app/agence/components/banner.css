@@ -83,13 +83,13 @@
 }
 
 .banner-marionfabrice {
-    height: 250px;
+    height: 400px;
     width: auto;
 
     object-fit: contain;
 
     position: relative;
-    bottom: -50px;
+    bottom: -95px;
 }
 
 /* ===================== LOGO SECTION ===================== */
@@ -198,7 +198,6 @@
     .banner-marionfabrice {
         width: 320px;
         height: auto;
-
         bottom: -30px;
     }
 

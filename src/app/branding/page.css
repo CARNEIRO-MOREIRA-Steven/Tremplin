@@ -138,6 +138,7 @@ font-weight: 600;
 text-align: start;
 color: #000;
 text-align: justify;
+font-family: 'Gill Sans', sans-serif;
 }
 .pour-qui-card.dark { background: var(--dark); color: var(--off); border: 1px solid var(--border); }
 
@@ -309,6 +310,7 @@ text-align: justify;
 .pourquoi-body p {
   font-family: 'Gill Sans', sans-serif;
   font-size: 18px;
+  text-align: justify;
 }
 .pourquoi-body p strong { color: var(--white); font-weight: 700; }
 
@@ -345,11 +347,15 @@ text-align: justify;
   flex-direction: column;
   align-items: center;
   gap: 25px;
+  text-align: justify;
 }
 .methode p strong { color: var(--white); }
+.methode p{
+  width: 100%;
+}
 .methode .methode-bold {
   font-weight: 700; color: var(--white);
-  max-width: 600px; margin: 0 auto 28px;
+  margin: 0 auto 28px;
 }
 .process{
   display: flex;
@@ -575,6 +581,7 @@ text-align: justify;
 .temoignage-tag-activite, .temoignage-tag-probleme{
   font-family: 'GiveYouGlory';
   font-size: 20px;
+  font-weight: 900;
 }
 .temoignage-tag-activite p, .temoignage-tag-probleme p{
   font-family: 'Kodchasan';
@@ -584,9 +591,11 @@ text-align: justify;
   border-radius: 50px;
   padding: 10px 20px;
   color: #000;
+  font-weight: normal;
 }
 .temoignage-words{
   margin: 50px 0;
+  color: #000;
 }
 
 .resultats, .duree{

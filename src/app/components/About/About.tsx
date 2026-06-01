@@ -1,6 +1,5 @@
 import React from 'react'
 import './about.css'
-import Bureaux from '../../../../public/un-bureau-lumineux.jpg'
 import MarionFabrice from '../../../../public/marion&fabrice.png'
 import Marion from '../../../../public/marion.png'
 import Fabrice from '../../../../public/fabrice.png'

@@ -46,7 +46,7 @@ export default function AccompagnementsPage() {
                 Tu sens que quelque chose cloche dans ta communication mais tu ne sais pas quoi.
                 Tu veux <strong>un diagnostic franc</strong>, rapide et concret.
               </p>
-              <div className="offer-price">239e <br /><br /></div>
+              <div className="offer-price">239e</div>
               <p className="offer-tagline">Identifier ce qui t&apos;empêche de décoller et comprendre comment ajuster…</p>
               <p className="offer-subtagline">
                 Tu vas enfin <strong>comprendre ce qui ne fait pas passer ton audience à l&apos;action.</strong><br />
@@ -77,7 +77,7 @@ export default function AccompagnementsPage() {
                 Tu veux <strong>(re)formuler ton positionnement et clarifier ton message</strong> pour enfin attirer les bons clients.{' '}
                 <strong>Tu veux monter d&apos;un step</strong>
               </p>
-              <div className="offer-price">3 x 430e <br /><span>1290e</span></div>
+              <div className="offer-price"><span>A partir de </span>3 x 430e<span>1290e</span></div>
               <p className="offer-tagline">Structurer ta vision, ton message et tes fondations pour communiquer avec cohérence.</p>
               <p className="offer-subtagline">
                 Tu vas être soulagé(e) <strong>d&apos;avoir enfin une direction</strong> avec ta communication.<br />
@@ -107,7 +107,7 @@ export default function AccompagnementsPage() {
                 <strong>Ton image ne colle plus à qui tu es devenu(e).</strong> Tu veux <strong>refondre ton image,</strong>{' '}
                 ton univers, créer ta légitimité. Tu veux <strong>être reconnu(e) pour ton expertise.</strong>
               </p>
-              <div className="offer-price">4 x 550e <br /><span>2190e</span></div>
+              <div className="offer-price"><span> A partir de</span>4 x 550e<span>2190e</span></div>
               <p className="offer-tagline">Recréer une identité complète, alignée et ambitieuse – à ton image.</p>
               <p className="offer-subtagline">
                 <strong>Ton image va enfin parler pour toi,</strong> ce qui va te rendre confiant(e) et crédible.<br />
