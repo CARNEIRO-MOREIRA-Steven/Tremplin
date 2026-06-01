@@ -21,10 +21,10 @@ const Banner = () => {
           <div className="hero-tu-te-demandes">
             <h2 className='neon'>Tu te demandes :</h2>
             <p>
-              <strong>Le site internet est-il obligatoire</strong> pour communiquer ?<br />
-              <strong>Par où commencer pour communiquer ?</strong><br />
-              <strong>Comment s&apos;occuper de ses réseaux sociaux</strong> ?<br />
-              Comment m&apos;organiser<strong> pour une communication régulière ?</strong><br />
+              <strong>Le site internet est-il obligatoire</strong> pour communiquer ?<br /><br />
+              <strong>Par où commencer pour communiquer ?</strong><br /><br />
+              <strong>Comment s&apos;occuper de ses réseaux sociaux</strong> ?<br /><br />
+              Comment m&apos;organiser<strong> pour une communication régulière ?</strong><br /><br />
               Faut-il communiquer de la même façon sur ses différents réseaux ?
             </p>
           </div>

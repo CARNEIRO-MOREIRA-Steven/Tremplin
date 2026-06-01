@@ -232,15 +232,13 @@ strong {
         align-items: center;
         gap: 15px;
     }
-    .image-left{
-        width: 100px !important;
-    }
-
     .image-left,
     .image-right {
         height: auto;
         width: 100%;
-        max-width: 360px;
+    }
+    .image-right{
+        display: none;
     }
 
     .etape-title {
