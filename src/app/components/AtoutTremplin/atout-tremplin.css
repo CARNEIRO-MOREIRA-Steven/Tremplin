@@ -105,7 +105,7 @@
 @media screen and (max-width : 767px) {
     .about-agence-container{
         height: auto;
-        padding: 20px 10px;
+        padding: 0px 20px 50px 20px;
         gap: 25px;
     }
     .about-agence-content{
@@ -126,5 +126,7 @@
     }
     .subtitle-atout{
         width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }

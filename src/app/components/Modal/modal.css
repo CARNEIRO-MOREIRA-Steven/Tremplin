@@ -239,7 +239,7 @@ li.services-texte{
 }
 @media (max-width : 767px) {
     .satisfaction-title{
-        padding:20px 10px 0 10px ;
+        padding:20px 20px 20px 20px ;
     }
     .list-services-details{
         padding: 20px 10px;
@@ -257,11 +257,12 @@ li.services-texte{
     .projects-track {
     animation: scroll-left 10s linear infinite;
 }
-.list-services{
+.list-services.projets{
     gap: 25px;
+    padding: 0;
 }
 .modal-cta{
-    padding: 0 10px 20px 10px;
+    padding: 0 20px 20px 20px;
 }
 .modal-header h2, .modal-objectif-results h2{
     font-size: 18px;

@@ -879,9 +879,11 @@
 @media (max-width: 768px) {
     .promise,
     .promise-intro {
-        padding: 20px;
+        padding: 50px 20px;
         width: auto;
     }
+
+
 
     .content-audit-left{
         position: initial;
@@ -930,14 +932,14 @@
 
     /* Social proof */
     .social-proof {
-        padding: 30px 0;
-        gap: 15px;
+        padding: 50px 0;
+        gap: 25px;
     }
 
     .proof-labels {
         grid-template-columns: 1fr;
-        padding: 0 15px;
-        gap: 8px;
+        padding: 0 20px;
+        gap: 10px;
         margin: 0;
     }
 
@@ -969,7 +971,7 @@
 
     /* Audit content */
     .audit-content {
-        padding: 30px 20px;
+        padding: 0px 20px 50px;
     }
 
     .audit-content-header {

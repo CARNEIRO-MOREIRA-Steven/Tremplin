@@ -165,8 +165,8 @@
     }
 
     #prochaine-etape {
-        padding: 30px 20px;
-        gap: 20px;
+        padding: 50px 20px;
+        gap: 25px;
     }
 
     #prochaine-etape ul {
@@ -190,17 +190,12 @@
         align-items: center;
         gap: 15px;
     }
-}
-
-/* ===================== SMALL MOBILE (max 480px) ===================== */
-@media (max-width: 480px) {
-
-    .process-container {
-        padding: 25px 15px;
+        .process-container {
+        padding: 0px 20px;
+        gap: 25px;
     }
 
     .process-details div {
         max-width: 100%;
     }
-
 }

@@ -286,6 +286,10 @@ height: 70px; }
         gap: 20px;
     }
 
+    .hero-title{
+      padding: 50px 20px;
+    }
+
     .offer-name{
       font-size: 30px;
     }
@@ -301,7 +305,7 @@ height: 70px; }
 
     .offers-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 25px;
     }
 
     .offer-desc, .offer-subtagline, .offer-includes, .offer-tagline {

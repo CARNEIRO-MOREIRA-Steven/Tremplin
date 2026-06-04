@@ -6,7 +6,7 @@ const IntroAgence = () => {
   return (
     <section className='intro-agence-container'>
       <p className='intro-agence-texte accroche'>Une bonne communication ne repose pas uniquement sur le visuel.</p>
-      <p className='intro-agence-texte accroche'>Elle repose sur une stratégie claire, des messages cohérents et une vraie compréhension de votre entreprise.</p>
+      <p className='intro-agence-texte accroche second'>Elle repose sur une stratégie claire, des messages cohérents et une vraie compréhension de votre entreprise.</p>
         <h2 className='neon-title' data-neon>
             Importance de la communication digitale
         </h2>

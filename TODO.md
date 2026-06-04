@@ -1,5 +1,0 @@
-- [x] Fix image references in projectsData (remove quotes around LogoAfterCharlotte.src)
-- [x] Create servicesData array with id, name, image, description for Transparence, Expertise, Agilité, Créativité
-- [x] Restructure services list rendering to map over servicesData and display image, title, description
-- [x] Update CSS for .list-services-ul li to style the new structure (image, h3, p)
-- Test the component display

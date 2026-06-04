@@ -56,6 +56,9 @@
     text-align: center;
     margin-bottom: 0;
 }
+.intro-agence-texte.accroche.second{
+    margin-bottom: 20px;
+}
 .intro-agence-image{
     height: 55vh;
     width: 100%;
@@ -86,8 +89,8 @@
 @media (max-width: 767px) {
     .intro-agence-container {
         height: auto;
-        padding : 20px 20px;
-        gap: 20px;
+        padding : 50px 20px;
+        gap: 30px;
     }
     .intro-agence-title {
         font-size: 22px;
@@ -103,4 +106,7 @@
         height: 30vh;
         width: 100%;
     }
+      .intro-agence-container .special-title{
+        padding-top: 40px;
+     }
 }

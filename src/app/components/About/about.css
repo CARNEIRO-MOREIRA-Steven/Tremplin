@@ -122,6 +122,10 @@
     text-shadow: 0 0 3px #000, 0 0 6px #000;
 }
 
+#cas-clients .list-services{
+    padding: 0;
+}
+
 /* Responsive styles */
 @media (max-width: 1023px) {
     .about-container {
@@ -177,7 +181,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 20px;
-        padding: 20px 0;    
+        padding: 5cap 0;    
         /* background-image: url(../../../../public/un-bureau-lumineux.jpg);
         background-repeat: no-repeat;
         background-size: auto;
@@ -228,14 +232,17 @@
         font-size: 15px;
     }
     .about-mission{
-        padding : 20px 10px
+        padding : 50px 20px 25px 20px
 
+    }
+    .about-title, .about-texte{
+        padding: 0 20px;
     }
     .about-marionfabrice{
         gap: 25px;
     }
     .list-services{
-        padding: 20px 10px;
+        padding: 0px 20px;
     }
     .about-mission-title {
         font-size: 18px;

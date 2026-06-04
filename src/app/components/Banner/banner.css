@@ -166,10 +166,10 @@
     .banner-section-texte {
         flex-direction: column;
         height: auto;
-        padding: 5px;
         align-items: center;
         justify-content: flex-start;
-        padding: 25px 5px;
+        padding: 25px 20px 50px 20px;
+        gap: 25px;
         width: auto;
     }
     .banner-title {

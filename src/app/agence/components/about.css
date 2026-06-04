@@ -197,7 +197,7 @@ aside p {
 /* ===================== MOBILE (max 768px) ===================== */
 @media (max-width: 768px) {
     .about-agence {
-        padding: 30px 20px;
+        padding: 50px 20px;
         gap: 30px;
     }
 

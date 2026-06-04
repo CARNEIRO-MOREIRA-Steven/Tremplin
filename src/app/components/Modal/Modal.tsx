@@ -33,7 +33,7 @@ const Modal = (props: { title: React.ReactNode }) => {
 
 
   return (
-    <section className='list-services' id='cas-client'>
+    <section className='list-services projets' id='cas-client'>
 
       <section className='satisfaction-title'>
         <div>{props.title} </div>
