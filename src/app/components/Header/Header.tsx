@@ -5,7 +5,7 @@ import "./header.css";
 import LogoBlack from "../../../../public/logo-black.png";
 import LogoColor from "../../../../public/logo-color.png";
 
-import LogoAlume from "../../../../public/logoallumé.png"
+import LogoAlume from "../../../../public/logoallume.png"
 import LogoEteint from "../../../../public/logoeteint.png"
 
 

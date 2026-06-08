@@ -129,23 +129,19 @@
     position: relative;
 }
 
-.logo-track {
-    display: flex;
-    align-items: center;
-
-    width: max-content;
-
-    animation: scroll 30s linear infinite;
-}
-
 .logo-group {
     display: flex;
     align-items: center;
     gap: 60px;
+    /* ❌ supprime padding-right: 60px; */
+}
 
-    padding-right: 60px;
-
-    flex-shrink: 0;
+.logo-track {
+    display: flex;
+    align-items: center;
+    gap: 60px; /* ✅ l'espacement entre les deux groupes vient d'ici */
+    width: max-content;
+    animation: scroll 30s linear infinite;
 }
 
 .logo-group img {
@@ -239,7 +235,7 @@
         width: 100%;
         height: auto;
 
-        bottom: 0;
+        bottom: -23px;
 
         align-self: center;
         object-fit: contain;
@@ -263,12 +259,13 @@
     }
 
     .logo-track {
+        gap: 25px;
         animation: scroll 18s linear infinite;
     }
 
     .logo-group {
         gap: 25px;
-        padding-right: 25px;
+        /* ❌ plus de padding-right */
     }
 
     .logo-group img {

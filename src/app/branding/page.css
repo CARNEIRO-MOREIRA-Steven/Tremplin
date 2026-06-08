@@ -769,12 +769,12 @@ font-family: 'Gill Sans', sans-serif;
 
 
 @media (max-width: 768px) {
-  .refonte, .pour-qui, .methode, .process, .start-projet, .inclus, .temoignages, .resultats, .resultats-container{
+  .refonte, .pour-qui, .methode, .process, .start-projet, .inclus, .resultats, .resultats-container{
     padding: 0 20px;
     gap: 25px;
   }
 
-  .pour-qui, .process, .inclus{
+  .pour-qui, .process, .inclus, .temoignages{
     padding: 50px 20px;
   }
 
