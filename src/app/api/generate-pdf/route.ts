@@ -127,7 +127,7 @@ export async function POST(req: NextRequest) {
         from: `"Tremplin Quiz" <${process.env.SMTP_USER}>`,
         to: process.env.ADMIN_EMAIL,
         replyTo: email || undefined,
-        subject: `📊 Nouveau résultat quiz — ${
+        subject: `Nouveau résultat quiz — ${
           fullName || email || "Anonyme"
         }`,
 
@@ -139,7 +139,7 @@ export async function POST(req: NextRequest) {
               border-bottom:2px solid #FF2D78;
               padding-bottom:8px;
             ">
-              📊 Nouveau résultat quiz Tremplin
+              Nouveau résultat quiz Tremplin
             </h2>
 
             <table style="
@@ -216,7 +216,7 @@ export async function POST(req: NextRequest) {
                 </td>
 
                 <td style="padding:8px 12px">
-                  ${consentShare ? "✅ Oui" : "❌ Non"}
+                  ${consentShare ? "Oui" : "Non"}
                 </td>
               </tr>
 
@@ -272,7 +272,7 @@ export async function POST(req: NextRequest) {
       });
     } catch (mailErr) {
       console.error(
-        "⚠️ Erreur envoi mail (non-bloquant):",
+        "Erreur envoi mail (non-bloquant):",
         mailErr
       );
     }
@@ -289,7 +289,7 @@ export async function POST(req: NextRequest) {
       },
     });
   } catch (err: any) {
-    console.error("🔥 PDF ERROR:", err.stack ?? err);
+    console.error("PDF ERROR:", err.stack ?? err);
 
     return NextResponse.json(
       {
@@ -322,7 +322,7 @@ function getProfileContent(result: string, color: string): string {
       challenge: string;
     }
   > = {
-    "🌪 Caméléon": {
+    "Caméléon": {
       quote: "Je m'adapte à tout… sauf à moi.",
       points: [
         {
@@ -386,7 +386,7 @@ function getProfileContent(result: string, color: string): string {
         "Pendant les 7 prochains jours : publie uniquement du contenu que toi, tu aurais aimé lire. Pas pour « faire pro », pas pour plaire à l'algorithme. Juste : une idée que tu crois vraiment, une réflexion personnelle, une expérience vécue, une opinion assumée.",
     },
 
-    "💡 Visionnaire": {
+    "Visionnaire": {
       quote: "Je vois loin… mais je ne sais pas comment le dire.",
       points: [
         {
@@ -451,7 +451,7 @@ function getProfileContent(result: string, color: string): string {
         "Pendant les 7 prochains jours : crée uniquement du contenu ultra simple. Une idée principale par contenu, une phrase forte, un message clair, zéro surcharge d'informations. Avant de publier, demande-toi : « Est-ce qu'un inconnu comprend immédiatement ce que je veux dire ? »",
     },
 
-    "🎤 Authentique Bridé·e": {
+    "Authentique Bridé·e": {
       quote: "Je veux être moi-même… mais j'ai peur que ce ne soit pas assez.",
       points: [
         {
@@ -516,7 +516,7 @@ function getProfileContent(result: string, color: string): string {
         "Pendant les 7 prochains jours : publie comme si tu parlais à une seule personne que tu connais vraiment bien. Pas une audience. Pas un marché. Une seule personne. Et dis les choses comme tu les dirais en vrai.",
     },
 
-    "🔧 Technicien·ne": {
+    "Technicien·ne": {
       quote: "Je montre ce que je fais, mais pas qui je suis.",
       points: [
         {
@@ -581,7 +581,7 @@ function getProfileContent(result: string, color: string): string {
         "Pendant les 7 prochains jours : publie uniquement des contenus qui commencent par « Ce que peu de gens comprennent dans mon métier, c'est que… » ou « Ce que mon travail change vraiment pour mes clients, c'est… »",
     },
 
-    "🌱 Stratège Tétanisé": {
+    "Stratège Tétanisé": {
       quote: "Je sais ce qu'il faut faire… mais je ne le fais pas.",
       points: [
         {
@@ -646,7 +646,7 @@ function getProfileContent(result: string, color: string): string {
         "Pendant les 7 prochains jours : choisis UNE seule action stratégique simple et tiens-la sans exception. 1 post par jour, ou 1 action commerciale par jour, ou 1 contenu structuré tous les 2 jours. Peu importe l'action. Ce qui compte : ne pas changer en cours de route.",
     },
 
-    "🧢 Multicasquette Dérouté": {
+    "Multicasquette Dérouté": {
       quote: "Je fais mille choses… et personne ne comprend ce que je fais.",
       points: [
         {
@@ -767,37 +767,37 @@ function getProfileContent(result: string, color: string): string {
 
       <!-- Ce que ta communication dit -->
       <div class="detail-block" style="border-color:${color}20; background: #0d0d0d;">
-        <div class="detail-block-label" style="color:${color};">💬 Ce que ta communication dit actuellement</div>
+        <div class="detail-block-label" style="color:${color};">Ce que ta communication dit actuellement</div>
         <div class="detail-block-value">${p.currentMessage}</div>
       </div>
 
       <!-- Traits -->
       <div class="detail-block" style="border-color:${color}20; background: #0d0d0d;">
-        <div class="detail-block-label" style="color:${color};">🧠 Ce profil est souvent :</div>
+        <div class="detail-block-label" style="color:${color};">Ce profil est souvent :</div>
         <ul class="detail-list">${traitsHtml}</ul>
       </div>
 
       <!-- Ce qu'il manque -->
       <div class="detail-block" style="border-color:${color}20; background: #0d0d0d;">
-        <div class="detail-block-label" style="color:#ff4d4d;">❌ Ce qu'il te manque :</div>
+        <div class="detail-block-label" style="color:#ff4d4d;">Ce qu'il te manque :</div>
         <ul class="detail-list">${missingHtml}</ul>
       </div>
 
       <!-- Conseils -->
       <div class="detail-block" style="border-color:${color}20; background: #0d0d0d;">
-        <div class="detail-block-label" style="color:${color};">🛠 Nos conseils :</div>
+        <div class="detail-block-label" style="color:${color};">Nos conseils :</div>
         ${tipsHtml}
       </div>
 
       <!-- Déclic -->
       <div class="detail-insight" style="border-color:${color}; background: linear-gradient(135deg, #0d0d0d, #1a1a1a);">
-        <div class="detail-block-label" style="color:${color}; margin-bottom:10px;">⚡ Le déclic à avoir :</div>
+        <div class="detail-block-label" style="color:${color}; margin-bottom:10px;">Le déclic à avoir :</div>
         <p style="margin:0; color:#e0e0e0; font-size:14px; line-height:1.7;">${p.insight}</p>
       </div>
 
       <!-- Défi -->
       <div class="detail-insight" style="border-color:${color}40; background: linear-gradient(135deg, #0d0d0d, #111);">
-        <div class="detail-block-label" style="color:${color}; margin-bottom:10px;">🎯 Défi à mettre en place maintenant :</div>
+        <div class="detail-block-label" style="color:${color}; margin-bottom:10px;">Défi à mettre en place maintenant :</div>
         <p style="margin:0; color:#e0e0e0; font-size:14px; line-height:1.7;">${p.challenge}</p>
       </div>
 
@@ -818,15 +818,15 @@ function generateHTML({
   const profiles = Object.keys(scores);
 
   const getColor = (p: string) => {
-    return p === "🎤 Authentique Bridé·e"
+    return p === "Authentique Bridé·e"
       ? "#FF2D78"
-      : p === "🌱 Stratège Tétanisé"
+      : p === "Stratège Tétanisé"
       ? "#00FF88"
-      : p === "🌪 Caméléon"
+      : p === "Caméléon"
       ? "#00D4FF"
-      : p === "💡 Visionnaire"
+      : p === "Visionnaire"
       ? "#FFD700"
-      : p === "🔧 Technicien·ne"
+      : p === "Technicien·ne"
       ? "#FF6B35"
       : "#7B2FBE";
   };
@@ -1011,6 +1011,20 @@ function generateHTML({
         break-after: auto;
       }
 
+      .detail-point-title {
+        font-weight: bold;
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 6px;
+      }
+
+      .detail-point-text {
+        font-size: 13px;
+        color: #ccc;
+        line-height: 1.6;
+        margin-bottom: 14px;
+      }
+
       .footer-logo img { width: 140px; margin-bottom: 18px; }
     </style>
   </head>
@@ -1019,7 +1033,7 @@ function generateHTML({
   <div class='page'>
 
     <div class="header">
-      <div class="subtitle">✦ PROFIL COMMUNICATION ✦</div>
+      <div class="subtitle">PROFIL COMMUNICATION</div>
       <h1>${result}</h1>
       ${userName ? `<div class="username">Profil de : ${userName}</div>` : ""}
     </div>
@@ -1062,14 +1076,33 @@ function generateHTML({
     <div class="detail-full">
       ${profileDetailHtml}
     </div>
+    <div>
+  Tu souhaites aller plus loin ? Deux options s'offrent à toi
+
+  <div style="display:flex; gap:40px; margin-top:10px;">
+
+    <div>
+      Prends rendez-vous maintenant <br>
+      <a href="https://calendly.com/email-tremplin-entreprendre/call-declic?" target="_blank">
+        Clique ici
+      </a>
+    </div>
+
+    <div>
+      Ou contactes-nous <br>
+      <a href="mailto:contact@tremplin-entreprendre.fr">
+        contact@tremplin-entreprendre.fr
+      </a>
+    </div>
+
+  </div>
+</div>
 
     <div class="footer">
       <div class="footer-logo">
         <img src="${LOGO_URL}" />
       </div>
-      <div>contact@tremplin-entreprendre.fr</div>
-      <div>www.tremplin-entreprendre.fr</div>
-      <div>https://calendly.com/email-tremplin-entreprendre/call-declic?</div>
+      <div>www.tremplin-entreprendre.fr</div> 
       <div style="margin-top:8px;">Communication • Stratégie • Branding</div>
     </div>
 
