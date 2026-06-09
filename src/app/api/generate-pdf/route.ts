@@ -712,17 +712,11 @@ function getProfileContent(result: string, color: string): string {
     },
   };
 
-  const profileKey =
-    Object.keys(profiles).find(
-      (key) =>
-        result.includes(key.replace(/^[^\s]+ /, "").split(" ")[0]) ||
-        key.includes(result.replace(/^[^\s]+ /, "").split(" ")[0])
-    ) ||
-    Object.keys(profiles).find((key) => {
-      const keyEmoji = key.split(" ")[0];
-      const resultEmoji = result.split(" ")[0];
-      return keyEmoji === resultEmoji;
-    });
+   const profileKey = Object.keys(profiles).find(
+  (key) =>
+    result.includes(key.replace(/^[^\s]+ /, "").split(" ")[0]) ||
+    key.includes(result.replace(/^[^\s]+ /, "").split(" ")[0])
+);
 
   if (!profileKey) return "";
 
@@ -756,8 +750,8 @@ function getProfileContent(result: string, color: string): string {
     <div class="profile-detail">
 
       <!-- Citation -->
-      <div class="detail-quote" style="border-left-color: ${color};">
-        <span style="color:${color}; font-weight:700;margin:10px;">"${p.quote}"</span>
+      <div class="detail-quote" style="border-left-color: ${color}; margin:10px;">
+        <span style="color:${color}; font-weight:700; margin:10px;">"${p.quote}"</span>
       </div>
 
       <!-- Points -->
