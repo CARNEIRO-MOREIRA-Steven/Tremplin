@@ -757,7 +757,7 @@ function getProfileContent(result: string, color: string): string {
 
       <!-- Citation -->
       <div class="detail-quote" style="border-left-color: ${color};">
-        <span style="color:${color}; font-weight:700;">"${p.quote}"</span>
+        <span style="color:${color}; font-weight:700;margin:10px;">"${p.quote}"</span>
       </div>
 
       <!-- Points -->
@@ -767,37 +767,37 @@ function getProfileContent(result: string, color: string): string {
 
       <!-- Ce que ta communication dit -->
       <div class="detail-block" style="border-color:${color}20; background: #0d0d0d;">
-        <div class="detail-block-label" style="color:${color};">Ce que ta communication dit actuellement</div>
+        <div class="detail-block-label" style="color:${color};margin:10px;">Ce que ta communication dit actuellement</div>
         <div class="detail-block-value">${p.currentMessage}</div>
       </div>
 
       <!-- Traits -->
       <div class="detail-block" style="border-color:${color}20; background: #0d0d0d;">
-        <div class="detail-block-label" style="color:${color};">Ce profil est souvent :</div>
+        <div class="detail-block-label" style="color:${color};margin:10px ; ">Ce profil est souvent :</div>
         <ul class="detail-list">${traitsHtml}</ul>
       </div>
 
       <!-- Ce qu'il manque -->
       <div class="detail-block" style="border-color:${color}20; background: #0d0d0d;">
-        <div class="detail-block-label" style="color:#ff4d4d;">Ce qu'il te manque :</div>
+        <div class="detail-block-label" style="color:#ff4d4d; margin:10px ;">Ce qu'il te manque :</div>
         <ul class="detail-list">${missingHtml}</ul>
       </div>
 
       <!-- Conseils -->
       <div class="detail-block" style="border-color:${color}20; background: #0d0d0d;">
-        <div class="detail-block-label" style="color:${color};">Nos conseils :</div>
+        <div class="detail-block-label" style="color:${color} ;margin:10px ;">Nos conseils :</div>
         ${tipsHtml}
       </div>
 
       <!-- Déclic -->
-      <div class="detail-insight" style="border-color:${color}; background: linear-gradient(135deg, #0d0d0d, #1a1a1a);">
-        <div class="detail-block-label" style="color:${color}; margin-bottom:10px;">Le déclic à avoir :</div>
+      <div class="detail-insight" style="border-color:${color};margin:10px; background: linear-gradient(135deg, #0d0d0d, #1a1a1a);">
+        <div class="detail-block-label" style="color:${color}; margin:10px;">Le déclic à avoir :</div>
         <p style="margin:0; color:#e0e0e0; font-size:14px; line-height:1.7;">${p.insight}</p>
       </div>
 
       <!-- Défi -->
       <div class="detail-insight" style="border-color:${color}40; background: linear-gradient(135deg, #0d0d0d, #111);">
-        <div class="detail-block-label" style="color:${color}; margin-bottom:10px;">Défi à mettre en place maintenant :</div>
+        <div class="detail-block-label" style="color:${color}; margin:10px;">Défi à mettre en place maintenant :</div>
         <p style="margin:0; color:#e0e0e0; font-size:14px; line-height:1.7;">${p.challenge}</p>
       </div>
 
@@ -931,7 +931,7 @@ function generateHTML({
       .subtitle {
         color:#aaa;
         font-size:13px;
-        margin-bottom:6px;
+        margin-bottom:10px;
       }
 
       .layout-top {
@@ -1015,7 +1015,7 @@ function generateHTML({
         font-weight: bold;
         font-size: 14px;
         color: #fff;
-        margin-bottom: 6px;
+        margin-bottom: 10px;
       }
 
       .detail-point-text {
