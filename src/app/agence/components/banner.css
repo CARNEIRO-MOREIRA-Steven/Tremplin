@@ -235,7 +235,7 @@
         width: 100%;
         height: auto;
 
-        bottom: -23px;
+        bottom: 0;
 
         align-self: center;
         object-fit: contain;

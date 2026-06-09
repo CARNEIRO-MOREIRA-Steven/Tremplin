@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import './banner.css'
-import MarionFabrice from '../../../../public/MarionFabSansFleche.png'
+import MarionFabrice from '../../../../public/MarionFabSansFleche2.png'
 import LogoCasamance from '../../../../public/casamance-logoenseigne.png'
 import DefiLogo from '../../../../public/defilogo lumineux - sans fond.png'
 import DressingLogo from '../../../../public/dressing_logo.png'
