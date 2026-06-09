@@ -712,10 +712,10 @@ function getProfileContent(result: string, color: string): string {
     },
   };
 
-   const profileKey = Object.keys(profiles).find(
+const profileKey = Object.keys(profiles).find(
   (key) =>
-    result.includes(key.replace(/^[^\s]+ /, "").split(" ")[0]) ||
-    key.includes(result.replace(/^[^\s]+ /, "").split(" ")[0])
+    result.toLowerCase().includes(key.toLowerCase()) ||
+    key.toLowerCase().includes(result.toLowerCase())
 );
 
   if (!profileKey) return "";
@@ -1019,6 +1019,55 @@ function generateHTML({
         margin-bottom: 14px;
       }
 
+      .cta-box {
+  margin-top: 40px;
+  padding: 32px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #111 0%, #080808 100%);
+  border: 1px solid #1f1f1f;
+}
+
+.cta-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.cta-subtitle {
+  color: #9f9f9f;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.cta-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.cta-card {
+  flex: 1;
+  background: #0d0d0d;
+  border: 1px solid #1f1f1f;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.cta-card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.cta-link {
+  color: ${dominantColor};
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
       .footer-logo img { width: 140px; margin-bottom: 18px; }
     </style>
   </head>
@@ -1070,26 +1119,48 @@ function generateHTML({
     <div class="detail-full">
       ${profileDetailHtml}
     </div>
-    <div>
-  Tu souhaites aller plus loin ? Deux options s'offrent à toi
+    
+    <div class="cta-box">
 
-  <div style="display:flex; gap:40px; margin-top:10px;">
+  <div class="cta-title">
+    Tu souhaites aller plus loin ?
+  </div>
 
-    <div>
-      Prends rendez-vous maintenant <br>
-      <a href="https://calendly.com/email-tremplin-entreprendre/call-declic?" target="_blank">
-        Clique ici
+  <div class="cta-subtitle">
+    Deux options s'offrent à toi
+  </div>
+
+  <div class="cta-grid">
+
+    <div class="cta-card">
+      <div class="cta-card-title">
+        Prends rendez-vous maintenant
+      </div>
+
+      <a
+        href="https://calendly.com/email-tremplin-entreprendre/call-declic?"
+        target="_blank"
+        class="cta-link"
+      >
+        Réserver un appel
       </a>
     </div>
 
-    <div>
-      Ou contactes-nous <br>
-      <a href="mailto:contact@tremplin-entreprendre.fr">
+    <div class="cta-card">
+      <div class="cta-card-title">
+        Contacte-nous directement
+      </div>
+
+      <a
+        href="mailto:contact@tremplin-entreprendre.fr"
+        class="cta-link"
+      >
         contact@tremplin-entreprendre.fr
       </a>
     </div>
 
   </div>
+
 </div>
 
     <div class="footer">
