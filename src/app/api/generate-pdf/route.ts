@@ -34,8 +34,9 @@ export async function POST(req: NextRequest) {
 
     const fullName = `${firstName ?? ""} ${lastName ?? ""}`.trim();
 
-    const safeResult = String(result).slice(0, 100);
-
+const safeResult = cleanProfileName(
+  String(result).slice(0, 100)
+);
     const safeFreeAnswer = freeAnswer
       ? String(freeAnswer).slice(0, 60)
       : "";
@@ -799,6 +800,15 @@ const profileKey = Object.keys(profiles).find(
   `;
 }
 
+function cleanProfileName(name: string): string {
+  return name
+    .replace(
+      /[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/gu,
+      ""
+    )
+    .trim();
+}
+
 // ─────────────────────────────────────────────
 // TEMPLATE HTML PDF
 // ─────────────────────────────────────────────
@@ -809,8 +819,7 @@ function generateHTML({
   freeAnswer,
   userName,
 }: any) {
-  const profiles = Object.keys(scores);
-
+const profiles = Object.keys(scores).map(cleanProfileName);
   const getColor = (p: string) => {
     return p === "Authentique Bridé·e"
       ? "#FF2D78"
@@ -826,14 +835,23 @@ function generateHTML({
   };
 
   const dominantColor = getColor(result);
-  const dominantScore = scores[result] || 0;
-
+const dominantScore =
+  scores[
+    Object.keys(scores).find(
+      (k) =>
+        cleanProfileName(k) === cleanProfileName(result)
+    ) || ""
+  ] || 0;
   const orderedProfiles = [...profiles];
 
   const segments = orderedProfiles.map((p) => ({
     name: p,
-    value: scores[p] || 0,
-    color: getColor(p),
+value:
+  scores[
+    Object.keys(scores).find(
+      (k) => cleanProfileName(k) === p
+    ) || ""
+  ] || 0,    color: getColor(p),
   }));
 
   const scoresList = segments
