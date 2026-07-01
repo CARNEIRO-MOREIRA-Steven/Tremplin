@@ -33,7 +33,7 @@ export const articles: Article[] = [
     metaDescription:
       "IA et la communication : Guide complet | 5 stratégies pour utiliser l'IA sans risquer votre image professionnelle - Découvrez comment en faire un outil",
     category: "Stratégie",
-    image: "/blog/ia-communication.png",
+    image: "/blog/ia-communication.svg",
     excerpt:
       "L'IA n'est pas votre rédacteur — c'est votre assistant stratégique. 5 stratégies concrètes pour l'intégrer sans sacrifier votre crédibilité.",
     date: "2026-06-24",
