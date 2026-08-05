@@ -4,9 +4,9 @@ import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import './offre.css'
 
-import AuditExpress from '../../../../public/auditExpress.png'
-import Alignement from '../../../../public/alignement.png'
-import Rebranding from '../../../../public/rebranding.png'
+import AuditExpress from '../../../../public/audit express 1.png'
+import Alignement from '../../../../public/alignement 1.png'
+import Rebranding from '../../../../public/rebranding interieur  1.png'
 
 const Offre = () => {
 

@@ -55,6 +55,7 @@ const Header = () => {
           {/* <li><a href="/com">Refondre ma com&apos;</a></li>
           <li><a href="/branding">Me creer une image de marque</a></li> */}
           <li><a href="/blog">Blog</a></li>
+          <li><a href="/newsletter">Newsletter</a></li>
           <li><a href="/contact">Contact</a></li>
           {/* <li><a href="/faq">J&apos;ai des questions</a></li> */}
         </ul>

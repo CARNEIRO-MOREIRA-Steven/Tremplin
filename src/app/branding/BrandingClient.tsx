@@ -339,7 +339,7 @@ console.log(visibleCount)
           <div className="step-content">
             <h4 className="step-title">Test, supervision, ajustements & livraison finale</h4>
             <div className="step-body">
-              <p>On gère tes réseaux pendant 4 semaines : on teste, on mesure, on ajuste.</p>
+              <p>On gère tes réseaux pendant 1 semaines : on teste, on mesure, on ajuste.</p>
               <p>Pendant ce temps :</p>
               <ul>
                 <li>on crée ton tableau de bord personnalisé,</li>

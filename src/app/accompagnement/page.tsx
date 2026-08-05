@@ -63,7 +63,7 @@ export default function AccompagnementsPage() {
                 <li>Recommandations stratégiques</li>
                 <li>Outils pour organiser et gérer ta com&apos;</li>
               </ul>
-              <a className="offer-details-link"  href='#compare'>Découvrir tout ce qui est inclus</a>
+              <a className="offer-details-link"  href='/audit'>Découvrir tout ce qui est inclus</a>
             </div>
 
             {/* Alignement */}
@@ -77,8 +77,7 @@ export default function AccompagnementsPage() {
                 Tu veux <strong>(re)formuler ton positionnement et clarifier ton message</strong> pour enfin attirer les bons clients.{' '}
                 <strong>Tu veux monter d&apos;un step</strong>
               </p>
-              {/* <div className="offer-price"><span>A partir de </span>3 x 430e<span>1290e</span></div> */} 
-              <div className="offer-price"><span></span><span></span></div> 
+              <div className="offer-price"><span>A partir de </span>3 x 430e<span>1290e</span></div>
               <p className="offer-tagline">Structurer ta vision, ton message et tes fondations pour communiquer avec cohérence.</p>
               <p className="offer-subtagline">
                 Tu vas être soulagé(e) <strong>d&apos;avoir enfin une direction</strong> avec ta communication.<br />
@@ -94,7 +93,7 @@ export default function AccompagnementsPage() {
                 <li>Suivi illimité sur WhatsApp (même après l&apos;accompagnement)</li>
                 <li>Espace de travail partagé privé</li>
               </ul>
-              <a className="offer-details-link"  href='#compare'>Découvrir tout ce qui est inclus</a>
+              <a className="offer-details-link"  href='/com'>Découvrir tout ce qui est inclus</a>
             </div>
 
             {/* Rebranding */}
@@ -108,8 +107,7 @@ export default function AccompagnementsPage() {
                 <strong>Ton image ne colle plus à qui tu es devenu(e).</strong> Tu veux <strong>refondre ton image,</strong>{' '}
                 ton univers, créer ta légitimité. Tu veux <strong>être reconnu(e) pour ton expertise.</strong>
               </p>
-              {/* <div className="offer-price"><span> A partir de</span>4 x 550e<span>2190e</span></div> */} 
-              <div className="offer-price"><span></span><span></span></div> 
+              <div className="offer-price"><span> A partir de</span>4 x 550e<span>2190e</span></div>
               <p className="offer-tagline">Recréer une identité complète, alignée et ambitieuse – à ton image.</p>
               <p className="offer-subtagline">
                 <strong>Ton image va enfin parler pour toi,</strong> ce qui va te rendre confiant(e) et crédible.<br />
@@ -126,7 +124,7 @@ export default function AccompagnementsPage() {
                 <li>Suivi illimité sur WhatsApp (même après l&apos;accompagnement)</li>
                 <li>Espace de travail partagé privé</li>
               </ul>
-              <a className="offer-details-link" href='#compare'>Découvrir tout ce qui est inclus</a>
+              <a className="offer-details-link" href='/branding'>Découvrir tout ce qui est inclus</a>
             </div>
 
           </div>

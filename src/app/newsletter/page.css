@@ -1,0 +1,204 @@
+section{
+    background-color: #000;
+
+}
+.newsletter-container{
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.title{
+    color: #fff;
+    -webkit-text-stroke: 1px #ce82bb;
+
+}
+h2{
+    font-family: 'Kodchasan';
+}
+.details-newsletter{
+    text-align: start;
+    padding: 50px 100px 50px 20px;
+    border: solid 1px #5aceb8;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    width: 90%;
+}
+.details-newsletter img{
+    position: absolute;
+    width: 400px;
+    right: -150px;
+    top: 25px;
+}
+.newsletter-container li{
+    list-style: square;
+}
+.details-newsletter p {
+    width: 75%;
+}
+.newsletter-container ul{
+    padding-left: 20px;
+    width: 75%;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+.fun-detail{
+    padding : 20px;
+    font-family: 'Kodchasan';
+    font-size: 25px;
+    width: 50%;
+}
+.image-vache{
+    width: 300px;
+    position: relative;
+    left: 150px;
+    top: -50px;
+}
+.details-newsletter-containe{
+    position: relative;
+}
+#mlb2-41185845{
+    position: absolute !important;
+    top: -50px;
+    right: -20px;
+}
+.inscription-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.tremplin-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 100px;
+}
+.tremplin-details img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 25px;
+    z-index: 5;
+}
+.tremplin-details-texte{
+    background-color: #5aceb8;
+    border-radius: 25px;
+    color: #000;
+    position: relative;
+    top: 50px;
+    left: -100px;
+    text-align: center;
+    padding: 50px 50px 50px 100px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+.tremplin-details-texte h2{
+    font-family: 'Kodchasan';
+    color: #fff;
+    -webkit-text-stroke: 2px #000;
+    font-size: 40px;
+}
+.tremplin-details-texte h3{
+    font-family: 'Kodchasan';
+    color: #000;
+}
+
+.tremplin-details-texte p{
+    color: #000;
+}
+.special-texte{
+    color: #fff !important;
+    font-family: 'Kodchasan';
+    position: absolute;
+    left: 120px;
+    bottom: 15px;
+}
+#arrow{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 25px;
+    left: 50px;
+    rotate: 280deg;
+}
+
+@media (max-width: 768px) {
+    .newsletter-container{
+    padding: 60px 20px;
+    text-align: center;
+}
+.details-newsletter{
+    padding: 20px;
+    width: 100%;
+}
+.details-newsletter p{
+    width: 100%;
+}
+.details-newsletter img{
+    width: 100%;
+    position: relative;
+    right: 0;
+    top: -10px;
+}
+ul{
+    width: 100%;
+}
+.inscription-container{
+    flex-direction : column-reverse
+}
+#mlb2-41185845{
+    right: 0;
+    position: relative !important;
+}
+.fun-detail{
+    width: 100%;
+    padding: 0;
+}
+.image-vache{
+    position: absolute;
+    left: 20px;
+    top: 0px !important;
+    bottom : -180px;
+}
+.inscription-container{
+    position: relative;
+}
+.tremplin-details{
+    flex-direction: column-reverse;
+    margin: 0;
+}
+.tremplin-details-texte{
+    width: 100%;
+    padding: 20px;
+    top: 0;
+    left: 0;
+}
+.tremplin-details img {
+    width: 100%;
+    height: 300px;
+}
+.special-texte{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#arrow{
+    position: absolute;
+    bottom: -10px;
+    left: 100px;
+    rotate: 180deg;
+}
+}

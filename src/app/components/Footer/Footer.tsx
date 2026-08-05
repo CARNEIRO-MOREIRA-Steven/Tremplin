@@ -10,9 +10,12 @@ import LogoMail from '../../../../public/icons/envelope-solid-full.svg'
 import LogoWhatsapp from '../../../../public/icons/square-whatsapp-brands-solid-full.svg'
 import Arrow from '../../../public/icons/arrow-courbe.png'
 
+import NewsletterFooter from "../../newsletter/NewsletterFooter";
+
 const Footer = () => {
   return (
     <footer>
+        <NewsletterFooter />
         <h2>Tremplin - Agence de communication créative et de branding à Saint-Quentin (02) dans les Hauts-de-France.</h2>
         <div className='footer-grid'>
         <aside>
