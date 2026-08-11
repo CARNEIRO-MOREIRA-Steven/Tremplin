@@ -1,85 +1,46 @@
 "use client";
-
-import { FormEvent, useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./newsletter-footer.css";
-
 const MAILERLITE_SCRIPT =
   "https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519";
-
 const MAILERLITE_TRACKING =
   "https://assets.mailerlite.com/jsonp/380716/forms/187253947722892706/takel";
-
 export default function NewsletterFooter() {
-  const [success, setSuccess] = useState(false);
-
   useEffect(() => {
-    // Charge le script MailerLite une seule fois
-    const existing = document.querySelector(
+    /*
+     * ---------------------------------------------------------
+     * 1. Chargement du script MailerLite
+     * ---------------------------------------------------------
+     */
+    const existingScript = document.querySelector(
       `script[src="${MAILERLITE_SCRIPT}"]`
     );
-
-    if (!existing) {
+    if (!existingScript) {
       const script = document.createElement("script");
       script.src = MAILERLITE_SCRIPT;
       script.async = true;
       document.body.appendChild(script);
     }
-
-    // Tracking MailerLite
-    fetch(MAILERLITE_TRACKING).catch(() => {
-      // Le tracking ne doit jamais empêcher le formulaire de fonctionner
-    });
-
-    return () => {
-      // On laisse le script MailerLite en place lors des navigations.
-    };
-  }, []);
-
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    // MailerLite gère la soumission.
-    // On conserve le comportement d'origine.
-    const form = event.currentTarget;
-
-    if (!form.checkValidity()) {
-      return;
+    /*
+     * ---------------------------------------------------------
+     * 2. Tracking MailerLite
+     * ---------------------------------------------------------
+     */
+    const trackingKey = "mailerlite-tracking-41184158";
+    if (!sessionStorage.getItem(trackingKey)) {
+      fetch(MAILERLITE_TRACKING, {
+        method: "GET",
+        mode: "no-cors",
+        credentials: "omit",
+      })
+        .then(() => {
+          sessionStorage.setItem(trackingKey, "true");
+        })
+        .catch(() => {
+          // Le tracking ne doit jamais bloquer le formulaire.
+        });
     }
-
-    window.setTimeout(() => {
-      const successBody = form.parentElement
-        ?.parentElement
-        ?.querySelector(".row-success");
-
-      if (!successBody) {
-        setSuccess(true);
-      }
-    }, 1200);
-  };
-
-  if (success) {
-    return (
-      <div
-        id="mlb2-41184158"
-        className="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-41184158"
-      >
-        <div className="ml-form-align-center">
-          <div className="ml-form-embedWrapper embedForm">
-            <div className="ml-form-successBody row-success">
-              <div className="ml-form-successContent">
-                <h4>Bravo !</h4>
-
-                <p>
-                  👉 RDV dans ta boîte mail pour{" "}
-                  <strong>confirmer ton mail</strong> et recevoir les
-                  prochains numéros de Tremplin Hebdo.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
+  }, []);
   return (
     <div
       id="mlb2-41184158"
@@ -87,38 +48,31 @@ export default function NewsletterFooter() {
     >
       <div className="ml-form-align-center">
         <div className="ml-form-embedWrapper embedForm">
-
+          {/* FORMULAIRE */}
           <div className="ml-form-embedBody ml-form-embedBodyDefault row-form">
-
             <div className="ml-form-embedContent">
               <h4>Rejoins TREMPLIN HEBDO !</h4>
-
               <p>
                 <br />
               </p>
-
               <p>
                 <span style={{ fontSize: "16px" }}>
                   Le journal qui ne remplit pas ta boîte mail et qui fait
-                  avancer ton business !&nbsp;
+                  avancer ton business !
                 </span>
               </p>
-
               <p>
                 <br />
               </p>
             </div>
-
             <form
               className="ml-block-form"
               action="https://assets.mailerlite.com/jsonp/380716/forms/187253947722892706/subscribe"
               data-code=""
               method="post"
-              target="_blank"
-              onSubmit={handleSubmit}
             >
               <div className="ml-form-formContent">
-
+                {/* PRÉNOM */}
                 <div className="ml-form-fieldRow">
                   <div className="ml-field-group ml-field-name">
                     <input
@@ -131,7 +85,7 @@ export default function NewsletterFooter() {
                     />
                   </div>
                 </div>
-
+                {/* EMAIL */}
                 <div className="ml-form-fieldRow ml-last-item">
                   <div className="ml-field-group ml-field-email ml-validate-email ml-validate-required">
                     <input
@@ -146,28 +100,29 @@ export default function NewsletterFooter() {
                     />
                   </div>
                 </div>
-
               </div>
-
+              {/* CONSENTEMENT */}
               <div className="ml-form-checkboxRow ml-validate-required">
                 <label className="checkbox">
-                  <input type="checkbox" required />
-
+                  <input
+                    type="checkbox"
+                    name="consent"
+                    value="newsletter"
+                    required
+                  />
                   <div className="label-description">
                     <p>
-                      J'accepte de recevoir des mails incroyables de la part
-                      de Tremplin
-                    </p>
+                      J'accepte de recevoir des mails ultra fun de la part de Tremplin pour me partager du contenu et me parler de ses offres, ainsi que l’utilisation de pixels de suivi permettant de mesurer l’ouverture des mails, d'en personnaliser le contenu et  la fréquence.</p>
+                  
                   </div>
                 </label>
               </div>
-
+              {/* MAILERLITE SUBMIT */}
               <input
                 type="hidden"
                 name="ml-submit"
                 value="1"
               />
-
               <div className="ml-form-embedSubmit">
                 <button
                   type="submit"
@@ -175,7 +130,6 @@ export default function NewsletterFooter() {
                 >
                   Je veux rejoindre la Newsletter&nbsp;&nbsp;➡
                 </button>
-
                 <button
                   disabled
                   style={{ display: "none" }}
@@ -183,30 +137,25 @@ export default function NewsletterFooter() {
                   className="loading"
                 >
                   <div className="ml-form-embedSubmitLoad" />
-
                   <span className="sr-only">
                     Loading...
                   </span>
                 </button>
               </div>
-
               <input
                 type="hidden"
                 name="anticsrf"
                 value="true"
               />
             </form>
-
           </div>
-
-          {/* Structure conservée pour MailerLite */}
+          {/* SUCCÈS MAILERLITE */}
           <div
             className="ml-form-successBody row-success"
             style={{ display: "none" }}
           >
             <div className="ml-form-successContent">
               <h4>Bravo !</h4>
-
               <p>
                 👉 RDV dans ta boîte mail pour{" "}
                 <strong>confirmer ton mail</strong> et recevoir les
@@ -214,7 +163,6 @@ export default function NewsletterFooter() {
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
