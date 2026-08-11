@@ -121,7 +121,7 @@ export default function NewsletterCapture() {
 
                     <div className="label-description">
                       <p>
-                        J'accepte de recevoir des mails ultra fun de la part de Tremplin pour me partager du contenu et me parler de ses offres, ainsi que l’utilisation de pixels de suivi permettant de mesurer l’ouverture des mails, d'en personnaliser le contenu et  la fréquence.
+                        J'accepte de recevoir des mails ultra fun de la part de Tremplin pour me partager du contenu et me parler de ses offres, ainsi que l’utilisation de pixels de suivi permettant de mesurer l’ouverture des mails, d'en personnaliser le contenu et  la fréquence. 
                       </p>
                     </div>
                   </label>
