@@ -14,6 +14,7 @@
     "@types/nodemailer": "^8.0.0",
     "animejs": "^4.3.6",
     "lucide-react": "^0.544.0",
+    "mysql2": "^3.24.6",
     "next": "^15.5.15",
     "nodemailer": "^8.0.10",
     "pdfkit": "^0.18.0",
@@ -30,6 +31,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.2",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }
