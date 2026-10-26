@@ -6,15 +6,38 @@ interface ArticleContentProps {
 
 // Convertit **gras** et *italique* en <strong>/<em>, retourne des noeuds React
 function parseInline(text: string) {
-  const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g).filter(Boolean);
+  const parts = text.split(
+    /(\[[^\]]+\]\(https?:\/\/[^)]+\)|\*\*[^*]+\*\*|\*[^*]+\*)/g
+  ).filter(Boolean);
 
   return parts.map((part, i) => {
+    // Lien personnalisé : [texte](URL)
+    const linkMatch = part.match(
+      /^\[([^\]]+)\]\((https?:\/\/[^)]+)\)$/
+    );
+
+    if (linkMatch) {
+      return (
+        <a
+          key={i}
+          href={linkMatch[2]}
+          className="article-content__link"
+        >
+          {parseInline(linkMatch[1])}
+        </a>
+      );
+    }
+
+    // Texte en gras
     if (part.startsWith("**") && part.endsWith("**")) {
       return <strong key={i}>{part.slice(2, -2)}</strong>;
     }
+
+    // Texte en italique
     if (part.startsWith("*") && part.endsWith("*")) {
       return <em key={i}>{part.slice(1, -1)}</em>;
     }
+
     return part;
   });
 }
